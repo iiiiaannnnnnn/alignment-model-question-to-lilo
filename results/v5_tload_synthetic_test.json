@@ -1,0 +1,401 @@
+{
+  "questions": 15,
+  "pairs": 60,
+  "mrr": 0.9333,
+  "recall_at_1": 0.8667,
+  "recall_at_3": 1.0,
+  "recall_at_5": 1.0,
+  "model": "models/prime-lilo-reranker-v5-tload-pilot",
+  "details": [
+    {
+      "question_id": "SALV-PROG-10",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "PRO-PROG12-02",
+          "label": 0,
+          "score": -0.041533950716257095
+        },
+        {
+          "lilo_id": "PRO-PROG01-01",
+          "label": 1,
+          "score": -0.16429491341114044
+        },
+        {
+          "lilo_id": "PRO-PROG03-01",
+          "label": 0,
+          "score": -0.8054360747337341
+        },
+        {
+          "lilo_id": "DAT-DB15-01",
+          "label": 0,
+          "score": -1.8724274635314941
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-DSTR-10",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DAT-DSTR01-01",
+          "label": 1,
+          "score": 1.252830982208252
+        },
+        {
+          "lilo_id": "DAT-DSTR02-02",
+          "label": 0,
+          "score": 0.6979239583015442
+        },
+        {
+          "lilo_id": "DAT-DSTR19-01",
+          "label": 0,
+          "score": -1.3769021034240723
+        },
+        {
+          "lilo_id": "NET-NET17-01",
+          "label": 0,
+          "score": -3.78530216217041
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-ALG-10",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-ALG01-01",
+          "label": 1,
+          "score": 2.1125175952911377
+        },
+        {
+          "lilo_id": "ALG-ALG13-01",
+          "label": 0,
+          "score": -0.9273524880409241
+        },
+        {
+          "lilo_id": "ALG-ALG19-01",
+          "label": 0,
+          "score": -3.054880380630493
+        },
+        {
+          "lilo_id": "CYB-SEC15-01",
+          "label": 0,
+          "score": -6.086893558502197
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-DB-10",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DAT-DB01-01",
+          "label": 1,
+          "score": 4.052348613739014
+        },
+        {
+          "lilo_id": "DAT-DB18-02",
+          "label": 0,
+          "score": -1.306257724761963
+        },
+        {
+          "lilo_id": "DAT-DB11-01",
+          "label": 0,
+          "score": -2.276777982711792
+        },
+        {
+          "lilo_id": "WEB-WEB13-01",
+          "label": 0,
+          "score": -2.527913808822632
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-NET-10",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-NET02-02",
+          "label": 1,
+          "score": 4.354298114776611
+        },
+        {
+          "lilo_id": "NET-NET19-01",
+          "label": 0,
+          "score": 3.921236753463745
+        },
+        {
+          "lilo_id": "ART-AI13-01",
+          "label": 0,
+          "score": -2.046159505844116
+        },
+        {
+          "lilo_id": "NET-NET03-01",
+          "label": 0,
+          "score": -2.140544891357422
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-SEC-10",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "CYB-SEC01-01",
+          "label": 0,
+          "score": 2.088735818862915
+        },
+        {
+          "lilo_id": "CYB-SEC07-01",
+          "label": 1,
+          "score": 0.2120407521724701
+        },
+        {
+          "lilo_id": "CYB-SEC15-01",
+          "label": 0,
+          "score": -1.6125109195709229
+        },
+        {
+          "lilo_id": "DAT-DS17-01",
+          "label": 0,
+          "score": -6.118350982666016
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-SE-09",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SOF-SE14-02",
+          "label": 1,
+          "score": 5.786858081817627
+        },
+        {
+          "lilo_id": "SOF-SE05-01",
+          "label": 0,
+          "score": -1.9818748235702515
+        },
+        {
+          "lilo_id": "SOF-SE19-01",
+          "label": 0,
+          "score": -4.494517803192139
+        },
+        {
+          "lilo_id": "OPE-OS15-01",
+          "label": 0,
+          "score": -5.587981700897217
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-SE-10",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SOF-SE01-01",
+          "label": 1,
+          "score": 2.4366798400878906
+        },
+        {
+          "lilo_id": "SOF-SE15-01",
+          "label": 0,
+          "score": 0.5099416971206665
+        },
+        {
+          "lilo_id": "SOF-SE07-01",
+          "label": 0,
+          "score": -3.671783447265625
+        },
+        {
+          "lilo_id": "OPE-OS15-01",
+          "label": 0,
+          "score": -5.239128112792969
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-WEB-10",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-WEB01-01",
+          "label": 1,
+          "score": 5.697486400604248
+        },
+        {
+          "lilo_id": "WEB-WEB18-02",
+          "label": 0,
+          "score": 0.541991651058197
+        },
+        {
+          "lilo_id": "WEB-WEB15-01",
+          "label": 0,
+          "score": -0.06082220748066902
+        },
+        {
+          "lilo_id": "CLO-CLOUD13-01",
+          "label": 0,
+          "score": -5.153378486633301
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-AI-10",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ART-AI01-01",
+          "label": 1,
+          "score": 2.953613042831421
+        },
+        {
+          "lilo_id": "ART-AI12-02",
+          "label": 0,
+          "score": 2.0533299446105957
+        },
+        {
+          "lilo_id": "PRO-PROG09-01",
+          "label": 0,
+          "score": -4.737796783447266
+        },
+        {
+          "lilo_id": "ART-AI13-01",
+          "label": 0,
+          "score": -6.0091071128845215
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-DS-09",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DAT-DS14-02",
+          "label": 1,
+          "score": 4.358614444732666
+        },
+        {
+          "lilo_id": "DAT-DS18-02",
+          "label": 0,
+          "score": -2.0619165897369385
+        },
+        {
+          "lilo_id": "DAT-DS11-01",
+          "label": 0,
+          "score": -2.178727626800537
+        },
+        {
+          "lilo_id": "DAT-DSTR15-01",
+          "label": 0,
+          "score": -6.607438564300537
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-DS-10",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DAT-DS02-02",
+          "label": 1,
+          "score": 2.5346901416778564
+        },
+        {
+          "lilo_id": "DAT-DS05-01",
+          "label": 0,
+          "score": 0.19689008593559265
+        },
+        {
+          "lilo_id": "DAT-DS15-01",
+          "label": 0,
+          "score": -4.0635600090026855
+        },
+        {
+          "lilo_id": "DAT-DSTR15-01",
+          "label": 0,
+          "score": -4.592828273773193
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-OS-10",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "OPE-OS01-01",
+          "label": 1,
+          "score": 4.341070652008057
+        },
+        {
+          "lilo_id": "OPE-OS03-01",
+          "label": 0,
+          "score": -0.6944762468338013
+        },
+        {
+          "lilo_id": "OPE-OS02-02",
+          "label": 0,
+          "score": -2.5887625217437744
+        },
+        {
+          "lilo_id": "ALG-ALG17-01",
+          "label": 0,
+          "score": -7.608516693115234
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-CLOUD-09",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLO-CLOUD10-02",
+          "label": 1,
+          "score": 3.6078217029571533
+        },
+        {
+          "lilo_id": "CLO-CLOUD13-01",
+          "label": 0,
+          "score": -1.4627485275268555
+        },
+        {
+          "lilo_id": "CLO-CLOUD17-01",
+          "label": 0,
+          "score": -2.2054030895233154
+        },
+        {
+          "lilo_id": "SOF-SE15-01",
+          "label": 0,
+          "score": -2.6981940269470215
+        }
+      ]
+    },
+    {
+      "question_id": "SALV-CLOUD-10",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLO-CLOUD02-02",
+          "label": 1,
+          "score": 4.298774242401123
+        },
+        {
+          "lilo_id": "CLO-CLOUD15-01",
+          "label": 0,
+          "score": 1.9494447708129883
+        },
+        {
+          "lilo_id": "SOF-SE15-01",
+          "label": 0,
+          "score": -2.227850914001465
+        },
+        {
+          "lilo_id": "CLO-CLOUD01-01",
+          "label": 0,
+          "score": -3.62785005569458
+        }
+      ]
+    }
+  ]
+}

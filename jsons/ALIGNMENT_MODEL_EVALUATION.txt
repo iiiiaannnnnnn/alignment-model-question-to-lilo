@@ -1,0 +1,454 @@
+====================================================================================================
+PRIME AI  --  ALIGNMENT MODEL EVALUATION ON REAL SAVED ASSESSMENTS
+====================================================================================================
+
+Generated          : 2026-08-27 02:31
+Backend revision   : 4daafcd
+Encoder            : multi-qa-mpnet-base-dot-v1  (768-dim, L2-normalised; dot product = cosine)
+Composite          : FinalScore = 0.45 x cosine + 0.2 x jaccard + 0.15 x content + 0.2 x bloom
+Cross-block penalty: composite x 0.5 when the candidate outcome's content block differs from the question's
+Match threshold    : 0.28        Display bands: Strong >= 0.47, Moderate >= 0.37, else Weak
+Gemini calls       : 0  (llm_max_calls=0 -- every number below is the deterministic composite, no LLM adjudication)
+
+Source: the seven exported assessment records in
+  c:\Users\Jericho Mico\Desktop\Thesis\Q_Testing_Models\Syllabus and FIle\jsons
+
+====================================================================================================
+0.  WHAT WAS TESTED, AND HOW TO READ IT
+====================================================================================================
+
+The evaluation calls the shipping function tag_questions_with_lilos() from
+Front_and_Back/Backend/app/utils/alignment_model.py. No part of the model was
+re-implemented for this test. Each export carries its own LILO pool, content
+blocks, course outcomes and questions, so every assessment is scored against
+exactly the outcomes it was generated against.
+
+Each export is tagged TWICE:
+
+  Run A  'as shipped'      questions keep their source_ilo_id.
+                           The source-LILO invariant then pins the tag to the
+                           outcome the generator targeted. This is what a
+                           professor sees in the app.
+
+  Run B  'composite only'  source_ilo_id removed. The four-channel composite
+                           has to find the outcome by itself. This is the run
+                           that can be scored for accuracy.
+
+GROUND TRUTH, stated plainly: the label is source_ilo_id -- the outcome the
+professor selected and the generator wrote the question for. It is generation
+provenance, not an independent expert rating. What Section 3 measures is
+therefore AGREEMENT between the semantic matcher and the outcome the item was
+authored against. A human-rater study would be needed to call it correctness,
+and this report does not claim that.
+
+Run A cannot be scored for accuracy: with the invariant in place its tag
+equals its source for every generated question, so its accuracy is 100% by
+construction and means nothing. Run A is used instead for the channel values,
+the score distribution, and the Bloom figures -- the numbers that describe the
+tags the system actually ships.
+
+====================================================================================================
+1.  DATASET INVENTORY
+====================================================================================================
+
+export                                          items  LILOs  blocks   COs   POs  topic
+----------------------------------------------------------------------------------------------------
+alignment_478588_2026-08-26.json                   35      5       2     4    10  Lecture 9 Mining Behavior Data (1) | Lecture
+alignment_final_exam_2026-08-25.json               62     31       9     4    10  Lecture 9 Mining Behavior Data (1) | Lecture
+alignment_quiz1111_2026-08-25.json                 10      4       1     4    10  Lecture 1 Real World Data Formulation (1)
+alignment_quiz_tssstt_2026-08-25.json              20      7       2     4    10  Lecture 5 Mining Image Data (1) | Lecture 4 
+alignment_quizzzzzzzzz_2026-08-25.json             10      4       1     4    10  Lecture 2 Mining Item Sets
+alignment_test_quizzz_2026-08-25.json              20      8       2     4    10  Lecture 2 Mining Item Sets | Lecture 1 Real 
+alignment_testtt1uizzz_2026-08-26.json             40      7       2     4    10  Lecture 5 Mining Image Data (1) | Lecture 4 
+----------------------------------------------------------------------------------------------------
+TOTAL                                             197     66
+
+Question formats across the corpus:
+    multiple_choice          94    47.72%
+    identification           54    27.41%
+    enumeration              29    14.72%
+    true_false               20    10.15%
+
+Every one of the 197 questions carries a source_ilo_id, so every one is
+scoreable against provenance. None had to be dropped.
+
+====================================================================================================
+2.  REPRODUCIBILITY  --  does today's code reproduce the saved records?
+====================================================================================================
+
+Run A re-scored beside the score stored in each export. A difference is not
+an error: five of these records were saved before the source-invariant and
+normaliser fixes landed, so they preserve the older behaviour by design.
+
+export                                            n  identical  <=0.001   >0.01  tag moved  mean |d|
+----------------------------------------------------------------------------------------------------
+alignment_478588_2026-08-26.json                 35         35       35       0          0    0.0000
+alignment_final_exam_2026-08-25.json             62          5        5      18          1    0.0257
+alignment_quiz1111_2026-08-25.json               10          0        1       2          0    0.0158
+alignment_quiz_tssstt_2026-08-25.json            20         14       14       6          6    0.0127
+alignment_quizzzzzzzzz_2026-08-25.json           10          0        0       6          0    0.0445
+alignment_test_quizzz_2026-08-25.json            20         20       20       0          0    0.0000
+alignment_testtt1uizzz_2026-08-26.json           40         40       40       0          0    0.0000
+----------------------------------------------------------------------------------------------------
+TOTAL                                           197        114      115      32          7
+
+MEANING.  'tag moved' counts questions whose outcome changed between the
+saved record and today's code. Those are the questions the source-invariant
+fix recovered: before the fix a mis-scoped filter could drop a source outcome
+from the candidate pool, and the question fell through to composite matching
+against the wrong outcome. Attainment for those items was being credited to
+the wrong LILO. Records saved after the fix should show zero movement.
+
+====================================================================================================
+3.  ALIGNMENT ACCURACY  --  the composite matcher against provenance
+====================================================================================================
+
+Run B only. source_ilo_id removed; the four channels have to find the outcome.
+
+export                                            n  pool  top-1 agree     rate   chance    lift
+----------------------------------------------------------------------------------------------------
+alignment_478588_2026-08-26.json                 35     5           32  91.43%   20.00%    4.6x
+alignment_final_exam_2026-08-25.json             62    31           43  69.35%    3.23%   21.5x
+alignment_quiz1111_2026-08-25.json               10     4            9  90.00%   25.00%    3.6x
+alignment_quiz_tssstt_2026-08-25.json            20     7           15  75.00%   14.29%    5.2x
+alignment_quizzzzzzzzz_2026-08-25.json           10     4            5  50.00%   25.00%    2.0x
+alignment_test_quizzz_2026-08-25.json            20     8           16  80.00%   12.50%    6.4x
+alignment_testtt1uizzz_2026-08-26.json           40     7           26  65.00%   14.29%    4.6x
+----------------------------------------------------------------------------------------------------
+CORPUS                                          197                146  74.11%
+
+Per-outcome precision / recall / F1 (outcomes with at least one question):
+
+    outcome     precision   recall      F1  support
+    ----------------------------------------------
+    LILO-10         0.833    1.000   0.909        5
+    LILO-11         0.444    0.800   0.571        5
+    LILO-12         1.000    1.000   1.000        1
+    LILO-13         0.500    1.000   0.667        1
+    LILO-14         1.000    1.000   1.000        1
+    LILO-16         0.250    1.000   0.400        1
+    LILO-17         0.375    0.300   0.333       10
+    LILO-18         0.667    0.400   0.500       10
+    LILO-19         0.471    0.800   0.593       10
+    LILO-20         1.000    0.800   0.889       10
+    LILO-21         0.778    0.700   0.737       10
+    LILO-22         0.889    0.889   0.889        9
+    LILO-23         0.800    1.000   0.889        8
+    LILO-24         1.000    1.000   1.000        3
+    LILO-25         1.000    1.000   1.000        3
+    LILO-26         0.000    0.000   0.000        1
+    LILO-27         1.000    1.000   1.000        1
+    LILO-28         0.500    0.500   0.500        2
+    LILO-29         0.333    0.500   0.400        2
+    LILO-31         0.000    0.000   0.000        1
+    LILO-32         1.000    0.714   0.833        7
+    LILO-33         1.000    1.000   1.000        7
+    LILO-35         0.778    1.000   0.875        7
+    LILO-38         1.000    0.824   0.903       17
+    LILO-39         0.833    0.938   0.882       16
+    LILO-4          1.000    0.600   0.750       10
+    LILO-5          0.857    0.600   0.706       10
+    LILO-6          0.857    0.750   0.800        8
+    LILO-7          0.714    0.714   0.714        7
+    LILO-8          0.750    0.429   0.545        7
+    LILO-9          1.000    0.571   0.727        7
+    LILO-NONE       0.000    0.000   0.000        0
+    ----------------------------------------------
+    macro           0.730    0.736   0.710      197
+    weighted        0.800    0.741   0.752      197
+
+    LILO-NONE is not an outcome. It is what the tagger returns when no
+    candidate cleared the 0.28 threshold -- 1 question(s) here. It has zero
+    support because nothing was written for it, so it is excluded from the
+    macro average and counts only as a miss against the true outcome.
+
+MEANING.  Precision on an outcome answers 'when the model tagged a question to
+this outcome, how often was that the outcome it was written for'. Recall
+answers 'of the questions written for this outcome, how many did the model
+find'. A low recall with high precision is the signature of an outcome being
+absorbed by a semantically adjacent neighbour -- the pattern that hides an
+untested outcome behind a full-looking coverage count.
+
+Where disagreements land (true outcome -> what the composite chose):
+
+    written for  tagged to     count   sample outcome text
+    --------------------------------------------------------------------------------------------
+    LILO-17      LILO-19           6   Apply LDA to real-world text data for topic discovery.
+    LILO-5       LILO-16           3   Apply matrix data mining methods to analyze microarray d
+    LILO-18      LILO-19           3   Apply LDA to real-world text data for topic discovery.
+    LILO-18      LILO-17           3   Develop proficiency in using LDA for unsupervised topic 
+    LILO-8       LILO-11           3   Apply frequent pattern mining to real-world datasets.
+    LILO-38      LILO-39           2   Apply mining results to online advertising.
+    LILO-7       LILO-31           2   Apply social network analysis for understanding social i
+    LILO-6       LILO-26           2   Apply geospatial analysis to spatiotemporal datasets.
+    LILO-4       LILO-7            2   Conduct network analysis on graph-structured data.
+    LILO-20      LILO-21           2   Apply object detection techniques for localizing objects
+    LILO-9       LILO-11           2   Apply frequent pattern mining to real-world datasets.
+    LILO-19      LILO-17           2   Develop proficiency in using LDA for unsupervised topic 
+    LILO-32      LILO-39           1   Apply mining results to online advertising.
+    LILO-32      LILO-35           1   Apply big data mining to log files, social media, and qu
+    LILO-21      LILO-22           1   Utilize interpretable models for image classification.
+    LILO-4       LILO-5            1   Apply matrix transformation techniques to represent and 
+    LILO-5       LILO-13           1   Apply Singular Value Decomposition (SVD) to data mining 
+    LILO-26      LILO-31           1   Apply social network analysis for understanding social i
+    LILO-31      LILO-28           1   Develop advanced skills in analyzing complex network dat
+    LILO-38      LILO-29           1   Analyze the evolution of communities over time in dynami
+    LILO-39      LILO-35           1   Apply big data mining to log files, social media, and qu
+    LILO-4       LILO-6            1   Analyze sequences of data to identify temporal patterns,
+    LILO-28      LILO-29           1   Analyze the evolution of communities over time in dynami
+    LILO-29      LILO-31           1   Apply social network analysis for understanding social i
+    LILO-8       LILO-NONE         1   
+    LILO-9       LILO-10           1   Apply mutual information to assess information gain betw
+    LILO-11      LILO-8            1   Develop the ability to identify and extract frequent pat
+    LILO-17      LILO-18           1   Interpret and analyze topics generated by LDA. Explore a
+    LILO-21      LILO-23           1   Apply image mining to social sensing and medical diagnos
+    LILO-21      LILO-18           1   Interpret and analyze topics generated by LDA. Explore a
+
+====================================================================================================
+4.  THE FOUR CHANNELS  --  what each one actually contributes
+====================================================================================================
+
+Measured on Run A, the tags the system ships. For each channel: its raw value,
+its weighted contribution (value x weight), and its share of the composite.
+
+channel     weight     mean   median     min     max  hard 0  w.contrib  % of score
+----------------------------------------------------------------------------------------------------
+cosine        0.45   0.5466   0.5415  0.3317  0.7743       0     0.2460      61.34%
+jaccard       0.20   0.0574   0.0566  0.0000  0.1887      12     0.0115       2.87%
+content       0.15   0.0539   0.0465  0.0000  0.2000      14     0.0081       2.01%
+bloom         0.20   0.7322   0.7500  0.2500  1.0000       0     0.1464      36.52%
+----------------------------------------------------------------------------------------------------
+composite     1.00   0.4010
+
+Full distribution per channel:
+    cosine   n=197  min 0.3317  p25 0.4945  median 0.5415  p75 0.6025  max 0.7743  mean 0.5466
+             semantic similarity, question vs enriched outcome
+    jaccard  n=197  min 0.0000  p25 0.0323  median 0.0566  p75 0.0820  max 0.1887  mean 0.0574
+             keyword overlap, question vs outcome key concepts
+    content  n=197  min 0.0000  p25 0.0238  median 0.0465  p75 0.0732  max 0.2000  mean 0.0539
+             keyword overlap, question vs the week's learning content
+    bloom    n=197  min 0.2500  p25 0.5000  median 0.7500  p75 1.0000  max 1.0000  mean 0.7322
+             cognitive-level proximity, question verb vs outcome verb
+
+Channel availability -- could the channel measure anything at all?
+(score_available as emitted by today's code on this run, so all 197 questions
+report it even though five of the saved records predate the field.)
+
+    cosine     inputs present on  197 of  197 questions  100.00%
+    jaccard    inputs present on  197 of  197 questions  100.00%
+    content    inputs present on  197 of  197 questions  100.00%
+    bloom      inputs present on  197 of  197 questions  100.00%
+
+MEANING.  A hard zero on an AVAILABLE channel is a real non-match and belongs
+in the score. A zero on an UNAVAILABLE channel means nothing was measured, and
+the display normaliser drops that channel's weight from the denominator rather
+than letting absence read as failure. The distinction is the whole reason
+score_available exists: guessing it from the value (the old 'below 0.05 must
+mean missing' rule) rewarded a failed match and, at the band boundary, ranked
+a worse question above a better one.
+
+Read the two Jaccard channels for what they are. A Jaccard index is
+|A n B| / |A u B|: a 10-keyword question sharing 3 terms with an 8-keyword
+outcome scores 3/15 = 0.20. These channels are structurally small, they are
+not percentages, and a mean near 0.05 is normal rather than broken. Their job
+is to break ties that the embedding alone leaves ambiguous.
+
+====================================================================================================
+5.  COMPOSITE ARITHMETIC  --  verifying the formula on every question
+====================================================================================================
+
+For each shipped tag the weighted sum is recomputed from the four channel
+values and compared with the score the model returned. Two outcomes are
+legitimate: an exact match, or exactly half the weighted sum, which is the
+cross-block penalty firing on a candidate from a different week.
+
+    reproduces 0.45c + 0.20j + 0.15n + 0.20b exactly       187    94.92%
+    reproduces exactly half of it (cross-block penalty)     10     5.08%
+    neither                                                  0     0.00%
+
+MEANING.  This is an arithmetic audit of the model, not a quality measure. It
+confirms the published weights are the weights the code applies, and it counts
+how often the cross-block penalty changed a score. Every question falling into
+one of the two expected buckets means the formula on the alignment-model slide
+is the formula that ran.
+
+====================================================================================================
+6.  SCORE DISTRIBUTION AND DISPLAY BANDS
+====================================================================================================
+
+    Shipped tags (Run A):  n=197  min 0.1448  p25 0.3522  median 0.4061  p75 0.4546  max 0.5714  mean 0.4010
+    Composite only (Run B):n=197  min 0.0000  p25 0.3717  median 0.4143  p75 0.4595  max 0.5760  mean 0.4157
+
+    Band cut points in the UI: Strong >= 0.47, Moderate >= 0.37
+
+    Strong        36    18.27%  #######
+    Moderate      98    49.75%  ###################
+    Weak          63    31.98%  ############
+
+Histogram of the shipped composite:
+
+    0.00-0.05     0  
+    0.05-0.10     0  
+    0.10-0.15     1  
+    0.15-0.20     1  
+    0.20-0.25     7  ##
+    0.25-0.30    11  ###
+    0.30-0.35    23  #######
+    0.35-0.40    47  ##############  <- Moderate cut
+    0.40-0.45    52  ###############
+    0.45-0.50    36  ##########  <- Strong cut
+    0.50-0.55    15  ####
+    0.55-0.60     4  #
+    0.60-0.65     0  
+    0.65-0.70     0  
+
+MEANING.  These bands are calibrated display categories, not percentages and
+not proof of educational correctness. 'Strong' means 'in the upper quartile of
+what this model produces on this corpus'. The composite cannot approach 1.0 by
+construction: two of its four channels are Jaccard indices that are
+structurally small, so a cut point chosen as if the score were a percentage
+would be unreachable. The current cuts came from the quartiles of 407 saved
+questions re-scored under the fixed normaliser, and they must be re-measured
+whenever a weight or a channel's coverage changes.
+
+====================================================================================================
+7.  BLOOM'S TAXONOMY  --  does the item demand the level the outcome asks for?
+====================================================================================================
+
+    questions with a measurable Bloom gap      197
+    exact level match (gap = 0)                 69    35.03%
+    detected level above the format ceiling     68    34.52%
+    mean Bloom proximity (channel 4)         0.7322
+
+      gap  count   meaning
+    --------------------------------------------------------------------------
+        3      6   item is three levels above the outcome
+        2      9   item is two levels above the outcome
+        1     22   item is one level above the outcome
+        0     69   item sits exactly at the outcome's level
+       -1     43   item is one level below the outcome
+       -2     34   item is two levels below the outcome
+       -3     14   item is three levels below the outcome
+
+MEANING.  A negative gap is the common failure and it is a question-authoring
+problem, not a matching problem: the item is tagged to the right outcome but
+tests it at a lower cognitive level than the outcome demands, so the evidence
+is thin against that outcome. 'Above the format ceiling' is the mirror case --
+an item that reads as analysis but is delivered as True/False, where the format
+cannot carry the reasoning it claims to test. Both are diagnostic only: neither
+changes a score, and both are surfaced so the professor can rewrite the item.
+
+====================================================================================================
+8.  COVERAGE INTEGRITY  --  tagged is not the same as covered
+====================================================================================================
+
+'shipped' is Run A -- the source invariant guarantees every outcome that was
+generated for keeps its question, so 100% there is the invariant working, not a
+measurement. 'composite' is Run B, and it is the number worth reading: it is
+what coverage would be if the matcher alone decided, which is what the system
+did before the invariant shipped.
+
+export                                          items  tagged  outcomes   shipped   composite   lost
+----------------------------------------------------------------------------------------------------
+alignment_478588_2026-08-26.json                   35      35         5    5 100.00%    5 100.00%      0
+alignment_final_exam_2026-08-25.json               62      62        31   31 100.00%   29  93.55%      2
+alignment_quiz1111_2026-08-25.json                 10      10         4    4 100.00%    4 100.00%      0
+alignment_quiz_tssstt_2026-08-25.json              20      20         7    7 100.00%    6  85.71%      1
+alignment_quizzzzzzzzz_2026-08-25.json             10      10         4    4 100.00%    3  75.00%      1
+alignment_test_quizzz_2026-08-25.json              20      20         8    8 100.00%    8 100.00%      0
+alignment_testtt1uizzz_2026-08-26.json             40      40         7    7 100.00%    7 100.00%      0
+----------------------------------------------------------------------------------------------------
+CORPUS                                                               66   66 100.00%   62  93.94%      4
+
+MEANING.  'tagged' counts questions that received any outcome. 'covered' counts
+distinct outcomes that received at least one question. The two are different
+numbers and conflating them is what let a 20-question quiz report 20/20 matched
+while two selected outcomes received nothing at all. An outcome with no
+question reports zero attainment forever, and nothing on the old summary said
+so.
+
+The 'lost' column is the concrete value of the source-LILO invariant: across
+the corpus the composite alone would leave 4 of 66 selected outcomes
+with no question attributed to them, each one reporting permanent zero
+attainment. Those outcomes were absorbed by a semantic neighbour, which is why
+the question count still looked complete.
+
+====================================================================================================
+9.  GENERATION DRIFT  --  where the generator and the matcher disagree
+====================================================================================================
+
+Run A ships the source outcome, and records on the tag what the composite
+would have chosen instead. A disagreement is a question that reads more like a
+different outcome than the one it was written for -- generation drift, not a
+tagging bug. It is diagnostic: nothing scores or attains from it.
+
+The margin below is taken from semantic_best on the shipped tag, so both
+scores come from the same run against the same candidate pool. It is the
+composite's winner minus the source outcome, and it is always positive by
+construction -- the winner is the winner.
+
+The 'agree' count here will not exactly equal Section 3's top-1 count, and
+should not. Section 3 is Run B, where the source outcome was stripped from the
+inputs; this is Run A, where the invariant keeps the source outcome in the
+candidate pool. A pool that differs by one candidate can change which outcome
+wins, so the two runs part company on a handful of borderline questions.
+
+export                                            n  agree  drift  drift rate  mean margin      max
+----------------------------------------------------------------------------------------------------
+alignment_478588_2026-08-26.json                 35     32      3   8.57%       0.0070   0.0155
+alignment_final_exam_2026-08-25.json             62     43     19  30.65%       0.1229   0.3273
+alignment_quiz1111_2026-08-25.json               10      9      1  10.00%       0.0187   0.0187
+alignment_quiz_tssstt_2026-08-25.json            20     15      5  25.00%       0.0235   0.0488
+alignment_quizzzzzzzzz_2026-08-25.json           10      5      5  50.00%       0.0560   0.0718
+alignment_test_quizzz_2026-08-25.json            20     17      3  15.00%       0.0319   0.0600
+alignment_testtt1uizzz_2026-08-26.json           40     26     14  35.00%       0.0204   0.0563
+----------------------------------------------------------------------------------------------------
+CORPUS                                          197    147     50  25.38%       0.0631   0.3273
+
+Distribution of the drift margin:
+    n=50   min 0.0000  p25 0.0084  median 0.0283  p75 0.0668  max 0.3273  mean 0.0631
+
+    margin below 0.02 (near-tie, the choice is close to arbitrary)    19   38.00%
+    margin at or above 0.05 (item reads clearly like another outcome)   17   34.00%
+
+MEANING.  A small margin means the two outcomes are genuinely close and the
+choice between them is near-arbitrary -- adjacent LILOs in the same week
+routinely differ by less than 0.02. A large margin means the item drifted well
+off its target and is worth rewriting. This is the only remaining measure of
+generation quality once the invariant pins the tag to provenance: without it,
+the override would not just fix the mapping, it would stop the system from
+being able to notice the problem.
+
+====================================================================================================
+10.  WHAT THIS EVALUATION DOES AND DOES NOT ESTABLISH
+====================================================================================================
+
+IT ESTABLISHES:
+  - The shipping composite reproduces its published weights on every question
+    in the corpus (Section 5).
+  - How often the semantic matcher, given no provenance, recovers the outcome
+    an item was authored against, well above the pool's chance rate
+    (Section 3).
+  - What each of the four channels contributes to a real score, including that
+    the two Jaccard channels are small by construction (Section 4).
+  - That coverage and tagging are distinct measures, with the gap quantified
+    per assessment (Section 8).
+
+IT DOES NOT ESTABLISH:
+  - Educational correctness. The ground truth is generation provenance, not an
+    expert rating. A question can be tagged to the outcome it was written for
+    and still be a poor assessment of it -- Section 7's Bloom gaps are exactly
+    that case.
+  - Generalisation beyond this course. All seven exports come from one ISU
+    syllabus; the outcome pools overlap heavily and the vocabulary is narrow.
+  - Anything about the generator. Gemini was not called (llm_max_calls=0).
+    These are the deterministic matcher's numbers alone.
+
+HONEST READING FOR THE DEFENCE: this measures whether the alignment model finds
+the outcome a question belongs to, and it shows what it costs when it does not.
+It is a measurement of the matcher, and the human-in-the-loop review exists
+precisely because a matcher's agreement is not a teacher's judgement.
+
+====================================================================================================
+end of report  --  197 questions, 7 assessments, 2 tagger runs each, 0 LLM calls
+====================================================================================================

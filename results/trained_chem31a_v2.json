@@ -1,0 +1,1431 @@
+{
+  "questions": 103,
+  "recall_at_1": 0.2524,
+  "recall_at_3": 0.3592,
+  "recall_at_5": 0.466,
+  "model": "models/prime-lilo-reranker-v2",
+  "details": [
+    {
+      "question_id": "chem31a-2021-e1-1i",
+      "gold_lilo_ids": [
+        "LILO-2",
+        "LILO-9"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-17",
+        "LILO-20",
+        "LILO-26",
+        "LILO-35"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-1ii",
+      "gold_lilo_ids": [
+        "LILO-11",
+        "LILO-13"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-15",
+        "LILO-23",
+        "LILO-14",
+        "LILO-20",
+        "LILO-35"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-1iii",
+      "gold_lilo_ids": [
+        "LILO-2",
+        "LILO-3"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-10",
+        "LILO-26",
+        "LILO-31",
+        "LILO-2",
+        "LILO-18"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-1iv",
+      "gold_lilo_ids": [
+        "LILO-40"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-8",
+        "LILO-44",
+        "LILO-43",
+        "LILO-40",
+        "LILO-53"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-1v",
+      "gold_lilo_ids": [
+        "LILO-40"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-44",
+        "LILO-67",
+        "LILO-43",
+        "LILO-8",
+        "LILO-53"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-2a",
+      "gold_lilo_ids": [
+        "LILO-2"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-19",
+        "LILO-14",
+        "LILO-23",
+        "LILO-12"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-2bi",
+      "gold_lilo_ids": [
+        "LILO-1",
+        "LILO-2",
+        "LILO-4",
+        "LILO-5",
+        "LILO-7"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-7",
+        "LILO-8",
+        "LILO-1",
+        "LILO-31"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-2bii",
+      "gold_lilo_ids": [
+        "LILO-1"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-7",
+        "LILO-31",
+        "LILO-1",
+        "LILO-23",
+        "LILO-18"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-2c",
+      "gold_lilo_ids": [
+        "LILO-2",
+        "LILO-3",
+        "LILO-38",
+        "LILO-4",
+        "LILO-5",
+        "LILO-7",
+        "LILO-9"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-36",
+        "LILO-31",
+        "LILO-6",
+        "LILO-8",
+        "LILO-28"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-3a",
+      "gold_lilo_ids": [
+        "LILO-1",
+        "LILO-6"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-2",
+        "LILO-5",
+        "LILO-29",
+        "LILO-30",
+        "LILO-70"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-3b",
+      "gold_lilo_ids": [
+        "LILO-1",
+        "LILO-6"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-2",
+        "LILO-5",
+        "LILO-29",
+        "LILO-30",
+        "LILO-33"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-3c",
+      "gold_lilo_ids": [
+        "LILO-2",
+        "LILO-6"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-2",
+        "LILO-18",
+        "LILO-1",
+        "LILO-10",
+        "LILO-6"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-4a",
+      "gold_lilo_ids": [
+        "LILO-11",
+        "LILO-18",
+        "LILO-2",
+        "LILO-3",
+        "LILO-4",
+        "LILO-5"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-26",
+        "LILO-31",
+        "LILO-19",
+        "LILO-23"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-4b",
+      "gold_lilo_ids": [
+        "LILO-11",
+        "LILO-13",
+        "LILO-18",
+        "LILO-2"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-23",
+        "LILO-18",
+        "LILO-26",
+        "LILO-31",
+        "LILO-36"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-5a",
+      "gold_lilo_ids": [
+        "LILO-3"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-23",
+        "LILO-31",
+        "LILO-6",
+        "LILO-11"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-5b",
+      "gold_lilo_ids": [
+        "LILO-8"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-8",
+        "LILO-18",
+        "LILO-31",
+        "LILO-11",
+        "LILO-27"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-5c",
+      "gold_lilo_ids": [
+        "LILO-1",
+        "LILO-7"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-29",
+        "LILO-26",
+        "LILO-68",
+        "LILO-18",
+        "LILO-70"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e1-5d",
+      "gold_lilo_ids": [
+        "LILO-2",
+        "LILO-7",
+        "LILO-9"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-26",
+        "LILO-31",
+        "LILO-11",
+        "LILO-19"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-1i",
+      "gold_lilo_ids": [
+        "LILO-24",
+        "LILO-25"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-2",
+        "LILO-17",
+        "LILO-12",
+        "LILO-13",
+        "LILO-19"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-1ii",
+      "gold_lilo_ids": [
+        "LILO-43"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-67",
+        "LILO-65",
+        "LILO-44",
+        "LILO-8",
+        "LILO-53"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-1iii",
+      "gold_lilo_ids": [
+        "LILO-34"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-30",
+        "LILO-36",
+        "LILO-45",
+        "LILO-71",
+        "LILO-23"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-1iv",
+      "gold_lilo_ids": [
+        "LILO-46",
+        "LILO-48"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-48",
+        "LILO-50",
+        "LILO-44",
+        "LILO-8",
+        "LILO-47"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-2a",
+      "gold_lilo_ids": [
+        "LILO-11",
+        "LILO-19",
+        "LILO-9"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-23",
+        "LILO-36",
+        "LILO-19",
+        "LILO-25",
+        "LILO-18"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-2bi",
+      "gold_lilo_ids": [
+        "LILO-3",
+        "LILO-7"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-8",
+        "LILO-36",
+        "LILO-28",
+        "LILO-31"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-2bii",
+      "gold_lilo_ids": [
+        "LILO-2",
+        "LILO-34",
+        "LILO-4",
+        "LILO-8"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-33",
+        "LILO-18",
+        "LILO-36",
+        "LILO-23",
+        "LILO-31"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-2c",
+      "gold_lilo_ids": [
+        "LILO-36",
+        "LILO-7"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-26",
+        "LILO-28",
+        "LILO-2",
+        "LILO-36",
+        "LILO-7"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-3ai",
+      "gold_lilo_ids": [
+        "LILO-24",
+        "LILO-25"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-25",
+        "LILO-19",
+        "LILO-16",
+        "LILO-24",
+        "LILO-18"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-3aii",
+      "gold_lilo_ids": [
+        "LILO-24",
+        "LILO-25"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-25",
+        "LILO-16",
+        "LILO-24",
+        "LILO-18",
+        "LILO-11"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-3b",
+      "gold_lilo_ids": [
+        "LILO-30",
+        "LILO-34"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-25",
+        "LILO-23",
+        "LILO-16",
+        "LILO-18",
+        "LILO-11"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-3c",
+      "gold_lilo_ids": [
+        "LILO-25"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-25",
+        "LILO-16",
+        "LILO-23",
+        "LILO-24",
+        "LILO-11"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-3d",
+      "gold_lilo_ids": [
+        "LILO-25"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-25",
+        "LILO-11",
+        "LILO-18",
+        "LILO-14",
+        "LILO-16"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-4a",
+      "gold_lilo_ids": [
+        "LILO-11",
+        "LILO-7",
+        "LILO-8"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-31",
+        "LILO-23",
+        "LILO-36",
+        "LILO-33",
+        "LILO-69"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-4b",
+      "gold_lilo_ids": [
+        "LILO-30",
+        "LILO-34",
+        "LILO-7"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-33",
+        "LILO-29",
+        "LILO-34",
+        "LILO-35",
+        "LILO-31"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-4c",
+      "gold_lilo_ids": [
+        "LILO-28",
+        "LILO-30"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-23",
+        "LILO-31",
+        "LILO-33",
+        "LILO-8",
+        "LILO-19"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-4d",
+      "gold_lilo_ids": [
+        "LILO-2",
+        "LILO-32"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-35",
+        "LILO-36",
+        "LILO-31",
+        "LILO-33",
+        "LILO-8"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-4e",
+      "gold_lilo_ids": [
+        "LILO-30",
+        "LILO-32"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-36",
+        "LILO-23",
+        "LILO-31",
+        "LILO-33",
+        "LILO-68"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-4f",
+      "gold_lilo_ids": [
+        "LILO-30",
+        "LILO-31",
+        "LILO-32",
+        "LILO-33",
+        "LILO-34"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-31",
+        "LILO-33",
+        "LILO-23",
+        "LILO-36",
+        "LILO-35"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-5a",
+      "gold_lilo_ids": [
+        "LILO-2",
+        "LILO-30",
+        "LILO-34",
+        "LILO-35"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-29",
+        "LILO-18",
+        "LILO-36",
+        "LILO-14",
+        "LILO-45"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-5b",
+      "gold_lilo_ids": [
+        "LILO-30",
+        "LILO-34"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-29",
+        "LILO-36",
+        "LILO-23",
+        "LILO-31",
+        "LILO-45"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e2-5c",
+      "gold_lilo_ids": [
+        "LILO-30",
+        "LILO-34",
+        "LILO-35"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-29",
+        "LILO-18",
+        "LILO-31",
+        "LILO-36",
+        "LILO-2"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-1i",
+      "gold_lilo_ids": [
+        "LILO-44"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-44",
+        "LILO-67",
+        "LILO-8",
+        "LILO-53",
+        "LILO-40"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-1ii",
+      "gold_lilo_ids": [
+        "LILO-60"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-67",
+        "LILO-64",
+        "LILO-61",
+        "LILO-56",
+        "LILO-23"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-1iii",
+      "gold_lilo_ids": [
+        "LILO-44"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-44",
+        "LILO-65",
+        "LILO-8",
+        "LILO-67",
+        "LILO-31"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-1iv",
+      "gold_lilo_ids": [
+        "LILO-44"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-44",
+        "LILO-8",
+        "LILO-53",
+        "LILO-31",
+        "LILO-67"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-1v",
+      "gold_lilo_ids": [
+        "LILO-56"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-56",
+        "LILO-57",
+        "LILO-55",
+        "LILO-70",
+        "LILO-67"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-2a",
+      "gold_lilo_ids": [
+        "LILO-53"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-53",
+        "LILO-8",
+        "LILO-44",
+        "LILO-43",
+        "LILO-67"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-2b",
+      "gold_lilo_ids": [
+        "LILO-53"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-44",
+        "LILO-70",
+        "LILO-69",
+        "LILO-8",
+        "LILO-3"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-2c",
+      "gold_lilo_ids": [
+        "LILO-53"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-67",
+        "LILO-19",
+        "LILO-69",
+        "LILO-53",
+        "LILO-44"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-2d",
+      "gold_lilo_ids": [
+        "LILO-57"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-60",
+        "LILO-57",
+        "LILO-64",
+        "LILO-44",
+        "LILO-62"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-3a",
+      "gold_lilo_ids": [
+        "LILO-57",
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-58",
+        "LILO-62",
+        "LILO-27",
+        "LILO-31",
+        "LILO-23"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-3b",
+      "gold_lilo_ids": [
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-56",
+        "LILO-31",
+        "LILO-27",
+        "LILO-67",
+        "LILO-55"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-3c",
+      "gold_lilo_ids": [
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-31",
+        "LILO-23",
+        "LILO-27",
+        "LILO-18",
+        "LILO-11"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-4a",
+      "gold_lilo_ids": [
+        "LILO-46"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-56",
+        "LILO-65",
+        "LILO-18",
+        "LILO-57",
+        "LILO-8"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-4b",
+      "gold_lilo_ids": [
+        "LILO-57",
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-57",
+        "LILO-18",
+        "LILO-65",
+        "LILO-36",
+        "LILO-67"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-4c",
+      "gold_lilo_ids": [
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-57",
+        "LILO-31",
+        "LILO-8",
+        "LILO-36",
+        "LILO-18"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-5a",
+      "gold_lilo_ids": [
+        "LILO-53"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-52",
+        "LILO-68",
+        "LILO-69",
+        "LILO-8",
+        "LILO-33"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-5b",
+      "gold_lilo_ids": [
+        "LILO-52",
+        "LILO-53"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-44",
+        "LILO-33",
+        "LILO-51",
+        "LILO-68",
+        "LILO-64"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-5c",
+      "gold_lilo_ids": [
+        "LILO-59",
+        "LILO-60"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-8",
+        "LILO-44",
+        "LILO-68",
+        "LILO-67",
+        "LILO-51"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-6a",
+      "gold_lilo_ids": [
+        "LILO-57",
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-36",
+        "LILO-31",
+        "LILO-58",
+        "LILO-57"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-6b",
+      "gold_lilo_ids": [
+        "LILO-60"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-36",
+        "LILO-18",
+        "LILO-27",
+        "LILO-14",
+        "LILO-31"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e3-6c",
+      "gold_lilo_ids": [
+        "LILO-61"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-36",
+        "LILO-14",
+        "LILO-23",
+        "LILO-49"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-1i",
+      "gold_lilo_ids": [
+        "LILO-33"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-36",
+        "LILO-23",
+        "LILO-31",
+        "LILO-33",
+        "LILO-18"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-1ii",
+      "gold_lilo_ids": [
+        "LILO-22"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-33",
+        "LILO-32",
+        "LILO-19",
+        "LILO-74"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-1iii",
+      "gold_lilo_ids": [
+        "LILO-32"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-30",
+        "LILO-31",
+        "LILO-23",
+        "LILO-35",
+        "LILO-2"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-1iv",
+      "gold_lilo_ids": [
+        "LILO-21",
+        "LILO-22",
+        "LILO-74"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-22",
+        "LILO-21",
+        "LILO-20",
+        "LILO-23",
+        "LILO-14"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-1v",
+      "gold_lilo_ids": [
+        "LILO-74"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-74",
+        "LILO-33",
+        "LILO-75",
+        "LILO-20",
+        "LILO-36"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-1vi",
+      "gold_lilo_ids": [
+        "LILO-74",
+        "LILO-75"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-33",
+        "LILO-23",
+        "LILO-74",
+        "LILO-2",
+        "LILO-31"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-1vii",
+      "gold_lilo_ids": [
+        "LILO-17"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-23",
+        "LILO-14",
+        "LILO-20",
+        "LILO-17",
+        "LILO-22"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-1viii",
+      "gold_lilo_ids": [
+        "LILO-48"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-66",
+        "LILO-44",
+        "LILO-6",
+        "LILO-31",
+        "LILO-67"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-1ix",
+      "gold_lilo_ids": [
+        "LILO-49"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-44",
+        "LILO-54",
+        "LILO-31",
+        "LILO-33",
+        "LILO-68"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-2a",
+      "gold_lilo_ids": [
+        "LILO-31"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-36",
+        "LILO-23",
+        "LILO-71",
+        "LILO-31",
+        "LILO-22"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-2b",
+      "gold_lilo_ids": [
+        "LILO-11",
+        "LILO-14"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-23",
+        "LILO-14",
+        "LILO-17",
+        "LILO-18",
+        "LILO-67"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-2c",
+      "gold_lilo_ids": [
+        "LILO-69",
+        "LILO-70"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-70",
+        "LILO-69",
+        "LILO-64",
+        "LILO-44",
+        "LILO-61"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-2d",
+      "gold_lilo_ids": [
+        "LILO-23"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-20",
+        "LILO-18",
+        "LILO-22",
+        "LILO-21",
+        "LILO-15"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-2e",
+      "gold_lilo_ids": [
+        "LILO-45",
+        "LILO-64"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-67",
+        "LILO-44",
+        "LILO-6",
+        "LILO-8",
+        "LILO-65"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-2f",
+      "gold_lilo_ids": [
+        "LILO-28",
+        "LILO-34"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-64",
+        "LILO-67",
+        "LILO-63",
+        "LILO-56",
+        "LILO-65"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-3a",
+      "gold_lilo_ids": [
+        "LILO-58",
+        "LILO-64",
+        "LILO-65"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-65",
+        "LILO-44",
+        "LILO-57",
+        "LILO-67",
+        "LILO-60"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-3b",
+      "gold_lilo_ids": [
+        "LILO-57"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-57",
+        "LILO-44",
+        "LILO-65",
+        "LILO-56",
+        "LILO-60"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-3c",
+      "gold_lilo_ids": [
+        "LILO-63"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-57",
+        "LILO-65",
+        "LILO-64",
+        "LILO-67",
+        "LILO-63"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-4a",
+      "gold_lilo_ids": [
+        "LILO-57",
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-44",
+        "LILO-66",
+        "LILO-65",
+        "LILO-58",
+        "LILO-67"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-4b",
+      "gold_lilo_ids": [
+        "LILO-57",
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-65",
+        "LILO-67",
+        "LILO-8",
+        "LILO-60",
+        "LILO-44"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-4c",
+      "gold_lilo_ids": [
+        "LILO-34"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-36",
+        "LILO-6",
+        "LILO-23",
+        "LILO-18",
+        "LILO-31"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-4d",
+      "gold_lilo_ids": [
+        "LILO-29"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-23",
+        "LILO-66",
+        "LILO-18",
+        "LILO-44",
+        "LILO-60"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-5a",
+      "gold_lilo_ids": [
+        "LILO-53"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-8",
+        "LILO-53",
+        "LILO-44",
+        "LILO-45",
+        "LILO-43"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-5b",
+      "gold_lilo_ids": [
+        "LILO-52",
+        "LILO-53"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-44",
+        "LILO-53",
+        "LILO-8",
+        "LILO-43",
+        "LILO-31"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-5c",
+      "gold_lilo_ids": [
+        "LILO-52",
+        "LILO-53"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-8",
+        "LILO-44",
+        "LILO-53",
+        "LILO-67",
+        "LILO-45"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-6a",
+      "gold_lilo_ids": [
+        "LILO-57",
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-57",
+        "LILO-67",
+        "LILO-8",
+        "LILO-44",
+        "LILO-65"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-6b",
+      "gold_lilo_ids": [
+        "LILO-57",
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-67",
+        "LILO-8",
+        "LILO-44",
+        "LILO-65",
+        "LILO-58"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-6c",
+      "gold_lilo_ids": [
+        "LILO-57",
+        "LILO-58"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-57",
+        "LILO-8",
+        "LILO-67",
+        "LILO-60",
+        "LILO-44"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-6d",
+      "gold_lilo_ids": [
+        "LILO-62"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-57",
+        "LILO-67",
+        "LILO-55",
+        "LILO-6",
+        "LILO-65"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-6e",
+      "gold_lilo_ids": [
+        "LILO-58",
+        "LILO-64"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-8",
+        "LILO-3",
+        "LILO-27",
+        "LILO-18",
+        "LILO-44"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-6f",
+      "gold_lilo_ids": [
+        "LILO-59"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-67",
+        "LILO-8",
+        "LILO-55",
+        "LILO-3",
+        "LILO-6"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-7a",
+      "gold_lilo_ids": [
+        "LILO-25"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-25",
+        "LILO-66",
+        "LILO-24",
+        "LILO-23",
+        "LILO-65"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-7b",
+      "gold_lilo_ids": [
+        "LILO-26"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-26",
+        "LILO-65",
+        "LILO-23",
+        "LILO-31",
+        "LILO-66"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-7c",
+      "gold_lilo_ids": [
+        "LILO-41"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-65",
+        "LILO-66",
+        "LILO-51",
+        "LILO-31",
+        "LILO-2"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-7d",
+      "gold_lilo_ids": [
+        "LILO-20"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-20",
+        "LILO-22",
+        "LILO-23",
+        "LILO-26",
+        "LILO-66"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-7e",
+      "gold_lilo_ids": [
+        "LILO-24"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-23",
+        "LILO-26",
+        "LILO-31",
+        "LILO-66",
+        "LILO-33"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-8a",
+      "gold_lilo_ids": [
+        "LILO-5"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-31",
+        "LILO-36",
+        "LILO-2",
+        "LILO-71",
+        "LILO-6"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-8b",
+      "gold_lilo_ids": [
+        "LILO-1",
+        "LILO-2",
+        "LILO-8"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-31",
+        "LILO-6",
+        "LILO-36",
+        "LILO-18",
+        "LILO-7"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-9a",
+      "gold_lilo_ids": [
+        "LILO-36"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-18",
+        "LILO-33",
+        "LILO-23",
+        "LILO-31",
+        "LILO-19"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-9b",
+      "gold_lilo_ids": [
+        "LILO-11",
+        "LILO-32",
+        "LILO-5"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-23",
+        "LILO-18",
+        "LILO-19",
+        "LILO-31",
+        "LILO-22"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-10a",
+      "gold_lilo_ids": [
+        "LILO-29",
+        "LILO-30"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-36",
+        "LILO-18",
+        "LILO-31",
+        "LILO-23",
+        "LILO-20"
+      ]
+    },
+    {
+      "question_id": "chem31a-2021-e4-10b",
+      "gold_lilo_ids": [
+        "LILO-35"
+      ],
+      "ranked_lilo_ids": [
+        "LILO-23",
+        "LILO-31",
+        "LILO-36",
+        "LILO-20",
+        "LILO-21"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+torch>=2.2
+transformers>=4.40,<5
+sentence-transformers>=3.4
+numpy>=1.26

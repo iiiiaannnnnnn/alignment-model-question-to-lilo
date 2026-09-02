@@ -1,0 +1,591 @@
+{
+  "exportedAt": "2026-08-25T05:34:00.700Z",
+  "assessment": {
+    "title": "quizzzzzzzzz",
+    "topic": "Lecture 2 Mining Item Sets",
+    "type": "quiz",
+    "difficulty": "medium"
+  },
+  "stats": {
+    "total": 10,
+    "matched": 10,
+    "bloomAligned": 10,
+    "avgAlignmentScore": 0.337
+  },
+  "questions": [
+    {
+      "index": 1,
+      "question": "Given the example transaction dataset from class (5 transactions), if a minimum support threshold of 0.6 is applied, which of the following itemsets is considered frequent?",
+      "type": "multiple_choice",
+      "options": [
+        "A) {Milk, Bread}",
+        "B) {Milk, Eggs}",
+        "C) {Bread, Eggs}",
+        "D) {Butter}"
+      ],
+      "correct_answer": "A) {Milk, Bread}",
+      "explanation": "The support for {Milk, Bread} is 3/5 = 0.6, which meets or exceeds the minimum support threshold. The other itemsets have supports below 0.6 (Milk, Eggs = 0.4; Bread, Eggs = 0.4; Butter = 0.2).",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-11",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-11",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply frequent pattern mining to real-world datasets.",
+        "score": 0.2996,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.4138,
+          "content": 0.0345,
+          "jaccard": 0.0408
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 2,
+      "question": "Given P(A)=0.6, P(B)=0.5, and P(A,B)=0.4, calculate the mutual information MI(A,B) and assess the information gain between A and B.",
+      "type": "multiple_choice",
+      "options": [
+        "A) MI(A,B) ≈ 0.125; A and B show moderate information gain.",
+        "B) MI(A,B) ≈ -0.125; A and B show negative information gain.",
+        "C) MI(A,B) ≈ 0.75; A and B are independent.",
+        "D) MI(A,B) ≈ 0.0; A and B are strongly dependent."
+      ],
+      "correct_answer": "A) MI(A,B) ≈ 0.125; A and B show moderate information gain.",
+      "explanation": "The mutual information MI(A,B) is calculated as log10(P(A,B) / (P(A) × P(B))). Substituting the given values: MI(A,B) = log10(0.4 / (0.6 × 0.5)) = log10(0.4 / 0.3) ≈ log10(1.333) ≈ 0.125. A positive MI value indicates that there is information gain and dependency between the variables.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-10",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-10",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply mutual information to assess information gain between variables.",
+        "score": 0.3989,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.6025,
+          "content": 0,
+          "jaccard": 0.1389
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 3,
+      "question": "When analyzing a very large real-world transactional dataset, applying the Apriori algorithm is generally more efficient for discovering frequent patterns compared to FP-Growth.",
+      "type": "true_false",
+      "correct_answer": "False",
+      "explanation": "The Apriori algorithm is known to be slow for large datasets due to its candidate generation process, whereas FP-Growth is generally faster and more efficient for such scenarios.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-11",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-11",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply frequent pattern mining to real-world datasets.",
+        "score": 0.4017,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.6235,
+          "content": 0.0323,
+          "jaccard": 0.0816
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 4,
+      "question": "Given P(A) = 0.6, P(B) = 0.5, and P(A, B) = 0.3, what is the numerical value of the argument inside the logarithm when calculating the Mutual Information between A and B?",
+      "type": "identification",
+      "correct_answer": "1",
+      "explanation": "Mutual Information is calculated as MI(A, B) = log(P(A,B) / (P(A) * P(B))). The argument inside the logarithm is 0.3 / (0.6 * 0.5) = 0.3 / 0.3 = 1.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-10",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-10",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply mutual information to assess information gain between variables.",
+        "score": 0.3432,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.5053,
+          "content": 0,
+          "jaccard": 0.0789
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 5,
+      "question": "Given two frequent patterns, {Milk, Bread} (MI ≈ -0.028) and {Milk, Eggs} (MI ≈ -0.079), what qualitative aspect of their underlying relationship primarily differentiates their significance for predicting co-purchase?",
+      "type": "identification",
+      "correct_answer": "Strength of dependency",
+      "explanation": "The mutual information (MI) values indicate the degree of statistical dependency between items. A value closer to zero suggests a weaker dependency, differentiating the patterns' predictive power for co-purchase.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-9",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-9",
+        "target_co_id": "CO-2",
+        "lilo_text": "Analyze the diversity of frequent patterns and interpret their significance.",
+        "score": 0.3124,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.4378,
+          "content": 0,
+          "jaccard": 0.0769
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 6,
+      "question": "A retail manager observes two association rules: Milk → Bread (Confidence = 0.75, Lift = 0.9375) and Bread → Milk (Confidence = 0.75, Lift = 0.9375). What key aspect must be analyzed to interpret their *distinct* significance for inventory management decisions?",
+      "type": "identification",
+      "correct_answer": "Directionality of implication",
+      "explanation": "Even with identical objective measures, the directionality of an association rule (e.g., buying Milk leads to Bread vs. Bread leads to Milk) provides distinct insights for operational decisions like inventory placement and targeted promotions.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-9",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-9",
+        "target_co_id": "CO-2",
+        "lilo_text": "Analyze the diversity of frequent patterns and interpret their significance.",
+        "score": 0.293,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.419,
+          "content": 0,
+          "jaccard": 0.0222
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 7,
+      "question": "When analyzing the diversity of frequent patterns, {Milk, Bread} and {Milk, Bread, Eggs} are identified. What specific characteristic of {Milk, Bread, Eggs} might indicate a higher level of *actionable insight* for a targeted promotional campaign, despite potentially lower support?",
+      "type": "identification",
+      "correct_answer": "Specificity",
+      "explanation": "The pattern {Milk, Bread, Eggs} offers a more specific and granular insight into customer behavior, which can be more valuable for highly targeted promotions compared to the broader {Milk, Bread} pattern, even if its overall frequency is lower.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-9",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-9",
+        "target_co_id": "CO-2",
+        "lilo_text": "Analyze the diversity of frequent patterns and interpret their significance.",
+        "score": 0.3238,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.558,
+          "content": 0,
+          "jaccard": 0.1136
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 8,
+      "question": "Given the transaction dataset (T1: Milk, Bread, Butter; T2: Milk, Bread; T3: Bread, Eggs; T4: Milk, Eggs; T5: Milk, Bread, Eggs) and a minimum support threshold of 0.6, enumerate the frequent 1-itemsets.",
+      "type": "enumeration",
+      "correct_answer": "Milk, Bread, Eggs",
+      "explanation": "Frequent 1-itemsets are those whose support meets or exceeds the minimum threshold. Butter (0.2) is below 0.6, while Milk (0.8), Bread (0.8), and Eggs (0.6) are at or above it.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-8",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-8",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop the ability to identify and extract frequent patterns from large datasets.",
+        "score": 0.351,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.4167,
+          "content": 0.0345,
+          "jaccard": 0.0417
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 9,
+      "question": "Using the transaction dataset (T1: Milk, Bread, Butter; T2: Milk, Bread; T3: Bread, Eggs; T4: Milk, Eggs; T5: Milk, Bread, Eggs) and a minimum support threshold of 0.6, enumerate the frequent 2-itemsets.",
+      "type": "enumeration",
+      "correct_answer": "{Milk, Bread}",
+      "explanation": "Only the itemset {Milk, Bread} has a support of 0.6, which meets the minimum threshold. {Milk, Eggs} and {Bread, Eggs} both have a support of 0.4, making them infrequent.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-8",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-8",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop the ability to identify and extract frequent patterns from large datasets.",
+        "score": 0.3518,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.4192,
+          "content": 0.0333,
+          "jaccard": 0.0408
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 10,
+      "question": "Given the frequent 2-itemset {Milk, Bread} from the provided dataset and a minimum confidence threshold of 0.7, enumerate all association rules that meet this criterion.",
+      "type": "enumeration",
+      "correct_answer": "Milk → Bread, Bread → Milk",
+      "explanation": "Both Confidence(Milk → Bread) = 0.75 and Confidence(Bread → Milk) = 0.75, which meet or exceed the 0.7 minimum confidence threshold.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-8",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-8",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop the ability to identify and extract frequent patterns from large datasets.",
+        "score": 0.2986,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.4916,
+          "content": 0.0345,
+          "jaccard": 0.1111
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    }
+  ],
+  "enrichedLlos": [
+    {
+      "id": "LILO-8",
+      "text": "Develop the ability to identify and extract frequent patterns from large datasets.",
+      "week": "4-5",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "key_concepts": [
+        "frequent pattern mining",
+        "large datasets",
+        "association rules",
+        "support",
+        "confidence",
+        "apriori algorithm",
+        "fp-growth algorithm",
+        "market basket analysis"
+      ],
+      "enriched_text": "Identify and extract frequent patterns from large datasets using techniques such as the Apriori or FP-growth algorithms, calculating metrics like support and confidence for association rule mining in applications like market basket analysis.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "LILO-9",
+      "text": "Analyze the diversity of frequent patterns and interpret their significance.",
+      "week": "4-5",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "key_concepts": [
+        "frequent patterns",
+        "pattern diversity",
+        "pattern significance",
+        "interpretability",
+        "domain knowledge",
+        "redundancy",
+        "novelty",
+        "actionable insights"
+      ],
+      "enriched_text": "Analyze the diversity of discovered frequent patterns, interpreting their statistical and practical significance by considering factors like redundancy, novelty, and domain knowledge to derive actionable insights.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "LILO-10",
+      "text": "Apply mutual information to assess information gain between variables.",
+      "week": "4-5",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "key_concepts": [
+        "mutual information",
+        "information gain",
+        "feature selection",
+        "entropy",
+        "conditional entropy",
+        "joint probability",
+        "variable dependence",
+        "data preprocessing"
+      ],
+      "enriched_text": "Apply the concept of mutual information to quantitatively assess the information gain and statistical dependence between variables, utilizing entropy and conditional entropy calculations for tasks such as feature selection and data preprocessing.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "LILO-11",
+      "text": "Apply frequent pattern mining to real-world datasets.",
+      "week": "4-5",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "key_concepts": [
+        "frequent pattern mining",
+        "association rule mining",
+        "apriori algorithm",
+        "fp-growth",
+        "eclat",
+        "support",
+        "confidence",
+        "lift",
+        "real-world datasets",
+        "data preprocessing"
+      ],
+      "enriched_text": "Apply frequent pattern mining techniques such as Apriori, FP-Growth, and Eclat to discover association rules and frequent itemsets within real-world datasets, requiring data preprocessing and interpretation of metrics like support, confidence, and lift.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    }
+  ],
+  "courseOutcomes": [
+    {
+      "id": "CO-1",
+      "text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "ga_codes": [
+        "GA1",
+        "GA2"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "understand"
+    },
+    {
+      "id": "CO-2",
+      "text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply"
+    },
+    {
+      "id": "CO-3",
+      "text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "ga_codes": [
+        "GA1",
+        "GA3"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "evaluate"
+    },
+    {
+      "id": "CO-4",
+      "text": "Design end-to-end data mining solutions and communicate findings effectively, demonstrating ethical awareness, adaptability, and innovative thinking across interdisciplinary domains",
+      "ga_codes": [
+        "GA2",
+        "GA4",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "bloom_level": "create"
+    }
+  ],
+  "graduateAttributes": [],
+  "programOutcomes": [
+    {
+      "id": "PO1",
+      "text": "Apply knowledge of computing fundamentals, mathematics, science and domain knowledge appropriate for the computing specialization."
+    },
+    {
+      "id": "PO10",
+      "text": "Recognize the need and have the ability to engage in independent learning for continual development as a computing professional."
+    },
+    {
+      "id": "PO2",
+      "text": "Identify, analyze, formulate, research literature and solve complex computing problems reaching substantiated conclusions."
+    },
+    {
+      "id": "PO3",
+      "text": "Apply mathematical foundations, algorithmic principles and computer science theory in the modeling and design of computer-based systems."
+    },
+    {
+      "id": "PO4",
+      "text": "Demonstrate knowledge and understanding of information security issues in relation to the design, development and use of information systems."
+    },
+    {
+      "id": "PO5",
+      "text": "Design and evaluate solutions for complex computing problems with appropriate consideration for public health, safety and environmental factors."
+    },
+    {
+      "id": "PO6",
+      "text": "Create, select, adapt and apply appropriate techniques, resources and modern computing tools to complex computing activities."
+    },
+    {
+      "id": "PO7",
+      "text": "Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary settings."
+    },
+    {
+      "id": "PO8",
+      "text": "Communicate effectively with the computing community and with society at large about complex computing activities."
+    },
+    {
+      "id": "PO9",
+      "text": "Recognize the legal, social, ethical and professional issues involved in the utilization of computer technology."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "id": "CONTENT-1",
+      "week": "4-5",
+      "co_ids": [
+        "CO-2"
+      ],
+      "ilo_ids": [
+        "LILO-8",
+        "LILO-9",
+        "LILO-10",
+        "LILO-11"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    }
+  ]
+}

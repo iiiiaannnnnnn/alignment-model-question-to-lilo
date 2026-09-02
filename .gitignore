@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Trained weights are not in this repository. Each models/<name>/ keeps its
+# config, tokenizer and training_manifest.json so a run is reproducible and
+# auditable; the 86.7 MB model.safetensors that goes with each one is not
+# published here. Nor is the frozen release zip.
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+prime-lilo-reranker-*-frozen.zip
+
+# Stanford CHEM 31A question text and its human labels are third-party data
+# with no licence permitting redistribution -- see DATA_SOURCES.md. Only the
+# id-level metrics computed from it are published, in results/.
+data/evaluation/
+*chem31a_human*
+*chem31a_learning_goal*
+*chem_human*details.csv
+exp7_rows_chem31a.csv

@@ -1,0 +1,12 @@
+{
+  "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "training_rows": 7097,
+  "validation_rows": 1920,
+  "requested_epochs": 12,
+  "best_epoch": 7,
+  "seed": 20260830,
+  "best_validation_mrr": 0.8667162698412699,
+  "best_validation_recall_at_1": 0.78125,
+  "best_validation_loss": 0.48190231587504967,
+  "warning": "Weak-supervision rows cannot establish alignment accuracy."
+}

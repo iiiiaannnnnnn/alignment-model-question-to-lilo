@@ -1,0 +1,72 @@
+{
+  "label_meaning": "source_ilo_id generation provenance; not independent professor ground truth",
+  "exports": [
+    {
+      "file": "alignment_478588_2026-08-26.json",
+      "questions": 35,
+      "lilos": 5
+    },
+    {
+      "file": "alignment_final_exam_2026-08-25.json",
+      "questions": 62,
+      "lilos": 31
+    },
+    {
+      "file": "alignment_quiz1111_2026-08-25.json",
+      "questions": 10,
+      "lilos": 4
+    },
+    {
+      "file": "alignment_quiz_tssstt_2026-08-25.json",
+      "questions": 20,
+      "lilos": 7
+    },
+    {
+      "file": "alignment_quizzzzzzzzz_2026-08-25.json",
+      "questions": 10,
+      "lilos": 4
+    },
+    {
+      "file": "alignment_test_quizzz_2026-08-25.json",
+      "questions": 20,
+      "lilos": 8
+    },
+    {
+      "file": "alignment_testtt1uizzz_2026-08-26.json",
+      "questions": 40,
+      "lilos": 7
+    }
+  ],
+  "total_questions": 197,
+  "union_lilos": 31,
+  "models": [
+    {
+      "name": "pretrained_minilm",
+      "path": "cross-encoder/ms-marco-MiniLM-L6-v2"
+    },
+    {
+      "name": "v3_cs",
+      "path": "/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v3-cs"
+    },
+    {
+      "name": "v4a_it",
+      "path": "/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v4a-it"
+    },
+    {
+      "name": "v4a_it_extended_v1_CONTAMINATED",
+      "path": "/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v4a-it-extended-v1"
+    },
+    {
+      "name": "v4a_it_extended_clean_v2",
+      "path": "/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v4a-it-extended-clean-v2"
+    },
+    {
+      "name": "v4b_it_from_v3",
+      "path": "/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v4b-it-from-v3"
+    },
+    {
+      "name": "v5_tload_pilot",
+      "path": "/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v5-tload-pilot"
+    }
+  ]
+}

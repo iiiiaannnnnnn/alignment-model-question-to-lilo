@@ -1,0 +1,16 @@
+model,model_path,benchmark,questions,candidate_pool_size,top1_hits,top1_accuracy,mrr,recall_at_3,recall_at_5
+pretrained_minilm,cross-encoder/ms-marco-MiniLM-L6-v2,it_grouped_4_candidates,192,4,159,0.8281,0.9036,0.9896,1.0
+pretrained_minilm,cross-encoder/ms-marco-MiniLM-L6-v2,it_full_120_lilos,192,120,125,0.651,0.7496,0.8229,0.8594
+pretrained_minilm,cross-encoder/ms-marco-MiniLM-L6-v2,chem_human_full_75_lilos,103,75,17,0.165,0.2744,0.2816,0.4078
+v3_cs,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v3-cs,it_grouped_4_candidates,192,4,159,0.8281,0.9058,0.9948,1.0
+v3_cs,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v3-cs,it_full_120_lilos,192,120,129,0.6719,0.7565,0.8073,0.8802
+v3_cs,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v3-cs,chem_human_full_75_lilos,103,75,36,0.3495,0.484,0.5437,0.6311
+v4a_it,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v4a-it,it_grouped_4_candidates,192,4,169,0.8802,0.9375,1.0,1.0
+v4a_it,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v4a-it,it_full_120_lilos,192,120,119,0.6198,0.7241,0.8021,0.8542
+v4a_it,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v4a-it,chem_human_full_75_lilos,103,75,20,0.1942,0.3309,0.3592,0.4563
+v4b_it_from_v3,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v4b-it-from-v3,it_grouped_4_candidates,192,4,167,0.8698,0.9297,1.0,1.0
+v4b_it_from_v3,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v4b-it-from-v3,it_full_120_lilos,192,120,121,0.6302,0.7306,0.8073,0.849
+v4b_it_from_v3,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v4b-it-from-v3,chem_human_full_75_lilos,103,75,31,0.301,0.4427,0.5146,0.5825
+v5_tload_pilot,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v5-tload-pilot,it_grouped_4_candidates,192,4,159,0.8281,0.9045,1.0,1.0
+v5_tload_pilot,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v5-tload-pilot,it_full_120_lilos,192,120,129,0.6719,0.7566,0.8021,0.8646
+v5_tload_pilot,/content/drive/MyDrive/alignment_model/models/prime-lilo-reranker-v5-tload-pilot,chem_human_full_75_lilos,103,75,17,0.165,0.2911,0.3107,0.4272

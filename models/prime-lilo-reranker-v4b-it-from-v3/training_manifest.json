@@ -1,0 +1,12 @@
+{
+  "base_model": "models/prime-lilo-reranker-v3-cs",
+  "training_rows": 3072,
+  "validation_rows": 768,
+  "requested_epochs": 6,
+  "best_epoch": 5,
+  "seed": 20260830,
+  "best_validation_mrr": 0.9296875,
+  "best_validation_recall_at_1": 0.8697916666666666,
+  "best_validation_loss": 0.49114223460977274,
+  "warning": "Weak-supervision rows cannot establish alignment accuracy."
+}

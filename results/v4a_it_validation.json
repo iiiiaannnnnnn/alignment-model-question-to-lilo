@@ -1,0 +1,5003 @@
+{
+  "questions": 192,
+  "pairs": 768,
+  "mrr": 0.9375,
+  "recall_at_1": 0.8802,
+  "recall_at_3": 1.0,
+  "recall_at_5": 1.0,
+  "model": "models/prime-lilo-reranker-v4a-it",
+  "details": [
+    {
+      "question_id": "IT-PROG-01-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-01",
+          "label": 1,
+          "score": 1.136009693145752
+        },
+        {
+          "lilo_id": "DSTR-08",
+          "label": 0,
+          "score": -0.24835605919361115
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -2.0232083797454834
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -2.5153496265411377
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-01-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-01",
+          "label": 1,
+          "score": -1.814517855644226
+        },
+        {
+          "lilo_id": "NET-01",
+          "label": 0,
+          "score": -3.783724546432495
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -5.20901346206665
+        },
+        {
+          "lilo_id": "ALG-02",
+          "label": 0,
+          "score": -6.16176700592041
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-01-03",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": 0.5759215354919434
+        },
+        {
+          "lilo_id": "PROG-01",
+          "label": 1,
+          "score": 0.22012564539909363
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -3.1451194286346436
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -3.269620418548584
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-01-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-01",
+          "label": 1,
+          "score": 1.457214117050171
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -2.196629762649536
+        },
+        {
+          "lilo_id": "ALG-05",
+          "label": 0,
+          "score": -3.1771483421325684
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -6.289362907409668
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-01-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-01",
+          "label": 1,
+          "score": -2.3562076091766357
+        },
+        {
+          "lilo_id": "SE-07",
+          "label": 0,
+          "score": -2.972559928894043
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -3.2882614135742188
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -4.848610877990723
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-01-06",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "WEB-10",
+          "label": 0,
+          "score": 1.4986257553100586
+        },
+        {
+          "lilo_id": "PROG-01",
+          "label": 1,
+          "score": 0.9710263013839722
+        },
+        {
+          "lilo_id": "PROG-06",
+          "label": 0,
+          "score": -0.9079769253730774
+        },
+        {
+          "lilo_id": "SE-09",
+          "label": 0,
+          "score": -1.7411993741989136
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-01-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-01",
+          "label": 1,
+          "score": -2.0657129287719727
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -2.43864107131958
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": -2.677316904067993
+        },
+        {
+          "lilo_id": "DSTR-05",
+          "label": 0,
+          "score": -3.5319464206695557
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-01-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-01",
+          "label": 1,
+          "score": 5.762782096862793
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": 0.6825583577156067
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": -3.3953795433044434
+        },
+        {
+          "lilo_id": "WEB-01",
+          "label": 0,
+          "score": -4.552307605743408
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-05-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-05",
+          "label": 1,
+          "score": -2.8294014930725098
+        },
+        {
+          "lilo_id": "PROG-06",
+          "label": 0,
+          "score": -3.063138008117676
+        },
+        {
+          "lilo_id": "WEB-10",
+          "label": 0,
+          "score": -3.176387310028076
+        },
+        {
+          "lilo_id": "EMERGE-05",
+          "label": 0,
+          "score": -3.921632766723633
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-05-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-05",
+          "label": 1,
+          "score": 3.239445209503174
+        },
+        {
+          "lilo_id": "SE-02",
+          "label": 0,
+          "score": 1.1037185192108154
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": 0.883246898651123
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -4.328120708465576
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-05-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-05",
+          "label": 1,
+          "score": 2.0768883228302
+        },
+        {
+          "lilo_id": "NET-09",
+          "label": 0,
+          "score": -2.1260290145874023
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -3.31781268119812
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -4.155845642089844
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-05-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-05",
+          "label": 1,
+          "score": 1.2332146167755127
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -0.05263442546129227
+        },
+        {
+          "lilo_id": "PROG-06",
+          "label": 0,
+          "score": -1.9038336277008057
+        },
+        {
+          "lilo_id": "NET-03",
+          "label": 0,
+          "score": -5.815896034240723
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-05-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-05",
+          "label": 1,
+          "score": 4.3290629386901855
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -1.9598044157028198
+        },
+        {
+          "lilo_id": "SE-03",
+          "label": 0,
+          "score": -3.973778486251831
+        },
+        {
+          "lilo_id": "EMERGE-05",
+          "label": 0,
+          "score": -5.391580581665039
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-05-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-05",
+          "label": 1,
+          "score": -1.476951003074646
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -2.611538887023926
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -3.7075915336608887
+        },
+        {
+          "lilo_id": "SEC-03",
+          "label": 0,
+          "score": -6.292852401733398
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-05-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-05",
+          "label": 1,
+          "score": -2.3612000942230225
+        },
+        {
+          "lilo_id": "ALG-08",
+          "label": 0,
+          "score": -2.7554237842559814
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -5.093081474304199
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -6.404559135437012
+        }
+      ]
+    },
+    {
+      "question_id": "IT-PROG-05-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "PROG-05",
+          "label": 1,
+          "score": 3.1945748329162598
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -2.329719305038452
+        },
+        {
+          "lilo_id": "EMERGE-03",
+          "label": 0,
+          "score": -2.5911519527435303
+        },
+        {
+          "lilo_id": "EMERGE-10",
+          "label": 0,
+          "score": -4.9729743003845215
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-07-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-07",
+          "label": 1,
+          "score": 4.072988033294678
+        },
+        {
+          "lilo_id": "DSTR-04",
+          "label": 0,
+          "score": 0.5124537944793701
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -4.327069282531738
+        },
+        {
+          "lilo_id": "SE-02",
+          "label": 0,
+          "score": -8.27599811553955
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-07-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-07",
+          "label": 1,
+          "score": 3.8701677322387695
+        },
+        {
+          "lilo_id": "DSTR-03",
+          "label": 0,
+          "score": -3.81839919090271
+        },
+        {
+          "lilo_id": "DB-03",
+          "label": 0,
+          "score": -6.295976161956787
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -7.721954345703125
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-07-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-07",
+          "label": 1,
+          "score": 3.037907600402832
+        },
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": 0.027407795190811157
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -1.9658857583999634
+        },
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 0,
+          "score": -4.556907653808594
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-07-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-07",
+          "label": 1,
+          "score": 1.450670599937439
+        },
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": -4.247129440307617
+        },
+        {
+          "lilo_id": "WEB-06",
+          "label": 0,
+          "score": -7.328454494476318
+        },
+        {
+          "lilo_id": "CLOUD-02",
+          "label": 0,
+          "score": -7.9486083984375
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-07-05",
+      "positive_rank": 3,
+      "ranked": [
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": 4.559082508087158
+        },
+        {
+          "lilo_id": "DSTR-04",
+          "label": 0,
+          "score": 1.7234187126159668
+        },
+        {
+          "lilo_id": "DSTR-07",
+          "label": 1,
+          "score": -0.7752485871315002
+        },
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": -2.2894015312194824
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-07-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-07",
+          "label": 1,
+          "score": 1.669654130935669
+        },
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": -4.2833452224731445
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -5.294229984283447
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -7.08780574798584
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-07-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-07",
+          "label": 1,
+          "score": 1.0943477153778076
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -4.121946334838867
+        },
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": -4.511660575866699
+        },
+        {
+          "lilo_id": "PROG-06",
+          "label": 0,
+          "score": -5.417175769805908
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-07-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-07",
+          "label": 1,
+          "score": 4.433597087860107
+        },
+        {
+          "lilo_id": "DSTR-09",
+          "label": 0,
+          "score": -4.068390369415283
+        },
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": -4.298367500305176
+        },
+        {
+          "lilo_id": "AI-09",
+          "label": 0,
+          "score": -7.200860023498535
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-10-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-10",
+          "label": 1,
+          "score": 4.846374988555908
+        },
+        {
+          "lilo_id": "DSTR-05",
+          "label": 0,
+          "score": 4.613763332366943
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -1.1842626333236694
+        },
+        {
+          "lilo_id": "AI-03",
+          "label": 0,
+          "score": -4.624181270599365
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-10-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-10",
+          "label": 1,
+          "score": 3.0991439819335938
+        },
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": -1.738893747329712
+        },
+        {
+          "lilo_id": "AI-10",
+          "label": 0,
+          "score": -5.8101115226745605
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -6.568227767944336
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-10-03",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": -2.1108860969543457
+        },
+        {
+          "lilo_id": "DSTR-10",
+          "label": 1,
+          "score": -2.7645740509033203
+        },
+        {
+          "lilo_id": "SEC-07",
+          "label": 0,
+          "score": -5.144791603088379
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -7.979973316192627
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-10-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-10",
+          "label": 1,
+          "score": 4.00045919418335
+        },
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": 2.4441134929656982
+        },
+        {
+          "lilo_id": "NET-10",
+          "label": 0,
+          "score": -1.9681249856948853
+        },
+        {
+          "lilo_id": "SE-04",
+          "label": 0,
+          "score": -3.7973577976226807
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-10-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-10",
+          "label": 1,
+          "score": 2.801387310028076
+        },
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": -1.5732851028442383
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -6.145615100860596
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -6.7763800621032715
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-10-06",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-03",
+          "label": 0,
+          "score": 5.108218669891357
+        },
+        {
+          "lilo_id": "DSTR-10",
+          "label": 1,
+          "score": -0.2871924638748169
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -1.7724313735961914
+        },
+        {
+          "lilo_id": "EMERGE-10",
+          "label": 0,
+          "score": -8.427812576293945
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-10-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-10",
+          "label": 1,
+          "score": 2.33365535736084
+        },
+        {
+          "lilo_id": "EMERGE-09",
+          "label": 0,
+          "score": -2.172837972640991
+        },
+        {
+          "lilo_id": "DSTR-09",
+          "label": 0,
+          "score": -2.5908801555633545
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -4.264001369476318
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DSTR-10-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DSTR-10",
+          "label": 1,
+          "score": 2.90891432762146
+        },
+        {
+          "lilo_id": "PROG-06",
+          "label": 0,
+          "score": -0.35928767919540405
+        },
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": -0.5689494609832764
+        },
+        {
+          "lilo_id": "PROG-01",
+          "label": 0,
+          "score": -5.273557186126709
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-07-01",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "ALG-05",
+          "label": 0,
+          "score": 3.0103955268859863
+        },
+        {
+          "lilo_id": "ALG-07",
+          "label": 1,
+          "score": -0.5460218191146851
+        },
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 0,
+          "score": -5.789747714996338
+        },
+        {
+          "lilo_id": "DATA-07",
+          "label": 0,
+          "score": -6.4312214851379395
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-07-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-07",
+          "label": 1,
+          "score": 5.746670722961426
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -5.542259693145752
+        },
+        {
+          "lilo_id": "EMERGE-05",
+          "label": 0,
+          "score": -6.668313503265381
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -7.804193019866943
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-07-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-07",
+          "label": 1,
+          "score": 1.2739498615264893
+        },
+        {
+          "lilo_id": "DB-08",
+          "label": 0,
+          "score": 0.7981277108192444
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": 0.07586663961410522
+        },
+        {
+          "lilo_id": "DATA-07",
+          "label": 0,
+          "score": -2.268057346343994
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-07-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-07",
+          "label": 1,
+          "score": 3.5086894035339355
+        },
+        {
+          "lilo_id": "DATA-09",
+          "label": 0,
+          "score": -2.626016616821289
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -3.795210361480713
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -7.047854900360107
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-07-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-07",
+          "label": 1,
+          "score": 7.956541061401367
+        },
+        {
+          "lilo_id": "AI-10",
+          "label": 0,
+          "score": -7.2102742195129395
+        },
+        {
+          "lilo_id": "WEB-10",
+          "label": 0,
+          "score": -7.579240798950195
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -9.666808128356934
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-07-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-07",
+          "label": 1,
+          "score": 5.250750541687012
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": -3.476069927215576
+        },
+        {
+          "lilo_id": "NET-10",
+          "label": 0,
+          "score": -3.6413891315460205
+        },
+        {
+          "lilo_id": "DATA-07",
+          "label": 0,
+          "score": -6.052209854125977
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-07-07",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "WEB-07",
+          "label": 0,
+          "score": 1.0026522874832153
+        },
+        {
+          "lilo_id": "ALG-07",
+          "label": 1,
+          "score": 0.5675002336502075
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -2.9417216777801514
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -2.961599349975586
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-07-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-07",
+          "label": 1,
+          "score": 6.4303107261657715
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -3.9471969604492188
+        },
+        {
+          "lilo_id": "DATA-07",
+          "label": 0,
+          "score": -7.041997909545898
+        },
+        {
+          "lilo_id": "DB-06",
+          "label": 0,
+          "score": -7.13162088394165
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-09-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-09",
+          "label": 1,
+          "score": 1.796976923942566
+        },
+        {
+          "lilo_id": "ALG-02",
+          "label": 0,
+          "score": -0.6380453109741211
+        },
+        {
+          "lilo_id": "SEC-02",
+          "label": 0,
+          "score": -3.6380221843719482
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -3.761533498764038
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-09-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-09",
+          "label": 1,
+          "score": 5.058816432952881
+        },
+        {
+          "lilo_id": "ALG-02",
+          "label": 0,
+          "score": 0.722623884677887
+        },
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": -2.5367324352264404
+        },
+        {
+          "lilo_id": "DB-04",
+          "label": 0,
+          "score": -2.7967281341552734
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-09-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-09",
+          "label": 1,
+          "score": 4.7609663009643555
+        },
+        {
+          "lilo_id": "PROG-08",
+          "label": 0,
+          "score": -2.8480281829833984
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": -3.6656746864318848
+        },
+        {
+          "lilo_id": "DATA-03",
+          "label": 0,
+          "score": -4.633611679077148
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-09-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-09",
+          "label": 1,
+          "score": 8.169830322265625
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": 0.12609949707984924
+        },
+        {
+          "lilo_id": "CLOUD-02",
+          "label": 0,
+          "score": -0.4062437415122986
+        },
+        {
+          "lilo_id": "DATA-04",
+          "label": 0,
+          "score": -6.113719463348389
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-09-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-09",
+          "label": 1,
+          "score": 3.7092702388763428
+        },
+        {
+          "lilo_id": "ALG-02",
+          "label": 0,
+          "score": 1.2473832368850708
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -6.048808574676514
+        },
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 0,
+          "score": -6.234807968139648
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-09-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-09",
+          "label": 1,
+          "score": 3.3463687896728516
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -1.6795486211776733
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -3.539670944213867
+        },
+        {
+          "lilo_id": "DSTR-09",
+          "label": 0,
+          "score": -4.318141937255859
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-09-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-09",
+          "label": 1,
+          "score": 4.357245922088623
+        },
+        {
+          "lilo_id": "ALG-02",
+          "label": 0,
+          "score": -1.702879786491394
+        },
+        {
+          "lilo_id": "DSTR-09",
+          "label": 0,
+          "score": -3.311368465423584
+        },
+        {
+          "lilo_id": "NET-05",
+          "label": 0,
+          "score": -7.900334358215332
+        }
+      ]
+    },
+    {
+      "question_id": "IT-ALG-09-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "ALG-09",
+          "label": 1,
+          "score": 1.8864816427230835
+        },
+        {
+          "lilo_id": "ALG-10",
+          "label": 0,
+          "score": -1.036157488822937
+        },
+        {
+          "lilo_id": "DSTR-09",
+          "label": 0,
+          "score": -5.782453536987305
+        },
+        {
+          "lilo_id": "CLOUD-02",
+          "label": 0,
+          "score": -8.36716365814209
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-04-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-04",
+          "label": 1,
+          "score": 5.4296722412109375
+        },
+        {
+          "lilo_id": "WEB-07",
+          "label": 0,
+          "score": -1.7697029113769531
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -2.754000186920166
+        },
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": -2.991664409637451
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-04-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-04",
+          "label": 1,
+          "score": 5.193248748779297
+        },
+        {
+          "lilo_id": "ALG-02",
+          "label": 0,
+          "score": -1.754854679107666
+        },
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": -2.4700076580047607
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -4.158921718597412
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-04-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-04",
+          "label": 1,
+          "score": 2.149932861328125
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -4.028458595275879
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -5.172881126403809
+        },
+        {
+          "lilo_id": "NET-04",
+          "label": 0,
+          "score": -5.52553653717041
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-04-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-04",
+          "label": 1,
+          "score": 0.23287524282932281
+        },
+        {
+          "lilo_id": "DB-02",
+          "label": 0,
+          "score": -1.8748095035552979
+        },
+        {
+          "lilo_id": "NET-03",
+          "label": 0,
+          "score": -5.741812229156494
+        },
+        {
+          "lilo_id": "SEC-05",
+          "label": 0,
+          "score": -7.068410396575928
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-04-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-04",
+          "label": 1,
+          "score": 3.9411544799804688
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -2.950312614440918
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -5.736020565032959
+        },
+        {
+          "lilo_id": "AI-01",
+          "label": 0,
+          "score": -7.918607234954834
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-04-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-04",
+          "label": 1,
+          "score": 3.4427223205566406
+        },
+        {
+          "lilo_id": "DSTR-04",
+          "label": 0,
+          "score": -0.23554854094982147
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -5.617607116699219
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -7.0845842361450195
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-04-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-04",
+          "label": 1,
+          "score": 3.111762285232544
+        },
+        {
+          "lilo_id": "DB-06",
+          "label": 0,
+          "score": -3.551344871520996
+        },
+        {
+          "lilo_id": "NET-06",
+          "label": 0,
+          "score": -3.893998622894287
+        },
+        {
+          "lilo_id": "SE-09",
+          "label": 0,
+          "score": -4.350533962249756
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-04-08",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": 4.738630771636963
+        },
+        {
+          "lilo_id": "DB-04",
+          "label": 1,
+          "score": 3.347161054611206
+        },
+        {
+          "lilo_id": "SE-01",
+          "label": 0,
+          "score": -5.997084617614746
+        },
+        {
+          "lilo_id": "DSTR-10",
+          "label": 0,
+          "score": -6.984574317932129
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-08-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-08",
+          "label": 1,
+          "score": -0.5110669136047363
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -2.0363919734954834
+        },
+        {
+          "lilo_id": "SEC-07",
+          "label": 0,
+          "score": -2.210214853286743
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -5.787670135498047
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-08-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-08",
+          "label": 1,
+          "score": 4.602987766265869
+        },
+        {
+          "lilo_id": "SEC-04",
+          "label": 0,
+          "score": -1.1000070571899414
+        },
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": -3.3340368270874023
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -3.6437039375305176
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-08-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-08",
+          "label": 1,
+          "score": 1.7807058095932007
+        },
+        {
+          "lilo_id": "DB-06",
+          "label": 0,
+          "score": -1.9575446844100952
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -4.133211612701416
+        },
+        {
+          "lilo_id": "WEB-09",
+          "label": 0,
+          "score": -5.4893975257873535
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-08-04",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "DB-09",
+          "label": 0,
+          "score": 4.876221656799316
+        },
+        {
+          "lilo_id": "DB-08",
+          "label": 1,
+          "score": 0.032885920256376266
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -5.877261161804199
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -6.676492691040039
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-08-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-08",
+          "label": 1,
+          "score": 3.9070286750793457
+        },
+        {
+          "lilo_id": "DB-03",
+          "label": 0,
+          "score": -2.2141451835632324
+        },
+        {
+          "lilo_id": "PROG-06",
+          "label": 0,
+          "score": -3.5708823204040527
+        },
+        {
+          "lilo_id": "DATA-06",
+          "label": 0,
+          "score": -6.170700550079346
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-08-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-08",
+          "label": 1,
+          "score": 2.0789949893951416
+        },
+        {
+          "lilo_id": "ALG-10",
+          "label": 0,
+          "score": -2.0398035049438477
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -2.21979022026062
+        },
+        {
+          "lilo_id": "EMERGE-05",
+          "label": 0,
+          "score": -7.451213836669922
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-08-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-08",
+          "label": 1,
+          "score": 4.906421184539795
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -4.859756946563721
+        },
+        {
+          "lilo_id": "ALG-08",
+          "label": 0,
+          "score": -4.987446308135986
+        },
+        {
+          "lilo_id": "DSTR-02",
+          "label": 0,
+          "score": -7.5956339836120605
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DB-08-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DB-08",
+          "label": 1,
+          "score": 4.841558933258057
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -1.5068384408950806
+        },
+        {
+          "lilo_id": "NET-05",
+          "label": 0,
+          "score": -4.054576873779297
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -8.058731079101562
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-03-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-03",
+          "label": 1,
+          "score": 5.071863651275635
+        },
+        {
+          "lilo_id": "NET-02",
+          "label": 0,
+          "score": -0.7391449809074402
+        },
+        {
+          "lilo_id": "SEC-04",
+          "label": 0,
+          "score": -4.011699676513672
+        },
+        {
+          "lilo_id": "WEB-10",
+          "label": 0,
+          "score": -5.3525471687316895
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-03-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-03",
+          "label": 1,
+          "score": 5.933919429779053
+        },
+        {
+          "lilo_id": "NET-07",
+          "label": 0,
+          "score": -1.323349118232727
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -5.874614238739014
+        },
+        {
+          "lilo_id": "DB-09",
+          "label": 0,
+          "score": -6.409887790679932
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-03-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-03",
+          "label": 1,
+          "score": 5.339943885803223
+        },
+        {
+          "lilo_id": "NET-02",
+          "label": 0,
+          "score": 2.673989772796631
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": -3.867244243621826
+        },
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 0,
+          "score": -7.310123443603516
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-03-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-03",
+          "label": 1,
+          "score": 2.5426101684570312
+        },
+        {
+          "lilo_id": "NET-01",
+          "label": 0,
+          "score": -2.441793203353882
+        },
+        {
+          "lilo_id": "PROG-10",
+          "label": 0,
+          "score": -3.4231173992156982
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -5.7268171310424805
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-03-05",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "NET-08",
+          "label": 0,
+          "score": 4.286712169647217
+        },
+        {
+          "lilo_id": "NET-03",
+          "label": 1,
+          "score": 2.5702953338623047
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -6.214025974273682
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -6.380692005157471
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-03-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-03",
+          "label": 1,
+          "score": 3.0210936069488525
+        },
+        {
+          "lilo_id": "AI-05",
+          "label": 0,
+          "score": 0.9546619057655334
+        },
+        {
+          "lilo_id": "DATA-10",
+          "label": 0,
+          "score": 0.18246378004550934
+        },
+        {
+          "lilo_id": "NET-05",
+          "label": 0,
+          "score": -1.6050357818603516
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-03-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-03",
+          "label": 1,
+          "score": 5.332040309906006
+        },
+        {
+          "lilo_id": "NET-08",
+          "label": 0,
+          "score": 1.5513688325881958
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -4.378531455993652
+        },
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 0,
+          "score": -6.402610778808594
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-03-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-03",
+          "label": 1,
+          "score": 3.7063581943511963
+        },
+        {
+          "lilo_id": "NET-06",
+          "label": 0,
+          "score": -3.085968494415283
+        },
+        {
+          "lilo_id": "PROG-10",
+          "label": 0,
+          "score": -5.21026086807251
+        },
+        {
+          "lilo_id": "DSTR-03",
+          "label": 0,
+          "score": -5.225940704345703
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-09-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-09",
+          "label": 1,
+          "score": 7.077528476715088
+        },
+        {
+          "lilo_id": "NET-02",
+          "label": 0,
+          "score": 1.6463589668273926
+        },
+        {
+          "lilo_id": "ALG-08",
+          "label": 0,
+          "score": -2.48067307472229
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -6.924158096313477
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-09-02",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "NET-01",
+          "label": 0,
+          "score": 2.1088058948516846
+        },
+        {
+          "lilo_id": "NET-09",
+          "label": 1,
+          "score": -1.1291426420211792
+        },
+        {
+          "lilo_id": "WEB-10",
+          "label": 0,
+          "score": -3.054978609085083
+        },
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 0,
+          "score": -4.237829685211182
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-09-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-09",
+          "label": 1,
+          "score": 6.6331377029418945
+        },
+        {
+          "lilo_id": "NET-02",
+          "label": 0,
+          "score": -3.4873979091644287
+        },
+        {
+          "lilo_id": "EMERGE-10",
+          "label": 0,
+          "score": -4.243504524230957
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -7.588021278381348
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-09-04",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "PROG-08",
+          "label": 0,
+          "score": 2.0632948875427246
+        },
+        {
+          "lilo_id": "NET-09",
+          "label": 1,
+          "score": 0.8806614875793457
+        },
+        {
+          "lilo_id": "NET-07",
+          "label": 0,
+          "score": -3.348095417022705
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -4.193887710571289
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-09-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-09",
+          "label": 1,
+          "score": 5.633327960968018
+        },
+        {
+          "lilo_id": "NET-07",
+          "label": 0,
+          "score": -2.9314401149749756
+        },
+        {
+          "lilo_id": "DSTR-02",
+          "label": 0,
+          "score": -5.596624374389648
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -8.120383262634277
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-09-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-09",
+          "label": 1,
+          "score": 3.02424955368042
+        },
+        {
+          "lilo_id": "NET-07",
+          "label": 0,
+          "score": -0.6465873122215271
+        },
+        {
+          "lilo_id": "CLOUD-08",
+          "label": 0,
+          "score": -1.9167141914367676
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -8.61550521850586
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-09-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-09",
+          "label": 1,
+          "score": 6.233000755310059
+        },
+        {
+          "lilo_id": "NET-05",
+          "label": 0,
+          "score": 0.21765007078647614
+        },
+        {
+          "lilo_id": "AI-05",
+          "label": 0,
+          "score": -4.790146350860596
+        },
+        {
+          "lilo_id": "DATA-02",
+          "label": 0,
+          "score": -7.941956043243408
+        }
+      ]
+    },
+    {
+      "question_id": "IT-NET-09-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "NET-09",
+          "label": 1,
+          "score": 3.16900372505188
+        },
+        {
+          "lilo_id": "CLOUD-03",
+          "label": 0,
+          "score": -1.985459804534912
+        },
+        {
+          "lilo_id": "SEC-02",
+          "label": 0,
+          "score": -3.9578161239624023
+        },
+        {
+          "lilo_id": "NET-07",
+          "label": 0,
+          "score": -6.439157009124756
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-03-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-03",
+          "label": 1,
+          "score": 5.893472194671631
+        },
+        {
+          "lilo_id": "DATA-02",
+          "label": 0,
+          "score": -0.21296560764312744
+        },
+        {
+          "lilo_id": "SEC-07",
+          "label": 0,
+          "score": -2.017127513885498
+        },
+        {
+          "lilo_id": "SE-08",
+          "label": 0,
+          "score": -6.425232410430908
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-03-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-03",
+          "label": 1,
+          "score": 1.207441806793213
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -2.3511404991149902
+        },
+        {
+          "lilo_id": "DATA-02",
+          "label": 0,
+          "score": -3.308184862136841
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": -7.3363213539123535
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-03-03",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -0.22393472492694855
+        },
+        {
+          "lilo_id": "SEC-03",
+          "label": 1,
+          "score": -0.26502612233161926
+        },
+        {
+          "lilo_id": "EMERGE-03",
+          "label": 0,
+          "score": -6.538459777832031
+        },
+        {
+          "lilo_id": "AI-01",
+          "label": 0,
+          "score": -7.529173851013184
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-03-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-03",
+          "label": 1,
+          "score": 3.4988667964935303
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -2.635230541229248
+        },
+        {
+          "lilo_id": "EMERGE-09",
+          "label": 0,
+          "score": -4.039079189300537
+        },
+        {
+          "lilo_id": "CLOUD-07",
+          "label": 0,
+          "score": -4.70988130569458
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-03-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-03",
+          "label": 1,
+          "score": 6.730066299438477
+        },
+        {
+          "lilo_id": "SEC-09",
+          "label": 0,
+          "score": -2.406672954559326
+        },
+        {
+          "lilo_id": "SE-06",
+          "label": 0,
+          "score": -2.8897955417633057
+        },
+        {
+          "lilo_id": "EMERGE-03",
+          "label": 0,
+          "score": -3.2509605884552
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-03-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-03",
+          "label": 1,
+          "score": 3.3737380504608154
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -5.068639278411865
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -6.103205680847168
+        },
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": -7.5675458908081055
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-03-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-03",
+          "label": 1,
+          "score": 2.7745323181152344
+        },
+        {
+          "lilo_id": "SEC-08",
+          "label": 0,
+          "score": 2.634871006011963
+        },
+        {
+          "lilo_id": "CLOUD-06",
+          "label": 0,
+          "score": -6.686883449554443
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -8.187336921691895
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-03-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-03",
+          "label": 1,
+          "score": 4.414140224456787
+        },
+        {
+          "lilo_id": "SEC-04",
+          "label": 0,
+          "score": -4.028445243835449
+        },
+        {
+          "lilo_id": "SE-03",
+          "label": 0,
+          "score": -5.167183876037598
+        },
+        {
+          "lilo_id": "DATA-03",
+          "label": 0,
+          "score": -7.789707183837891
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-06-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-06",
+          "label": 1,
+          "score": 5.128863334655762
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -1.6671535968780518
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -3.621289014816284
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -7.246578216552734
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-06-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-06",
+          "label": 1,
+          "score": 4.963425636291504
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -2.532353401184082
+        },
+        {
+          "lilo_id": "SEC-04",
+          "label": 0,
+          "score": -2.7232167720794678
+        },
+        {
+          "lilo_id": "ALG-08",
+          "label": 0,
+          "score": -3.081511974334717
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-06-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-06",
+          "label": 1,
+          "score": 4.4796905517578125
+        },
+        {
+          "lilo_id": "SEC-07",
+          "label": 0,
+          "score": -4.469311714172363
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -6.260205268859863
+        },
+        {
+          "lilo_id": "AI-01",
+          "label": 0,
+          "score": -8.42850112915039
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-06-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-06",
+          "label": 1,
+          "score": 6.57305383682251
+        },
+        {
+          "lilo_id": "SEC-03",
+          "label": 0,
+          "score": -0.34567123651504517
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -1.174333930015564
+        },
+        {
+          "lilo_id": "CLOUD-06",
+          "label": 0,
+          "score": -5.818536758422852
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-06-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-06",
+          "label": 1,
+          "score": 4.342747211456299
+        },
+        {
+          "lilo_id": "SEC-09",
+          "label": 0,
+          "score": 4.2350382804870605
+        },
+        {
+          "lilo_id": "DB-10",
+          "label": 0,
+          "score": 2.013629913330078
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -3.644110679626465
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-06-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-06",
+          "label": 1,
+          "score": 3.674837112426758
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -2.5149552822113037
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -3.064201593399048
+        },
+        {
+          "lilo_id": "ALG-05",
+          "label": 0,
+          "score": -6.281731128692627
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-06-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-06",
+          "label": 1,
+          "score": 3.9097750186920166
+        },
+        {
+          "lilo_id": "AI-03",
+          "label": 0,
+          "score": -3.372851610183716
+        },
+        {
+          "lilo_id": "SEC-04",
+          "label": 0,
+          "score": -4.373749256134033
+        },
+        {
+          "lilo_id": "AI-05",
+          "label": 0,
+          "score": -5.9707536697387695
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SEC-06-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SEC-06",
+          "label": 1,
+          "score": 4.663759231567383
+        },
+        {
+          "lilo_id": "WEB-02",
+          "label": 0,
+          "score": -3.8249409198760986
+        },
+        {
+          "lilo_id": "SE-01",
+          "label": 0,
+          "score": -6.743441104888916
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -8.806933403015137
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-01-01",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": 1.806063175201416
+        },
+        {
+          "lilo_id": "AI-01",
+          "label": 1,
+          "score": -1.9658328294754028
+        },
+        {
+          "lilo_id": "DB-02",
+          "label": 0,
+          "score": -2.967878580093384
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -4.557995796203613
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-01-02",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": 3.8415346145629883
+        },
+        {
+          "lilo_id": "AI-01",
+          "label": 1,
+          "score": 0.05039361119270325
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -2.2160966396331787
+        },
+        {
+          "lilo_id": "CLOUD-01",
+          "label": 0,
+          "score": -5.112585067749023
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-01-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "AI-01",
+          "label": 1,
+          "score": 4.832509994506836
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -2.0878918170928955
+        },
+        {
+          "lilo_id": "EMERGE-05",
+          "label": 0,
+          "score": -3.3991434574127197
+        },
+        {
+          "lilo_id": "ALG-07",
+          "label": 0,
+          "score": -4.184250831604004
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-01-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "AI-01",
+          "label": 1,
+          "score": -0.5903806090354919
+        },
+        {
+          "lilo_id": "AI-07",
+          "label": 0,
+          "score": -2.1227898597717285
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -4.2608795166015625
+        },
+        {
+          "lilo_id": "WEB-08",
+          "label": 0,
+          "score": -6.301661491394043
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-01-05",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "AI-07",
+          "label": 0,
+          "score": -1.0468266010284424
+        },
+        {
+          "lilo_id": "AI-01",
+          "label": 1,
+          "score": -3.7554032802581787
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -4.768239498138428
+        },
+        {
+          "lilo_id": "SEC-09",
+          "label": 0,
+          "score": -6.878774642944336
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-01-06",
+      "positive_rank": 3,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-05",
+          "label": 0,
+          "score": -2.2292656898498535
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -2.2375564575195312
+        },
+        {
+          "lilo_id": "AI-01",
+          "label": 1,
+          "score": -2.947718858718872
+        },
+        {
+          "lilo_id": "WEB-08",
+          "label": 0,
+          "score": -4.562333106994629
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-01-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "AI-01",
+          "label": 1,
+          "score": 5.880448341369629
+        },
+        {
+          "lilo_id": "AI-07",
+          "label": 0,
+          "score": -2.1170058250427246
+        },
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": -7.7550835609436035
+        },
+        {
+          "lilo_id": "CLOUD-01",
+          "label": 0,
+          "score": -8.60292911529541
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-01-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "AI-01",
+          "label": 1,
+          "score": 4.523264408111572
+        },
+        {
+          "lilo_id": "AI-07",
+          "label": 0,
+          "score": -1.9715020656585693
+        },
+        {
+          "lilo_id": "EMERGE-03",
+          "label": 0,
+          "score": -6.556493759155273
+        },
+        {
+          "lilo_id": "CLOUD-02",
+          "label": 0,
+          "score": -9.053272247314453
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-03-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "AI-03",
+          "label": 1,
+          "score": 1.3730953931808472
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -2.5116896629333496
+        },
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 0,
+          "score": -4.238434314727783
+        },
+        {
+          "lilo_id": "AI-01",
+          "label": 0,
+          "score": -6.279116153717041
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-03-02",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "DATA-07",
+          "label": 0,
+          "score": 4.507002353668213
+        },
+        {
+          "lilo_id": "AI-03",
+          "label": 1,
+          "score": 4.485642910003662
+        },
+        {
+          "lilo_id": "AI-10",
+          "label": 0,
+          "score": -3.963594436645508
+        },
+        {
+          "lilo_id": "ALG-05",
+          "label": 0,
+          "score": -5.01507568359375
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-03-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "AI-03",
+          "label": 1,
+          "score": 2.4441354274749756
+        },
+        {
+          "lilo_id": "DB-04",
+          "label": 0,
+          "score": -4.898458003997803
+        },
+        {
+          "lilo_id": "WEB-10",
+          "label": 0,
+          "score": -7.930461883544922
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -9.11388874053955
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-03-04",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "DATA-07",
+          "label": 0,
+          "score": 5.971389293670654
+        },
+        {
+          "lilo_id": "AI-03",
+          "label": 1,
+          "score": 5.114046573638916
+        },
+        {
+          "lilo_id": "NET-08",
+          "label": 0,
+          "score": -7.571977615356445
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -10.440895080566406
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-03-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "AI-03",
+          "label": 1,
+          "score": 0.24572691321372986
+        },
+        {
+          "lilo_id": "PROG-06",
+          "label": 0,
+          "score": -2.620253086090088
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": -5.150729179382324
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -6.9060187339782715
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-03-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "AI-03",
+          "label": 1,
+          "score": 4.481112957000732
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -5.904743194580078
+        },
+        {
+          "lilo_id": "AI-01",
+          "label": 0,
+          "score": -6.414597511291504
+        },
+        {
+          "lilo_id": "SE-10",
+          "label": 0,
+          "score": -6.819877624511719
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-03-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "AI-03",
+          "label": 1,
+          "score": 5.967586040496826
+        },
+        {
+          "lilo_id": "DATA-07",
+          "label": 0,
+          "score": 5.951650619506836
+        },
+        {
+          "lilo_id": "DATA-10",
+          "label": 0,
+          "score": 0.75392746925354
+        },
+        {
+          "lilo_id": "AI-10",
+          "label": 0,
+          "score": -4.4388251304626465
+        }
+      ]
+    },
+    {
+      "question_id": "IT-AI-03-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "AI-03",
+          "label": 1,
+          "score": 4.929993629455566
+        },
+        {
+          "lilo_id": "DATA-07",
+          "label": 0,
+          "score": 4.705629825592041
+        },
+        {
+          "lilo_id": "AI-10",
+          "label": 0,
+          "score": -1.3445278406143188
+        },
+        {
+          "lilo_id": "DSTR-10",
+          "label": 0,
+          "score": -5.079715728759766
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-04-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-04",
+          "label": 1,
+          "score": 0.9491334557533264
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -2.3260464668273926
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -7.763757705688477
+        },
+        {
+          "lilo_id": "PROG-10",
+          "label": 0,
+          "score": -8.060815811157227
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-04-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-04",
+          "label": 1,
+          "score": 4.2909393310546875
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -0.6300249695777893
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -6.4735636711120605
+        },
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 0,
+          "score": -8.00666618347168
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-04-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-04",
+          "label": 1,
+          "score": 5.991294860839844
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": 2.760037422180176
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -9.030035972595215
+        },
+        {
+          "lilo_id": "SEC-05",
+          "label": 0,
+          "score": -9.602375030517578
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-04-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-04",
+          "label": 1,
+          "score": 3.5784494876861572
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -4.772153854370117
+        },
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 0,
+          "score": -5.8996076583862305
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -7.895233631134033
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-04-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-04",
+          "label": 1,
+          "score": 4.384124279022217
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -3.621659755706787
+        },
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 0,
+          "score": -5.379787445068359
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -8.52743148803711
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-04-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-04",
+          "label": 1,
+          "score": 1.194226622581482
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -4.646912574768066
+        },
+        {
+          "lilo_id": "DB-09",
+          "label": 0,
+          "score": -8.736742973327637
+        },
+        {
+          "lilo_id": "ALG-07",
+          "label": 0,
+          "score": -8.748942375183105
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-04-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-04",
+          "label": 1,
+          "score": 3.8693859577178955
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": 2.049697160720825
+        },
+        {
+          "lilo_id": "EMERGE-09",
+          "label": 0,
+          "score": -5.341394424438477
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -5.892232894897461
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-04-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-04",
+          "label": 1,
+          "score": 4.197616100311279
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -0.6717690229415894
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -8.081326484680176
+        },
+        {
+          "lilo_id": "AI-01",
+          "label": 0,
+          "score": -8.349760055541992
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-08-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-08",
+          "label": 1,
+          "score": 6.488595962524414
+        },
+        {
+          "lilo_id": "AI-04",
+          "label": 0,
+          "score": 3.956831455230713
+        },
+        {
+          "lilo_id": "DATA-05",
+          "label": 0,
+          "score": 2.7948484420776367
+        },
+        {
+          "lilo_id": "WEB-06",
+          "label": 0,
+          "score": -6.279354572296143
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-08-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-08",
+          "label": 1,
+          "score": 1.7435897588729858
+        },
+        {
+          "lilo_id": "DB-06",
+          "label": 0,
+          "score": 0.2989582121372223
+        },
+        {
+          "lilo_id": "DATA-03",
+          "label": 0,
+          "score": -0.5971949100494385
+        },
+        {
+          "lilo_id": "EMERGE-09",
+          "label": 0,
+          "score": -5.070357322692871
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-08-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-08",
+          "label": 1,
+          "score": 0.42939308285713196
+        },
+        {
+          "lilo_id": "PROG-04",
+          "label": 0,
+          "score": -1.1056450605392456
+        },
+        {
+          "lilo_id": "DATA-05",
+          "label": 0,
+          "score": -1.110577940940857
+        },
+        {
+          "lilo_id": "DSTR-01",
+          "label": 0,
+          "score": -8.056218147277832
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-08-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-08",
+          "label": 1,
+          "score": 3.9042818546295166
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -3.1864659786224365
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -4.100169658660889
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -4.3292460441589355
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-08-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-08",
+          "label": 1,
+          "score": 4.752568244934082
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -2.8152365684509277
+        },
+        {
+          "lilo_id": "DSTR-03",
+          "label": 0,
+          "score": -4.519108295440674
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -6.9928083419799805
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-08-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-08",
+          "label": 1,
+          "score": 7.6424560546875
+        },
+        {
+          "lilo_id": "CLOUD-03",
+          "label": 0,
+          "score": -3.069148302078247
+        },
+        {
+          "lilo_id": "DATA-07",
+          "label": 0,
+          "score": -3.4728338718414307
+        },
+        {
+          "lilo_id": "CLOUD-02",
+          "label": 0,
+          "score": -9.474383354187012
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-08-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-08",
+          "label": 1,
+          "score": 1.8225709199905396
+        },
+        {
+          "lilo_id": "NET-01",
+          "label": 0,
+          "score": -4.637489318847656
+        },
+        {
+          "lilo_id": "EMERGE-10",
+          "label": 0,
+          "score": -6.04008150100708
+        },
+        {
+          "lilo_id": "DATA-01",
+          "label": 0,
+          "score": -6.912937164306641
+        }
+      ]
+    },
+    {
+      "question_id": "IT-DATA-08-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "DATA-08",
+          "label": 1,
+          "score": 5.945673942565918
+        },
+        {
+          "lilo_id": "DATA-06",
+          "label": 0,
+          "score": -3.1616978645324707
+        },
+        {
+          "lilo_id": "DB-02",
+          "label": 0,
+          "score": -3.238717555999756
+        },
+        {
+          "lilo_id": "CLOUD-04",
+          "label": 0,
+          "score": -7.618297576904297
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-06-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-06",
+          "label": 1,
+          "score": 4.596435070037842
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": 1.4162883758544922
+        },
+        {
+          "lilo_id": "EMERGE-08",
+          "label": 0,
+          "score": -3.178008556365967
+        },
+        {
+          "lilo_id": "AI-03",
+          "label": 0,
+          "score": -6.934604644775391
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-06-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-06",
+          "label": 1,
+          "score": 4.109958648681641
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -0.227421835064888
+        },
+        {
+          "lilo_id": "DATA-10",
+          "label": 0,
+          "score": -1.4758249521255493
+        },
+        {
+          "lilo_id": "CLOUD-03",
+          "label": 0,
+          "score": -1.6842142343521118
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-06-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-06",
+          "label": 1,
+          "score": 6.883952617645264
+        },
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 0,
+          "score": -1.950513482093811
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -2.941645383834839
+        },
+        {
+          "lilo_id": "PROG-05",
+          "label": 0,
+          "score": -4.333099365234375
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-06-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-06",
+          "label": 1,
+          "score": 2.980015516281128
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -3.2914652824401855
+        },
+        {
+          "lilo_id": "NET-07",
+          "label": 0,
+          "score": -5.829178810119629
+        },
+        {
+          "lilo_id": "EMERGE-03",
+          "label": 0,
+          "score": -5.924902439117432
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-06-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-06",
+          "label": 1,
+          "score": 4.366450786590576
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -1.4716768264770508
+        },
+        {
+          "lilo_id": "PROG-03",
+          "label": 0,
+          "score": -2.1803102493286133
+        },
+        {
+          "lilo_id": "EMERGE-06",
+          "label": 0,
+          "score": -7.312805652618408
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-06-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-06",
+          "label": 1,
+          "score": 6.861079692840576
+        },
+        {
+          "lilo_id": "WEB-10",
+          "label": 0,
+          "score": -3.415128469467163
+        },
+        {
+          "lilo_id": "EMERGE-02",
+          "label": 0,
+          "score": -4.994690418243408
+        },
+        {
+          "lilo_id": "ALG-02",
+          "label": 0,
+          "score": -9.523628234863281
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-06-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-06",
+          "label": 1,
+          "score": 4.245104789733887
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -1.4268300533294678
+        },
+        {
+          "lilo_id": "NET-03",
+          "label": 0,
+          "score": -3.9178762435913086
+        },
+        {
+          "lilo_id": "CLOUD-03",
+          "label": 0,
+          "score": -4.725467681884766
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-06-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-06",
+          "label": 1,
+          "score": 1.6288477182388306
+        },
+        {
+          "lilo_id": "WEB-10",
+          "label": 0,
+          "score": -0.6383203268051147
+        },
+        {
+          "lilo_id": "NET-08",
+          "label": 0,
+          "score": -5.348553657531738
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -9.098823547363281
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-10-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-10",
+          "label": 1,
+          "score": 3.663553237915039
+        },
+        {
+          "lilo_id": "WEB-09",
+          "label": 0,
+          "score": -2.514577865600586
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -2.524507522583008
+        },
+        {
+          "lilo_id": "DSTR-09",
+          "label": 0,
+          "score": -7.436285018920898
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-10-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-10",
+          "label": 1,
+          "score": 4.544628143310547
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -7.066319465637207
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -7.514195442199707
+        },
+        {
+          "lilo_id": "DSTR-06",
+          "label": 0,
+          "score": -8.335180282592773
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-10-03",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "WEB-02",
+          "label": 0,
+          "score": 5.324883937835693
+        },
+        {
+          "lilo_id": "WEB-10",
+          "label": 1,
+          "score": 2.229468822479248
+        },
+        {
+          "lilo_id": "PROG-06",
+          "label": 0,
+          "score": -2.030268669128418
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -6.28586483001709
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-10-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-10",
+          "label": 1,
+          "score": 1.8593560457229614
+        },
+        {
+          "lilo_id": "WEB-02",
+          "label": 0,
+          "score": 1.7973690032958984
+        },
+        {
+          "lilo_id": "DATA-10",
+          "label": 0,
+          "score": -1.479719638824463
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -5.642256259918213
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-10-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-10",
+          "label": 1,
+          "score": 4.50009822845459
+        },
+        {
+          "lilo_id": "NET-08",
+          "label": 0,
+          "score": -1.7131154537200928
+        },
+        {
+          "lilo_id": "WEB-09",
+          "label": 0,
+          "score": -2.605766773223877
+        },
+        {
+          "lilo_id": "EMERGE-10",
+          "label": 0,
+          "score": -6.863315105438232
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-10-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-10",
+          "label": 1,
+          "score": 5.513937950134277
+        },
+        {
+          "lilo_id": "WEB-02",
+          "label": 0,
+          "score": 4.111292839050293
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -5.389311790466309
+        },
+        {
+          "lilo_id": "DSTR-07",
+          "label": 0,
+          "score": -6.9638166427612305
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-10-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-10",
+          "label": 1,
+          "score": 3.7764663696289062
+        },
+        {
+          "lilo_id": "ALG-08",
+          "label": 0,
+          "score": -2.1326310634613037
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -2.2122702598571777
+        },
+        {
+          "lilo_id": "CLOUD-01",
+          "label": 0,
+          "score": -3.580493688583374
+        }
+      ]
+    },
+    {
+      "question_id": "IT-WEB-10-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "WEB-10",
+          "label": 1,
+          "score": 3.3672537803649902
+        },
+        {
+          "lilo_id": "SE-08",
+          "label": 0,
+          "score": 2.121304988861084
+        },
+        {
+          "lilo_id": "WEB-01",
+          "label": 0,
+          "score": -4.671237468719482
+        },
+        {
+          "lilo_id": "ALG-03",
+          "label": 0,
+          "score": -8.511618614196777
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-06-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-06",
+          "label": 1,
+          "score": 3.3937442302703857
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": -1.7209177017211914
+        },
+        {
+          "lilo_id": "SE-08",
+          "label": 0,
+          "score": -3.3981988430023193
+        },
+        {
+          "lilo_id": "EMERGE-02",
+          "label": 0,
+          "score": -4.612003803253174
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-06-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-06",
+          "label": 1,
+          "score": 3.4455041885375977
+        },
+        {
+          "lilo_id": "SE-01",
+          "label": 0,
+          "score": -3.348205089569092
+        },
+        {
+          "lilo_id": "DB-07",
+          "label": 0,
+          "score": -4.034217834472656
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -7.237710952758789
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-06-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-06",
+          "label": 1,
+          "score": 1.5141940116882324
+        },
+        {
+          "lilo_id": "CLOUD-03",
+          "label": 0,
+          "score": -1.9567763805389404
+        },
+        {
+          "lilo_id": "NET-02",
+          "label": 0,
+          "score": -4.759844779968262
+        },
+        {
+          "lilo_id": "SE-08",
+          "label": 0,
+          "score": -5.110595226287842
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-06-04",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "SE-08",
+          "label": 0,
+          "score": 1.8717989921569824
+        },
+        {
+          "lilo_id": "SE-06",
+          "label": 1,
+          "score": 1.2459644079208374
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -4.462009429931641
+        },
+        {
+          "lilo_id": "DATA-05",
+          "label": 0,
+          "score": -4.68522310256958
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-06-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-06",
+          "label": 1,
+          "score": 4.477611541748047
+        },
+        {
+          "lilo_id": "SE-01",
+          "label": 0,
+          "score": -4.609705448150635
+        },
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 0,
+          "score": -5.758498668670654
+        },
+        {
+          "lilo_id": "WEB-10",
+          "label": 0,
+          "score": -5.8919572830200195
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-06-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-06",
+          "label": 1,
+          "score": 0.5652865767478943
+        },
+        {
+          "lilo_id": "SE-10",
+          "label": 0,
+          "score": -0.10338414460420609
+        },
+        {
+          "lilo_id": "DB-10",
+          "label": 0,
+          "score": -0.35872918367385864
+        },
+        {
+          "lilo_id": "PROG-01",
+          "label": 0,
+          "score": -8.645796775817871
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-06-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-06",
+          "label": 1,
+          "score": 2.9918150901794434
+        },
+        {
+          "lilo_id": "SE-05",
+          "label": 0,
+          "score": -1.1539568901062012
+        },
+        {
+          "lilo_id": "AI-05",
+          "label": 0,
+          "score": -4.750588417053223
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -7.763996601104736
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-06-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-06",
+          "label": 1,
+          "score": 5.319934844970703
+        },
+        {
+          "lilo_id": "PROG-10",
+          "label": 0,
+          "score": -2.1042799949645996
+        },
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 0,
+          "score": -2.6304140090942383
+        },
+        {
+          "lilo_id": "SE-05",
+          "label": 0,
+          "score": -2.731112003326416
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-10-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-10",
+          "label": 1,
+          "score": 5.14388370513916
+        },
+        {
+          "lilo_id": "SE-01",
+          "label": 0,
+          "score": -1.9923653602600098
+        },
+        {
+          "lilo_id": "CLOUD-06",
+          "label": 0,
+          "score": -2.9344372749328613
+        },
+        {
+          "lilo_id": "EMERGE-06",
+          "label": 0,
+          "score": -3.422410249710083
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-10-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-10",
+          "label": 1,
+          "score": -0.8206978440284729
+        },
+        {
+          "lilo_id": "DSTR-08",
+          "label": 0,
+          "score": -3.6886279582977295
+        },
+        {
+          "lilo_id": "SE-05",
+          "label": 0,
+          "score": -5.349251747131348
+        },
+        {
+          "lilo_id": "DSTR-10",
+          "label": 0,
+          "score": -6.443610191345215
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-10-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-10",
+          "label": 1,
+          "score": 3.625450611114502
+        },
+        {
+          "lilo_id": "DB-10",
+          "label": 0,
+          "score": 0.814898669719696
+        },
+        {
+          "lilo_id": "SE-08",
+          "label": 0,
+          "score": -1.3222899436950684
+        },
+        {
+          "lilo_id": "WEB-06",
+          "label": 0,
+          "score": -3.2977805137634277
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-10-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-10",
+          "label": 1,
+          "score": 6.578849792480469
+        },
+        {
+          "lilo_id": "SE-06",
+          "label": 0,
+          "score": -0.17548081278800964
+        },
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 0,
+          "score": -6.179906845092773
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -8.495672225952148
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-10-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-10",
+          "label": 1,
+          "score": 4.005275726318359
+        },
+        {
+          "lilo_id": "SE-03",
+          "label": 0,
+          "score": 2.2177858352661133
+        },
+        {
+          "lilo_id": "DB-02",
+          "label": 0,
+          "score": -1.2795350551605225
+        },
+        {
+          "lilo_id": "DATA-10",
+          "label": 0,
+          "score": -4.8298540115356445
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-10-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-10",
+          "label": 1,
+          "score": 7.090860843658447
+        },
+        {
+          "lilo_id": "SE-06",
+          "label": 0,
+          "score": 2.2212891578674316
+        },
+        {
+          "lilo_id": "DB-10",
+          "label": 0,
+          "score": 1.5405080318450928
+        },
+        {
+          "lilo_id": "DSTR-07",
+          "label": 0,
+          "score": -7.378393173217773
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-10-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-10",
+          "label": 1,
+          "score": 4.399203777313232
+        },
+        {
+          "lilo_id": "SE-03",
+          "label": 0,
+          "score": 4.298358917236328
+        },
+        {
+          "lilo_id": "DB-03",
+          "label": 0,
+          "score": -0.5714225172996521
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -3.5464677810668945
+        }
+      ]
+    },
+    {
+      "question_id": "IT-SE-10-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "SE-10",
+          "label": 1,
+          "score": 5.826865196228027
+        },
+        {
+          "lilo_id": "SE-05",
+          "label": 0,
+          "score": 0.1290501356124878
+        },
+        {
+          "lilo_id": "CLOUD-10",
+          "label": 0,
+          "score": -4.795579433441162
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -9.187479972839355
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-05-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 1,
+          "score": 2.897000789642334
+        },
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 0,
+          "score": 0.5129358768463135
+        },
+        {
+          "lilo_id": "EMERGE-02",
+          "label": 0,
+          "score": -1.2943148612976074
+        },
+        {
+          "lilo_id": "AI-10",
+          "label": 0,
+          "score": -2.846092700958252
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-05-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 1,
+          "score": 4.452206611633301
+        },
+        {
+          "lilo_id": "WEB-02",
+          "label": 0,
+          "score": -1.9723389148712158
+        },
+        {
+          "lilo_id": "PROG-09",
+          "label": 0,
+          "score": -5.163987159729004
+        },
+        {
+          "lilo_id": "CLOUD-03",
+          "label": 0,
+          "score": -6.1303205490112305
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-05-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 1,
+          "score": 6.07855224609375
+        },
+        {
+          "lilo_id": "CLOUD-04",
+          "label": 0,
+          "score": -4.362878799438477
+        },
+        {
+          "lilo_id": "AI-10",
+          "label": 0,
+          "score": -4.8927507400512695
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -6.030327320098877
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-05-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 1,
+          "score": 0.6627787947654724
+        },
+        {
+          "lilo_id": "CLOUD-03",
+          "label": 0,
+          "score": -2.886793613433838
+        },
+        {
+          "lilo_id": "SEC-02",
+          "label": 0,
+          "score": -4.109368324279785
+        },
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": -4.335997104644775
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-05-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 1,
+          "score": 5.3276448249816895
+        },
+        {
+          "lilo_id": "SE-03",
+          "label": 0,
+          "score": -1.4023551940917969
+        },
+        {
+          "lilo_id": "CLOUD-03",
+          "label": 0,
+          "score": -4.613315105438232
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -7.2118120193481445
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-05-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 1,
+          "score": 2.784146547317505
+        },
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 0,
+          "score": 0.042468033730983734
+        },
+        {
+          "lilo_id": "WEB-04",
+          "label": 0,
+          "score": -2.64581298828125
+        },
+        {
+          "lilo_id": "AI-07",
+          "label": 0,
+          "score": -2.8902342319488525
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-05-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 1,
+          "score": 3.9015395641326904
+        },
+        {
+          "lilo_id": "AI-10",
+          "label": 0,
+          "score": -1.125626564025879
+        },
+        {
+          "lilo_id": "CLOUD-06",
+          "label": 0,
+          "score": -2.1688144207000732
+        },
+        {
+          "lilo_id": "SE-09",
+          "label": 0,
+          "score": -2.5789921283721924
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-05-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-05",
+          "label": 1,
+          "score": 4.677435874938965
+        },
+        {
+          "lilo_id": "SE-08",
+          "label": 0,
+          "score": -0.14516107738018036
+        },
+        {
+          "lilo_id": "CLOUD-04",
+          "label": 0,
+          "score": -6.855559825897217
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -8.462615013122559
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-09-01",
+      "positive_rank": 3,
+      "ranked": [
+        {
+          "lilo_id": "PROG-04",
+          "label": 0,
+          "score": -2.721686601638794
+        },
+        {
+          "lilo_id": "SEC-02",
+          "label": 0,
+          "score": -3.616713047027588
+        },
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 1,
+          "score": -3.8349199295043945
+        },
+        {
+          "lilo_id": "CLOUD-01",
+          "label": 0,
+          "score": -4.866791725158691
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-09-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 1,
+          "score": 3.9699885845184326
+        },
+        {
+          "lilo_id": "DATA-02",
+          "label": 0,
+          "score": -3.745884895324707
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -4.531874656677246
+        },
+        {
+          "lilo_id": "CLOUD-01",
+          "label": 0,
+          "score": -4.770580768585205
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-09-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 1,
+          "score": 2.8886635303497314
+        },
+        {
+          "lilo_id": "CLOUD-02",
+          "label": 0,
+          "score": -2.823911428451538
+        },
+        {
+          "lilo_id": "DB-05",
+          "label": 0,
+          "score": -5.221799850463867
+        },
+        {
+          "lilo_id": "DSTR-02",
+          "label": 0,
+          "score": -8.484781265258789
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-09-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 1,
+          "score": 1.9259591102600098
+        },
+        {
+          "lilo_id": "CLOUD-06",
+          "label": 0,
+          "score": -1.216827154159546
+        },
+        {
+          "lilo_id": "EMERGE-06",
+          "label": 0,
+          "score": -4.03208065032959
+        },
+        {
+          "lilo_id": "WEB-03",
+          "label": 0,
+          "score": -5.253231525421143
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-09-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 1,
+          "score": 4.274227142333984
+        },
+        {
+          "lilo_id": "CLOUD-01",
+          "label": 0,
+          "score": -3.600484609603882
+        },
+        {
+          "lilo_id": "EMERGE-03",
+          "label": 0,
+          "score": -4.025397300720215
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -6.815512657165527
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-09-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 1,
+          "score": 0.518075704574585
+        },
+        {
+          "lilo_id": "ALG-04",
+          "label": 0,
+          "score": -6.866272926330566
+        },
+        {
+          "lilo_id": "CLOUD-01",
+          "label": 0,
+          "score": -9.683067321777344
+        },
+        {
+          "lilo_id": "PROG-01",
+          "label": 0,
+          "score": -9.918536186218262
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-09-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 1,
+          "score": 1.4750131368637085
+        },
+        {
+          "lilo_id": "SEC-05",
+          "label": 0,
+          "score": -4.815568447113037
+        },
+        {
+          "lilo_id": "CLOUD-02",
+          "label": 0,
+          "score": -7.98622465133667
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -8.757899284362793
+        }
+      ]
+    },
+    {
+      "question_id": "IT-CLOUD-09-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "CLOUD-09",
+          "label": 1,
+          "score": 2.2799830436706543
+        },
+        {
+          "lilo_id": "DATA-10",
+          "label": 0,
+          "score": -4.642694473266602
+        },
+        {
+          "lilo_id": "SE-01",
+          "label": 0,
+          "score": -6.035704612731934
+        },
+        {
+          "lilo_id": "CLOUD-01",
+          "label": 0,
+          "score": -8.21021556854248
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-04-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 1,
+          "score": 0.7654781341552734
+        },
+        {
+          "lilo_id": "EMERGE-05",
+          "label": 0,
+          "score": -5.088650703430176
+        },
+        {
+          "lilo_id": "PROG-06",
+          "label": 0,
+          "score": -7.126471042633057
+        },
+        {
+          "lilo_id": "ALG-01",
+          "label": 0,
+          "score": -8.534890174865723
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-04-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 1,
+          "score": -2.3868300914764404
+        },
+        {
+          "lilo_id": "EMERGE-05",
+          "label": 0,
+          "score": -4.978970527648926
+        },
+        {
+          "lilo_id": "CLOUD-03",
+          "label": 0,
+          "score": -6.679454803466797
+        },
+        {
+          "lilo_id": "PROG-05",
+          "label": 0,
+          "score": -9.058931350708008
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-04-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 1,
+          "score": 1.6428508758544922
+        },
+        {
+          "lilo_id": "NET-04",
+          "label": 0,
+          "score": -0.24554255604743958
+        },
+        {
+          "lilo_id": "EMERGE-09",
+          "label": 0,
+          "score": -2.7895684242248535
+        },
+        {
+          "lilo_id": "ALG-10",
+          "label": 0,
+          "score": -5.108658313751221
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-04-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 1,
+          "score": -0.47060468792915344
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": -5.836643218994141
+        },
+        {
+          "lilo_id": "DSTR-02",
+          "label": 0,
+          "score": -5.868488311767578
+        },
+        {
+          "lilo_id": "EMERGE-03",
+          "label": 0,
+          "score": -6.785216331481934
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-04-05",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 1,
+          "score": -0.07554036378860474
+        },
+        {
+          "lilo_id": "NET-04",
+          "label": 0,
+          "score": -1.3935585021972656
+        },
+        {
+          "lilo_id": "EMERGE-06",
+          "label": 0,
+          "score": -3.5559234619140625
+        },
+        {
+          "lilo_id": "PROG-10",
+          "label": 0,
+          "score": -3.9637575149536133
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-04-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 1,
+          "score": 1.1497375965118408
+        },
+        {
+          "lilo_id": "CLOUD-01",
+          "label": 0,
+          "score": -4.05925989151001
+        },
+        {
+          "lilo_id": "EMERGE-09",
+          "label": 0,
+          "score": -8.714174270629883
+        },
+        {
+          "lilo_id": "DSTR-07",
+          "label": 0,
+          "score": -8.938404083251953
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-04-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 1,
+          "score": 2.9388628005981445
+        },
+        {
+          "lilo_id": "EMERGE-02",
+          "label": 0,
+          "score": -3.31321120262146
+        },
+        {
+          "lilo_id": "CLOUD-03",
+          "label": 0,
+          "score": -4.345218658447266
+        },
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": -9.166299819946289
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-04-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-04",
+          "label": 1,
+          "score": 3.4165172576904297
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -2.352776527404785
+        },
+        {
+          "lilo_id": "EMERGE-02",
+          "label": 0,
+          "score": -3.4346256256103516
+        },
+        {
+          "lilo_id": "SE-03",
+          "label": 0,
+          "score": -7.534964084625244
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-07-01",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 1,
+          "score": 5.983560562133789
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -3.468940019607544
+        },
+        {
+          "lilo_id": "EMERGE-03",
+          "label": 0,
+          "score": -4.795630931854248
+        },
+        {
+          "lilo_id": "DB-01",
+          "label": 0,
+          "score": -5.649660587310791
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-07-02",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 1,
+          "score": 4.898910999298096
+        },
+        {
+          "lilo_id": "WEB-06",
+          "label": 0,
+          "score": 0.10234683752059937
+        },
+        {
+          "lilo_id": "SEC-01",
+          "label": 0,
+          "score": -3.0963757038116455
+        },
+        {
+          "lilo_id": "EMERGE-08",
+          "label": 0,
+          "score": -3.6100893020629883
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-07-03",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 1,
+          "score": 1.711441159248352
+        },
+        {
+          "lilo_id": "PROG-04",
+          "label": 0,
+          "score": -4.050473213195801
+        },
+        {
+          "lilo_id": "EMERGE-05",
+          "label": 0,
+          "score": -4.620211124420166
+        },
+        {
+          "lilo_id": "AI-02",
+          "label": 0,
+          "score": -6.494117259979248
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-07-04",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 1,
+          "score": 0.4486790597438812
+        },
+        {
+          "lilo_id": "ALG-05",
+          "label": 0,
+          "score": -0.6535034775733948
+        },
+        {
+          "lilo_id": "NET-07",
+          "label": 0,
+          "score": -6.882775783538818
+        },
+        {
+          "lilo_id": "EMERGE-09",
+          "label": 0,
+          "score": -8.368274688720703
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-07-05",
+      "positive_rank": 2,
+      "ranked": [
+        {
+          "lilo_id": "DATA-06",
+          "label": 0,
+          "score": -0.9674304127693176
+        },
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 1,
+          "score": -2.9865386486053467
+        },
+        {
+          "lilo_id": "ALG-06",
+          "label": 0,
+          "score": -4.164778709411621
+        },
+        {
+          "lilo_id": "EMERGE-05",
+          "label": 0,
+          "score": -5.6691436767578125
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-07-06",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 1,
+          "score": 0.5432854890823364
+        },
+        {
+          "lilo_id": "EMERGE-01",
+          "label": 0,
+          "score": -5.352591037750244
+        },
+        {
+          "lilo_id": "DATA-03",
+          "label": 0,
+          "score": -6.676479816436768
+        },
+        {
+          "lilo_id": "SE-07",
+          "label": 0,
+          "score": -7.045607089996338
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-07-07",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 1,
+          "score": 4.708621501922607
+        },
+        {
+          "lilo_id": "EMERGE-02",
+          "label": 0,
+          "score": -2.0314154624938965
+        },
+        {
+          "lilo_id": "WEB-10",
+          "label": 0,
+          "score": -3.5712952613830566
+        },
+        {
+          "lilo_id": "SEC-05",
+          "label": 0,
+          "score": -5.788452625274658
+        }
+      ]
+    },
+    {
+      "question_id": "IT-EMERGE-07-08",
+      "positive_rank": 1,
+      "ranked": [
+        {
+          "lilo_id": "EMERGE-07",
+          "label": 1,
+          "score": 5.235692977905273
+        },
+        {
+          "lilo_id": "ALG-07",
+          "label": 0,
+          "score": -4.320444107055664
+        },
+        {
+          "lilo_id": "WEB-01",
+          "label": 0,
+          "score": -7.514903545379639
+        },
+        {
+          "lilo_id": "EMERGE-03",
+          "label": 0,
+          "score": -8.35949993133545
+        }
+      ]
+    }
+  ]
+}

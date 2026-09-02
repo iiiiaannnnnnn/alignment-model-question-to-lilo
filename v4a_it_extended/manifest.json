@@ -1,0 +1,73 @@
+{
+  "schema_version": "PRIME-V4A-IT-EXTENDED-1.0",
+  "seed": 20260830,
+  "status": "TRAINING-READY WEAK SUPERVISION; NOT PROFESSOR GROUND TRUTH",
+  "counts": {
+    "train_questions": 1145,
+    "validation_questions": 192,
+    "train_pairs": 7637,
+    "validation_pairs": 1920,
+    "train_positive_pairs": 1145,
+    "train_negative_pairs": 6492,
+    "validation_positive_pairs": 192,
+    "validation_negative_pairs": 1728,
+    "train_questions_by_source": {
+      "it_cs_v4": 768,
+      "prime_tload_revised_train": 72,
+      "prime_data_mining_train": 305
+    },
+    "train_pairs_by_source": {
+      "it_cs_v4": 6144,
+      "prime_tload_revised_train": 288,
+      "prime_data_mining_train": 1205
+    },
+    "reserved_isu_questions": 80,
+    "reserved_isu_train_matches": 0,
+    "reserved_isu_validation_matches": 0,
+    "normalized_train_validation_overlap": 0
+  },
+  "split_rules": {
+    "validation": "Original 24 held-out V4 LILO families only; no TLOAD or PRIME Data Mining validation was merged.",
+    "v4_train_candidates": "One positive, four same-domain hard negatives, and three cross-domain hard negatives. Validation-family LILOs are excluded.",
+    "v4_validation_candidates": "One positive, four same-domain hard negatives, and five cross-domain hard negatives from the full 120-LILO catalog.",
+    "tload": "Only the 72 train questions and 288 reviewed weak pairs are included; its validation and synthetic test remain excluded.",
+    "prime_data_mining": "Only the existing assessment-group training split is included; its 127-question validation remains excluded."
+  },
+  "sources": [
+    {
+      "name": "it_cs_v4",
+      "questions": 768,
+      "pairs": 6144,
+      "quality": "synthetic generation-target weak supervision"
+    },
+    {
+      "name": "prime_tload_revised_train",
+      "questions": 72,
+      "pairs": 288,
+      "quality": "single-AI-reviewed weak supervision"
+    },
+    {
+      "name": "prime_data_mining_train",
+      "questions": 305,
+      "pairs": 1205,
+      "quality": "PRIME generation-provenance weak supervision"
+    }
+  ],
+  "excluded": [
+    "All 80 reserved ISU final-exam questions and their labels",
+    "V4 validation questions from training",
+    "TLOAD validation and synthetic-test questions",
+    "PRIME Data Mining validation questions",
+    "CHEM 31A evaluation data",
+    "Deprecated 9,000-row template corpus"
+  ],
+  "warning": "This dataset can train a research candidate but cannot establish educational alignment accuracy. Final claims require blind professor labels.",
+  "sha256": {
+    "train.jsonl": "845805954b19aeb53147ef04a529161c38a75fad609601f0d81fda1053762536",
+    "validation.jsonl": "199138f331c084e94b914d374b0e49d390e8ffcb88a90a20f1b2c0d375beba43",
+    "generated_questions/train_questions.jsonl": "ec05284eeae86e2ba6e0d3cbd69fc72a68d002c865cbe0aa4f9a894484b4b779",
+    "generated_questions/validation_questions.jsonl": "f0b62ce4b31d6be3fc5fa22b422d2f9dfd8c4af2a982cd4c18fdbf700a87d5d4",
+    "blind_holdout_registry.json": "7b6b062a72461cdfb49166f108acbdc3c44499c540ddbeca4c10dc410ba7251e",
+    "training_config.json": "87774b586569fae8a3213c0c590e4582fd0f6a0f37fa4f316f853fa27a54d271"
+  }
+}

@@ -1,0 +1,1831 @@
+{
+  "exportedAt": "2026-08-26T08:56:20.255Z",
+  "assessment": {
+    "title": "478588",
+    "topic": "Lecture 9 Mining Behavior Data (1) · Lecture 8 Mining Big Data",
+    "type": "quiz",
+    "difficulty": "medium",
+    "createdAt": "2026-08-26T08:55:08.927Z"
+  },
+  "stats": {
+    "total": 35,
+    "matched": 35,
+    "questionsTagged": 35,
+    "selectedLilos": 5,
+    "selectedLilosCovered": 5,
+    "uncoveredLiloIds": [],
+    "sourceLilos": 5,
+    "sourceLilosCovered": 5,
+    "sourceTagMismatches": 0,
+    "semanticSourceMismatches": 3,
+    "missingSourceLiloIds": [],
+    "bloomAligned": 13,
+    "avgBloomProximity": 0.786,
+    "bloomGapHistogram": {
+      "0": 13,
+      "1": 3,
+      "2": 1,
+      "3": 1,
+      "-2": 5,
+      "-1": 12
+    },
+    "bloomGapNotMeasured": 0,
+    "bloomAboveCeiling": 12,
+    "validBloomEvidence": 4,
+    "avgAlignmentScore": 0.392
+  },
+  "questions": [
+    {
+      "index": 1,
+      "question": "To count the total unique visitor IDs from a multi-terabyte web server log using MapReduce, which key-value pairs would the Map phase typically emit, and how would the Reduce phase process them?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Map: (visitor_ID, 1); Reduce: Group by visitor_ID, then emit each unique ID.",
+        "B) Map: (log_entry, visitor_ID); Reduce: Count occurrences of each ID.",
+        "C) Map: (timestamp, visitor_ID); Reduce: Sum all visitor IDs.",
+        "D) Map: (visitor_ID, timestamp); Reduce: Find the first occurrence of each ID."
+      ],
+      "correct_answer": "A) Map: (visitor_ID, 1); Reduce: Group by visitor_ID, then emit each unique ID.",
+      "explanation": "The Map phase processes each log entry independently to identify visitor IDs. The Reduce phase groups these IDs, and simply emitting each unique ID after grouping effectively counts them as unique.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-33",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-33",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply MapReduce to analyze and process big data.",
+        "score": 0.3057,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4278,
+          "jaccard": 0.02,
+          "content": 0.0612,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 2,
+      "question": "A dataset contains millions of IoT sensor readings, each with a `device_ID` and `temperature`. To calculate the average temperature per `device_ID` using MapReduce, how would the Map and Reduce phases operate?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Map: emits (`device_ID`, `temperature`); Reduce: groups by `device_ID` and computes the average of `temperature` values.",
+        "B) Map: emits (`temperature`, `device_ID`); Reduce: groups by `temperature` and sums `device_ID`s.",
+        "C) Map: emits (`device_ID`, 1); Reduce: counts occurrences of each `device_ID`.",
+        "D) Map: emits (`device_ID`, `timestamp`); Reduce: finds the latest `temperature` for each `device_ID`."
+      ],
+      "correct_answer": "A) Map: emits (`device_ID`, `temperature`); Reduce: groups by `device_ID` and computes the average of `temperature` values.",
+      "explanation": "The Map phase prepares data by associating each temperature reading with its device ID. The Reduce phase then aggregates these temperatures by device ID to calculate their average.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-33",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-33",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply MapReduce to analyze and process big data.",
+        "score": 0.4019,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5415,
+          "jaccard": 0.0238,
+          "content": 0.0233,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 3,
+      "question": "During a large-scale MapReduce job processing financial transaction data, one of the mapper tasks fails unexpectedly. How does the MapReduce framework typically handle this situation to ensure the overall job completes successfully?",
+      "type": "multiple_choice",
+      "options": [
+        "A) It automatically re-executes the failed mapper task on another available node.",
+        "B) It stops the entire job and reports an error to the user.",
+        "C) It proceeds with the remaining mappers, discarding the incomplete data from the failed task.",
+        "D) It rolls back the entire processing to the beginning of the Map phase."
+      ],
+      "correct_answer": "A) It automatically re-executes the failed mapper task on another available node.",
+      "explanation": "MapReduce is designed with fault tolerance, allowing it to automatically re-run failed tasks on different nodes to ensure job completion without manual intervention.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-33",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-33",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply MapReduce to analyze and process big data.",
+        "score": 0.381,
+        "bloom_level": "analyze",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4812,
+          "jaccard": 0.0417,
+          "content": 0.0408,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 4,
+      "question": "Given a massive dataset of customer records, apply MapReduce to filter for customers residing in 'California' and standardize their `email_address` field to lowercase.",
+      "type": "multiple_choice",
+      "options": [
+        "A) The Map phase filters by region and converts `email_address` to lowercase, emitting relevant records; the Reduce phase performs an identity operation.",
+        "B) The Map phase converts all `email_address` fields to lowercase; the Reduce phase filters for 'California' residents.",
+        "C) The Map phase emits all records; the Reduce phase filters by region and converts `email_address` to lowercase.",
+        "D) The Map phase filters for 'California' residents; the Reduce phase only aggregates `email_address` counts."
+      ],
+      "correct_answer": "A) The Map phase filters by region and converts `email_address` to lowercase, emitting relevant records; the Reduce phase performs an identity operation.",
+      "explanation": "Filtering and basic transformations are efficiently handled in the Map phase, as each record can be processed independently. An identity Reduce phase then passes these transformed records through.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-33",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-33",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply MapReduce to analyze and process big data.",
+        "score": 0.4425,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5131,
+          "jaccard": 0.0233,
+          "content": 0.0465,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 5,
+      "question": "A data scientist needs to process a 10TB dataset of network traffic logs to identify the top 10 most frequent IP addresses. Why would applying a MapReduce solution be significantly more efficient than a single-machine approach?",
+      "type": "multiple_choice",
+      "options": [
+        "A) MapReduce enables parallel processing of data across multiple machines, drastically reducing total processing time.",
+        "B) MapReduce offers built-in visualization tools for the top IP addresses.",
+        "C) MapReduce automatically compresses the 10TB dataset to fit on a single machine's memory.",
+        "D) MapReduce eliminates the need for any programming, making it faster to set up."
+      ],
+      "correct_answer": "A) MapReduce enables parallel processing of data across multiple machines, drastically reducing total processing time.",
+      "explanation": "MapReduce's primary advantage for massive datasets is its ability to distribute and parallelize computations across a cluster, which is essential for efficient big data processing.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-33",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-33",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply MapReduce to analyze and process big data.",
+        "score": 0.4437,
+        "bloom_level": "analyze",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6212,
+          "jaccard": 0.0408,
+          "content": 0.04,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 6,
+      "question": "To generate MinHash signatures for millions of documents in a large corpus using MapReduce for subsequent similarity detection, how would the Map phase typically be structured?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Each mapper reads a document, computes its MinHash signature, and emits (`document_ID`, `MinHash_signature`).",
+        "B) Each mapper collects all documents and computes a single MinHash signature for the entire corpus.",
+        "C) Each mapper groups documents by content and then computes a MinHash signature for each group.",
+        "D) Each mapper counts the total words in a document and emits (`document_ID`, `word_count`)."
+      ],
+      "correct_answer": "A) Each mapper reads a document, computes its MinHash signature, and emits (`document_ID`, `MinHash_signature`).",
+      "explanation": "The Map phase is designed to process independent chunks of data. For MinHash signature generation, each document can be processed individually by a mapper to produce its unique signature.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-33",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-33",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply MapReduce to analyze and process big data.",
+        "score": 0.3737,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.48,
+          "jaccard": 0.0222,
+          "content": 0.0217,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 7,
+      "question": "To calculate the total number of unique users interacting with a website every 60-second interval, which stream processing windowing technique should be applied?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Tumbling window",
+        "B) Sliding window",
+        "C) Session window",
+        "D) Global window"
+      ],
+      "correct_answer": "A) Tumbling window",
+      "explanation": "A tumbling window processes non-overlapping, fixed-size intervals, which is ideal for aggregating data like unique users over discrete time periods.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-32",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-32",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in processing streaming data in real-time.",
+        "score": 0.4014,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4167,
+          "jaccard": 0.0526,
+          "content": 0.0222,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 8,
+      "question": "A financial analytics system needs to compute the average stock price over the last 5 minutes, updated every 30 seconds. Which windowing technique applies here?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Tumbling window",
+        "B) Sliding window",
+        "C) Session window",
+        "D) Global window"
+      ],
+      "correct_answer": "B) Sliding window",
+      "explanation": "A sliding window computes aggregates over overlapping, fixed-size intervals, allowing for continuous updates of metrics like moving averages.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-32",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-32",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in processing streaming data in real-time.",
+        "score": 0.3573,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.3345,
+          "jaccard": 0.0339,
+          "content": 0,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-39",
+          "lilo_text": "Apply mining results to online advertising.",
+          "score": 0.3728,
+          "margin": 0.0155
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": false
+      }
+    },
+    {
+      "index": 9,
+      "question": "A smart city platform receives continuous sensor data from thousands of devices. To immediately detect anomalies, how should this data be processed initially?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Batch process it daily using MapReduce.",
+        "B) Store all data in a data lake for later analysis.",
+        "C) Ingest directly into a real-time stream processing framework.",
+        "D) Manually inspect logs periodically."
+      ],
+      "correct_answer": "C) Ingest directly into a real-time stream processing framework.",
+      "explanation": "Real-time stream processing frameworks are designed for immediate ingestion and analysis of continuous data, enabling prompt anomaly detection.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-32",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-32",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in processing streaming data in real-time.",
+        "score": 0.3697,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.474,
+          "jaccard": 0.0161,
+          "content": 0.0208,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 10,
+      "question": "When designing a real-time fraud detection system, how can you ensure the processing state is not lost and processing continues seamlessly if a worker node fails?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Periodically restart the entire application.",
+        "B) Implement regular checkpointing of the application's state.",
+        "C) Store all raw input data indefinitely.",
+        "D) Increase the number of batch processing jobs."
+      ],
+      "correct_answer": "B) Implement regular checkpointing of the application's state.",
+      "explanation": "Checkpointing allows a stream processing application to recover its state from a consistent point in case of failures, ensuring fault tolerance and data consistency.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-32",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-32",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in processing streaming data in real-time.",
+        "score": 0.3353,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.3666,
+          "jaccard": 0.0333,
+          "content": 0.0909,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 11,
+      "question": "A social media company wants to provide users with trending topics updated every few seconds based on live post streams. Which approach should they apply?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Run daily batch jobs on historical data.",
+        "B) Store all posts in a database and query hourly.",
+        "C) Use a real-time stream processing framework to analyze live data.",
+        "D) Manually monitor posts in real-time."
+      ],
+      "correct_answer": "C) Use a real-time stream processing framework to analyze live data.",
+      "explanation": "Real-time stream processing frameworks are specifically designed to analyze continuous data streams for up-to-the-second insights like trending topics.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-32",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-32",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in processing streaming data in real-time.",
+        "score": 0.4079,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4399,
+          "jaccard": 0,
+          "content": 0.0667,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-35",
+          "lilo_text": "Apply big data mining to log files, social media, and query logs.",
+          "score": 0.4111,
+          "margin": 0.0032
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 12,
+      "question": "To compute a running sum of values for each distinct user ID from an incoming data stream, what fundamental capability must the stream processing framework apply?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Batch processing capabilities.",
+        "B) The ability to manage and update application state.",
+        "C) Static data indexing.",
+        "D) Offline data warehousing."
+      ],
+      "correct_answer": "B) The ability to manage and update application state.",
+      "explanation": "Maintaining a running sum for each user ID requires the framework to store and update state associated with each key as new data arrives.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-32",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-32",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in processing streaming data in real-time.",
+        "score": 0.3751,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4632,
+          "jaccard": 0.0508,
+          "content": 0.0435,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 13,
+      "question": "In an observational study, carefully matching groups on several characteristics guarantees that any observed behavioral differences are due to a specific factor of interest.",
+      "type": "true_false",
+      "correct_answer": "False",
+      "explanation": "While matching can reduce bias from known confounders, it cannot guarantee causal inference in an observational study because unobserved (latent) confounding variables may still exist.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.352,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4407,
+          "jaccard": 0.0185,
+          "content": 0,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 14,
+      "question": "An online ad platform uses a probabilistic model to estimate the likelihood of a user clicking an ad, directly applying mining results for CTR prediction.",
+      "type": "true_false",
+      "correct_answer": "True",
+      "explanation": "Probabilistic models are used to estimate the likelihood of events, such as a user clicking a product, which directly supports click-through rate (CTR) prediction in online advertising.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.5081,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.7183,
+          "jaccard": 0.1091,
+          "content": 0.087,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 15,
+      "question": "A generative model, after learning user preferences from behavior data, can simulate new ad content tailored to individual users, directly supporting ad targeting.",
+      "type": "true_false",
+      "correct_answer": "True",
+      "explanation": "Generative models can learn data structures and generate new observations based on learned patterns, which can be applied to create personalized ad content for improved targeting.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.4494,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6061,
+          "jaccard": 0.0784,
+          "content": 0.0732,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 16,
+      "question": "Identifying sequential behavior patterns in user data allows an advertiser to optimize ad placement along a user's conversion funnel.",
+      "type": "true_false",
+      "correct_answer": "True",
+      "explanation": "Mining sequential behavior patterns helps predict future user behavior, enabling advertisers to strategically place ads to guide users towards a desired conversion.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.3621,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5348,
+          "jaccard": 0.0741,
+          "content": 0.0444,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 17,
+      "question": "Observing a strong correlation between ad exposure and product purchase is sufficient evidence to conclude that the ad caused the purchase, thus optimizing the ad campaign.",
+      "type": "true_false",
+      "correct_answer": "False",
+      "explanation": "The source material differentiates between correlation and causality. Correlation measures a relationship, but does not prove one variable caused another, which is critical for accurate ad campaign optimization.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.3749,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4921,
+          "jaccard": 0.0175,
+          "content": 0,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 18,
+      "question": "To understand common navigation paths users take on a website, what big data mining technique would you apply to server log files to discover frequent sequences of page visits?",
+      "type": "identification",
+      "correct_answer": "Sequential pattern mining",
+      "explanation": "Sequential pattern mining identifies ordered events or actions within a dataset, making it suitable for analyzing user navigation flows in log files.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-35",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-35",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply big data mining to log files, social media, and query logs.",
+        "score": 0.4595,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.5006,
+          "jaccard": 0.0877,
+          "content": 0.1111,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 19,
+      "question": "A company wants to identify the most influential users discussing their products on a social media platform. What social media analytics technique would you apply to their social media data?",
+      "type": "identification",
+      "correct_answer": "Social network analysis",
+      "explanation": "Social network analysis is applied to map relationships and identify key influencers or central nodes within a social network based on interactions.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-35",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-35",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply big data mining to log files, social media, and query logs.",
+        "score": 0.4334,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.4481,
+          "jaccard": 0.08,
+          "content": 0.1053,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 20,
+      "question": "To improve search recommendations, an e-commerce site needs to find products that are frequently searched for together in its query logs. What big data mining technique would you apply?",
+      "type": "identification",
+      "correct_answer": "Frequent itemset mining",
+      "explanation": "Frequent itemset mining discovers items that often appear together in transactions or queries, which is useful for 'customers who searched for X also searched for Y' features.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-35",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-35",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply big data mining to log files, social media, and query logs.",
+        "score": 0.4876,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.567,
+          "jaccard": 0.0926,
+          "content": 0.093,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 21,
+      "question": "Before analyzing web server logs for user behavior, entries from known bots or crawlers must be removed. What essential big data mining preprocessing step would you apply to these raw log files?",
+      "type": "identification",
+      "correct_answer": "Data cleaning",
+      "explanation": "Data cleaning involves identifying and removing or correcting irrelevant, incomplete, or inaccurate data entries, such as bot traffic in log files.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-35",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-35",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply big data mining to log files, social media, and query logs.",
+        "score": 0.4761,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.5065,
+          "jaccard": 0.1538,
+          "content": 0.1163,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 22,
+      "question": "A marketing team wants to detect emerging trends and topics from real-time social media conversations about their brand. What pattern discovery method would you apply to identify these new clusters of discussion?",
+      "type": "identification",
+      "correct_answer": "Topic modeling",
+      "explanation": "Topic modeling is a technique used to discover the abstract 'topics' that occur in a collection of documents, suitable for identifying emerging themes in social media.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-35",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-35",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply big data mining to log files, social media, and query logs.",
+        "score": 0.4322,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.4545,
+          "jaccard": 0.0893,
+          "content": 0.0652,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 23,
+      "question": "An online service wants to estimate the probability that a user will churn within the next month based on their activity patterns observed in application log files. What type of big data model would you apply for this prediction?",
+      "type": "identification",
+      "correct_answer": "Probabilistic model",
+      "explanation": "Probabilistic models use probability theory to estimate the likelihood of specific outcomes, such as user churn, based on historical behavior data.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-35",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-35",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply big data mining to log files, social media, and query logs.",
+        "score": 0.4348,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.4655,
+          "jaccard": 0.0741,
+          "content": 0.0698,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 24,
+      "question": "A streaming service notices that users who receive personalized movie recommendations watch more content. What method should they apply to confirm recommendations causally increase watch time?",
+      "type": "identification",
+      "correct_answer": "A/B testing",
+      "explanation": "A/B testing allows for random assignment of users to receive or not receive recommendations, enabling a direct comparison to infer causality.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.3493,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.3317,
+          "jaccard": 0,
+          "content": 0,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-39",
+          "lilo_text": "Apply mining results to online advertising.",
+          "score": 0.3517,
+          "margin": 0.0024
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 25,
+      "question": "An e-commerce site observes that customers who view product reviews before purchasing have higher satisfaction rates. Identify a potential confounding variable for this observed correlation.",
+      "type": "identification",
+      "correct_answer": "Prior interest (or product quality perception)",
+      "explanation": "Users with higher prior interest in a product are more likely to seek out reviews and also more likely to be satisfied with their purchase, confounding the direct effect of reviews.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.3023,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4417,
+          "jaccard": 0.0175,
+          "content": 0,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 26,
+      "question": "To determine the impact of a new app tutorial on user retention, a developer randomly assigns new users to either the old or new tutorial. What term describes the observed difference in retention between these groups?",
+      "type": "identification",
+      "correct_answer": "Treatment effect",
+      "explanation": "The treatment effect measures the causal impact of the new tutorial (the 'treatment') on user retention, isolated through random assignment.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.331,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4023,
+          "jaccard": 0,
+          "content": 0,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 27,
+      "question": "A social media platform wants to test if a new notification design leads to more app opens. What specific experimental approach should they use to establish a causal link?",
+      "type": "identification",
+      "correct_answer": "A/B testing",
+      "explanation": "A/B testing involves comparing two versions (A and B) of a feature with random user assignment to determine which version causally influences a specific behavior like app opens.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.4257,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.4879,
+          "jaccard": 0.0164,
+          "content": 0.0192,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 28,
+      "question": "A health app wants to investigate if sending daily motivational messages directly causes users to log more exercise. What rigorous study design should they employ?",
+      "type": "identification",
+      "correct_answer": "Randomized Controlled Trial (RCT)",
+      "explanation": "An RCT would randomly assign users to either receive or not receive motivational messages, allowing for a strong causal inference regarding exercise logging behavior.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.3898,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.4219,
+          "jaccard": 0,
+          "content": 0,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 29,
+      "question": "Researchers analyze existing customer data to find that users who frequently engage with loyalty program emails also make more frequent purchases. What type of study is this, which makes causal inference difficult?",
+      "type": "identification",
+      "correct_answer": "Observational study",
+      "explanation": "An observational study examines existing data without manipulating variables, making it challenging to establish causality due to the presence of potential confounding factors.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.2912,
+        "bloom_level": "create",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 3,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.5047,
+          "jaccard": 0.037,
+          "content": 0.0444,
+          "bloom": 0.25
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 30,
+      "question": "A gaming company notices a correlation between in-game tutorial completion and longer play sessions. To demonstrate that completing the tutorial *causes* longer play sessions, what must they specifically address?",
+      "type": "identification",
+      "correct_answer": "Confounding variables",
+      "explanation": "To establish causality, the company must account for or control other factors that might influence both tutorial completion and longer play sessions.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.3538,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4528,
+          "jaccard": 0,
+          "content": 0,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 31,
+      "question": "A website redesign coincides with a significant increase in user sign-ups. What type of analysis is necessary to conclude the redesign was the direct cause of this increase?",
+      "type": "identification",
+      "correct_answer": "Causal inference",
+      "explanation": "While a correlation exists, causal inference techniques, often involving experimental designs, are required to establish that the redesign directly caused the increase in sign-ups.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.3348,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "understand",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4106,
+          "jaccard": 0,
+          "content": 0,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 32,
+      "question": "An advertiser wants to personalize ad experiences for users viewing sports equipment. Which types of behavior data should they analyze to effectively target these ads?",
+      "type": "enumeration",
+      "correct_answer": "Online browsing behavior, Purchase history, Social media interactions, Mobile application usage",
+      "explanation": "These are all examples of behavior data that capture user actions and preferences, which are crucial for understanding user interests and personalizing ad targeting.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.4145,
+        "bloom_level": "analyze",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "format_ceiling": "remember",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.5492,
+          "jaccard": 0.0357,
+          "content": 0.0682,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 33,
+      "question": "To optimize an online advertising campaign, a marketing team employs a probabilistic model. Which specific predictions from this model would guide their adjustments?",
+      "type": "enumeration",
+      "correct_answer": "The probability that a user will click a product, The likelihood of purchasing an item, The chance of a user leaving a platform",
+      "explanation": "Probabilistic models can estimate these specific likelihoods, providing data-driven insights to adjust ad placements, messaging, and overall campaign strategy for better performance.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.4012,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "remember",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6214,
+          "jaccard": 0.0556,
+          "content": 0.0698,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 34,
+      "question": "An e-commerce platform aims to enhance its product recommendation system for advertising. Which capabilities of generative models would be most beneficial in this context?",
+      "type": "enumeration",
+      "correct_answer": "Simulate realistic data samples, Model complex data distributions, Handle incomplete data, Generate new observations based on learned patterns",
+      "explanation": "Generative models can learn underlying data structures to create realistic data, handle complexities and gaps, and generate new recommendations, all vital for an effective ad recommendation system.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.3551,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "remember",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5357,
+          "jaccard": 0.0364,
+          "content": 0.0455,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 35,
+      "question": "An online publisher wants to improve user experience while simultaneously increasing ad relevance. Which outcomes from mining behavior data would directly support both goals?",
+      "type": "enumeration",
+      "correct_answer": "Understand user preferences, Improve recommendation systems, Personalize user experiences, Predict future user behavior",
+      "explanation": "Mining behavior data yields insights into user preferences and predictable actions, which can be directly applied to personalize experiences, improve recommendations, and thus enhance both user satisfaction and ad relevance.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.4169,
+        "bloom_level": "evaluate",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 2,
+        "format_ceiling": "remember",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.6243,
+          "jaccard": 0.0926,
+          "content": 0.1163,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    }
+  ],
+  "enrichedLlos": [
+    {
+      "id": "LILO-32",
+      "text": "Develop advanced skills in processing streaming data in real-time.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "streaming data",
+        "real-time processing",
+        "stream processing frameworks (e.g., apache flink, kafka streams)",
+        "data ingestion",
+        "windowing techniques (tumbling, sliding)",
+        "fault tolerance",
+        "low-latency analytics",
+        "event time vs. processing time"
+      ],
+      "enriched_text": "Students will develop advanced skills in processing streaming data in real-time, utilizing stream processing frameworks like Apache Flink or Kafka Streams, implementing techniques such as windowing (tumbling, sliding), and ensuring fault tolerance for low-latency data ingestion and analytics based on event or processing time.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2",
+        "CO-3"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "16-17",
+      "topic_title": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7, GA1, GA3",
+      "learning_content": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis"
+    },
+    {
+      "id": "LILO-33",
+      "text": "Apply MapReduce to analyze and process big data.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "mapreduce",
+        "big data",
+        "distributed computing",
+        "hadoop ecosystem",
+        "hdfs",
+        "mappers",
+        "reducers",
+        "fault tolerance",
+        "data partitioning"
+      ],
+      "enriched_text": "This LILO focuses on applying the MapReduce programming model, within a distributed computing framework like Hadoop and its HDFS, to efficiently analyze and process large-scale datasets, understanding concepts such as mappers, reducers, data partitioning, and fault tolerance.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2",
+        "CO-3"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "16-17",
+      "topic_title": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7, GA1, GA3",
+      "learning_content": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis"
+    },
+    {
+      "id": "LILO-35",
+      "text": "Apply big data mining to log files, social media, and query logs.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "big data mining",
+        "log file analysis",
+        "social media analytics",
+        "query log analysis",
+        "data preprocessing",
+        "pattern discovery (frequent itemsets)",
+        "anomaly detection",
+        "user behavior analysis"
+      ],
+      "enriched_text": "This LILO involves applying big data mining techniques to diverse datasets such as log files, social media feeds, and query logs, encompassing data preprocessing, pattern discovery, anomaly detection, sentiment analysis, and user behavior analysis for extracting actionable insights.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2",
+        "CO-3"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "16-17",
+      "topic_title": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7, GA1, GA3",
+      "learning_content": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis"
+    },
+    {
+      "id": "LILO-38",
+      "text": "Apply causal inference to understand factors influencing behavior.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "causal inference",
+        "confounding variables",
+        "treatment effects",
+        "a/b testing",
+        "randomized controlled trials (rcts)",
+        "observational studies",
+        "counterfactuals",
+        "causal graphs (dags)",
+        "instrumental variables"
+      ],
+      "enriched_text": "Students will apply causal inference techniques, including methods for handling confounding variables and understanding treatment effects, to analyze data from A/B tests, randomized controlled trials, or observational studies and identify factors influencing behavior using concepts like counterfactuals and causal graphs.",
+      "source_type": "ilo",
+      "co_id": "CO-4",
+      "co_ids": [
+        "CO-4"
+      ],
+      "co_suggestions": [],
+      "co_text": "Design end-to-end data mining solutions and communicate findings effectively, demonstrating ethical awareness, adaptability, and innovative thinking across interdisciplinary domains",
+      "week": "18",
+      "topic_title": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "graduate_attr": "GA2, GA4, GA7",
+      "learning_content": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation"
+    },
+    {
+      "id": "LILO-39",
+      "text": "Apply mining results to online advertising.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "data mining results",
+        "online advertising",
+        "ad targeting",
+        "recommendation systems",
+        "click-through rate (ctr) prediction",
+        "conversion optimization",
+        "a/b testing",
+        "user segmentation",
+        "personalization"
+      ],
+      "enriched_text": "This LILO focuses on applying insights derived from data mining, such as user segmentation and predictive models, to optimize online advertising strategies, including ad targeting, recommendation systems, click-through rate prediction, and conversion optimization.",
+      "source_type": "ilo",
+      "co_id": "CO-4",
+      "co_ids": [
+        "CO-4"
+      ],
+      "co_suggestions": [],
+      "co_text": "Design end-to-end data mining solutions and communicate findings effectively, demonstrating ethical awareness, adaptability, and innovative thinking across interdisciplinary domains",
+      "week": "18",
+      "topic_title": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "graduate_attr": "GA2, GA4, GA7",
+      "learning_content": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation"
+    }
+  ],
+  "courseOutcomes": [
+    {
+      "id": "CO-1",
+      "text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "bloom_level": "understand",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA2"
+      ]
+    },
+    {
+      "id": "CO-2",
+      "text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "bloom_level": "apply",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ]
+    },
+    {
+      "id": "CO-3",
+      "text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "bloom_level": "evaluate",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA3"
+      ]
+    },
+    {
+      "id": "CO-4",
+      "text": "Design end-to-end data mining solutions and communicate findings effectively, demonstrating ethical awareness, adaptability, and innovative thinking across interdisciplinary domains",
+      "bloom_level": "create",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA4",
+        "GA7"
+      ]
+    }
+  ],
+  "graduateAttributes": [],
+  "programOutcomes": [
+    {
+      "id": "PO1",
+      "text": "Apply knowledge of computing fundamentals, mathematics, science and domain knowledge appropriate for the computing specialization."
+    },
+    {
+      "id": "PO10",
+      "text": "Recognize the need and have the ability to engage in independent learning for continual development as a computing professional."
+    },
+    {
+      "id": "PO2",
+      "text": "Identify, analyze, formulate, research literature and solve complex computing problems reaching substantiated conclusions."
+    },
+    {
+      "id": "PO3",
+      "text": "Apply mathematical foundations, algorithmic principles and computer science theory in the modeling and design of computer-based systems."
+    },
+    {
+      "id": "PO4",
+      "text": "Demonstrate knowledge and understanding of information security issues in relation to the design, development and use of information systems."
+    },
+    {
+      "id": "PO5",
+      "text": "Design and evaluate solutions for complex computing problems with appropriate consideration for public health, safety and environmental factors."
+    },
+    {
+      "id": "PO6",
+      "text": "Create, select, adapt and apply appropriate techniques, resources and modern computing tools to complex computing activities."
+    },
+    {
+      "id": "PO7",
+      "text": "Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary settings."
+    },
+    {
+      "id": "PO8",
+      "text": "Communicate effectively with the computing community and with society at large about complex computing activities."
+    },
+    {
+      "id": "PO9",
+      "text": "Recognize the legal, social, ethical and professional issues involved in the utilization of computer technology."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "id": "CONTENT-1",
+      "topic_title": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis",
+      "learning_content": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis",
+      "week": "16-17",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA2",
+        "GA3",
+        "GA7"
+      ],
+      "co_ids": [
+        "CO-2"
+      ],
+      "ilo_ids": [
+        "LILO-32",
+        "LILO-33",
+        "LILO-35"
+      ]
+    },
+    {
+      "id": "CONTENT-2",
+      "topic_title": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation",
+      "learning_content": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation",
+      "week": "18",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA4",
+        "GA7"
+      ],
+      "co_ids": [
+        "CO-4"
+      ],
+      "ilo_ids": [
+        "LILO-38",
+        "LILO-39"
+      ]
+    }
+  ]
+}

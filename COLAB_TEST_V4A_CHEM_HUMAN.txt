@@ -1,0 +1,107 @@
+"""Paste this entire file into one Google Colab code cell.
+
+Tests V4-A Extended Clean v2 on the existing 103-question, course-staff-labelled
+Stanford CHEM 31A benchmark against all 75 chemistry LILOs.
+"""
+
+import json
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+
+ROOT = Path("/content/drive/MyDrive/alignment_model")
+MODEL = ROOT / "models" / "prime-lilo-reranker-v4a-it-extended-clean-v2"
+QUESTIONS = ROOT / "data" / "evaluation" / "chem31a_human.jsonl"
+LILO_FILE = ROOT / "data" / "external" / "chem31a_learning_goal_list.txt"
+OUTPUT = ROOT / "results" / "trained_chem31a_v4a_extended_clean_v2.json"
+
+for required in (MODEL, QUESTIONS, LILO_FILE):
+    if not required.exists():
+        raise FileNotFoundError(required)
+
+try:
+    import torch
+    import transformers
+except ImportError:
+    subprocess.check_call([
+        sys.executable, "-m", "pip", "install", "-q", "-r",
+        str(ROOT / "requirements-colab.txt"),
+    ])
+
+import torch
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+
+questions = [json.loads(line) for line in QUESTIONS.read_text(encoding="utf-8").splitlines() if line.strip()]
+lilos = []
+topic = None
+for raw in LILO_FILE.read_text(encoding="utf-8").splitlines()[1:]:
+    line = raw.strip()
+    if not line:
+        continue
+    header = re.match(r"^(\d+)\.(.+)$", line)
+    if header:
+        topic = header.group(1)
+    elif topic:
+        lilos.append({"lilo_id": f"LILO-{len(lilos) + 1}", "lilo": line})
+
+if len(questions) != 103 or len(lilos) != 75:
+    raise ValueError(f"Expected 103 questions and 75 LILOs; found {len(questions)} and {len(lilos)}")
+
+tokenizer = AutoTokenizer.from_pretrained(MODEL)
+model = AutoModelForSequenceClassification.from_pretrained(MODEL)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device).eval()
+
+pairs = [(question["question"], lilo["lilo"]) for question in questions for lilo in lilos]
+scores = []
+with torch.inference_mode():
+    for start in range(0, len(pairs), 64):
+        batch = pairs[start:start + 64]
+        encoded = tokenizer(
+            [pair[0] for pair in batch],
+            [pair[1] for pair in batch],
+            padding=True,
+            truncation=True,
+            max_length=256,
+            return_tensors="pt",
+        )
+        logits = model(**{key: value.to(device) for key, value in encoded.items()}).logits
+        values = logits[:, 0] if logits.ndim == 2 and logits.shape[1] == 1 else logits[:, -1]
+        scores.extend(values.detach().cpu().tolist())
+
+details = []
+for index, question in enumerate(questions):
+    question_scores = scores[index * 75:(index + 1) * 75]
+    ranked = sorted(zip(question_scores, lilos), key=lambda item: item[0], reverse=True)
+    gold = set(question["gold_lilo_ids"])
+    rank = next(position for position, (_, candidate) in enumerate(ranked, 1) if candidate["lilo_id"] in gold)
+    details.append({
+        "question_id": question["question_id"],
+        "gold_lilo_ids": sorted(gold),
+        "positive_rank": rank,
+        "predicted_lilo_id": ranked[0][1]["lilo_id"],
+        "top5_lilo_ids": [candidate["lilo_id"] for _, candidate in ranked[:5]],
+    })
+
+n = len(details)
+result = {
+    "model": "prime-lilo-reranker-v4a-it-extended-clean-v2",
+    "benchmark": "Stanford CHEM 31A 2021 course-staff labels",
+    "questions": n,
+    "candidate_lilos": 75,
+    "top1_hits": sum(row["positive_rank"] == 1 for row in details),
+    "top1_accuracy": round(sum(row["positive_rank"] == 1 for row in details) / n, 4),
+    "mrr": round(sum(1 / row["positive_rank"] for row in details) / n, 4),
+    "recall_at_3": round(sum(row["positive_rank"] <= 3 for row in details) / n, 4),
+    "recall_at_5": round(sum(row["positive_rank"] <= 5 for row in details) / n, 4),
+    "details": details,
+    "warning": "Cross-domain chemistry development benchmark; not an ISU-CS accuracy estimate.",
+}
+
+OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+OUTPUT.write_text(json.dumps(result, indent=2), encoding="utf-8")
+print(json.dumps({key: value for key, value in result.items() if key != "details"}, indent=2))
+print("Saved:", OUTPUT)

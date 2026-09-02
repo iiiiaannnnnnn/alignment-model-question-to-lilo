@@ -1,0 +1,672 @@
+{
+  "exportedAt": "2026-08-25T14:03:01.391Z",
+  "assessment": {
+    "title": "quiz1111",
+    "topic": "Lecture 1 Real World Data Formulation (1)",
+    "type": "quiz",
+    "difficulty": "medium"
+  },
+  "stats": {
+    "total": 10,
+    "matched": 10,
+    "bloomAligned": 10,
+    "avgBloomProximity": 0.625,
+    "bloomGapHistogram": {},
+    "bloomGapNotMeasured": 10,
+    "bloomAboveCeiling": 0,
+    "validBloomEvidence": 10,
+    "avgAlignmentScore": 0.387
+  },
+  "questions": [
+    {
+      "index": 1,
+      "question": "In a social network graph where nodes are users and edges are friendships, to identify the user who acts as a crucial bridge between different friend groups, which centrality measure would you calculate?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Betweenness Centrality",
+        "B) Degree Centrality",
+        "C) Closeness Centrality",
+        "D) Eigenvector Centrality"
+      ],
+      "correct_answer": "A) Betweenness Centrality",
+      "explanation": "Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes. Calculating this measure helps identify crucial connectors in a network.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-7",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-7",
+        "target_co_id": "CO-1",
+        "lilo_text": "Conduct network analysis on graph-structured data.",
+        "score": 0.312,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.4342,
+          "content": 0,
+          "jaccard": 0.0833
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 2,
+      "question": "Given a graph where nodes represent products and edges indicate co-purchases by customers, to discover natural groupings of products that are frequently bought together, which network analysis technique would you apply?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Community Detection",
+        "B) Link Prediction",
+        "C) Node Classification",
+        "D) Graph Embedding"
+      ],
+      "correct_answer": "A) Community Detection",
+      "explanation": "Community detection algorithms are designed to partition a graph into sets of nodes that are more densely connected within the sets than across sets. Applying this technique would reveal product groupings based on co-purchase patterns.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-7",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-7",
+        "target_co_id": "CO-1",
+        "lilo_text": "Conduct network analysis on graph-structured data.",
+        "score": 0.4866,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.5785,
+          "content": 0.0303,
+          "jaccard": 0.1087
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 3,
+      "question": "A data analyst examines a year of sensor readings from a smart city air quality monitor. They observe that pollutant levels consistently peak between 7-9 AM and 4-6 PM on weekdays, while remaining significantly lower on weekends. Which temporal pattern is most evident in this sequence data?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Daily and weekly seasonality",
+        "B) A long-term upward trend",
+        "C) Irregular dependencies",
+        "D) Random noise and outliers"
+      ],
+      "correct_answer": "A) Daily and weekly seasonality",
+      "explanation": "The consistent daily peaks and the significant difference between weekdays and weekends indicate predictable, recurring patterns over fixed periods, which is characteristic of seasonality.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-6",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-6",
+        "target_co_id": "CO-1",
+        "lilo_text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+        "score": 0.3178,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.5547,
+          "content": 0,
+          "jaccard": 0.0909
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 4,
+      "question": "A financial analyst investigates a stock's closing price data over a decade. They note a consistent, gradual increase in the average price per quarter, despite minor daily fluctuations. Additionally, there is a predictable dip in price every March, followed by a recovery. How would you best characterize these temporal observations?",
+      "type": "multiple_choice",
+      "options": [
+        "A) A long-term upward trend with annual seasonality",
+        "B) Primarily random fluctuations with no clear pattern",
+        "C) Strong dependencies on external market events only",
+        "D) A consistent downward trend with monthly outliers"
+      ],
+      "correct_answer": "A) A long-term upward trend with annual seasonality",
+      "explanation": "The gradual increase over a decade indicates a long-term trend, while the predictable annual dip and recovery suggest a recurring seasonal pattern.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-6",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-6",
+        "target_co_id": "CO-1",
+        "lilo_text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+        "score": 0.3452,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.5272,
+          "content": 0,
+          "jaccard": 0.04
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 5,
+      "question": "A company needs to reduce the dimensionality of a large customer purchase dataset for efficient visualization and analysis. Which matrix transformation technique is most appropriate?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Singular Value Decomposition (SVD)",
+        "B) Matrix Inversion",
+        "C) Determinant Calculation",
+        "D) Transpose Operation"
+      ],
+      "correct_answer": "A) Singular Value Decomposition (SVD)",
+      "explanation": "SVD effectively decomposes a matrix to identify principal components, allowing for projection into a lower-dimensional space while retaining most variance, which is crucial for efficient visualization and analysis of large datasets.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-5",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-5",
+        "target_co_id": "CO-1",
+        "lilo_text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+        "score": 0.5166,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6592,
+          "content": 0,
+          "jaccard": 0.1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 6,
+      "question": "To identify the most influential underlying patterns and reduce noise in high-dimensional financial market data, which matrix transformation concept is primarily utilized?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Eigenvalue decomposition for Principal Component Analysis (PCA)",
+        "B) Matrix addition",
+        "C) Cross-product calculation",
+        "D) Scalar multiplication"
+      ],
+      "correct_answer": "A) Eigenvalue decomposition for Principal Component Analysis (PCA)",
+      "explanation": "Eigenvalue decomposition, particularly within PCA, identifies orthogonal directions (principal components) that capture the maximum variance in the data, effectively revealing underlying patterns and reducing noise in high-dimensional datasets.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-5",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-5",
+        "target_co_id": "CO-1",
+        "lilo_text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+        "score": 0.4828,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.5956,
+          "content": 0,
+          "jaccard": 0.0741
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 7,
+      "question": "A dataset containing varying scales of features needs to be uniformly normalized between 0 and 1 for optimal performance of a neural network. Which matrix transformation operation achieves this?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Linear scaling transformation (e.g., min-max normalization)",
+        "B) Matrix multiplication with an identity matrix",
+        "C) Non-linear sigmoid transformation",
+        "D) Random permutation of rows"
+      ],
+      "correct_answer": "A) Linear scaling transformation (e.g., min-max normalization)",
+      "explanation": "Linear scaling transformations, such as min-max normalization, are a form of matrix transformation that uniformly maps data points within a specific range (e.g., 0 to 1) by applying a linear function to each feature, which is essential for many machine learning algorithms.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-5",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-5",
+        "target_co_id": "CO-1",
+        "lilo_text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+        "score": 0.3279,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.4808,
+          "content": 0,
+          "jaccard": 0.0577
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 8,
+      "question": "A large online retailer aims to identify frequently co-purchased items to improve product recommendations. From the raw transaction logs, which abstraction best supports analyzing item relationships for this goal?",
+      "type": "multiple_choice",
+      "options": [
+        "A) An item set where each set represents a single customer's entire purchase history, with items as elements.",
+        "B) A matrix listing each product's total sales volume across all customers.",
+        "C) A table of individual product attributes (e.g., color, size, price).",
+        "D) A structured database schema detailing supplier information for each product."
+      ],
+      "correct_answer": "A) An item set where each set represents a single customer's entire purchase history, with items as elements.",
+      "explanation": "This item set structure directly captures the relationships of items co-occurring within a single transaction or customer's basket, which is essential for market basket analysis and recommendation systems. The student must differentiate between data structures that reveal relationships versus those that merely aggregate or describe attributes.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-4",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-4",
+        "target_co_id": "CO-1",
+        "lilo_text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+        "score": 0.4026,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.5134,
+          "content": 0.0606,
+          "jaccard": 0.0625
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 9,
+      "question": "A hospital wants to analyze factors contributing to patient readmission within 30 days. To effectively structure this real-world data into a matrix for predictive modeling, which set of attributes would be most relevant for identifying relationships with readmission?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Patient ID, admission date, discharge date, primary diagnosis, length of stay, readmission status (yes/no).",
+        "B) Hospital staff shift schedules, cafeteria menu, number of available parking spaces.",
+        "C) Total hospital budget, average nurse salary, patient satisfaction survey scores.",
+        "D) Patient's favorite TV show, preferred meal choice, number of visitors."
+      ],
+      "correct_answer": "A) Patient ID, admission date, discharge date, primary diagnosis, length of stay, readmission status (yes/no).",
+      "explanation": "This option identifies the core attributes directly related to the patient's medical journey and outcome, which are critical for analyzing their relationships to readmission. The student must examine the problem's goal and distinguish relevant, direct attributes from extraneous or less direct factors.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-4",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-4",
+        "target_co_id": "CO-1",
+        "lilo_text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+        "score": 0.3063,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.523,
+          "content": 0.0286,
+          "jaccard": 0.0833
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 10,
+      "question": "A city's traffic management system collects continuous sensor readings (vehicle count, average speed) from various intersections. To analyze real-time traffic patterns and congestion relationships across the city, how should this data be abstracted into a structured matrix?",
+      "type": "multiple_choice",
+      "options": [
+        "A) A matrix where rows represent specific time intervals (e.g., 5-minute blocks), columns represent intersections, and cell values are average vehicle counts.",
+        "B) A list of unique vehicle license plates detected by sensors.",
+        "C) An unstructured text document containing raw, timestamped sensor logs.",
+        "D) A simple count of total vehicles passing through each intersection daily."
+      ],
+      "correct_answer": "A) A matrix where rows represent specific time intervals (e.g., 5-minute blocks), columns represent intersections, and cell values are average vehicle counts.",
+      "explanation": "This matrix structure effectively abstracts continuous sensor data into discrete, analyzable units that reveal temporal and spatial relationships for traffic patterns. The student must investigate how raw data can be categorized and structured to enable analysis of patterns and relationships, distinguishing this from less structured or overly aggregated options.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-4",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-4",
+        "target_co_id": "CO-1",
+        "lilo_text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+        "score": 0.3735,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.5727,
+          "content": 0.027,
+          "jaccard": 0.0588
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    }
+  ],
+  "enrichedLlos": [
+    {
+      "id": "LILO-4",
+      "text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+      "week": "2-3",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "key_concepts": [
+        "data abstraction",
+        "real-world data",
+        "structured matrices",
+        "item sets",
+        "attributes",
+        "relationships",
+        "data modeling",
+        "feature engineering"
+      ],
+      "enriched_text": "Abstract complex real-world data into structured formats like matrices and item sets, identifying relevant attributes, their data types, and the relationships between them, as a foundational step in data modeling and feature engineering.",
+      "graduate_attr": "GA1, GA2",
+      "co_suggestions": [],
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-5",
+      "text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+      "week": "2-3",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "key_concepts": [
+        "matrix transformation",
+        "data representation",
+        "data analysis",
+        "linear algebra",
+        "eigenvalues/vectors",
+        "singular value decomposition (svd)",
+        "principal component analysis (pca)",
+        "dimensionality reduction"
+      ],
+      "enriched_text": "Apply various matrix transformation techniques, such as Singular Value Decomposition (SVD) or Principal Component Analysis (PCA), to efficiently represent and analyze real-world data, enabling dimensionality reduction and feature extraction.",
+      "graduate_attr": "GA1, GA2",
+      "co_suggestions": [],
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-6",
+      "text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+      "week": "2-3",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "key_concepts": [
+        "sequence data",
+        "time series analysis",
+        "temporal patterns",
+        "trends",
+        "dependencies",
+        "seasonality",
+        "autocorrelation",
+        "forecasting"
+      ],
+      "enriched_text": "Analyze sequences of data using time series analysis techniques to identify temporal patterns, underlying trends, seasonal variations, and dependencies between data points, which is crucial for forecasting and understanding dynamic systems.",
+      "graduate_attr": "GA1, GA2",
+      "co_suggestions": [],
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-7",
+      "text": "Conduct network analysis on graph-structured data.",
+      "week": "2-3",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "key_concepts": [
+        "network analysis",
+        "graph-structured data",
+        "nodes",
+        "edges",
+        "centrality measures",
+        "community detection",
+        "pathfinding algorithms",
+        "network visualization"
+      ],
+      "enriched_text": "Conduct network analysis on graph-structured data by applying algorithms to identify key nodes using centrality measures, detect communities, and find optimal paths, enabling the understanding of complex relationships and structures.",
+      "graduate_attr": "GA1, GA2",
+      "co_suggestions": [],
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    }
+  ],
+  "courseOutcomes": [
+    {
+      "id": "CO-1",
+      "text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "ga_codes": [
+        "GA1",
+        "GA2"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "understand"
+    },
+    {
+      "id": "CO-2",
+      "text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply"
+    },
+    {
+      "id": "CO-3",
+      "text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "ga_codes": [
+        "GA1",
+        "GA3"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "evaluate"
+    },
+    {
+      "id": "CO-4",
+      "text": "Design end-to-end data mining solutions and communicate findings effectively, demonstrating ethical awareness, adaptability, and innovative thinking across interdisciplinary domains",
+      "ga_codes": [
+        "GA2",
+        "GA4",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "bloom_level": "create"
+    }
+  ],
+  "graduateAttributes": [],
+  "programOutcomes": [
+    {
+      "id": "PO1",
+      "text": "Apply knowledge of computing fundamentals, mathematics, science and domain knowledge appropriate for the computing specialization."
+    },
+    {
+      "id": "PO10",
+      "text": "Recognize the need and have the ability to engage in independent learning for continual development as a computing professional."
+    },
+    {
+      "id": "PO2",
+      "text": "Identify, analyze, formulate, research literature and solve complex computing problems reaching substantiated conclusions."
+    },
+    {
+      "id": "PO3",
+      "text": "Apply mathematical foundations, algorithmic principles and computer science theory in the modeling and design of computer-based systems."
+    },
+    {
+      "id": "PO4",
+      "text": "Demonstrate knowledge and understanding of information security issues in relation to the design, development and use of information systems."
+    },
+    {
+      "id": "PO5",
+      "text": "Design and evaluate solutions for complex computing problems with appropriate consideration for public health, safety and environmental factors."
+    },
+    {
+      "id": "PO6",
+      "text": "Create, select, adapt and apply appropriate techniques, resources and modern computing tools to complex computing activities."
+    },
+    {
+      "id": "PO7",
+      "text": "Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary settings."
+    },
+    {
+      "id": "PO8",
+      "text": "Communicate effectively with the computing community and with society at large about complex computing activities."
+    },
+    {
+      "id": "PO9",
+      "text": "Recognize the legal, social, ethical and professional issues involved in the utilization of computer technology."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "id": "CONTENT-1",
+      "week": "2-3",
+      "co_ids": [
+        "CO-1"
+      ],
+      "ilo_ids": [
+        "LILO-4",
+        "LILO-5",
+        "LILO-6",
+        "LILO-7"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA2"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    }
+  ]
+}

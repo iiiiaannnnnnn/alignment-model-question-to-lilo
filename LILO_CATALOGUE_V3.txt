@@ -1,0 +1,148 @@
+PRIME v3 LILO CATALOGUE - 120 OUTCOMES, PASTE ALONGSIDE THE SPEC
+Use these statements verbatim in the "lilo" field. Do not reword them.
+The "topic" value for each block is the heading shown.
+
+
+--- topic: Programming ---
+LILO-1    Explain variable scope and lifetime in imperative programs.
+LILO-2    Apply conditional logic to select program execution paths.
+LILO-3    Use functions with parameters and return values to decompose a program.
+LILO-4    Analyze common runtime errors and trace their causes in source code.
+LILO-5    Apply object-oriented encapsulation when designing program classes.
+LILO-6    Compare mutable and immutable data representations in application code.
+LILO-7    Use exception handling to manage predictable runtime failures.
+LILO-8    Analyze recursion by tracing base cases and recursive calls.
+LILO-9    Apply file input and output operations in a program.
+LILO-10   Explain how modules and packages organize reusable program components.
+
+--- topic: Data Structures ---
+LILO-11   Implement stack operations using an appropriate data structure.
+LILO-12   Implement queue operations for first-in-first-out processing.
+LILO-13   Compare arrays and linked lists for insertion, deletion, and access.
+LILO-14   Analyze binary search tree operations and their structural effects.
+LILO-15   Apply hash tables to support efficient key-based lookup.
+LILO-16   Compare graph representations using adjacency lists and matrices.
+LILO-17   Traverse trees using preorder, inorder, and postorder strategies.
+LILO-18   Apply priority queues to problems requiring ordered retrieval.
+LILO-19   Analyze how heap structure affects insertion and removal operations.
+LILO-20   Select an appropriate data structure based on workload requirements.
+
+--- topic: Algorithms ---
+LILO-21   Apply binary search to a sorted collection.
+LILO-22   Analyze the time complexity of common sorting algorithms.
+LILO-23   Compare breadth-first search and depth-first search for graph problems.
+LILO-24   Apply shortest-path algorithms to weighted network problems.
+LILO-25   Analyze algorithmic trade-offs between time and space complexity.
+LILO-26   Use divide-and-conquer to decompose a computational problem.
+LILO-27   Apply greedy strategies when local choices support a valid global solution.
+LILO-28   Analyze dynamic programming solutions using overlapping subproblems.
+LILO-29   Compare stable and unstable sorting algorithms for application requirements.
+LILO-30   Evaluate algorithm selection based on input size and constraints.
+
+--- topic: Databases ---
+LILO-31   Explain the role of primary and foreign keys in relational databases.
+LILO-32   Apply normalization principles to reduce data redundancy.
+LILO-33   Write SQL queries that filter and aggregate relational data.
+LILO-34   Analyze query results involving joins across related tables.
+LILO-35   Design a relational schema for a transaction-processing application.
+LILO-36   Compare relational and document-oriented database models.
+LILO-37   Apply indexing strategies to improve database query performance.
+LILO-38   Analyze transaction behavior using atomicity, consistency, isolation, and durability.
+LILO-39   Use constraints to preserve data integrity in a relational schema.
+LILO-40   Evaluate database design alternatives for scalability and maintainability.
+
+--- topic: Networking ---
+LILO-41   Explain the purpose of the OSI and TCP/IP networking models.
+LILO-42   Apply IPv4 subnetting to determine network and host ranges.
+LILO-43   Analyze routing-table information to determine packet paths.
+LILO-44   Compare TCP and UDP for application communication requirements.
+LILO-45   Explain how DNS resolves domain names into network addresses.
+LILO-46   Analyze common causes of packet loss and network latency.
+LILO-47   Apply VLAN concepts to segment traffic within a switched network.
+LILO-48   Compare static and dynamic routing approaches.
+LILO-49   Analyze NAT behavior when private hosts access external networks.
+LILO-50   Troubleshoot connectivity using systematic network diagnostic steps.
+
+--- topic: Cybersecurity ---
+LILO-51   Explain the difference between authentication and authorization.
+LILO-52   Apply least-privilege principles when designing access controls.
+LILO-53   Analyze phishing indicators in suspicious messages and links.
+LILO-54   Compare symmetric and asymmetric cryptography for security tasks.
+LILO-55   Apply secure password-storage practices using salted password hashes.
+LILO-56   Analyze common web vulnerabilities such as injection and cross-site scripting.
+LILO-57   Use multi-factor authentication to strengthen account security.
+LILO-58   Analyze security logs to identify suspicious activity patterns.
+LILO-59   Evaluate risk by considering threats, vulnerabilities, likelihood, and impact.
+LILO-60   Apply defense-in-depth strategies to protect information systems.
+
+--- topic: Artificial Intelligence ---
+LILO-61   Explain the difference between supervised and unsupervised learning.
+LILO-62   Apply feature preprocessing before training a machine-learning model.
+LILO-63   Analyze classification results using a confusion matrix.
+LILO-64   Compare precision, recall, and F1-score for model evaluation.
+LILO-65   Explain how neural-network layers transform input representations.
+LILO-66   Apply train-validation-test splitting to reduce evaluation bias.
+LILO-67   Analyze overfitting and underfitting in machine-learning models.
+LILO-68   Compare batch and stochastic gradient descent for model optimization.
+LILO-69   Evaluate model performance using an appropriate validation strategy.
+LILO-70   Explain how attention mechanisms support sequence modeling.
+
+--- topic: Data Science ---
+LILO-71   Apply descriptive statistics to summarize a dataset.
+LILO-72   Analyze missing data patterns before selecting an imputation strategy.
+LILO-73   Compare normalization and standardization for numerical features.
+LILO-74   Apply correlation analysis while recognizing its limitations.
+LILO-75   Analyze outliers and determine whether they represent errors or valid cases.
+LILO-76   Use feature engineering to construct informative model inputs.
+LILO-77   Interpret a confusion matrix for a binary classification problem.
+LILO-78   Evaluate regression performance using appropriate error metrics.
+LILO-79   Analyze clustering results using distance and cohesion concepts.
+LILO-80   Communicate analytical findings using appropriate data visualizations.
+
+--- topic: Web Development ---
+LILO-81   Explain how semantic HTML improves document structure and accessibility.
+LILO-82   Apply CSS layout techniques using Flexbox or Grid.
+LILO-83   Analyze client-server interactions in a web application.
+LILO-84   Use JavaScript events to create interactive user interfaces.
+LILO-85   Apply React component state to manage dynamic interface behavior.
+LILO-86   Explain how REST APIs expose resources through HTTP methods.
+LILO-87   Apply input validation to reduce invalid or unsafe web requests.
+LILO-88   Analyze browser storage mechanisms for appropriate application data.
+LILO-89   Compare server-side rendering and client-side rendering.
+LILO-90   Design a responsive interface that adapts to different screen sizes.
+
+--- topic: Software Engineering ---
+LILO-91   Explain the purpose of software requirements and acceptance criteria.
+LILO-92   Apply version-control workflows when collaborating on source code.
+LILO-93   Analyze software defects using reproducible bug reports.
+LILO-94   Compare unit, integration, and system testing.
+LILO-95   Apply continuous integration practices to automated software builds.
+LILO-96   Analyze code complexity and identify opportunities for refactoring.
+LILO-97   Compare Agile and plan-driven approaches for project contexts.
+LILO-98   Apply design principles to improve modularity and maintainability.
+LILO-99   Evaluate software quality using functional and non-functional requirements.
+LILO-100  Explain how code review improves software reliability and maintainability.
+
+--- topic: Cloud & DevOps ---
+LILO-101  Explain the role of virtualization in cloud computing.
+LILO-102  Apply containerization concepts when packaging an application.
+LILO-103  Analyze logs and metrics to diagnose a deployed service.
+LILO-104  Compare virtual machines and containers for workload isolation.
+LILO-105  Apply infrastructure-as-code concepts to reproducible environments.
+LILO-106  Explain how continuous deployment changes the software delivery process.
+LILO-107  Analyze autoscaling behavior under changing application load.
+LILO-108  Compare managed and self-hosted cloud services for operational trade-offs.
+LILO-109  Apply secrets management practices in cloud deployments.
+LILO-110  Evaluate cloud architecture choices for reliability, cost, and scalability.
+
+--- topic: Emerging Technologies ---
+LILO-111  Explain how edge computing reduces latency for distributed applications.
+LILO-112  Compare centralized cloud processing with edge processing.
+LILO-113  Analyze blockchain consensus as a mechanism for shared state.
+LILO-114  Explain how Internet of Things devices communicate with cloud services.
+LILO-115  Apply digital-twin concepts to monitor a physical system.
+LILO-116  Analyze privacy and governance considerations for generative AI systems.
+LILO-117  Compare retrieval-augmented generation with direct language-model prompting.
+LILO-118  Evaluate AI-agent architectures based on tool use, planning, and control.
+LILO-119  Explain the role of multimodal models in combining text and visual inputs.
+LILO-120  Analyze responsible-AI risks involving bias, transparency, and misuse.

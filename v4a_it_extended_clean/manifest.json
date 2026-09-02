@@ -1,0 +1,49 @@
+{
+  "schema_version": "PRIME-V4A-IT-EXTENDED-CLEAN-2.0",
+  "seed": 20260830,
+  "status": "TRAINING-READY WEAK SUPERVISION; NOT PROFESSOR GROUND TRUTH",
+  "counts": {
+    "train_questions": 1010,
+    "validation_questions": 192,
+    "train_pairs": 7097,
+    "validation_pairs": 1920,
+    "train_positive_pairs": 1010,
+    "train_negative_pairs": 6087,
+    "train_questions_by_source": {
+      "it_cs_v4": 768,
+      "prime_tload_revised_train": 72,
+      "prime_data_mining_train": 170
+    },
+    "train_pairs_by_source": {
+      "it_cs_v4": 6144,
+      "prime_tload_revised_train": 288,
+      "prime_data_mining_train": 665
+    },
+    "removed_json_benchmark_questions": 135,
+    "reserved_json_benchmark_questions": 197,
+    "reserved_json_benchmark_train_matches": 0,
+    "reserved_isu_questions": 80,
+    "reserved_isu_train_matches": 0,
+    "normalized_train_validation_overlap": 0
+  },
+  "correction": "V1 included 135 of the 197 seven-JSON benchmark questions. V2 removes those complete question groups; do not use V1 seven-JSON aggregate metrics as independent evidence.",
+  "excluded": [
+    "All 197 questions from the seven saved Data Mining JSON exports",
+    "All 80 reserved ISU professor-test questions and their labels",
+    "V4 validation questions from training",
+    "TLOAD validation and synthetic-test questions",
+    "PRIME Data Mining validation questions",
+    "CHEM 31A evaluation data",
+    "Deprecated 9,000-row template corpus"
+  ],
+  "warning": "Weak supervision cannot establish educational alignment accuracy. Final claims require blind professor labels.",
+  "sha256": {
+    "train.jsonl": "da871b07e5ad03d7f3f4f8a2f476f7b5ac37674d9e85a9761bc0723fc155c7e1",
+    "validation.jsonl": "199138f331c084e94b914d374b0e49d390e8ffcb88a90a20f1b2c0d375beba43",
+    "generated_questions/train_questions.jsonl": "1d240a5e712d0cb72e0da7d4c41216b4c192589940b9e62d2a87aec2e1f92650",
+    "generated_questions/validation_questions.jsonl": "f0b62ce4b31d6be3fc5fa22b422d2f9dfd8c4af2a982cd4c18fdbf700a87d5d4",
+    "blind_holdout_registry.json": "7b6b062a72461cdfb49166f108acbdc3c44499c540ddbeca4c10dc410ba7251e",
+    "json_benchmark_holdout_registry.json": "a3c9452e45acb88070b6f519980468dc841af232a697085d2074e9fef3e1cc47",
+    "training_config.json": "23d9c7be9364337267f639cfce638bd27cfe51fac317d57d3711edce4a639472"
+  }
+}

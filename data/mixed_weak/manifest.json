@@ -1,0 +1,24 @@
+{
+  "prime": {
+    "files": 19,
+    "questions": 432,
+    "skipped": 50
+  },
+  "openstax": {
+    "questions": 1711,
+    "objectives": 306
+  },
+  "rows": {
+    "prime_train": 1205,
+    "prime_validation": 508,
+    "openstax_train": 11634,
+    "openstax_validation": 3294,
+    "mixed_train": 12839,
+    "mixed_validation": 3802
+  },
+  "warnings": [
+    "PRIME source_ilo_id is generation provenance, not independent human annotation.",
+    "OpenStax labels are subchapter objective groups, not exact per-question LILO annotations.",
+    "CHEM 31A human labels are excluded from all training output."
+  ]
+}

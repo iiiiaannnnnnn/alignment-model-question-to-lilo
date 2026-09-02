@@ -1,0 +1,70 @@
+{
+  "counts": {
+    "accepted_questions": 102,
+    "catalog_lilos": 240,
+    "distinctive_payloads_reviewed": 120,
+    "pairs_by_split": {
+      "synthetic_test": 60,
+      "train": 288,
+      "validation": 60
+    },
+    "pairs_total": 408,
+    "questions_by_domain": {
+      "Algorithms": 9,
+      "Artificial Intelligence and Machine Learning": 8,
+      "Cloud and Distributed Systems": 9,
+      "Cybersecurity": 8,
+      "Data Science and Data Mining": 9,
+      "Data Structures": 9,
+      "Databases": 8,
+      "Networking": 9,
+      "Operating Systems": 8,
+      "Programming Fundamentals": 8,
+      "Software Engineering": 9,
+      "Web Development": 8
+    },
+    "questions_by_split": {
+      "synthetic_test": 15,
+      "train": 72,
+      "validation": 15
+    },
+    "rejected_payloads": 18,
+    "rejections_by_domain": {
+      "Algorithms": 1,
+      "Artificial Intelligence and Machine Learning": 2,
+      "Cloud and Distributed Systems": 1,
+      "Cybersecurity": 2,
+      "Data Science and Data Mining": 1,
+      "Data Structures": 1,
+      "Databases": 2,
+      "Networking": 1,
+      "Operating Systems": 2,
+      "Programming Fundamentals": 2,
+      "Software Engineering": 1,
+      "Web Development": 2
+    },
+    "source_questions_read": 2400,
+    "verified_questions": 102
+  },
+  "output": "C:\\Users\\Jericho Mico\\Downloads\\prime_tload_v2_dataset\\prime_tload_revised",
+  "schema_version": "PRIME-TLOAD-REVISED-1.0",
+  "seed": 20260830,
+  "sha256": {
+    "catalog/lilos.jsonl": "7db40a70bb6dbd94f8aa3504c7ed1efe1067ffaa1ddae5c578e3c50f2668443e",
+    "pairs/synthetic_test.jsonl": "6684423c9e2a09dd93eb41dbf87dc51995b6950c2eeb2f0487b452e87130277d",
+    "pairs/train.jsonl": "bbfac2fee2fe19fad5010e477fa8eaf8809f5e90641d30519895bf25c9eab766",
+    "pairs/validation.jsonl": "7b4b118c706f4a3fc6200d1a55b9677fb9eefd9c4c115bdd66eafa1ed0eda4ca",
+    "questions/questions.jsonl": "2f31854717225266ebc716ef237b85e5c65c977e8e5b7d7dab3f60568485316f",
+    "rejected/rejected_questions.jsonl": "e49b96be72f84ba909371872bee10ecb91a54561b07370480d249e7c6830e150",
+    "verification/verified_questions.jsonl": "1f7fe6b1487e43f0906acfade1b66af3cbf0668f4c4dd6be5caa775af0e82a91"
+  },
+  "source": "C:\\Users\\Jericho Mico\\Downloads\\prime_tload_v2_dataset\\prime_tload_v2",
+  "split_rules": {
+    "candidate_rule": "each question has one target, two manually curated same-domain train-LILO negatives, and one unrelated cross-domain train-LILO negative",
+    "catalog_split_rule": "used targets carry their assigned split; unused catalog objectives are train negative-only candidates; held-out objectives are positive-only",
+    "method": "deterministic domain-stratified assignment in source-payload order; all questions sharing a target are kept together",
+    "target_isolation": "validation and synthetic-test target LILOs never occur as candidates in train pairs"
+  },
+  "status": "TRAINING-READY PILOT WEAK SUPERVISION; NOT GROUND TRUTH",
+  "warning": "AI-reviewed weak supervision, not human gold. The salvage mapping, answers, rationales, and negative choices were reviewed by one AI and were not independently or human verified."
+}

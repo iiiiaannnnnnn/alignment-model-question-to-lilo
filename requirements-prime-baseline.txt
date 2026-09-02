@@ -1,0 +1,5 @@
+# Needed only to import and run baseline/app/utils/alignment_model.py itself.
+# In Colab, copy these PRIME modules beside this workspace or add the PRIME
+# backend to PYTHONPATH. The default reranker scripts do not import them.
+-r requirements-colab.txt
+keybert==0.9.0

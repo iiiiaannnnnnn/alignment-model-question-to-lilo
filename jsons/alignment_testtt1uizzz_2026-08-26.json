@@ -1,0 +1,2303 @@
+{
+  "exportedAt": "2026-08-26T08:52:07.872Z",
+  "assessment": {
+    "title": "testtt1uizzz",
+    "topic": "Lecture 5 Mining Image Data (1) · Lecture 4 Mining Text Data (1)",
+    "type": "quiz",
+    "difficulty": "medium",
+    "createdAt": "2026-08-26T08:50:28.775Z"
+  },
+  "stats": {
+    "total": 40,
+    "matched": 40,
+    "questionsTagged": 40,
+    "selectedLilos": 7,
+    "selectedLilosCovered": 7,
+    "uncoveredLiloIds": [],
+    "sourceLilos": 7,
+    "sourceLilosCovered": 7,
+    "sourceTagMismatches": 0,
+    "semanticSourceMismatches": 14,
+    "missingSourceLiloIds": [],
+    "bloomAligned": 13,
+    "avgBloomProximity": 0.75,
+    "bloomGapHistogram": {
+      "0": 13,
+      "1": 7,
+      "2": 2,
+      "-2": 7,
+      "-1": 9,
+      "-3": 2
+    },
+    "bloomGapNotMeasured": 0,
+    "bloomAboveCeiling": 4,
+    "validBloomEvidence": 13,
+    "avgAlignmentScore": 0.423
+  },
+  "questions": [
+    {
+      "index": 1,
+      "question": "To develop a system for automatically tagging animal species in wildlife camera trap images, a deep learning engineer trains a CNN. Which core CNN operation primarily enables the model to automatically learn and extract relevant visual characteristics, such as fur patterns or horn shapes, from raw pixel data?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Convolutional layers applying filters to generate feature maps.",
+        "B) Pooling layers reducing spatial dimensions and computational load.",
+        "C) Fully connected layers classifying the extracted features.",
+        "D) Activation functions introducing non-linearity to the network."
+      ],
+      "correct_answer": "A) Convolutional layers applying filters to generate feature maps.",
+      "explanation": "Convolutional layers are fundamental for feature extraction in CNNs, learning hierarchical visual patterns by applying various filters across the input image to produce feature maps.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-20",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-20",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in image recognition, identifying objects and features using deep learning.",
+        "score": 0.4179,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6636,
+          "jaccard": 0.0484,
+          "content": 0.0638,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 2,
+      "question": "A security company wants to monitor multiple unauthorized objects entering a restricted zone in real-time. Which deep learning technique should they apply to simultaneously identify and pinpoint the exact locations of these objects in live video feeds?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Image Classification",
+        "B) Image-to-Text Generation",
+        "C) Object Detection",
+        "D) Feature Extraction"
+      ],
+      "correct_answer": "C) Object Detection",
+      "explanation": "Object detection is the appropriate technique as it not only identifies what objects are present (recognition) but also locates them within the image using bounding boxes, which is crucial for monitoring multiple unauthorized objects.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-20",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-20",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in image recognition, identifying objects and features using deep learning.",
+        "score": 0.4635,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5341,
+          "jaccard": 0.0492,
+          "content": 0.0889,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 3,
+      "question": "A medical imaging system needs to determine if a patient's X-ray shows 'Pneumonia' or 'No Pneumonia.' Which specific deep learning task is being applied here to assign the entire image to one of the predefined health categories?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Object Detection",
+        "B) Image Classification",
+        "C) Image Segmentation",
+        "D) Image-to-Text Generation"
+      ],
+      "correct_answer": "B) Image Classification",
+      "explanation": "Image classification involves assigning a single label or category to an entire image, which perfectly matches the task of categorizing an X-ray as either 'Pneumonia' or 'No Pneumonia'.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-20",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-20",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in image recognition, identifying objects and features using deep learning.",
+        "score": 0.5082,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6161,
+          "jaccard": 0.0678,
+          "content": 0.1163,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 4,
+      "question": "A small startup needs to build an image recognition model for a highly specialized dataset (e.g., rare plant diseases) but has limited computational resources and data. Which deep learning strategy should they prioritize to achieve good performance quickly?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Training a CNN from scratch with a very deep architecture.",
+        "B) Applying a pre-trained CNN model and fine-tuning it on their specific dataset.",
+        "C) Developing a custom feature engineering pipeline using traditional computer vision methods.",
+        "D) Increasing the complexity of their dataset through extensive manual labeling."
+      ],
+      "correct_answer": "B) Applying a pre-trained CNN model and fine-tuning it on their specific dataset.",
+      "explanation": "Transfer learning, by fine-tuning a pre-trained CNN, is highly effective for specialized datasets with limited data and resources. It leverages features learned from large general datasets, adapting them to the new specific task.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-20",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-20",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in image recognition, identifying objects and features using deep learning.",
+        "score": 0.4094,
+        "bloom_level": "evaluate",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 2,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.5886,
+          "jaccard": 0.1207,
+          "content": 0.1364,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 5,
+      "question": "When developing a deep learning model to differentiate between various types of industrial defects on a manufacturing line, a data scientist uses a CNN. How does the CNN effectively learn increasingly complex visual features like cracks or discolorations from simple edge detections?",
+      "type": "multiple_choice",
+      "options": [
+        "A) By stacking multiple convolutional layers, where deeper layers combine simpler features from shallower layers.",
+        "B) By increasing the learning rate exponentially during training.",
+        "C) By applying only max pooling layers throughout the network.",
+        "D) By using a single, very large convolutional filter across the entire image."
+      ],
+      "correct_answer": "A) By stacking multiple convolutional layers, where deeper layers combine simpler features from shallower layers.",
+      "explanation": "The hierarchical nature of CNNs, with multiple stacked convolutional layers, allows them to build increasingly complex feature representations. Deeper layers learn to combine and interpret the simpler features (like edges and corners) extracted by shallower layers to identify more abstract patterns (like cracks or textures).",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-20",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-20",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in image recognition, identifying objects and features using deep learning.",
+        "score": 0.4391,
+        "bloom_level": "analyze",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5807,
+          "jaccard": 0.069,
+          "content": 0.093,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 6,
+      "question": "An autonomous drone needs to identify if a specific target building is present in an aerial image, and if so, draw a bounding box around it. Which deep learning technique combines both identification and localization for this task?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Image Recognition",
+        "B) Image Classification",
+        "C) Object Detection",
+        "D) Feature Extraction"
+      ],
+      "correct_answer": "C) Object Detection",
+      "explanation": "Object detection is the correct technique because it performs both the identification of the object (the target building) and its localization within the image by drawing a bounding box around it. Image recognition only identifies what is in the image, without location.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-20",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-20",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in image recognition, identifying objects and features using deep learning.",
+        "score": 0.4796,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5598,
+          "jaccard": 0.069,
+          "content": 0.093,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-21",
+          "lilo_text": "Apply object detection techniques for localizing objects within images.",
+          "score": 0.5108,
+          "margin": 0.0311
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 7,
+      "question": "A research team wants to uncover hidden thematic structures within a large corpus of historical government documents without any prior knowledge of specific categories. Which NLP technique should they apply to achieve this unsupervised discovery?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Latent Dirichlet Allocation (LDA)",
+        "B) Supervised Text Classification",
+        "C) Named Entity Recognition (NER)",
+        "D) Part-of-Speech (POS) Tagging"
+      ],
+      "correct_answer": "A) Latent Dirichlet Allocation (LDA)",
+      "explanation": "LDA is an unsupervised topic modeling algorithm specifically designed to discover hidden themes or topics in a collection of documents without requiring any pre-defined labels or categories.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-17",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-17",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+        "score": 0.4022,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4351,
+          "jaccard": 0.0159,
+          "content": 0.0213,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 8,
+      "question": "After running an LDA model on student feedback, one topic prominently features the keywords: 'exam, quiz, grade, assignment'. How should an analyst apply domain knowledge to effectively interpret and name this discovered topic?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Assign it a generic label like 'Topic 1'.",
+        "B) Label it as 'Assessment and Evaluation'.",
+        "C) Remove this topic as the words are too common.",
+        "D) Use these words to create a dictionary for sentiment analysis."
+      ],
+      "correct_answer": "B) Label it as 'Assessment and Evaluation'.",
+      "explanation": "Interpreting LDA topics involves using the dominant keywords associated with a topic and applying human domain knowledge to assign a meaningful, descriptive label to the underlying theme.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-17",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-17",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+        "score": 0.374,
+        "bloom_level": "evaluate",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 2,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.5855,
+          "jaccard": 0.0169,
+          "content": 0.0476,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-18",
+          "lilo_text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+          "score": 0.427,
+          "margin": 0.053
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 9,
+      "question": "A data scientist observes that their LDA model consistently assigns documents very strongly to only one or two topics, resulting in less diverse topic representation per document. To encourage documents to exhibit a more varied mixture of topics, which LDA parameter should be adjusted, and how?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Increase the value of Alpha (α).",
+        "B) Decrease the value of Alpha (α).",
+        "C) Increase the value of Beta (β).",
+        "D) Decrease the value of Beta (β)."
+      ],
+      "correct_answer": "A) Increase the value of Alpha (α).",
+      "explanation": "Increasing the Alpha (α) parameter encourages a document to be composed of a more diverse mixture of topics, making the document-topic distributions less sparse.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-17",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-17",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+        "score": 0.361,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5501,
+          "jaccard": 0.0333,
+          "content": 0.0455,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-19",
+          "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+          "score": 0.3621,
+          "margin": 0.0011
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 10,
+      "question": "Before applying LDA to a large dataset of customer reviews, a data engineer needs to prepare the text to improve the quality of topic extraction. What essential NLP preprocessing step should they perform to reduce noise and focus on meaningful content words?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Perform sentiment analysis on each review.",
+        "B) Apply stop word removal and lemmatization.",
+        "C) Translate all reviews into a single language.",
+        "D) Train a word embedding model like Word2Vec."
+      ],
+      "correct_answer": "B) Apply stop word removal and lemmatization.",
+      "explanation": "Preprocessing steps like removing common words (stop words) and reducing words to their base form (lemmatization) are crucial for LDA to identify meaningful topics by focusing on significant content words rather than noise.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-17",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-17",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+        "score": 0.4393,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.496,
+          "jaccard": 0.0317,
+          "content": 0.0652,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-19",
+          "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+          "score": 0.4871,
+          "margin": 0.0478
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 11,
+      "question": "An LDA model has been trained on a collection of news articles. The output includes a matrix where each row corresponds to a news article and each column represents a discovered topic, with the cell values indicating the probability that a given article belongs to a particular topic. What specific output component of LDA does this matrix represent?",
+      "type": "multiple_choice",
+      "options": [
+        "A) The topic-word distribution.",
+        "B) The document-topic distribution.",
+        "C) The overall vocabulary list.",
+        "D) The word co-occurrence matrix."
+      ],
+      "correct_answer": "B) The document-topic distribution.",
+      "explanation": "The document-topic distribution (or document-topic probabilities) is a key output of LDA, showing the proportion or probability of each topic within each document.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-17",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-17",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+        "score": 0.3887,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5089,
+          "jaccard": 0.0159,
+          "content": 0.0435,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-19",
+          "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+          "score": 0.3906,
+          "margin": 0.0019
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 12,
+      "question": "A content analysis firm needs to identify the primary themes present across thousands of research papers without having any pre-existing categories or labels. They want to explore the data to discover emergent topics. How should they apply LDA for this task?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Use LDA to classify papers into pre-defined categories.",
+        "B) Apply LDA in an unsupervised manner to discover latent topics.",
+        "C) Employ LDA to summarize individual research papers.",
+        "D) Utilize LDA to correct grammatical errors in the papers."
+      ],
+      "correct_answer": "B) Apply LDA in an unsupervised manner to discover latent topics.",
+      "explanation": "LDA is an unsupervised topic modeling technique that is applied to discover hidden or latent themes within a collection of documents without the need for pre-existing labels, making it suitable for exploratory content analysis.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-17",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-17",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+        "score": 0.4851,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.597,
+          "jaccard": 0.0156,
+          "content": 0.0889,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-19",
+          "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+          "score": 0.4965,
+          "margin": 0.0114
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 13,
+      "question": "A smart surveillance system requires real-time identification and localization of unauthorized objects entering a restricted area. Which object detection approach would you primarily apply for minimal latency?",
+      "type": "multiple_choice",
+      "options": [
+        "A) YOLO (You Only Look Once)",
+        "B) R-CNN",
+        "C) Image Classification",
+        "D) Feature Extraction without detection"
+      ],
+      "correct_answer": "A) YOLO (You Only Look Once)",
+      "explanation": "YOLO (You Only Look Once) is a single-shot detector known for its speed and efficiency, making it highly suitable for real-time applications requiring minimal latency in localizing objects.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-21",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-21",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply object detection techniques for localizing objects within images.",
+        "score": 0.4764,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5666,
+          "jaccard": 0.0727,
+          "content": 0.0455,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 14,
+      "question": "After applying an object detection model, the output for a detected car includes coordinates (x1, y1, x2, y2). What does this set of values directly enable?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Calculating the car's speed.",
+        "B) Localizing the car within the image.",
+        "C) Determining the car's color.",
+        "D) Classifying the image as containing a vehicle."
+      ],
+      "correct_answer": "B) Localizing the car within the image.",
+      "explanation": "The coordinates (x1, y1, x2, y2) define a bounding box, which precisely localizes the detected object (the car) by indicating its position and extent within the image.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-21",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-21",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply object detection techniques for localizing objects within images.",
+        "score": 0.3457,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4041,
+          "jaccard": 0.0351,
+          "content": 0.0455,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 15,
+      "question": "To localize a specific object, an object detection model first processes an input image through several convolutional layers. What is the primary function of these layers in this context?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Generating a single class label for the entire image.",
+        "B) Extracting meaningful features to represent potential objects.",
+        "C) Directly predicting bounding box coordinates without further steps.",
+        "D) Upscaling the image resolution for better visibility."
+      ],
+      "correct_answer": "B) Extracting meaningful features to represent potential objects.",
+      "explanation": "Convolutional layers within an object detection pipeline are primarily responsible for extracting hierarchical features from the input image, which are then used by subsequent layers to localize and classify objects.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-21",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-21",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply object detection techniques for localizing objects within images.",
+        "score": 0.3806,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5605,
+          "jaccard": 0.0909,
+          "content": 0.0682,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 16,
+      "question": "An agricultural system needs to count the number of diseased leaves on individual plants in an image and highlight their exact positions. Which computer vision task would you apply?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Image Classification",
+        "B) Image Recognition",
+        "C) Object Detection",
+        "D) Image-to-Text Generation"
+      ],
+      "correct_answer": "C) Object Detection",
+      "explanation": "Object detection is required because the system needs to both identify (diseased leaves) and locate (highlight exact positions) multiple objects within the image, which goes beyond simple image classification or recognition.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-21",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-21",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply object detection techniques for localizing objects within images.",
+        "score": 0.4386,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5074,
+          "jaccard": 0.0172,
+          "content": 0.0455,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-23",
+          "lilo_text": "Apply image mining to social sensing and medical diagnosis.",
+          "score": 0.4565,
+          "margin": 0.0179
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 17,
+      "question": "In a Faster R-CNN architecture, a Region Proposal Network (RPN) suggests potential object locations. How does the RPN contribute to localizing objects?",
+      "type": "multiple_choice",
+      "options": [
+        "A) It directly classifies the objects within the image.",
+        "B) It generates candidate bounding boxes (region proposals) for further processing.",
+        "C) It performs a final regression to refine bounding box coordinates.",
+        "D) It extracts global image features for overall scene understanding."
+      ],
+      "correct_answer": "B) It generates candidate bounding boxes (region proposals) for further processing.",
+      "explanation": "The Region Proposal Network (RPN) in Faster R-CNN generates a set of preliminary bounding box proposals, identifying potential object locations that are then refined and classified by subsequent stages.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-21",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-21",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply object detection techniques for localizing objects within images.",
+        "score": 0.3571,
+        "bloom_level": "analyze",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4379,
+          "jaccard": 0.0169,
+          "content": 0.0444,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-18",
+          "lilo_text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+          "score": 0.3571,
+          "margin": 0
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 18,
+      "question": "After an initial region proposal, an object detection model applies bounding box regression. What is the direct purpose of this step in localizing objects?",
+      "type": "multiple_choice",
+      "options": [
+        "A) To assign a confidence score to the detected object.",
+        "B) To classify the object within the proposed region.",
+        "C) To refine and adjust the coordinates of the proposed bounding box.",
+        "D) To extract more abstract features from the image."
+      ],
+      "correct_answer": "C) To refine and adjust the coordinates of the proposed bounding box.",
+      "explanation": "Bounding box regression is a crucial step that refines the initially proposed bounding box coordinates, making them more precise and accurate in localizing the object within the image.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-21",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-21",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply object detection techniques for localizing objects within images.",
+        "score": 0.3386,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4707,
+          "jaccard": 0.0862,
+          "content": 0.0638,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 19,
+      "question": "An LDA model analyzing customer reviews generates Topic X: ['price', 'cost', 'expensive', 'discount'] and Topic Y: ['shipping', 'delivery', 'late', 'tracking']. A product manager interprets Topic X as 'Value Perception' and Topic Y as 'Logistics Issues'. Which analytical reasoning best supports this distinction?",
+      "type": "multiple_choice",
+      "options": [
+        "A) The keywords in Topic X primarily relate to monetary aspects, while Topic Y's keywords focus on the movement and timeliness of goods.",
+        "B) Topic X's keywords are all adjectives, whereas Topic Y's keywords are a mix of nouns and verbs.",
+        "C) The probability distribution of words in Topic X is wider than in Topic Y, indicating more diverse meanings.",
+        "D) Topic X represents a higher frequency of occurrence across all documents compared to Topic Y."
+      ],
+      "correct_answer": "A) The keywords in Topic X primarily relate to monetary aspects, while Topic Y's keywords focus on the movement and timeliness of goods.",
+      "explanation": "This analysis distinguishes the topics based on the semantic categories of their constituent keywords, aligning with the proposed interpretations of 'Value Perception' and 'Logistics Issues'.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-18",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-18",
+        "target_co_id": "CO-2",
+        "lilo_text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+        "score": 0.3923,
+        "bloom_level": "evaluate",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.5109,
+          "jaccard": 0.0312,
+          "content": 0.0408,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 20,
+      "question": "A data scientist observes that an LDA model, trained on a large corpus, consistently produces topics with highly overlapping keyword distributions and low interpretability. To address this, they decide to adjust the model's parameters. Which analytical approach to parameter adjustment is most likely to yield more distinct and focused topics?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Analyzing the effect of decreasing the alpha (α) parameter to encourage documents to be represented by fewer topics, making topics more distinct.",
+        "B) Increasing the beta (β) parameter to allow each topic to have a broader distribution over all words, increasing topic diversity.",
+        "C) Reducing the number of topics (K) significantly, forcing the model to merge similar themes into broader categories.",
+        "D) Increasing the total number of iterations for the Gibbs sampling algorithm, which primarily affects convergence speed, not topic separation directly."
+      ],
+      "correct_answer": "A) Analyzing the effect of decreasing the alpha (α) parameter to encourage documents to be represented by fewer topics, making topics more distinct.",
+      "explanation": "Decreasing alpha encourages documents to be represented by fewer topics, leading to more specialized topics with less overlap and higher distinction, which directly addresses the problem of overlapping and low interpretability.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-18",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-18",
+        "target_co_id": "CO-2",
+        "lilo_text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+        "score": 0.4239,
+        "bloom_level": "evaluate",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": true,
+        "score_breakdown": {
+          "cosine": 0.5952,
+          "jaccard": 0.0154,
+          "content": 0.02,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 21,
+      "question": "A research team is analyzing a corpus of scientific articles. They initially used LDA and found topics like 'cell, gene, therapy' and 'algorithm, data, learning'. They now want to differentiate between specific types of 'therapy' (e.g., gene therapy vs. drug therapy) within the 'cell, gene, therapy' topic. Which analytical limitation of LDA are they encountering, prompting a need for deeper investigation?",
+      "type": "multiple_choice",
+      "options": [
+        "A) LDA's unsupervised nature means it does not automatically assign granular sub-categories within a broader topic.",
+        "B) LDA's probabilistic approach inherently limits its ability to distinguish between closely related concepts.",
+        "C) The generative process of LDA is too simplistic to capture complex hierarchical relationships between words.",
+        "D) LDA requires labeled data to differentiate specific sub-topics effectively."
+      ],
+      "correct_answer": "A) LDA's unsupervised nature means it does not automatically assign granular sub-categories within a broader topic.",
+      "explanation": "LDA discovers hidden themes based on word co-occurrence but, being unsupervised, does not automatically delineate fine-grained sub-topics or assign explicit meaning beyond the keywords. Further analytical steps or different models are often needed for such granular distinctions.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-18",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-18",
+        "target_co_id": "CO-2",
+        "lilo_text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+        "score": 0.2925,
+        "bloom_level": "remember",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": false,
+        "bloom_gap": -3,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.532,
+          "jaccard": 0,
+          "content": 0.0208,
+          "bloom": 0.25
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-19",
+          "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+          "score": 0.3489,
+          "margin": 0.0563
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 22,
+      "question": "Consider a scenario where an LDA model consistently generates a topic represented by keywords like ['management', 'strategy', 'business', 'company', 'market']. A domain expert finds this topic to be too general and not particularly insightful. Which analytical conclusion best explains why this generic topic might arise and how it impacts interpretation?",
+      "type": "multiple_choice",
+      "options": [
+        "A) The preprocessing steps likely failed to remove highly frequent, domain-general terms that dilute topic specificity.",
+        "B) The chosen number of topics (K) was too low, forcing unrelated concepts into a single broad category.",
+        "C) The alpha (α) parameter was set too low, resulting in documents being assigned to too few topics, thus broadening topic scope.",
+        "D) The beta (β) parameter was too high, allowing words to be distributed too evenly across topics, reducing distinction."
+      ],
+      "correct_answer": "A) The preprocessing steps likely failed to remove highly frequent, domain-general terms that dilute topic specificity.",
+      "explanation": "Generic topics often arise when common, but not highly informative, words in a specific domain are not adequately filtered during preprocessing. These terms can dominate topics, making them broad and less interpretable, as LDA only analyzes patterns, not meaning.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-18",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-18",
+        "target_co_id": "CO-2",
+        "lilo_text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+        "score": 0.469,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5643,
+          "jaccard": 0.0462,
+          "content": 0.0392,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 23,
+      "question": "A data scientist has used LDA to model topics in a large collection of news articles. While the model identifies general themes, they are concerned that certain highly specific, technical terms within some documents are not forming distinct topics, but are instead spread across multiple broader topics. Which analytical consideration might lead them to explore advanced topic modeling techniques like NMF or LSA?",
+      "type": "multiple_choice",
+      "options": [
+        "A) The need to potentially represent topics and documents using direct matrix factorization, which might better isolate specific features than LDA's probabilistic approach.",
+        "B) The requirement for a supervised learning method to explicitly categorize documents into pre-defined technical themes.",
+        "C) The desire to reduce the dimensionality of the text data without directly inferring latent topics, to improve computational efficiency.",
+        "D) The observation that LDA is inherently biased against identifying specialized vocabulary in favor of common terms."
+      ],
+      "correct_answer": "A) The need to potentially represent topics and documents using direct matrix factorization, which might better isolate specific features than LDA's probabilistic approach.",
+      "explanation": "This analytical insight points to a conceptual difference: LDA's probabilistic model might blend specific terms into broader topics. Exploring techniques like NMF or LSA, which often rely on matrix factorization, could offer an alternative way to decompose the document-term matrix that might better isolate specific features or terms into distinct 'topics' (or components), addressing the concern about specific technical terms being spread.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-18",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-18",
+        "target_co_id": "CO-2",
+        "lilo_text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+        "score": 0.4927,
+        "bloom_level": "apply",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.7175,
+          "jaccard": 0.0323,
+          "content": 0.0889,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-17",
+          "lilo_text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+          "score": 0.4929,
+          "margin": 0.0003
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 24,
+      "question": "A team is analyzing student feedback using LDA. They notice that a topic related to 'course difficulty' includes keywords like ['challenging', 'hard', 'easy', 'simple']. Which analytical observation about these keywords is crucial for a meaningful interpretation of this topic?",
+      "type": "multiple_choice",
+      "options": [
+        "A) The topic contains both positive and negative sentiment words, requiring further analysis to understand the overall sentiment regarding difficulty.",
+        "B) The presence of antonyms indicates a poorly converged LDA model that needs more iterations.",
+        "C) The keywords are all adjectives, suggesting the topic is solely focused on descriptive attributes rather than actions.",
+        "D) The distribution of these words across documents is highly uniform, indicating a lack of specificity."
+      ],
+      "correct_answer": "A) The topic contains both positive and negative sentiment words, requiring further analysis to understand the overall sentiment regarding difficulty.",
+      "explanation": "Analyzing the sentiment of the keywords within a topic is essential for interpreting its meaning beyond just its literal words. The presence of both 'challenging/hard' and 'easy/simple' indicates that the topic captures discussions about difficulty across a spectrum, requiring further analysis to understand the prevailing sentiment or specific contexts.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-18",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-18",
+        "target_co_id": "CO-2",
+        "lilo_text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+        "score": 0.3165,
+        "bloom_level": "remember",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": false,
+        "bloom_gap": -3,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5621,
+          "jaccard": 0.0339,
+          "content": 0.0455,
+          "bloom": 0.25
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-19",
+          "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+          "score": 0.3488,
+          "margin": 0.0323
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 25,
+      "question": "A data scientist is preparing a corpus of customer reviews for topic modeling. After tokenization, what NLP technique should they apply next to improve LDA's topic discovery?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Remove stop words",
+        "B) Perform part-of-speech tagging",
+        "C) Convert to lowercase",
+        "D) Generate n-grams"
+      ],
+      "correct_answer": "A) Remove stop words",
+      "explanation": "Removing common stop words (e.g., 'the', 'is', 'a') is a crucial preprocessing step for LDA. It helps the model focus on more meaningful terms, leading to clearer and more coherent topics.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-19",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-19",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+        "score": 0.5142,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.65,
+          "jaccard": 0.0508,
+          "content": 0.0769,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 26,
+      "question": "To make each document in an LDA model express fewer, more specific topics, how should the alpha (α) parameter be adjusted?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Increase alpha",
+        "B) Decrease alpha",
+        "C) Keep alpha constant",
+        "D) Adjust beta instead"
+      ],
+      "correct_answer": "B) Decrease alpha",
+      "explanation": "Decreasing the alpha parameter encourages documents to have a sparser topic distribution, meaning each document will be composed of fewer dominant topics. This leads to more specific topics per document.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-19",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-19",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+        "score": 0.3898,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5162,
+          "jaccard": 0.0175,
+          "content": 0.027,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 27,
+      "question": "An LDA model on legal documents yields a topic with keywords: 'contract,' 'agreement,' 'party,' 'clause,' 'obligation.' How should this topic be interpreted?",
+      "type": "multiple_choice",
+      "options": [
+        "A) As a topic about 'Legal Agreements'",
+        "B) As a topic about 'Party Planning'",
+        "C) As a topic about 'Contract Negotiation Software'",
+        "D) As a topic about 'General Business Terms'"
+      ],
+      "correct_answer": "A) As a topic about 'Legal Agreements'",
+      "explanation": "Interpreting LDA topics requires human judgment based on the most probable keywords. The given keywords strongly co-occur in discussions related to legal agreements, making this the most appropriate interpretation.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-19",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-19",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+        "score": 0.3962,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.515,
+          "jaccard": 0.0339,
+          "content": 0.0513,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-17",
+          "lilo_text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+          "score": 0.3964,
+          "margin": 0.0001
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 28,
+      "question": "Which of the following real-world scenarios would best apply LDA for topic discovery?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Classifying emails as spam or not spam",
+        "B) Predicting the sentiment (positive/negative) of movie reviews",
+        "C) Discovering hidden themes in a collection of scientific abstracts",
+        "D) Translating text from English to Spanish"
+      ],
+      "correct_answer": "C) Discovering hidden themes in a collection of scientific abstracts",
+      "explanation": "LDA is an unsupervised method designed for discovering latent topics or hidden themes within a corpus of text. This aligns perfectly with the goal of exploring scientific abstracts without predefined labels.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-19",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-19",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+        "score": 0.555,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6881,
+          "jaccard": 0.0769,
+          "content": 0.2,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 29,
+      "question": "An LDA model on news articles produces broad topics with many uninformative words. What preprocessing step should be re-evaluated or applied more rigorously?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Tokenization",
+        "B) Stop word removal",
+        "C) Stemming",
+        "D) Document-term matrix creation"
+      ],
+      "correct_answer": "B) Stop word removal",
+      "explanation": "If topics are too broad and contain uninformative words, it often indicates that common words that don't contribute to specific topic meaning (stop words) were not adequately removed during preprocessing. More rigorous stop word filtering would improve topic clarity.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-19",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-19",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+        "score": 0.4262,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5908,
+          "jaccard": 0.0333,
+          "content": 0.0244,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 30,
+      "question": "After applying LDA to product reviews, a review has high probability (0.85) for Topic 1, with keywords: 'battery,' 'charge,' 'life,' 'hours.' What can be inferred about this review?",
+      "type": "multiple_choice",
+      "options": [
+        "A) The review primarily discusses battery performance",
+        "B) The review is highly positive",
+        "C) The review contains many grammatical errors",
+        "D) The review is unrelated to product features"
+      ],
+      "correct_answer": "A) The review primarily discusses battery performance",
+      "explanation": "A high probability for a specific topic indicates that the document strongly belongs to that topic. Given the keywords ('battery,' 'charge,' 'life,' 'hours'), it can be inferred that the review's primary content relates to battery performance.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-19",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-19",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+        "score": 0.3701,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.4635,
+          "jaccard": 0.0172,
+          "content": 0.0541,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-17",
+          "lilo_text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+          "score": 0.376,
+          "margin": 0.0059
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 31,
+      "question": "A deep learning model classifies an image of a handwritten digit as '8'. To understand which specific pixels in *that particular image* most influenced this classification, which interpretable method would you apply?",
+      "type": "multiple_choice",
+      "options": [
+        "A) LIME",
+        "B) Principal Component Analysis",
+        "C) K-Means Clustering",
+        "D) Gradient Descent"
+      ],
+      "correct_answer": "A) LIME",
+      "explanation": "LIME (Local Interpretable Model-agnostic Explanations) is applied to provide local, interpretable explanations for individual predictions, showing which features (pixels) contribute most to a specific classification decision.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-22",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-22",
+        "target_co_id": "CO-2",
+        "lilo_text": "Utilize interpretable models for image classification.",
+        "score": 0.5067,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6194,
+          "jaccard": 0.0851,
+          "content": 0.0732,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 32,
+      "question": "A Convolutional Neural Network (CNN) classifies a medical image as showing 'pneumonia.' To visually highlight the exact regions within the image that the CNN considered most important for this diagnosis, which technique should be utilized?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Grad-CAM",
+        "B) Support Vector Machines",
+        "C) Decision Trees",
+        "D) Random Forest"
+      ],
+      "correct_answer": "A) Grad-CAM",
+      "explanation": "Grad-CAM (Gradient-weighted Class Activation Mapping) is utilized to generate a visual heatmap, highlighting the specific regions in an input image that were most influential for a CNN's classification decision.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-22",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-22",
+        "target_co_id": "CO-2",
+        "lilo_text": "Utilize interpretable models for image classification.",
+        "score": 0.3534,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5327,
+          "jaccard": 0.0185,
+          "content": 0.0667,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": {
+          "lilo_id": "LILO-23",
+          "lilo_text": "Apply image mining to social sensing and medical diagnosis.",
+          "score": 0.3799,
+          "margin": 0.0265
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 33,
+      "question": "An image classifier incorrectly identifies a picture of a cat as a dog. Applying an interpretable model reveals that the classification was primarily based on the grassy background rather than the animal itself. What does this output *indicate* about the model's learning?",
+      "type": "multiple_choice",
+      "options": [
+        "A) The model has successfully generalized to new environments.",
+        "B) The model is overfitting to background features.",
+        "C) The model requires more complex architectures.",
+        "D) The model's training data was perfectly balanced."
+      ],
+      "correct_answer": "B) The model is overfitting to background features.",
+      "explanation": "The output indicates that the model is learning spurious correlations by relying on irrelevant background features rather than the actual object of interest, which is a sign of overfitting.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-22",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-22",
+        "target_co_id": "CO-2",
+        "lilo_text": "Utilize interpretable models for image classification.",
+        "score": 0.4172,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5378,
+          "jaccard": 0.0769,
+          "content": 0.0652,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 34,
+      "question": "To ensure a pre-trained image classification model for detecting manufacturing defects is robust and not relying on irrelevant artifacts, you need to identify which input features are driving its decisions. Which aspect of interpretable model output would you *analyze* to achieve this?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Model accuracy scores",
+        "B) Training time",
+        "C) Feature importance scores",
+        "D) Number of layers"
+      ],
+      "correct_answer": "C) Feature importance scores",
+      "explanation": "Analyzing feature importance scores from an interpretable model allows you to identify which parts of the input image are most influential in the model's classification decisions, helping to detect reliance on irrelevant features.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-22",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-22",
+        "target_co_id": "CO-2",
+        "lilo_text": "Utilize interpretable models for image classification.",
+        "score": 0.3947,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5933,
+          "jaccard": 0.0926,
+          "content": 0.0612,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 35,
+      "question": "A regulatory body demands that every 'approved' classification made by an automated image system for quality control must be accompanied by a clear, human-understandable explanation of *why* that specific image was approved. Which characteristic of interpretable models is being prioritized here for *application*?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Scalability",
+        "B) Computational efficiency",
+        "C) Decision rationale transparency",
+        "D) Training data size"
+      ],
+      "correct_answer": "C) Decision rationale transparency",
+      "explanation": "The demand for a clear, human-understandable explanation directly prioritizes decision rationale transparency, which is a core benefit and application of interpretable models.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-22",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-22",
+        "target_co_id": "CO-2",
+        "lilo_text": "Utilize interpretable models for image classification.",
+        "score": 0.4435,
+        "bloom_level": "analyze",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6054,
+          "jaccard": 0.0566,
+          "content": 0.0652,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 36,
+      "question": "A social media analytics firm wants to automatically categorize images uploaded during a public event into 'protest' or 'celebration'. Which image mining technique should they apply?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Image Classification",
+        "B) Object Detection",
+        "C) Image-to-Text Generation",
+        "D) Image Segmentation"
+      ],
+      "correct_answer": "A) Image Classification",
+      "explanation": "Image classification assigns a predefined category to an entire image, which directly applies to categorizing event photos based on their overall theme or content.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-23",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-23",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply image mining to social sensing and medical diagnosis.",
+        "score": 0.4225,
+        "bloom_level": "analyze",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.5489,
+          "jaccard": 0.0727,
+          "content": 0.0732,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 37,
+      "question": "A new AI system for radiology aims to precisely locate and identify malignant growths within lung CT scans. What image mining technique is most appropriate for this task?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Object Detection",
+        "B) Image Recognition",
+        "C) Image Classification",
+        "D) Image Filtering"
+      ],
+      "correct_answer": "A) Object Detection",
+      "explanation": "Object detection identifies objects and provides their precise location (bounding boxes), which is crucial for accurately locating growths in medical images.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-23",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-23",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply image mining to social sensing and medical diagnosis.",
+        "score": 0.4061,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.631,
+          "jaccard": 0.0545,
+          "content": 0.075,
+          "bloom": 0.5
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 38,
+      "question": "To monitor public health trends from social media, a system needs to identify and count instances of people wearing face masks in crowd photos. Which image mining technique would be applied?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Object Detection",
+        "B) Image-to-Text Generation",
+        "C) Image Classification",
+        "D) Semantic Segmentation"
+      ],
+      "correct_answer": "A) Object Detection",
+      "explanation": "Object detection allows for identifying and locating multiple instances of objects (e.g., face masks on individuals) within an image, enabling accurate counting and analysis in social sensing applications.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-23",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-23",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply image mining to social sensing and medical diagnosis.",
+        "score": 0.5165,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6489,
+          "jaccard": 0.0702,
+          "content": 0.0698,
+          "bloom": 1
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 39,
+      "question": "A team is developing an automated system to diagnose skin cancer from dermatoscopic images. What essential image mining step must be performed to prepare these images for a machine learning model?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Feature Extraction",
+        "B) Data Normalization",
+        "C) Image Compression",
+        "D) Image Resizing"
+      ],
+      "correct_answer": "A) Feature Extraction",
+      "explanation": "Feature extraction is the process of deriving meaningful characteristics and patterns from raw image data, which is crucial for a machine learning model to learn and make accurate diagnoses from medical images.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-23",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-23",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply image mining to social sensing and medical diagnosis.",
+        "score": 0.4599,
+        "bloom_level": "understand",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6124,
+          "jaccard": 0.1154,
+          "content": 0.075,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 40,
+      "question": "To analyze public sentiment during a crisis, a social media monitoring tool needs to automatically detect and categorize facial expressions (e.g., 'sad', 'angry') in uploaded images. Which image mining technique is most appropriate?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Image Classification",
+        "B) Image-to-Text Generation",
+        "C) Image Detection",
+        "D) Image Segmentation"
+      ],
+      "correct_answer": "A) Image Classification",
+      "explanation": "While face detection might precede it, image classification is the technique used to assign predefined categories like 'sad' or 'angry' to detected facial regions, enabling the categorization of expressions for social sensing.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-23",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-23",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply image mining to social sensing and medical diagnosis.",
+        "score": 0.4581,
+        "bloom_level": "analyze",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "format_ceiling": "analyze",
+        "bloom_above_ceiling": false,
+        "score_breakdown": {
+          "cosine": 0.6312,
+          "jaccard": 0.069,
+          "content": 0.0682,
+          "bloom": 0.75
+        },
+        "score_available": {
+          "cosine": true,
+          "jaccard": true,
+          "content": true,
+          "bloom": true
+        },
+        "semantic_best": null,
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    }
+  ],
+  "enrichedLlos": [
+    {
+      "id": "LILO-17",
+      "text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "latent dirichlet allocation (lda)",
+        "unsupervised topic modeling",
+        "natural language processing (nlp)",
+        "probabilistic graphical models",
+        "document-topic distributions",
+        "topic-word distributions",
+        "gibbs sampling",
+        "variational inference"
+      ],
+      "enriched_text": "Develop proficiency in using Latent Dirichlet Allocation (LDA) for unsupervised topic modeling in text data, understanding its probabilistic foundations, applying it to discover latent topics, and interpreting the resulting document-topic and topic-word distributions.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "9-10",
+      "topic_title": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA"
+    },
+    {
+      "id": "LILO-18",
+      "text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+      "bloom_level": "analyze",
+      "key_concepts": [
+        "latent dirichlet allocation (lda)",
+        "topic interpretation",
+        "topic analysis",
+        "topic coherence",
+        "topic perplexity",
+        "advanced topic modeling",
+        "non-negative matrix factorization (nmf)",
+        "latent semantic analysis (lsa)",
+        "model evaluation"
+      ],
+      "enriched_text": "Interpret and analyze the quality and coherence of topics generated by LDA, evaluating their meaningfulness and distinguishing characteristics, and explore advanced topic modeling techniques such as Non-negative Matrix Factorization (NMF) and Latent Semantic Analysis (LSA), comparing their underlying principles and applications.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "9-10",
+      "topic_title": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA"
+    },
+    {
+      "id": "LILO-19",
+      "text": "Apply LDA to real-world text data for topic discovery.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "latent dirichlet allocation (lda)",
+        "real-world text data",
+        "topic discovery",
+        "natural language processing (nlp)",
+        "text preprocessing (tokenization, stop words, stemming/lemmatization)",
+        "document-term matrix",
+        "hyperparameter tuning",
+        "model evaluation"
+      ],
+      "enriched_text": "Apply Latent Dirichlet Allocation (LDA) to real-world text data for effective topic discovery, involving necessary text preprocessing steps (tokenization, stop word removal, stemming/lemmatization), hyperparameter tuning, and interpreting the discovered latent topics within the context of the dataset.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "9-10",
+      "topic_title": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA"
+    },
+    {
+      "id": "LILO-20",
+      "text": "Develop advanced skills in image recognition, identifying objects and features using deep learning.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "image recognition",
+        "object detection",
+        "feature extraction",
+        "deep learning",
+        "convolutional neural networks (cnns)",
+        "transfer learning",
+        "data augmentation",
+        "model evaluation (precision, recall, f1-score)",
+        "computer vision"
+      ],
+      "enriched_text": "Develop advanced skills in image recognition and object detection, applying deep learning techniques such as Convolutional Neural Networks (CNNs) and transfer learning to identify objects and extract relevant features from images, including data preprocessing, model training, and performance evaluation.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "11-12",
+      "topic_title": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)"
+    },
+    {
+      "id": "LILO-21",
+      "text": "Apply object detection techniques for localizing objects within images.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "object detection",
+        "image localization",
+        "bounding box regression",
+        "convolutional neural networks (cnns)",
+        "region-based cnns (r-cnn, yolo, ssd)",
+        "feature extraction",
+        "non-maximum suppression (nms)",
+        "image classification"
+      ],
+      "enriched_text": "Apply various object detection techniques, such as R-CNN, YOLO, and SSD, for localizing and classifying multiple objects within images by predicting bounding boxes and class labels, utilizing concepts like feature extraction and Non-Maximum Suppression.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "11-12",
+      "topic_title": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)"
+    },
+    {
+      "id": "LILO-22",
+      "text": "Utilize interpretable models for image classification.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "interpretable ai (xai)",
+        "image classification",
+        "model interpretability",
+        "explainable models (lime, shap, grad-cam)",
+        "feature importance",
+        "decision rationale",
+        "model transparency"
+      ],
+      "enriched_text": "Utilize interpretable models and explainable AI techniques like LIME, SHAP, or Grad-CAM to classify images and provide transparent, human-understandable explanations for model predictions, focusing on feature importance and decision rationale.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "11-12",
+      "topic_title": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)"
+    },
+    {
+      "id": "LILO-23",
+      "text": "Apply image mining to social sensing and medical diagnosis.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "image mining",
+        "social sensing",
+        "medical diagnosis",
+        "feature extraction (image)",
+        "pattern recognition",
+        "machine learning for image analysis",
+        "image processing techniques",
+        "data integration"
+      ],
+      "enriched_text": "Apply image mining techniques, including feature extraction, pattern recognition, and machine learning algorithms, to extract meaningful insights from visual data in diverse domains such as social sensing for trend analysis and medical diagnosis for disease detection and prognosis.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "11-12",
+      "topic_title": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)"
+    }
+  ],
+  "courseOutcomes": [
+    {
+      "id": "CO-1",
+      "text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "bloom_level": "understand",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA2"
+      ]
+    },
+    {
+      "id": "CO-2",
+      "text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "bloom_level": "apply",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ]
+    },
+    {
+      "id": "CO-3",
+      "text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "bloom_level": "evaluate",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA3"
+      ]
+    },
+    {
+      "id": "CO-4",
+      "text": "Design end-to-end data mining solutions and communicate findings effectively, demonstrating ethical awareness, adaptability, and innovative thinking across interdisciplinary domains",
+      "bloom_level": "create",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA4",
+        "GA7"
+      ]
+    }
+  ],
+  "graduateAttributes": [],
+  "programOutcomes": [
+    {
+      "id": "PO1",
+      "text": "Apply knowledge of computing fundamentals, mathematics, science and domain knowledge appropriate for the computing specialization."
+    },
+    {
+      "id": "PO10",
+      "text": "Recognize the need and have the ability to engage in independent learning for continual development as a computing professional."
+    },
+    {
+      "id": "PO2",
+      "text": "Identify, analyze, formulate, research literature and solve complex computing problems reaching substantiated conclusions."
+    },
+    {
+      "id": "PO3",
+      "text": "Apply mathematical foundations, algorithmic principles and computer science theory in the modeling and design of computer-based systems."
+    },
+    {
+      "id": "PO4",
+      "text": "Demonstrate knowledge and understanding of information security issues in relation to the design, development and use of information systems."
+    },
+    {
+      "id": "PO5",
+      "text": "Design and evaluate solutions for complex computing problems with appropriate consideration for public health, safety and environmental factors."
+    },
+    {
+      "id": "PO6",
+      "text": "Create, select, adapt and apply appropriate techniques, resources and modern computing tools to complex computing activities."
+    },
+    {
+      "id": "PO7",
+      "text": "Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary settings."
+    },
+    {
+      "id": "PO8",
+      "text": "Communicate effectively with the computing community and with society at large about complex computing activities."
+    },
+    {
+      "id": "PO9",
+      "text": "Recognize the legal, social, ethical and professional issues involved in the utilization of computer technology."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "id": "CONTENT-1",
+      "topic_title": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA",
+      "learning_content": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA",
+      "week": "9-10",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "co_ids": [
+        "CO-2"
+      ],
+      "ilo_ids": [
+        "LILO-17",
+        "LILO-18",
+        "LILO-19"
+      ]
+    },
+    {
+      "id": "CONTENT-2",
+      "topic_title": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "learning_content": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "week": "11-12",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "co_ids": [
+        "CO-2"
+      ],
+      "ilo_ids": [
+        "LILO-20",
+        "LILO-21",
+        "LILO-22",
+        "LILO-23"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3501 @@
+{
+  "exportedAt": "2026-08-25T14:02:57.841Z",
+  "assessment": {
+    "title": "Final Exam",
+    "topic": "Lecture 9 Mining Behavior Data (1) · Lecture 8 Mining Big Data · Lecture 7 Mining Network Data (1) · Mining Time Series and Spatio Temporal Data (1) · Lecture 5 Mining Image Data (1) · Lecture 4 Mining Text Data (1) · Lecture 3 Mining Matrix Data · Lecture 2 Mining Item Sets · Lecture 1 Real World Data Formulation (1)",
+    "type": "exam",
+    "difficulty": "medium"
+  },
+  "stats": {
+    "total": 62,
+    "matched": 62,
+    "bloomAligned": 61,
+    "avgBloomProximity": 0.726,
+    "bloomGapHistogram": {},
+    "bloomGapNotMeasured": 62,
+    "bloomAboveCeiling": 0,
+    "validBloomEvidence": 61,
+    "avgAlignmentScore": 0.378
+  },
+  "questions": [
+    {
+      "index": 1,
+      "question": "A data scientist is preparing a high-dimensional dataset with 100 features for a machine learning model. To mitigate the curse of dimensionality and speed up training, they apply Principal Component Analysis (PCA). After computing the principal components, they obtain the following cumulative explained variance ratios: PC1: 30%, PC2: 55%, PC3: 75%, PC4: 88%, PC5: 95%, PC6: 98%. If the objective is to reduce the dimensionality while preserving at least 90% of the original data's variance, how many principal components should be selected?",
+      "type": "multiple_choice",
+      "options": [
+        "A) 4",
+        "B) 5",
+        "C) 6",
+        "D) 3"
+      ],
+      "correct_answer": "B) 5",
+      "explanation": "To preserve at least 90% of the original data's variance, one should select the minimum number of principal components whose cumulative explained variance ratio meets or exceeds this threshold. PC5 accounts for 95% cumulative explained variance, which is the first point at or above the 90% target.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-12",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-12",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop proficiency in using PCA for dimensionality reduction.",
+        "score": 0.4978,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6189,
+          "content": 0.0278,
+          "jaccard": 0.0755
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-3",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 2,
+      "question": "A marketing analytics team is tasked with identifying key themes from a vast collection of customer feedback comments to better understand product perceptions. They have preprocessed the text into a document-term matrix. To effectively uncover latent topics and reduce the high dimensionality for subsequent analysis, which specific application of Singular Value Decomposition (SVD) would be most appropriate?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Using SVD to factorize the document-term matrix into lower-dimensional matrices, thereby performing Latent Semantic Analysis (LSA) to extract underlying topics.",
+        "B) Applying SVD directly to calculate the average sentiment score for each customer comment.",
+        "C) Employing SVD to encrypt sensitive customer information within the document-term matrix for data security compliance.",
+        "D) Utilizing SVD to cluster customer comments based on the frequency of specific keywords without considering semantic relationships."
+      ],
+      "correct_answer": "A) Using SVD to factorize the document-term matrix into lower-dimensional matrices, thereby performing Latent Semantic Analysis (LSA) to extract underlying topics.",
+      "explanation": "This scenario describes a common text mining task where SVD is applied as the core mechanism for Latent Semantic Analysis (LSA). LSA uses SVD to decompose the document-term matrix, reducing its dimensionality while uncovering latent semantic relationships and topics within the text data, which is crucial for understanding product perceptions and noise reduction.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-13",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-13",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply Singular Value Decomposition (SVD) to data mining tasks.",
+        "score": 0.5063,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.7377,
+          "content": 0.0526,
+          "jaccard": 0.082
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-3",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 3,
+      "question": "A digital art gallery wants to analyze scanned historical paintings to identify recurring visual motifs (e.g., specific brushstrokes, color palettes) without prior labeling. Representing each painting as a matrix of pixel intensity values, they aim to decompose this complex image data into interpretable, non-negative components representing these motifs. Which matrix factorization technique should they apply?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Non-negative Matrix Factorization (NMF)",
+        "B) Principal Component Analysis (PCA)",
+        "C) Singular Value Decomposition (SVD)",
+        "D) Linear Discriminant Analysis (LDA)"
+      ],
+      "correct_answer": "A) Non-negative Matrix Factorization (NMF)",
+      "explanation": "NMF is ideal for decomposing non-negative data like pixel intensities into interpretable, parts-based representations, making it suitable for identifying visual motifs in images. Unlike PCA or SVD, NMF's non-negativity constraint ensures the components are meaningful in the context of image parts.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-14",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-14",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply Non-negative Matrix Factorization to decompose complex data.",
+        "score": 0.4974,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6122,
+          "content": 0.0556,
+          "jaccard": 0.0678
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-3",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 4,
+      "question": "A pharmaceutical research team has generated a microarray dataset comprising the expression levels of over 15,000 genes across 75 patient samples, categorized into three distinct disease subtypes. To gain an initial understanding of the most significant sources of variation in gene expression among these samples and to visually represent their overall relationships, which matrix data mining technique would be most appropriate to apply first?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Principal Component Analysis (PCA) to reduce dimensionality and project samples onto a lower-dimensional space.",
+        "B) Hierarchical Clustering to group genes based on their expression similarity across samples.",
+        "C) K-means Clustering to partition samples into a pre-defined number of clusters based on gene expression profiles.",
+        "D) Differential Expression Analysis to identify genes with statistically significant differences in expression between disease subtypes."
+      ],
+      "correct_answer": "A) Principal Component Analysis (PCA) to reduce dimensionality and project samples onto a lower-dimensional space.",
+      "explanation": "Principal Component Analysis (PCA) is ideal for identifying the principal sources of variation in high-dimensional data like microarray expression profiles and for visualizing overall sample relationships by projecting them into a reduced-dimensional space. While other methods are valuable, PCA serves as an excellent initial exploratory step for the stated goals.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-16",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-16",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply matrix data mining methods to analyze microarray data.",
+        "score": 0.5618,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.7644,
+          "content": 0,
+          "jaccard": 0.0893
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-3",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 5,
+      "question": "A precision manufacturing company aims to automate quality inspection of circuit boards. They require a system capable of accurately identifying and localizing various microscopic defects (e.g., solder anomalies, missing components) from high-resolution images. Given a limited dataset of defective boards but extensive data on correctly manufactured ones, which deep learning approach would be most appropriate to implement for this task?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Fine-tuning a pre-trained Convolutional Neural Network (CNN) model (e.g., Faster R-CNN or YOLO) using transfer learning on the limited defect dataset.",
+        "B) Training a simple feed-forward neural network from scratch on a dataset of pixel intensity values of the circuit board images.",
+        "C) Implementing Principal Component Analysis (PCA) for dimensionality reduction followed by a K-Nearest Neighbors (KNN) classifier.",
+        "D) Developing a custom Generative Adversarial Network (GAN) to generate more defective images for a larger training dataset before training a basic image classifier."
+      ],
+      "correct_answer": "A) Fine-tuning a pre-trained Convolutional Neural Network (CNN) model (e.g., Faster R-CNN or YOLO) using transfer learning on the limited defect dataset.",
+      "explanation": "This approach directly addresses the need for both object identification and localization (object detection) using advanced deep learning models like Faster R-CNN or YOLO. Transfer learning with a pre-trained CNN is ideal when target-specific data is limited, leveraging learned features and fine-tuning them for the specific defect detection task.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-20",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-20",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in image recognition, identifying objects and features using deep learning.",
+        "score": 0.469,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.5674,
+          "content": 0.0256,
+          "jaccard": 0.0492
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-5",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 6,
+      "question": "A large e-commerce company has collected thousands of customer feedback comments from product reviews and support tickets. To automatically identify the main underlying themes and concerns expressed by customers, they decide to apply Latent Dirichlet Allocation (LDA). After acquiring and loading this raw text data, what is the most appropriate sequence of steps to successfully apply LDA for topic discovery?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Perform text preprocessing (tokenization, stop-word removal, etc.), create a document-term matrix, and then execute the LDA algorithm to infer topic distributions.",
+        "B) Manually categorize a sample of reviews into predefined themes, then train a supervised classification model to label the remaining comments.",
+        "C) Summarize the frequency of the most common individual words to identify keywords directly related to product features.",
+        "D) Develop a neural network model to generate new, synthetic customer feedback comments that reflect positive sentiment."
+      ],
+      "correct_answer": "A) Perform text preprocessing (tokenization, stop-word removal, etc.), create a document-term matrix, and then execute the LDA algorithm to infer topic distributions.",
+      "explanation": "This sequence correctly outlines the necessary preprocessing steps to prepare real-world text data for LDA, followed by constructing the required document-term matrix, and finally applying the LDA algorithm to discover latent topics. This directly demonstrates the practical application of LDA.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-19",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-19",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply LDA to real-world text data for topic discovery.",
+        "score": 0.4854,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.7743,
+          "content": 0.0909,
+          "jaccard": 0.1167
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-4",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 7,
+      "question": "A smart city initiative aims to develop an autonomous traffic monitoring system that can identify and precisely locate various types of vehicles (cars, buses, motorcycles) within live camera feeds at complex intersections. To achieve this, which machine learning technique should be applied, and what specific information would it primarily output for each identified vehicle?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Object detection, providing bounding boxes, class labels (e.g., 'car', 'bus'), and confidence scores for each vehicle.",
+        "B) Image classification, yielding a single label describing the overall traffic condition (e.g., 'heavy traffic', 'light traffic').",
+        "C) Image recognition, listing the types of vehicles present (e.g., 'car, bus, motorcycle') without specific spatial coordinates.",
+        "D) Image segmentation, generating pixel-level masks for each vehicle but without identifying their specific class."
+      ],
+      "correct_answer": "A) Object detection, providing bounding boxes, class labels (e.g., 'car', 'bus'), and confidence scores for each vehicle.",
+      "explanation": "Object detection algorithms are specifically designed to both identify objects and localize them within an image using bounding boxes, along with providing class labels and confidence scores. This directly addresses the need for precise localization of multiple vehicle types for the autonomous traffic monitoring system.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-21",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-22",
+        "target_co_id": "CO-2",
+        "lilo_text": "Utilize interpretable models for image classification.",
+        "score": 0.3604,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.5617,
+          "content": 0,
+          "jaccard": 0.0385
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-5",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 8,
+      "question": "A data science team has applied Latent Dirichlet Allocation (LDA) to a large corpus of product reviews to identify recurring themes. After initial modeling, they observe that many topics are quite broad, with a high overlap of words across different topics, making precise interpretation challenging. To encourage the formation of more distinct and focused topics, which parameter adjustment should the team primarily consider, and what is its expected effect?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Decrease the alpha (α) value, which encourages documents to be composed of fewer topics, thereby making individual topics more discernible.",
+        "B) Increase the alpha (α) value, which encourages documents to be composed of more topics, potentially leading to more generic topics.",
+        "C) Decrease the beta (β) value, which encourages topics to be composed of a more concentrated set of words, leading to more specialized and distinct topics.",
+        "D) Increase the beta (β) value, which encourages topics to be composed of a wider range of words, potentially leading to broader and less distinct topics."
+      ],
+      "correct_answer": "C) Decrease the beta (β) value, which encourages topics to be composed of a more concentrated set of words, leading to more specialized and distinct topics.",
+      "explanation": "Decreasing the beta (β) parameter encourages a more concentrated topic-word distribution, meaning each topic will be strongly associated with a smaller, more specific set of words. This directly addresses the issue of broad topics and high word overlap, leading to more specialized and distinct topics. While decreasing alpha can also improve topic distinctiveness by making document-topic distributions sparser, decreasing beta directly refines the internal composition of topics.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-17",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-17",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+        "score": 0.4164,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.6708,
+          "content": 0.027,
+          "jaccard": 0.0526
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-4",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 9,
+      "question": "A medical imaging startup has developed a highly accurate Convolutional Neural Network (CNN) to classify benign vs. malignant skin lesions from dermatoscopic images. Before deploying the model for clinical use, doctors and regulatory bodies demand transparency, specifically needing to understand which specific pixels or regions in an image most strongly influenced the model's 'malignant' classification. Which of the following interpretable AI techniques should the data scientist *apply* to generate these explanations?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Apply LIME (Local Interpretable Model-agnostic Explanations) to generate local explanations by perturbing input images and observing model output.",
+        "B) Perform Principal Component Analysis (PCA) to reduce the dimensionality of the image features before classification.",
+        "C) Retrain the CNN with a simpler architecture like a Logistic Regression model for inherent interpretability.",
+        "D) Implement a standard image preprocessing pipeline including resizing and normalization."
+      ],
+      "correct_answer": "A) Apply LIME (Local Interpretable Model-agnostic Explanations) to generate local explanations by perturbing input images and observing model output.",
+      "explanation": "LIME is specifically designed to provide local explanations for individual predictions of complex models like CNNs, by highlighting the input features (e.g., super-pixels in images) that are most important for that prediction. This directly addresses the need to understand which image regions influenced the 'malignant' classification.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-22",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-22",
+        "target_co_id": "CO-2",
+        "lilo_text": "Utilize interpretable models for image classification.",
+        "score": 0.4893,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6078,
+          "content": 0.027,
+          "jaccard": 0.0588
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-5",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 10,
+      "question": "A medical research team aims to develop an automated system for radiologists to quickly identify and precisely delineate early-stage tumors within MRI scans. Considering the need to both detect and localize these anomalies, which image mining technique should the team primarily apply for this task?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Image Classification using a Convolutional Neural Network (CNN) to categorize scans as 'tumor' or 'no tumor'.",
+        "B) Object Detection using a Faster R-CNN model to generate bounding boxes around potential tumor regions.",
+        "C) Image-to-Text Generation to provide a natural language description of the MRI scan contents.",
+        "D) Principal Component Analysis (PCA) to reduce the dimensionality of the MRI scan data for easier storage."
+      ],
+      "correct_answer": "B) Object Detection using a Faster R-CNN model to generate bounding boxes around potential tumor regions.",
+      "explanation": "Object detection techniques, such as those employing Faster R-CNN, are specifically designed to identify and localize objects (like tumors) within an image by drawing bounding boxes. This directly fulfills the requirement to 'detect and precisely delineate regions' for medical diagnosis. Image classification would only indicate the presence or absence of a tumor without localization, while image-to-text generation and PCA serve different purposes.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-23",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-23",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply image mining to social sensing and medical diagnosis.",
+        "score": 0.5112,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6412,
+          "content": 0.0556,
+          "jaccard": 0.0714
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-5",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 11,
+      "question": "A global logistics company needs to continuously track the location and status of its entire fleet of delivery vehicles to provide customers with immediate, up-to-the-second delivery estimates and proactively reroute drivers around unexpected traffic incidents. This system requires processing millions of location updates per minute with sub-second latency. Which of the following approaches would best enable the company to process this continuous stream of data and provide real-time responses?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Implement an event-driven architecture utilizing a distributed message queue and a stream processing framework like Apache Flink or Kafka Streams.",
+        "B) Periodically poll a centralized relational database every five minutes for new vehicle location entries and run nightly batch analytics.",
+        "C) Store all vehicle location data in a data warehouse and execute hourly SQL queries to update delivery estimates.",
+        "D) Use traditional ETL processes to move data from operational systems to a reporting server once every hour."
+      ],
+      "correct_answer": "A) Implement an event-driven architecture utilizing a distributed message queue and a stream processing framework like Apache Flink or Kafka Streams.",
+      "explanation": "This approach directly applies advanced skills in real-time streaming data processing. An event-driven architecture with a distributed message queue and a stream processing framework is designed to handle continuous high-volume data streams with extremely low latency, meeting the sub-second requirement for immediate responses and proactive rerouting. Options B, C, and D describe batch processing or near-real-time solutions that would not satisfy the critical low-latency and real-time responsiveness demands of the scenario.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-32",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-32",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop advanced skills in processing streaming data in real-time.",
+        "score": 0.3379,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.4945,
+          "content": 0.027,
+          "jaccard": 0.0566
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-8",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 12,
+      "question": "A streaming service company collects millions of user comments daily from social media. To quickly identify prevailing themes and concerns without manual review, they need to apply a big data mining technique. Which technique is most appropriate to automatically discover hidden thematic patterns and categorize this unstructured social media feedback efficiently?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Apply Latent Dirichlet Allocation (LDA) to model topics from the comment text data.",
+        "B) Use Principal Component Analysis (PCA) on user browsing history to reduce dimensionality.",
+        "C) Implement Apriori algorithm on user purchase logs to find frequent itemsets.",
+        "D) Conduct sentiment analysis using a pre-trained dictionary to classify comments as positive or negative."
+      ],
+      "correct_answer": "A) Apply Latent Dirichlet Allocation (LDA) to model topics from the comment text data.",
+      "explanation": "Latent Dirichlet Allocation (LDA) is an unsupervised topic modeling technique specifically designed to discover hidden thematic patterns (topics) within large collections of unstructured text data, such as social media comments. This directly addresses the need to identify prevailing themes and concerns from the feedback. PCA, Apriori, and sentiment analysis serve different analytical purposes, with sentiment analysis classifying known labels rather than discovering hidden themes.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-35",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-35",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply big data mining to log files, social media, and query logs.",
+        "score": 0.2114,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.5587,
+          "content": 0.0278,
+          "jaccard": 0.0862
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 13,
+      "question": "A social media analytics firm needs to process petabytes of daily user posts to identify the frequency of specific keywords or hashtags for trending topic analysis. Given this big data challenge, how would the MapReduce framework be applied to efficiently count the occurrences of each unique keyword/hashtag?",
+      "type": "multiple_choice",
+      "options": [
+        "A) The Map phase would extract each keyword/hashtag from posts and emit (keyword/hashtag, 1). The Reduce phase would then group identical keywords/hashtags and sum their associated '1' values to produce (keyword/hashtag, total_count).",
+        "B) The Map phase would assign a unique ID to each post and emit (post_ID, keyword/hashtag). The Reduce phase would then group by post_ID and count the number of keywords within each individual post.",
+        "C) The Map phase would generate a hash for each keyword/hashtag and emit (hash_value, full_post_text). The Reduce phase would then apply Locality Sensitive Hashing (LSH) to group similar posts based on these hash values.",
+        "D) The Map phase would sort all keywords/hashtags alphabetically across all posts. The Reduce phase would then merge these sorted lists into a single, globally sorted list of all unique keywords/hashtags."
+      ],
+      "correct_answer": "A) The Map phase would extract each keyword/hashtag from posts and emit (keyword/hashtag, 1). The Reduce phase would then group identical keywords/hashtags and sum their associated '1' values to produce (keyword/hashtag, total_count).",
+      "explanation": "To count frequencies of items in a big dataset using MapReduce, the Map phase processes data in parallel, extracting each item (keyword/hashtag) and emitting it with a count of '1'. The Reduce phase then collects all '1's for identical keys and sums them to obtain the total count for each unique item, effectively applying the framework for distributed big data analysis.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-33",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-33",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply MapReduce to analyze and process big data.",
+        "score": 0.438,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.6219,
+          "content": 0,
+          "jaccard": 0.0408
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-8",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 14,
+      "question": "A large e-commerce company collects user behavior data, including 150 different features for each user (e.g., click patterns, view duration, purchase history). To build a predictive model for customer churn, they need to reduce the dimensionality of this dataset to improve model training speed and prevent overfitting, while retaining most of the variance. Which matrix transformation technique should the data science team apply to efficiently achieve this goal?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Principal Component Analysis (PCA)",
+        "B) Gaussian Elimination",
+        "C) Inverse Matrix Calculation",
+        "D) Matrix Transposition"
+      ],
+      "correct_answer": "A) Principal Component Analysis (PCA)",
+      "explanation": "Principal Component Analysis (PCA) is specifically designed for dimensionality reduction. It transforms the original variables into a smaller set of new variables (principal components) that capture the maximum variance, making the data more efficient for modeling and analysis.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-5",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-5",
+        "target_co_id": "CO-1",
+        "lilo_text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+        "score": 0.2484,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6214,
+          "content": 0,
+          "jaccard": 0.0862
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-3",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 15,
+      "question": "A biomedical research lab gathers time-series data from 200 different sensors monitoring a patient's vital signs. The raw data is inherently noisy and contains redundant information. To isolate the most significant physiological patterns and reduce the impact of noise for diagnostic analysis, the researchers need to extract underlying features. Which matrix transformation technique would be most appropriate to apply for efficiently extracting these meaningful features and reducing noise?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Singular Value Decomposition (SVD)",
+        "B) Matrix Addition",
+        "C) Determinant Calculation",
+        "D) Cross-product of Vectors"
+      ],
+      "correct_answer": "A) Singular Value Decomposition (SVD)",
+      "explanation": "Singular Value Decomposition (SVD) is highly effective for decomposing a matrix into components that reveal latent features and can be used for noise reduction. By reconstructing the matrix with fewer singular values, it efficiently extracts meaningful patterns while mitigating noise.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-5",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-5",
+        "target_co_id": "CO-1",
+        "lilo_text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+        "score": 0.2509,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6394,
+          "content": 0,
+          "jaccard": 0.0702
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-3",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 16,
+      "question": "A financial institution is analyzing the daily returns of 300 different stocks over the past year to understand market dynamics. They want to transform this high-dimensional data into a lower-dimensional representation that captures the primary underlying market factors influencing stock movements, making it easier to identify trends and risk. To efficiently represent and analyze these stock returns by identifying the most significant underlying market factors, which matrix transformation technique should be applied to the covariance matrix of the stock returns?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Eigenvalue Decomposition (EVD) or Principal Component Analysis (PCA)",
+        "B) Matrix Inversion",
+        "C) Hadamard Product",
+        "D) Row Echelon Form"
+      ],
+      "correct_answer": "A) Eigenvalue Decomposition (EVD) or Principal Component Analysis (PCA)",
+      "explanation": "Eigenvalue Decomposition (EVD) is fundamental to Principal Component Analysis (PCA) when applied to a covariance matrix. These techniques identify eigenvectors (principal components) that represent the directions of maximum variance, thus efficiently revealing the most significant underlying market factors.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-5",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-5",
+        "target_co_id": "CO-1",
+        "lilo_text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+        "score": 0.2117,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.5846,
+          "content": 0,
+          "jaccard": 0.0517
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-3",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 17,
+      "question": "A university library wants to analyze student borrowing patterns to optimize shelf placement and purchasing decisions for new books. They have raw data from their system including student IDs, book IDs, borrowing dates, return dates, and book genres. They want to specifically identify which book genres are frequently borrowed together by the same students. To effectively analyze the relationships between frequently co-borrowed book genres, which of the following structured data abstractions into an item set or matrix is most appropriate?",
+      "type": "multiple_choice",
+      "options": [
+        "A) An item set where each set represents a student, and the items within the set are the unique genres of all books they have ever borrowed.",
+        "B) A matrix where rows are individual borrowing transactions, columns are book IDs, and cell values indicate the number of times a book was borrowed.",
+        "C) An item set where each set represents a unique borrowing transaction, and the items within the set are the specific book titles borrowed in that transaction.",
+        "D) A matrix where rows are book genres, columns are student IDs, and cell values indicate the total number of books of that genre borrowed by that student."
+      ],
+      "correct_answer": "A) An item set where each set represents a student, and the items within the set are the unique genres of all books they have ever borrowed.",
+      "explanation": "This formulation directly abstracts the student's borrowing history into a collection of genres, allowing for the analysis of which genres tend to appear together within a single student's borrowing profile, thus revealing co-borrowing patterns at the genre level. Other options either focus on individual transactions or aggregate counts without capturing the co-occurrence relationships within a student's profile relevant to the goal.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-4",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-4",
+        "target_co_id": "CO-1",
+        "lilo_text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+        "score": 0.4835,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.5835,
+          "content": 0.0286,
+          "jaccard": 0.0833
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 18,
+      "question": "A cybersecurity firm collects vast amounts of log data from various network devices, including source IP, destination IP, port numbers, protocol, timestamp, and event type. They aim to detect anomalous network traffic patterns that could indicate a security breach. To effectively distinguish normal network communication relationships from potentially malicious ones using matrix decomposition techniques, which attribute combination, when abstracted into a structured matrix, provides the most relevant basis for analysis?",
+      "type": "multiple_choice",
+      "options": [
+        "A) A matrix where rows represent distinct timestamps, columns represent unique source IP addresses, and cell values indicate the count of packets.",
+        "B) A matrix where rows represent unique source-destination IP pairs, columns represent distinct port-protocol combinations, and cell values indicate communication frequency.",
+        "C) A matrix where rows represent individual event types, columns represent timestamps, and cell values denote the number of occurrences.",
+        "D) A matrix where rows represent unique destination IP addresses, columns represent event types, and cell values indicate the severity of the event."
+      ],
+      "correct_answer": "B) A matrix where rows represent unique source-destination IP pairs, columns represent distinct port-protocol combinations, and cell values indicate communication frequency.",
+      "explanation": "This matrix structure directly abstracts the core components of network communication (who talks to whom, and how) and quantifies their interaction. Matrix decomposition on this structure can reveal hidden patterns and anomalies in communication relationships that are indicative of security threats, aligning with the goal of detecting anomalous traffic.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-4",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-4",
+        "target_co_id": "CO-1",
+        "lilo_text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+        "score": 0.4461,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.5117,
+          "content": 0.027,
+          "jaccard": 0.0588
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 19,
+      "question": "A retail chain wants to understand customer loyalty and churn. They have transactional data (customer ID, transaction date, items purchased, total amount, payment method) and customer demographic data (age, gender, location). They hypothesize that specific purchasing behaviors combined with demographics predict churn. When abstracting this real-world data into a structured matrix to investigate the relationship between customer purchasing behavior, demographics, and churn risk, which of the following differentiations of attributes is most crucial for revealing meaningful patterns?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Differentiating 'total amount spent per transaction' into broad categories (e.g., low, medium, high) versus using the exact numerical value.",
+        "B) Distinguishing 'items purchased' by product category (e.g., electronics, apparel, groceries) rather than listing every individual product SKU.",
+        "C) Categorizing 'payment method' into online vs. in-store payment types versus specific credit card brands.",
+        "D) Separating 'transaction date' into 'day of the week' versus 'month of the year' for analysis."
+      ],
+      "correct_answer": "B) Distinguishing 'items purchased' by product category (e.g., electronics, apparel, groceries) rather than listing every individual product SKU.",
+      "explanation": "Abstracting individual product SKUs into broader categories (e.g., electronics, apparel) simplifies the high-dimensional 'items purchased' attribute while preserving meaningful relationships. This allows for identifying purchasing behavior patterns (e.g., customers who primarily buy electronics vs. groceries) that are more likely to correlate with loyalty or churn than individual SKUs, which would be too granular and sparse for effective pattern discovery.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-4",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-4",
+        "target_co_id": "CO-1",
+        "lilo_text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+        "score": 0.3983,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.5343,
+          "content": 0,
+          "jaccard": 0.0392
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 20,
+      "question": "If a social media company aims to identify users who serve as crucial bridges for information flow between different user communities, calculating the Degree Centrality for each user would be the most appropriate network analysis measure to achieve this objective.",
+      "type": "true_false",
+      "correct_answer": "False",
+      "explanation": "Degree centrality only measures the number of direct connections. To identify users acting as bridges between communities, Betweenness Centrality would be the more appropriate measure, as it quantifies how often a node lies on the shortest path between other nodes.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-7",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-7",
+        "target_co_id": "CO-1",
+        "lilo_text": "Conduct network analysis on graph-structured data.",
+        "score": 0.1807,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.534,
+          "content": 0.0294,
+          "jaccard": 0.0833
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 21,
+      "question": "A financial analyst examining a company's quarterly revenue reports over a decade notes a consistent upward trajectory in overall revenue, alongside a noticeable dip in Q1 results followed by a surge in Q4 each year. This scenario indicates that the data primarily exhibits a strong seasonal pattern, with the long-term upward trajectory being a less significant trend.",
+      "type": "true_false",
+      "correct_answer": "False",
+      "explanation": "The consistent upward trajectory represents a clear long-term trend, while the predictable Q1 dip and Q4 surge are seasonal patterns. Both are significant temporal patterns, and the statement incorrectly prioritizes seasonality over a robust long-term trend.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-6",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-6",
+        "target_co_id": "CO-1",
+        "lilo_text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+        "score": 0.3393,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.5228,
+          "content": 0,
+          "jaccard": 0.0204
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-6",
+        "topic_block_aligned": false
+      }
+    },
+    {
+      "index": 22,
+      "question": "To identify groups of proteins that interact more frequently with each other than with proteins outside their group within a biological interaction network, applying community detection algorithms is a suitable network analysis technique.",
+      "type": "true_false",
+      "correct_answer": "True",
+      "explanation": "Community detection is specifically designed to identify densely connected groups of nodes (communities) within a network, which aligns with the goal of finding functionally related protein groups.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-7",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-7",
+        "target_co_id": "CO-1",
+        "lilo_text": "Conduct network analysis on graph-structured data.",
+        "score": 0.2148,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.5343,
+          "content": 0.0333,
+          "jaccard": 0.1707
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 23,
+      "question": "When modeling customer reviews where a review 'influences' a product's rating (but not vice-versa), representing this relationship as an undirected edge in a graph-structured dataset would accurately capture the directional nature of the influence.",
+      "type": "true_false",
+      "correct_answer": "False",
+      "explanation": "An undirected edge represents a mutual relationship. To accurately capture a one-way influence, such as a review influencing a rating but not vice-versa, the relationship must be represented as a directed edge.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-7",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-7",
+        "target_co_id": "CO-1",
+        "lilo_text": "Conduct network analysis on graph-structured data.",
+        "score": 0.3184,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.4763,
+          "content": 0,
+          "jaccard": 0.0204
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 24,
+      "question": "An energy grid operator analyzes power demand data, observing predictable daily spikes during business hours and drops overnight, consistently repeating each week. Additionally, they identify irregular, multi-year periods of increased baseline demand that are not fixed in duration or timing. The operator concludes that the daily and weekly fluctuations represent cyclical patterns, while the irregular multi-year periods are indicative of strong seasonality.",
+      "type": "true_false",
+      "correct_answer": "False",
+      "explanation": "The predictable daily and weekly spikes are examples of seasonality, as they are repeating patterns within a fixed period (day/week). The irregular, multi-year periods of increased baseline demand are more characteristic of cycles, which are irregular fluctuations not tied to a fixed period, or potentially a long-term trend if consistent.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-6",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-6",
+        "target_co_id": "CO-1",
+        "lilo_text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+        "score": 0.3018,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.5397,
+          "content": 0,
+          "jaccard": 0.0444
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-6",
+        "topic_block_aligned": false
+      }
+    },
+    {
+      "index": 25,
+      "question": "A data scientist monitoring server load metrics observes a consistent pattern of high CPU utilization during peak business hours (9 AM - 5 PM) and significantly lower utilization overnight. One Tuesday at 3 AM, the system records an unprecedented, sustained CPU utilization at 95% for two hours, an event never before observed. This observation should be categorized as a normal temporal dependency, indicating expected system behavior during off-peak hours.",
+      "type": "true_false",
+      "correct_answer": "False",
+      "explanation": "Given the established pattern of significantly lower utilization overnight, an unprecedented and sustained 95% CPU utilization at 3 AM clearly deviates from the normal temporal dependency. This event should be categorized as an outlier, not expected behavior.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-6",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-6",
+        "target_co_id": "CO-1",
+        "lilo_text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+        "score": 0.1608,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.4745,
+          "content": 0,
+          "jaccard": 0.0408
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-6",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 26,
+      "question": "A city planner examines daily public transport ridership data collected over several years. They observe that ridership consistently peaks during morning and evening rush hours on weekdays and significantly drops on weekends. They also note a general increase in overall annual ridership by approximately 3% each year. The planner concludes that the daily and weekly fluctuations represent a long-term trend, while the consistent 3% annual increase indicates strong seasonality.",
+      "type": "true_false",
+      "correct_answer": "False",
+      "explanation": "The consistent daily and weekly fluctuations (rush hour peaks, weekend drops) are characteristic of seasonality, as they are repeating patterns within a fixed period (day/week). The general increase in overall annual ridership by 3% each year represents a long-term trend.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-6",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-6",
+        "target_co_id": "CO-1",
+        "lilo_text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+        "score": 0.3141,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.4667,
+          "content": 0,
+          "jaccard": 0.0204
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": false
+      }
+    },
+    {
+      "index": 27,
+      "question": "Applying Singular Value Decomposition (SVD) to a sparse user-item interaction matrix in a movie recommendation system directly helps identify latent features and reduce the matrix's rank for more efficient personalized recommendations.",
+      "type": "true_false",
+      "correct_answer": "True",
+      "explanation": "SVD is a core technique in recommendation systems. It decomposes the user-item matrix into latent factors that represent user preferences and item characteristics. By using a truncated SVD (reducing the rank), it allows for more efficient computation of recommendations and identification of underlying patterns.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-5",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-5",
+        "target_co_id": "CO-1",
+        "lilo_text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+        "score": 0.2472,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6113,
+          "content": 0,
+          "jaccard": 0.0962
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-3",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 28,
+      "question": "An e-commerce company observes that users who view product videos are more likely to make a purchase. To determine if watching videos *causes* increased purchases, they design an experiment. They realize that users already highly interested in a product might seek out videos, thus inflating the perceived impact. Identify the statistical phenomenon that describes this pre-existing difference influencing both video viewing and purchasing behavior.",
+      "type": "identification",
+      "correct_answer": "Confounding variable",
+      "explanation": "A confounding variable is an unobserved factor that influences both the 'cause' (video viewing) and the 'effect' (purchasing), leading to a spurious correlation that masks the true causal relationship.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.2903,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.534,
+          "content": 0,
+          "jaccard": 0
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 29,
+      "question": "An online ad platform analyzes historical user data to determine the likelihood of a user clicking on a specific ad given their browsing history and demographic information. This analysis is then used to rank and display ads to maximize engagement. What specific metric are they primarily applying probabilistic model results to predict for ad optimization?",
+      "type": "identification",
+      "correct_answer": "Click-through rate (CTR)",
+      "explanation": "Probabilistic models estimate the likelihood of certain events, directly applying to the prediction of a user clicking an ad, which is measured by the click-through rate (CTR).",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.4974,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6394,
+          "content": 0,
+          "jaccard": 0.0484
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 30,
+      "question": "A city's public health department monitors the spread of an infectious disease by tracking anonymized, geolocated, and timestamped patient data. To predict the probability of new outbreaks in specific neighborhoods next week based on current and historical spatial diffusion patterns, what kind of analytical model should they apply?",
+      "type": "identification",
+      "correct_answer": "Probabilistic model",
+      "explanation": "Probabilistic models are applied to spatiotemporal datasets to estimate the likelihood of events, such as disease outbreaks, occurring at specific locations and times based on observed patterns.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-26",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-26",
+        "target_co_id": "CO-3",
+        "lilo_text": "Apply geospatial analysis to spatiotemporal datasets.",
+        "score": 0.2123,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.4909,
+          "content": 0,
+          "jaccard": 0.0185
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 31,
+      "question": "A quantitative analyst at a hedge fund is tasked with developing a model to estimate the closing price of a particular tech stock for the next trading week, utilizing its past 12 months of daily price movements. Which specific time series mining task are they applying to achieve this?",
+      "type": "identification",
+      "correct_answer": "Forecasting",
+      "explanation": "This task involves predicting future values based on past time-series data, which is precisely the definition of forecasting in the context of stock market prediction.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-27",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-27",
+        "target_co_id": "CO-3",
+        "lilo_text": "Apply time series mining to stock market prediction and marketing analysis.",
+        "score": 0.5122,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6615,
+          "content": 0.0256,
+          "jaccard": 0.0536
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-6",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 32,
+      "question": "In an enterprise social network, an analyst observes that Employee A frequently facilitates communication between two departments that rarely interact directly. Employee A consistently appears on the shortest communication paths between individuals in these distinct departments. Which network centrality measure best captures Employee A's influential role as a bridge?",
+      "type": "identification",
+      "correct_answer": "Betweenness Centrality",
+      "explanation": "Betweenness centrality quantifies how often a node lies on the shortest path between other nodes, making it ideal for identifying individuals who bridge separate groups and control information flow.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-31",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-31",
+        "target_co_id": "CO-3",
+        "lilo_text": "Apply social network analysis for understanding social interactions.",
+        "score": 0.3349,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.4964,
+          "content": 0,
+          "jaccard": 0.0577
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 33,
+      "question": "A large grocery chain wants to analyze its point-of-sale transaction data to understand customer purchasing habits. Specifically, they aim to identify groups of products that are often bought together to optimize shelf placement and promotional offers. What core data mining methodology is specifically designed to uncover these co-occurring item relationships in transactional datasets?",
+      "type": "identification",
+      "correct_answer": "Frequent Pattern Mining",
+      "explanation": "Frequent Pattern Mining, often employing algorithms like Apriori, is the methodology applied to transactional data to discover items that appear together frequently, directly addressing the goal of identifying product bundles for retail optimization.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-11",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-11",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply frequent pattern mining to real-world datasets.",
+        "score": 0.4079,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.538,
+          "content": 0.0286,
+          "jaccard": 0.0577
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 34,
+      "question": "A data scientist is evaluating the dependency between a categorical feature 'Marketing Campaign Exposure' (X) and a binary target 'Product Purchase' (Y) for feature selection. The joint probability distribution P(X, Y) is given below:\n\nP(X=Yes, Y=Yes) = 0.2\nP(X=Yes, Y=No) = 0.3\nP(X=No, Y=Yes) = 0.1\nP(X=No, Y=No) = 0.4\n\nCalculate and identify the mutual information I(X;Y) in bits, rounded to three decimal places.",
+      "type": "identification",
+      "correct_answer": "0.035 bits",
+      "explanation": "The mutual information I(X;Y) is calculated using the formula Σ P(x,y) log2(P(x,y) / (P(x)P(y))), summing over all joint probability pairs. First, calculate the marginal probabilities: P(X=Yes)=0.5, P(X=No)=0.5, P(Y=Yes)=0.3, P(Y=No)=0.7. Then, apply the formula for each pair and sum the results.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-10",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-10",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply mutual information to assess information gain between variables.",
+        "score": 0.4332,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.575,
+          "content": 0,
+          "jaccard": 0.1224
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 35,
+      "question": "A streaming service wants to evaluate if a new 'binge-watching' feature *increases* overall user subscription renewals. To establish a definitive causal link, they randomly assign half of their new subscribers to receive the feature and the other half to not. Identify the specific type of experimental design they are employing to measure this causal effect.",
+      "type": "identification",
+      "correct_answer": "Randomized Controlled Trial",
+      "explanation": "A Randomized Controlled Trial (RCT), often implemented as an A/B test, is the gold standard for establishing causal links by randomly assigning subjects to treatment and control groups.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.2961,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.5323,
+          "content": 0,
+          "jaccard": 0.0328
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 36,
+      "question": "A public health researcher analyzes historical data to see if increased social media exposure to health campaigns *led to* a decrease in smoking rates in different regions. Although they find a strong correlation, they acknowledge that many other unmeasured factors could also explain the trend. Identify the primary limitation of this research approach for establishing a causal relationship.",
+      "type": "identification",
+      "correct_answer": "Observational study",
+      "explanation": "An observational study analyzes existing data without intervention, making it difficult to control for confounding variables and definitively establish causation, unlike an experiment.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.4116,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.5745,
+          "content": 0,
+          "jaccard": 0.0152
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 37,
+      "question": "A mobile application developer implements a new 'daily challenge' notification for a randomly selected group of users (Group A) while another group (Group B) receives no such notification. They then compare the average daily app usage between the two groups. Identify the specific causal concept they are attempting to quantify by comparing the outcomes of Group A versus Group B.",
+      "type": "identification",
+      "correct_answer": "Treatment effect",
+      "explanation": "The treatment effect measures the causal impact of a specific intervention (the daily challenge notification) by comparing outcomes between a treated group and a control group.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.3997,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.5474,
+          "content": 0,
+          "jaccard": 0.0167
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 38,
+      "question": "A marketing team observes that customers who interact with their chatbot tend to have higher satisfaction scores. They want to understand if deploying the chatbot *directly improves* customer satisfaction, or if more satisfied customers are simply more likely to use the chatbot. Identify the overarching analytical objective of this investigation.",
+      "type": "identification",
+      "correct_answer": "Causal inference",
+      "explanation": "Causal inference is the process of determining whether a relationship between variables is causal (one variable directly influences another) rather than merely correlational.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.3671,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.4824,
+          "content": 0,
+          "jaccard": 0
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 39,
+      "question": "After launching a personalized recommendation algorithm, a music streaming service observes a 15% increase in user engagement. To confidently attribute this increase to the new algorithm, they must consider what the engagement level would have been *if the algorithm had not been launched*. Identify the specific concept in causal analysis that represents this 'what-if' scenario.",
+      "type": "identification",
+      "correct_answer": "Counterfactual",
+      "explanation": "The counterfactual refers to the outcome that would have occurred if the treatment or intervention had not been applied, which is essential for defining and measuring causal effects.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.4002,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.5491,
+          "content": 0,
+          "jaccard": 0.0156
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 40,
+      "question": "A software company offers a free advanced feature trial only to its most active users. Following the trial, these users report significantly higher satisfaction with the software compared to users who did not receive the trial. The company concludes the trial *caused* the increased satisfaction. Identify the specific type of bias that likely invalidates this causal claim due to the non-random assignment of the trial.",
+      "type": "identification",
+      "correct_answer": "Selection bias",
+      "explanation": "Selection bias occurs when the method of assigning individuals to treatment and control groups is not random, leading to systematic differences between the groups that can confound the causal effect.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.3806,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.5055,
+          "content": 0,
+          "jaccard": 0.0159
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 41,
+      "question": "A social media platform is testing a new 'community moderation' tool designed to reduce toxic comments. They plan to roll out this tool to a random subset of communities and measure the change in toxicity levels. Identify the specific term for the 'community moderation tool' within the framework of establishing its causal impact.",
+      "type": "identification",
+      "correct_answer": "Treatment",
+      "explanation": "In experimental design, the 'treatment' is the specific intervention or manipulation being applied to a group to observe its causal effect on an outcome.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-38",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-38",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply causal inference to understand factors influencing behavior.",
+        "score": 0.1434,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.5122,
+          "content": 0,
+          "jaccard": 0.0312
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 42,
+      "question": "A digital marketing team notices that users who frequently view running shoes on their e-commerce site also tend to browse fitness trackers. They decide to target these users with ads for complementary products. What specific mining result from behavior data are they applying to refine their ad targeting strategy?",
+      "type": "identification",
+      "correct_answer": "Relationships between actions",
+      "explanation": "Analyzing relationships between actions in behavior data allows advertisers to identify complementary products and create more effective, targeted ad campaigns.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.4228,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.6676,
+          "content": 0.0303,
+          "jaccard": 0.0893
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 43,
+      "question": "An advertising agency wants to generate hundreds of unique ad headlines and short descriptions that are stylistically similar to their most successful past campaigns, without manually writing each one. Which type of data mining model would they apply to automatically produce these new ad variations?",
+      "type": "identification",
+      "correct_answer": "Generative models",
+      "explanation": "Generative models learn the underlying structure of data to create new, realistic samples, making them ideal for automatically generating diverse ad content based on successful patterns.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.1453,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.4977,
+          "content": 0,
+          "jaccard": 0.0833
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-4",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 44,
+      "question": "A SaaS company offers a 30-day free trial and wants to convert as many trial users into paying subscribers as possible. They use a model to identify trial users who exhibit behavior patterns (e.g., feature usage, login frequency) most indicative of an eventual purchase. What specific outcome are they applying probabilistic model results to predict for conversion optimization?",
+      "type": "identification",
+      "correct_answer": "Likelihood of purchasing an item",
+      "explanation": "Probabilistic models can estimate the likelihood of a user purchasing an item or subscribing, which directly supports conversion optimization by targeting high-potential users.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.452,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.5459,
+          "content": 0,
+          "jaccard": 0.0317
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 45,
+      "question": "An e-commerce platform collects vast amounts of user interaction data, including thousands of product features, browsing events, and purchase histories. This high-dimensional data makes it computationally expensive to personalize ad recommendations in real-time. Which data mining technique would be applied to simplify this data while preserving essential patterns for more efficient ad personalization?",
+      "type": "identification",
+      "correct_answer": "Dimensionality reduction (e.g., PCA)",
+      "explanation": "Dimensionality reduction techniques like PCA simplify complex, high-dimensional data by transforming it into a smaller set of meaningful components, improving the efficiency of personalized ad targeting.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.2451,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.609,
+          "content": 0,
+          "jaccard": 0.0806
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-8",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 46,
+      "question": "A video streaming service aims to improve its 'next video' recommendations and accompanying ad placements. They analyze user viewing sequences, such as watching a specific genre followed by another. What type of pattern from behavior data mining is being applied to enhance their recommendation system and targeted ad delivery?",
+      "type": "identification",
+      "correct_answer": "Sequential behavior patterns",
+      "explanation": "Mining sequential behavior patterns in user data allows recommendation systems to predict future actions, leading to more relevant content and ad placements within the platform.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.4243,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.5617,
+          "content": 0.0286,
+          "jaccard": 0.0862
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 47,
+      "question": "An advertiser notices that users who interact with ads for 'outdoor adventure gear' are significantly more likely to click on ads for 'travel insurance' within the same session. They decide to create a campaign where these two ad types are shown together. What specific data relationship, identified through data mining, is being applied to inform this cross-promotion strategy?",
+      "type": "identification",
+      "correct_answer": "Correlation",
+      "explanation": "Correlation measures the strength and direction of a relationship between variables, allowing advertisers to identify related products and optimize cross-promotional ad strategies.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.3549,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.5445,
+          "content": 0,
+          "jaccard": 0.0492
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 48,
+      "question": "An ad network needs to quickly distinguish between legitimate user clicks and potentially fraudulent bot activity to prevent financial losses and maintain ad quality. They develop a system that assesses various click attributes (e.g., speed, origin, sequence) and assigns a score indicating the probability of fraud. Which type of model is being applied to perform this real-time risk assessment for ad serving?",
+      "type": "identification",
+      "correct_answer": "Probabilistic models",
+      "explanation": "Probabilistic models are applied in risk assessment to estimate the likelihood of events, such as fraudulent clicks, enabling real-time decisions to mitigate risks in online advertising.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-39",
+      "target_co_id": "CO-4",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-39",
+        "target_co_id": "CO-4",
+        "lilo_text": "Apply mining results to online advertising.",
+        "score": 0.292,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.5305,
+          "content": 0,
+          "jaccard": 0.0164
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-9",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 49,
+      "question": "A data analyst detects an outlier in daily website traffic, showing 10,000 unique visitors on a Tuesday, significantly higher than the usual 800-1200 range. Enumerate three distinct categories of real-world events that could explain this detected outlier, differentiating between those indicating positive engagement and those suggesting potential issues.",
+      "type": "enumeration",
+      "correct_answer": "1. A successful marketing campaign, viral content, or major announcement driving legitimate interest; 2. A denial-of-service (DoS) attack or bot traffic inflating visitor counts; 3. A data collection error, sensor malfunction, or misconfiguration in the analytics system.",
+      "explanation": "This question requires analyzing the detected outlier to differentiate between various plausible real-world causes and their significance, categorizing them into positive, malicious, or erroneous events.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-25",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-25",
+        "target_co_id": "CO-3",
+        "lilo_text": "Interpret and explain the significance of detected outliers.",
+        "score": 0.1757,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.543,
+          "content": 0,
+          "jaccard": 0.0351
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 50,
+      "question": "A financial analyst is examining three distinct time series datasets: (1) Daily stock prices, exhibiting clear upward/downward trends but no distinct repeating patterns. (2) Monthly electricity consumption, showing a strong yearly cycle and a gradual increase over decades. (3) Hourly website traffic, characterized by daily and weekly seasonality, plus occasional irregular spikes from news events. Enumerate the most appropriate advanced time-series modeling approaches (from ARIMA, SARIMA, Prophet) that an analyst would differentiate for each of these datasets, based on their distinct temporal patterns.",
+      "type": "enumeration",
+      "correct_answer": "1. ARIMA, 2. SARIMA, 3. Prophet",
+      "explanation": "This question requires students to analyze the described temporal patterns (trend, seasonality, irregular fluctuations) for each dataset and differentiate the suitability of advanced models like ARIMA (for trends/autocorrelation), SARIMA (for seasonality), and Prophet (for multiple seasonalities, holidays, and robust handling of outliers), thereby categorizing the best fit.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-24",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-24",
+        "target_co_id": "CO-3",
+        "lilo_text": "Develop advanced skills in time-series analysis and temporal pattern modeling.",
+        "score": 0.5185,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.6447,
+          "content": 0.0256,
+          "jaccard": 0.1224
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-6",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 51,
+      "question": "A data analyst at 'FreshMart' is investigating customer purchasing habits using the following transaction data: T1: Milk, Bread, Butter; T2: Milk, Bread; T3: Bread, Eggs; T4: Milk, Eggs; T5: Milk, Bread, Eggs. If FreshMart sets a minimum support threshold of 0.5, analyze this dataset and enumerate all frequent itemsets (both 1-item and 2-item) that would be identified using frequent pattern mining techniques.",
+      "type": "enumeration",
+      "correct_answer": "{Milk}, {Bread}, {Eggs}, {Milk, Bread}",
+      "explanation": "The correct itemsets are identified by calculating their support in the given transactions and filtering those that meet or exceed the 0.5 minimum support threshold. Support(Milk)=0.8, Support(Bread)=0.8, Support(Eggs)=0.6, Support(Milk, Bread)=0.6, all of which are ≥ 0.5.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-8",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-8",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop the ability to identify and extract frequent patterns from large datasets.",
+        "score": 0.4516,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.6091,
+          "content": 0.0526,
+          "jaccard": 0.098
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 52,
+      "question": "A cybersecurity firm is investigating a compromised network to understand how malware spread and identify critical choke points. They have mapped communication logs into a complex network where nodes are devices and edges are communication links. To analyze the spread mechanisms within this compromised network, enumerate two distinct network centrality measures that would best differentiate between devices acting as primary hubs for initial infection spread and devices serving as crucial intermediaries connecting disparate network segments.",
+      "type": "enumeration",
+      "correct_answer": "Degree Centrality, Betweenness Centrality",
+      "explanation": "Degree Centrality identifies nodes with many direct connections, indicative of primary hubs for initial rapid spread. Betweenness Centrality identifies nodes frequently on shortest paths between others, indicating crucial intermediaries connecting disparate segments and controlling information flow.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-28",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-28",
+        "target_co_id": "CO-3",
+        "lilo_text": "Develop advanced skills in analyzing complex network data.",
+        "score": 0.4741,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.5757,
+          "content": 0,
+          "jaccard": 0.0755
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 53,
+      "question": "A team of social scientists is studying the evolution of political discourse on a microblogging platform over a five-year period. They apply community detection algorithms to monthly snapshots of the interaction network, identifying groups of users with strong reciprocal engagements. Over time, they observe several instances where a previously cohesive political community unexpectedly splits into two or more smaller, distinct communities, or conversely, where two separate communities merge into a single larger one. List three distinct analytical insights or patterns a researcher could infer about the underlying political landscape's dynamics by examining these specific community evolution events (splits and merges) rather than just analyzing static monthly snapshots.",
+      "type": "enumeration",
+      "correct_answer": "1. **Identification of emerging ideological schisms or policy divergences:** A community split might indicate a fundamental disagreement or a new issue causing a rift within a previously unified political group, leading to the formation of distinct factions. 2. **Detection of political coalition formation or issue-based convergence:** Community merges could signify that previously disparate political groups or movements have found common ground on certain issues, leading to increased collaboration and the consolidation of their online presence. 3. **Pinpointing influential 'change points' or critical events that reshape political alignments:** Sudden splits or merges often correlate with significant real-world political events (e.g., elections, policy announcements, scandals), indicating moments when the political narrative or allegiances undergo substantial reordering.",
+      "explanation": "This question requires students to analyze the implications of observed community evolution events (splits and merges) within a dynamic network. It goes beyond simply describing these events by asking for inferences about the underlying dynamics of the political landscape, thus operating at the Analyze cognitive level. The insights drawn connect network behavior to real-world phenomena.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-29",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-29",
+        "target_co_id": "CO-3",
+        "lilo_text": "Analyze the evolution of communities over time in dynamic networks.",
+        "score": 0.5309,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.7042,
+          "content": 0,
+          "jaccard": 0.0702
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 54,
+      "question": "A grocery store's data analysis team has identified several frequent itemsets from recent sales data, each exhibiting varying support and confidence levels. These patterns include: {Milk, Bread}, {Organic Vegetables, Tofu}, {Diapers, Baby Wipes, Baby Formula}, and {Coffee, Pastry}. Given the diversity in items, implied customer segments, and statistical measures, enumerate three distinct categories of actionable insights or strategic implications that can be derived from analyzing these different types of frequent patterns for the business.",
+      "type": "enumeration",
+      "correct_answer": "1. Core Product Linkages/Staple Co-purchases (e.g., Milk, Bread): Insights for optimizing basic inventory, shelf placement, and general promotions. 2. Targeted Customer Segment Insights (e.g., Organic Vegetables, Tofu; Diapers, Baby Wipes, Baby Formula): Insights for focused marketing, personalized recommendations, or creating specific product bundles for identified demographic or lifestyle groups. 3. Cross-Promotional/Upselling Opportunities (e.g., Coffee, Pastry): Insights for strategic suggestive selling, promotional pairings, or increasing the average transaction value by encouraging additional purchases.",
+      "explanation": "This question requires students to analyze the varying characteristics of different frequent patterns (item composition, implied context, support/confidence) and differentiate their significance to categorize distinct types of actionable insights. It moves beyond simple recall to interpret patterns in a business context, demonstrating an understanding of pattern diversity and its strategic implications.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-9",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-9",
+        "target_co_id": "CO-2",
+        "lilo_text": "Analyze the diversity of frequent patterns and interpret their significance.",
+        "score": 0.4638,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.6596,
+          "content": 0,
+          "jaccard": 0.0851
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 55,
+      "question": "A research team has applied LDA to a corpus of historical documents, generating a set of topics represented by keywords. To gain a deeper understanding and explore alternative perspectives, they are now evaluating whether to also apply Non-negative Matrix Factorization (NMF) or Latent Semantic Analysis (LSA). Enumerate three distinct ways in which the fundamental mathematical or conceptual underpinnings of LDA, NMF, and LSA could lead to different characteristics in the *generated topics* (e.g., overlap, sparsity, interpretability) and consequently require varied approaches to *topic interpretation*.",
+      "type": "enumeration",
+      "correct_answer": "1. The probabilistic generative approach of LDA versus the matrix factorization approaches of NMF/LSA, affecting how topics are formed (e.g., mixtures vs. components). 2. NMF's strict non-negativity constraint yielding additive, parts-based topics, contrasting with LSA's potential for negative values and LDA's inherent non-negativity from probabilities. 3. Differences in inherent sparsity and topic overlap, where NMF often produces sparser topics, LDA uses priors to encourage sparsity, and LSA can yield denser, more diffuse representations.",
+      "explanation": "These distinctions highlight how the underlying mathematics of each technique shapes the characteristics of the generated topics, directly impacting how an analyst must approach their interpretation and assess their coherence or distinctiveness. Understanding these differences is crucial for selecting the appropriate model and effectively deriving insights from textual data.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-18",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-18",
+        "target_co_id": "CO-2",
+        "lilo_text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+        "score": 0.5357,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.7733,
+          "content": 0,
+          "jaccard": 0.1887
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-4",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 56,
+      "question": "A major airline wants to improve its flight scheduling efficiency and customer satisfaction by analyzing flight delays. They collect real-world data including departure/arrival times, scheduled times, origin/destination airports, aircraft type, weather conditions at departure/arrival, and passenger load factor for each flight. To abstract this complex real-world data into a structured matrix suitable for identifying patterns in flight delays, enumerate three distinct categories of attributes that a data miner must identify, and briefly explain how each category contributes to understanding delay relationships.",
+      "type": "enumeration",
+      "correct_answer": "1. Temporal Attributes: E.g., Scheduled Departure Time, Actual Departure Time, Scheduled Arrival Time, Actual Arrival Time. These are crucial for calculating delay durations and identifying time-of-day or day-of-week patterns related to delays. 2. Locational/Operational Attributes: E.g., Origin Airport, Destination Airport, Aircraft Type, Flight Number. These help identify relationships between specific routes, airports, or equipment and recurring delay issues. 3. Environmental/Contextual Attributes: E.g., Weather Conditions (at origin/destination), Passenger Load Factor. These are essential for investigating external factors and operational pressures that correlate with or cause delays.",
+      "explanation": "This task requires breaking down the raw data, categorizing attributes, and explaining their relevance to understanding relationships, which is an Analyze level task. Each category of attributes contributes uniquely to forming a comprehensive view of factors influencing flight delays.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-4",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-4",
+        "target_co_id": "CO-1",
+        "lilo_text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+        "score": 0.3833,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.5,
+          "cosine": 0.5817,
+          "content": 0.0606,
+          "jaccard": 0.0625
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 57,
+      "question": "A power utility company uses a machine learning model to predict daily electricity demand. On a specific day, the actual demand was 5000 MW, while the model predicted 3000 MW, flagging this 2000 MW discrepancy as a significant outlier. Enumerate three critical operational impacts or necessary investigations the utility company must undertake to interpret the significance of this detected prediction outlier.",
+      "type": "enumeration",
+      "correct_answer": "1. Investigate potential causes for the unexpected demand surge, such as extreme weather conditions or a large-scale public event; 2. Assess the immediate risk of grid instability, potential power outages, or the need to activate emergency generation; 3. Examine the model's performance for biases or data drift, potentially requiring recalibration or retraining with new data.",
+      "explanation": "This question requires students to analyze the operational significance of a prediction outlier by investigating its potential causes and outlining critical impacts or necessary actions for the utility company.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-25",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-25",
+        "target_co_id": "CO-3",
+        "lilo_text": "Interpret and explain the significance of detected outliers.",
+        "score": 0.4461,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.6333,
+          "content": 0.027,
+          "jaccard": 0.0351
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-6",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 58,
+      "question": "A financial trading system flags a significant outlier: a particular stock's price dropped by 15% within a 5-minute interval, whereas typical intra-day fluctuations are less than 2%. Enumerate three distinct interpretations of the significance of this detected outlier, considering both legitimate market events and potential data anomalies.",
+      "type": "enumeration",
+      "correct_answer": "1. An urgent investigation for potential market manipulation, a 'flash crash,' or a major news event impacting the company; 2. Verification of the data feed's integrity to rule out transmission errors, system glitches, or incorrect pricing data; 3. An assessment of the broader market context for systemic issues or liquidity crises that could trigger such rapid price movements.",
+      "explanation": "This question assesses the ability to interpret the significance of an outlier in a financial context by differentiating between legitimate market forces, potential fraudulent activities, and data quality issues.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-25",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-25",
+        "target_co_id": "CO-3",
+        "lilo_text": "Interpret and explain the significance of detected outliers.",
+        "score": 0.3648,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.25,
+          "cosine": 0.6717,
+          "content": 0,
+          "jaccard": 0.0625
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-6",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 59,
+      "question": "A data scientist is handed a time series representing daily sales data for a new product. Initial visual inspection shows the mean increasing over time and the variance appearing to widen. Before applying an ARIMA model, they need to address stationarity. Enumerate the key characteristics a data scientist would analyze in this sales data to distinguish it as non-stationary, and differentiate how these characteristics would impact the immediate steps taken for ARIMA model preparation.",
+      "type": "enumeration",
+      "correct_answer": "1. A non-constant mean over time (trend), 2. A non-constant variance over time (heteroscedasticity), 3. Presence of deterministic seasonality (if any, though not explicitly mentioned for this specific product, it's a general characteristic of non-stationarity)",
+      "explanation": "This question requires students to analyze the visual cues in the data (increasing mean, widening variance) to distinguish non-stationary characteristics. They must then relate these characteristics to the necessary data transformations (e.g., differencing for trend, log transformation for variance) required before applying an ARIMA model, thereby demonstrating advanced understanding of model prerequisites.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-24",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-24",
+        "target_co_id": "CO-3",
+        "lilo_text": "Develop advanced skills in time-series analysis and temporal pattern modeling.",
+        "score": 0.4641,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.5687,
+          "content": 0,
+          "jaccard": 0.0408
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-6",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 60,
+      "question": "An e-commerce company is experiencing rapid growth and needs to accurately forecast daily website traffic for server provisioning and marketing budget allocation. They observe strong daily and weekly seasonality, significant spikes during holiday sales events, and a general upward trend. They are evaluating SARIMA and Prophet for this task. Enumerate the distinct advantages of using Prophet over SARIMA that an analyst would identify and differentiate for this specific forecasting challenge, considering the described temporal patterns.",
+      "type": "enumeration",
+      "correct_answer": "1. Robustness to missing data and outliers, 2. Flexible handling of multiple seasonality types (daily, weekly, yearly) without complex differencing, 3. Ease of incorporating holiday effects and custom regressors (e.g., marketing campaigns)",
+      "explanation": "This question requires students to analyze the specific temporal patterns (multiple seasonalities, holiday spikes, outliers) and business needs (robustness) described in the scenario. They must differentiate the inherent strengths of Prophet (e.g., additive/multiplicative seasonality, holiday regressors, robustness) from SARIMA's more rigid structure, demonstrating an advanced understanding of model application.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-24",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-24",
+        "target_co_id": "CO-3",
+        "lilo_text": "Develop advanced skills in time-series analysis and temporal pattern modeling.",
+        "score": 0.4379,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.4909,
+          "content": 0,
+          "jaccard": 0.0851
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-6",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 61,
+      "question": "Researchers are examining a global supply chain network where nodes represent companies and edges represent trade relationships. They suspect the network contains distinct regional or industry-specific clusters that operate relatively independently. To investigate and distinguish these regional or industry-specific clusters within the global supply chain network, enumerate two primary structural properties or characteristics that would define and identify such communities.",
+      "type": "enumeration",
+      "correct_answer": "High internal density of connections, Low external density of connections",
+      "explanation": "Communities are characterized by a higher density of connections among their constituent nodes (high internal density) compared to the density of connections between nodes in different communities (low external density). These properties differentiate cohesive groups from the rest of the network.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-28",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-28",
+        "target_co_id": "CO-3",
+        "lilo_text": "Develop advanced skills in analyzing complex network data.",
+        "score": 0.4213,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 1,
+          "cosine": 0.4841,
+          "content": 0,
+          "jaccard": 0.0172
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 62,
+      "question": "An IT security analyst monitors a large corporate network for anomalous behavior, using temporal network analysis to track communication patterns between servers and workstations. They employ community detection to group devices exhibiting similar communication profiles. The analyst observes a particular community of servers, critical for data processing, that frequently undergoes rapid, yet non-destructive, internal structural changes—such as shifts in which servers act as central hubs or significant reconfigurations of internal communication pathways—while maintaining its overall membership and external interfaces. List three distinct hypotheses or operational characteristics about this critical data processing community that the analyst could infer from these specific observed temporal dynamics, as opposed to a community that remains static or completely dissolves.",
+      "type": "enumeration",
+      "correct_answer": "1. **Dynamic load balancing or resource allocation:** The frequent internal reconfigurations could suggest that the community is actively distributing processing tasks and resources among its members to optimize performance, prevent bottlenecks, or handle fluctuating workloads. 2. **Resilient or fault-tolerant architecture:** The continuous internal flux might indicate an adaptive design where the community is constantly re-organizing to maintain functionality even if individual nodes experience issues, ensuring high availability and resilience against failures. 3. **High-frequency, transient data processing operations:** The community might be involved in processing numerous short-lived, independent data streams or tasks that require frequent re-establishment of temporary connections or re-prioritization of internal communication paths.",
+      "explanation": "This question assesses the ability to analyze dynamic network observations to infer underlying operational characteristics or hypotheses. Students must interpret specific temporal changes (rapid internal structural shifts) within a community to deduce their functional implications, demonstrating analysis rather than mere description. This aligns with the Analyze cognitive level and the concept of network dynamics.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-29",
+      "target_co_id": "CO-3",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-29",
+        "target_co_id": "CO-3",
+        "lilo_text": "Analyze the evolution of communities over time in dynamic networks.",
+        "score": 0.4505,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": null,
+        "format_ceiling": null,
+        "bloom_above_ceiling": null,
+        "score_breakdown": {
+          "bloom": 0.75,
+          "cosine": 0.6055,
+          "content": 0.0588,
+          "jaccard": 0.0962
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-7",
+        "topic_block_aligned": true
+      }
+    }
+  ],
+  "enrichedLlos": [
+    {
+      "id": "LILO-4",
+      "text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+      "week": "2-3",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "key_concepts": [
+        "data abstraction",
+        "real-world data",
+        "structured matrices",
+        "item sets",
+        "attributes",
+        "relationships",
+        "data modeling",
+        "feature engineering"
+      ],
+      "enriched_text": "Abstract complex real-world data into structured formats like matrices and item sets, identifying relevant attributes, their data types, and the relationships between them, as a foundational step in data modeling and feature engineering.",
+      "graduate_attr": "GA1, GA2",
+      "co_suggestions": [],
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-5",
+      "text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+      "week": "2-3",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "key_concepts": [
+        "matrix transformation",
+        "data representation",
+        "data analysis",
+        "linear algebra",
+        "eigenvalues/vectors",
+        "singular value decomposition (svd)",
+        "principal component analysis (pca)",
+        "dimensionality reduction"
+      ],
+      "enriched_text": "Apply various matrix transformation techniques, such as Singular Value Decomposition (SVD) or Principal Component Analysis (PCA), to efficiently represent and analyze real-world data, enabling dimensionality reduction and feature extraction.",
+      "graduate_attr": "GA1, GA2",
+      "co_suggestions": [],
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-6",
+      "text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+      "week": "2-3",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "key_concepts": [
+        "sequence data",
+        "time series analysis",
+        "temporal patterns",
+        "trends",
+        "dependencies",
+        "seasonality",
+        "autocorrelation",
+        "forecasting"
+      ],
+      "enriched_text": "Analyze sequences of data using time series analysis techniques to identify temporal patterns, underlying trends, seasonal variations, and dependencies between data points, which is crucial for forecasting and understanding dynamic systems.",
+      "graduate_attr": "GA1, GA2",
+      "co_suggestions": [],
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-7",
+      "text": "Conduct network analysis on graph-structured data.",
+      "week": "2-3",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "key_concepts": [
+        "network analysis",
+        "graph-structured data",
+        "nodes",
+        "edges",
+        "centrality measures",
+        "community detection",
+        "pathfinding algorithms",
+        "network visualization"
+      ],
+      "enriched_text": "Conduct network analysis on graph-structured data by applying algorithms to identify key nodes using centrality measures, detect communities, and find optimal paths, enabling the understanding of complex relationships and structures.",
+      "graduate_attr": "GA1, GA2",
+      "co_suggestions": [],
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-8",
+      "text": "Develop the ability to identify and extract frequent patterns from large datasets.",
+      "week": "4-5",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "key_concepts": [
+        "frequent pattern mining",
+        "large datasets",
+        "association rules",
+        "itemsets",
+        "support",
+        "confidence",
+        "apriori algorithm",
+        "fp-growth algorithm"
+      ],
+      "enriched_text": "Identify and extract frequent patterns, such as frequent itemsets and association rules, from large datasets using algorithms like Apriori or FP-growth, considering metrics like support and confidence.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "LILO-9",
+      "text": "Analyze the diversity of frequent patterns and interpret their significance.",
+      "week": "4-5",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "key_concepts": [
+        "frequent patterns",
+        "pattern diversity",
+        "pattern interpretation",
+        "actionable insights",
+        "domain knowledge",
+        "redundancy",
+        "novelty",
+        "interestingness measures"
+      ],
+      "enriched_text": "Analyze the diversity of discovered frequent patterns, assessing their novelty, redundancy, and interestingness using domain knowledge, and interpret their significance to derive actionable insights and business implications.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "LILO-10",
+      "text": "Apply mutual information to assess information gain between variables.",
+      "week": "4-5",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "key_concepts": [
+        "mutual information",
+        "information gain",
+        "feature selection",
+        "entropy",
+        "conditional entropy",
+        "data dependency",
+        "variable relationships",
+        "machine learning preprocessing"
+      ],
+      "enriched_text": "Apply the concept of mutual information to quantitatively assess the information gain and dependency between variables, utilizing entropy and conditional entropy principles for tasks such as feature selection in machine learning.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "LILO-11",
+      "text": "Apply frequent pattern mining to real-world datasets.",
+      "week": "4-5",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "key_concepts": [
+        "frequent pattern mining",
+        "real-world datasets",
+        "association rules",
+        "support",
+        "confidence",
+        "apriori algorithm",
+        "fp-growth algorithm",
+        "data preprocessing"
+      ],
+      "enriched_text": "Apply frequent pattern mining techniques, such as Apriori and FP-growth algorithms, to extract association rules and identify frequent itemsets from diverse real-world datasets, requiring data preprocessing and interpretation of support and confidence metrics.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "LILO-12",
+      "text": "Develop proficiency in using PCA for dimensionality reduction.",
+      "week": "6-8",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Matrix Data \n • Principal Component Analysis (PCA) \n • Singular Value Decomposition (SVD) \n • Non-negative Matrix Factorization \n Machine Problem: Recommender System, Microarray Analysis",
+      "key_concepts": [
+        "principal component analysis (pca)",
+        "dimensionality reduction",
+        "feature extraction",
+        "eigenvalues",
+        "eigenvectors",
+        "variance explained",
+        "data visualization",
+        "curse of dimensionality"
+      ],
+      "enriched_text": "Develop proficiency in applying Principal Component Analysis (PCA) for dimensionality reduction, including understanding its mathematical foundations (eigenvalues, eigenvectors), interpreting variance explained, and using it for feature extraction and data visualization on various datasets.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Matrix Data \n • Principal Component Analysis (PCA) \n • Singular Value Decomposition (SVD) \n • Non-negative Matrix Factorization \n Machine Problem: Recommender System, Microarray Analysis"
+    },
+    {
+      "id": "LILO-13",
+      "text": "Apply Singular Value Decomposition (SVD) to data mining tasks.",
+      "week": "6-8",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Matrix Data \n • Principal Component Analysis (PCA) \n • Singular Value Decomposition (SVD) \n • Non-negative Matrix Factorization \n Machine Problem: Recommender System, Microarray Analysis",
+      "key_concepts": [
+        "singular value decomposition (svd)",
+        "data mining tasks",
+        "matrix factorization",
+        "latent semantic analysis (lsa)",
+        "recommender systems",
+        "noise reduction",
+        "data compression",
+        "principal components"
+      ],
+      "enriched_text": "Apply Singular Value Decomposition (SVD) as a matrix factorization technique to various data mining tasks, including latent semantic analysis, recommender systems, noise reduction, and data compression, understanding its role in extracting underlying structures from data.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Matrix Data \n • Principal Component Analysis (PCA) \n • Singular Value Decomposition (SVD) \n • Non-negative Matrix Factorization \n Machine Problem: Recommender System, Microarray Analysis"
+    },
+    {
+      "id": "LILO-14",
+      "text": "Apply Non-negative Matrix Factorization to decompose complex data.",
+      "week": "6-8",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Matrix Data \n • Principal Component Analysis (PCA) \n • Singular Value Decomposition (SVD) \n • Non-negative Matrix Factorization \n Machine Problem: Recommender System, Microarray Analysis",
+      "key_concepts": [
+        "non-negative matrix factorization (nmf)",
+        "data decomposition",
+        "feature learning",
+        "topic modeling",
+        "image processing",
+        "gene expression analysis",
+        "non-negativity constraint",
+        "basis vectors"
+      ],
+      "enriched_text": "Apply Non-negative Matrix Factorization (NMF) to decompose complex data into meaningful, non-negative components, enabling feature learning and interpretation in applications such as topic modeling, image processing, and gene expression analysis.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Matrix Data \n • Principal Component Analysis (PCA) \n • Singular Value Decomposition (SVD) \n • Non-negative Matrix Factorization \n Machine Problem: Recommender System, Microarray Analysis"
+    },
+    {
+      "id": "LILO-16",
+      "text": "Apply matrix data mining methods to analyze microarray data.",
+      "week": "6-8",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Matrix Data \n • Principal Component Analysis (PCA) \n • Singular Value Decomposition (SVD) \n • Non-negative Matrix Factorization \n Machine Problem: Recommender System, Microarray Analysis",
+      "key_concepts": [
+        "matrix data mining",
+        "microarray data",
+        "gene expression analysis",
+        "clustering (hierarchical, k-means)",
+        "dimensionality reduction (pca, svd)",
+        "differential expression",
+        "bioinformatics",
+        "data normalization"
+      ],
+      "enriched_text": "Apply various matrix data mining methods, such as clustering (e.g., hierarchical, k-means) and dimensionality reduction (e.g., PCA, SVD), to analyze microarray data for gene expression patterns, differential expression, and biological insights, requiring appropriate data normalization.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Matrix Data \n • Principal Component Analysis (PCA) \n • Singular Value Decomposition (SVD) \n • Non-negative Matrix Factorization \n Machine Problem: Recommender System, Microarray Analysis"
+    },
+    {
+      "id": "LILO-17",
+      "text": "Develop proficiency in using LDA for unsupervised topic modeling.",
+      "week": "9-10",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA",
+      "key_concepts": [
+        "latent dirichlet allocation (lda)",
+        "unsupervised topic modeling",
+        "probabilistic graphical models",
+        "document-topic distributions",
+        "topic-word distributions",
+        "dirichlet prior",
+        "gibbs sampling",
+        "perplexity"
+      ],
+      "enriched_text": "Develop proficiency in applying Latent Dirichlet Allocation (LDA) for unsupervised topic modeling, understanding its probabilistic framework, interpreting document-topic and topic-word distributions, and evaluating model performance using metrics like perplexity and coherence.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA"
+    },
+    {
+      "id": "LILO-18",
+      "text": "Interpret and analyze topics generated by LDA. Explore advanced topic modeling techniques (NMF, LSA).",
+      "week": "9-10",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA",
+      "key_concepts": [
+        "latent dirichlet allocation (lda)",
+        "topic interpretation",
+        "topic coherence",
+        "topic visualization",
+        "latent semantic analysis (lsa)",
+        "non-negative matrix factorization (nmf)",
+        "advanced topic modeling",
+        "model evaluation"
+      ],
+      "enriched_text": "Interpret and analyze the semantic meaning and coherence of topics generated by LDA, and explore advanced topic modeling techniques such as Non-negative Matrix Factorization (NMF) and Latent Semantic Analysis (LSA), understanding their underlying principles and comparative advantages for different data types.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA"
+    },
+    {
+      "id": "LILO-19",
+      "text": "Apply LDA to real-world text data for topic discovery.",
+      "week": "9-10",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA",
+      "key_concepts": [
+        "latent dirichlet allocation (lda)",
+        "real-world text data",
+        "topic discovery",
+        "natural language processing (nlp)",
+        "text preprocessing (tokenization, stop words)",
+        "document-term matrix",
+        "model parameter tuning",
+        "topic visualization"
+      ],
+      "enriched_text": "Apply Latent Dirichlet Allocation (LDA) to diverse real-world text data for effective topic discovery, involving essential natural language processing (NLP) preprocessing steps like tokenization and stop-word removal, and appropriate model parameter tuning for meaningful topic extraction.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA"
+    },
+    {
+      "id": "LILO-20",
+      "text": "Develop advanced skills in image recognition, identifying objects and features using deep learning.",
+      "week": "11-12",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "key_concepts": [
+        "image recognition",
+        "object detection",
+        "feature extraction",
+        "deep learning",
+        "convolutional neural networks (cnns)",
+        "transfer learning",
+        "data augmentation",
+        "image preprocessing",
+        "model evaluation"
+      ],
+      "enriched_text": "Develop advanced skills in applying deep learning techniques, specifically Convolutional Neural Networks (CNNs), for image recognition tasks, including identifying objects and extracting features, utilizing concepts like transfer learning, data augmentation, and appropriate model evaluation metrics.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)"
+    },
+    {
+      "id": "LILO-21",
+      "text": "Apply object detection techniques for localizing objects within images.",
+      "week": "11-12",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "key_concepts": [
+        "object detection",
+        "image localization",
+        "bounding boxes",
+        "convolutional neural networks (cnns)",
+        "r-cnn",
+        "yolo",
+        "ssd",
+        "computer vision"
+      ],
+      "enriched_text": "This LILO requires students to apply various object detection techniques, such as R-CNN, YOLO, or SSD, to localize objects within images by generating bounding boxes and class labels, demonstrating an understanding of underlying computer vision algorithms and their practical implementation.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)"
+    },
+    {
+      "id": "LILO-22",
+      "text": "Utilize interpretable models for image classification.",
+      "week": "11-12",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "key_concepts": [
+        "interpretable ai (xai)",
+        "image classification",
+        "machine learning models",
+        "deep learning models",
+        "lime",
+        "shap",
+        "grad-cam",
+        "feature importance"
+      ],
+      "enriched_text": "Students will utilize interpretable machine learning and deep learning models for image classification, employing techniques like LIME, SHAP, or Grad-CAM to explain model predictions and understand feature importance in image data.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)"
+    },
+    {
+      "id": "LILO-23",
+      "text": "Apply image mining to social sensing and medical diagnosis.",
+      "week": "11-12",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "key_concepts": [
+        "image mining",
+        "social sensing",
+        "medical diagnosis",
+        "image feature extraction",
+        "pattern recognition",
+        "machine learning",
+        "deep learning",
+        "diagnostic imaging"
+      ],
+      "enriched_text": "This LILO involves applying image mining techniques, including feature extraction and pattern recognition, to analyze visual data from social sensing platforms and medical diagnostic images (e.g., X-rays, MRIs) for insights and automated diagnosis.",
+      "graduate_attr": "GA2, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)"
+    },
+    {
+      "id": "LILO-24",
+      "text": "Develop advanced skills in time-series analysis and temporal pattern modeling.",
+      "week": "13",
+      "co_id": "CO-3",
+      "co_ids": [
+        "CO-3"
+      ],
+      "co_text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Mining Time Series and Spatiotemporal Data \n • Time-series Analysis \n • Outlier Detection \n • Symbolic Representation \n • Spatio-Temporal Mining \n Machine Problem: Stock Market Prediction, Marketing",
+      "key_concepts": [
+        "time-series analysis",
+        "temporal pattern modeling",
+        "stationarity",
+        "arima models",
+        "sarima",
+        "prophet",
+        "lstms",
+        "forecasting"
+      ],
+      "enriched_text": "Students will develop advanced skills in time-series analysis and temporal pattern modeling, encompassing techniques like ARIMA, SARIMA, Prophet, and deep learning models (e.g., LSTMs) to identify trends, seasonality, and anomalies for forecasting and understanding sequential data.",
+      "graduate_attr": "GA1, GA3",
+      "co_suggestions": [],
+      "learning_content": "Mining Time Series and Spatiotemporal Data \n • Time-series Analysis \n • Outlier Detection \n • Symbolic Representation \n • Spatio-Temporal Mining \n Machine Problem: Stock Market Prediction, Marketing"
+    },
+    {
+      "id": "LILO-25",
+      "text": "Interpret and explain the significance of detected outliers.",
+      "week": "13",
+      "co_id": "CO-3",
+      "co_ids": [
+        "CO-3"
+      ],
+      "co_text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Mining Time Series and Spatiotemporal Data \n • Time-series Analysis \n • Outlier Detection \n • Symbolic Representation \n • Spatio-Temporal Mining \n Machine Problem: Stock Market Prediction, Marketing",
+      "key_concepts": [
+        "outlier detection",
+        "anomaly detection",
+        "statistical significance",
+        "data distribution",
+        "domain knowledge",
+        "impact analysis",
+        "robust statistics",
+        "visualization techniques"
+      ],
+      "enriched_text": "Students will interpret and explain the significance of detected outliers by considering their statistical context, potential causes, and impact on data analysis or system behavior, often requiring domain knowledge and robust statistical methods.",
+      "graduate_attr": "GA1, GA3",
+      "co_suggestions": [],
+      "learning_content": "Mining Time Series and Spatiotemporal Data \n • Time-series Analysis \n • Outlier Detection \n • Symbolic Representation \n • Spatio-Temporal Mining \n Machine Problem: Stock Market Prediction, Marketing"
+    },
+    {
+      "id": "LILO-26",
+      "text": "Apply geospatial analysis to spatiotemporal datasets.",
+      "week": "13",
+      "co_id": "CO-3",
+      "co_ids": [
+        "CO-3"
+      ],
+      "co_text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Time Series and Spatiotemporal Data \n • Time-series Analysis \n • Outlier Detection \n • Symbolic Representation \n • Spatio-Temporal Mining \n Machine Problem: Stock Market Prediction, Marketing",
+      "key_concepts": [
+        "geospatial analysis",
+        "spatiotemporal data",
+        "gis (geographic information systems)",
+        "spatial statistics",
+        "mapping",
+        "remote sensing",
+        "location intelligence",
+        "spatial autocorrelation"
+      ],
+      "enriched_text": "This LILO requires students to apply geospatial analysis techniques, utilizing GIS tools and spatial statistics, to spatiotemporal datasets for identifying patterns, trends, and relationships across geographic space and over time.",
+      "graduate_attr": "GA1, GA3",
+      "co_suggestions": [],
+      "learning_content": "Mining Time Series and Spatiotemporal Data \n • Time-series Analysis \n • Outlier Detection \n • Symbolic Representation \n • Spatio-Temporal Mining \n Machine Problem: Stock Market Prediction, Marketing"
+    },
+    {
+      "id": "LILO-27",
+      "text": "Apply time series mining to stock market prediction and marketing analysis.",
+      "week": "13",
+      "co_id": "CO-3",
+      "co_ids": [
+        "CO-3"
+      ],
+      "co_text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Time Series and Spatiotemporal Data \n • Time-series Analysis \n • Outlier Detection \n • Symbolic Representation \n • Spatio-Temporal Mining \n Machine Problem: Stock Market Prediction, Marketing",
+      "key_concepts": [
+        "time series mining",
+        "stock market prediction",
+        "marketing analysis",
+        "financial forecasting",
+        "customer behavior analysis",
+        "arima",
+        "lstms",
+        "predictive modeling"
+      ],
+      "enriched_text": "Students will apply time series mining techniques, including advanced forecasting models like ARIMA or LSTMs, to real-world problems such as stock market prediction and marketing analysis, identifying temporal patterns for strategic decision-making and predictive modeling.",
+      "graduate_attr": "GA1, GA3",
+      "co_suggestions": [],
+      "learning_content": "Mining Time Series and Spatiotemporal Data \n • Time-series Analysis \n • Outlier Detection \n • Symbolic Representation \n • Spatio-Temporal Mining \n Machine Problem: Stock Market Prediction, Marketing"
+    },
+    {
+      "id": "LILO-28",
+      "text": "Develop advanced skills in analyzing complex network data.",
+      "week": "14-15",
+      "co_id": "CO-3",
+      "co_ids": [
+        "CO-3"
+      ],
+      "co_text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Mining Network Data \n • Network Measures \n • Community Detection \n • Link Prediction \n Machine Problem: Social Network Analysis",
+      "key_concepts": [
+        "complex networks",
+        "network analysis",
+        "graph theory",
+        "centrality measures",
+        "community detection",
+        "link prediction",
+        "network visualization",
+        "social network analysis"
+      ],
+      "enriched_text": "This LILO focuses on developing advanced skills in analyzing complex network data, encompassing graph theory concepts, centrality measures (e.g., degree, betweenness), community detection algorithms, and network visualization techniques to understand structure and dynamics.",
+      "graduate_attr": "GA1, GA3",
+      "co_suggestions": [],
+      "learning_content": "Mining Network Data \n • Network Measures \n • Community Detection \n • Link Prediction \n Machine Problem: Social Network Analysis"
+    },
+    {
+      "id": "LILO-29",
+      "text": "Analyze the evolution of communities over time in dynamic networks.",
+      "week": "14-15",
+      "co_id": "CO-3",
+      "co_ids": [
+        "CO-3"
+      ],
+      "co_text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "analyze",
+      "source_type": "ilo",
+      "topic_title": "Mining Network Data \n • Network Measures \n • Community Detection \n • Link Prediction \n Machine Problem: Social Network Analysis",
+      "key_concepts": [
+        "dynamic networks",
+        "community evolution",
+        "temporal networks",
+        "community detection algorithms",
+        "network dynamics",
+        "change point detection",
+        "network visualization",
+        "social network analysis"
+      ],
+      "enriched_text": "Students will analyze the evolution of communities over time in dynamic networks, employing temporal community detection algorithms and visualization methods to track changes in group structure, membership, and interactions within evolving network data.",
+      "graduate_attr": "GA1, GA3",
+      "co_suggestions": [],
+      "learning_content": "Mining Network Data \n • Network Measures \n • Community Detection \n • Link Prediction \n Machine Problem: Social Network Analysis"
+    },
+    {
+      "id": "LILO-31",
+      "text": "Apply social network analysis for understanding social interactions.",
+      "week": "14-15",
+      "co_id": "CO-3",
+      "co_ids": [
+        "CO-3"
+      ],
+      "co_text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Network Data \n • Network Measures \n • Community Detection \n • Link Prediction \n Machine Problem: Social Network Analysis",
+      "key_concepts": [
+        "social network analysis (sna)",
+        "social interactions",
+        "network metrics",
+        "graph theory",
+        "network visualization",
+        "community detection",
+        "centrality measures"
+      ],
+      "enriched_text": "Students will apply Social Network Analysis (SNA) techniques, including graph theory principles and various network metrics like centrality, density, and clustering, to analyze and understand complex social interactions and structures, potentially involving community detection and network visualization.",
+      "graduate_attr": "GA1, GA3",
+      "co_suggestions": [],
+      "learning_content": "Mining Network Data \n • Network Measures \n • Community Detection \n • Link Prediction \n Machine Problem: Social Network Analysis"
+    },
+    {
+      "id": "LILO-32",
+      "text": "Develop advanced skills in processing streaming data in real-time.",
+      "week": "16-17",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2",
+        "CO-3"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis",
+      "key_concepts": [
+        "streaming data",
+        "real-time processing",
+        "data pipelines",
+        "stream processing frameworks",
+        "event-driven architectures",
+        "latency",
+        "throughput",
+        "fault tolerance"
+      ],
+      "enriched_text": "Students will develop advanced skills in designing and implementing real-time data pipelines for processing streaming data, utilizing stream processing frameworks like Apache Flink or Kafka Streams, while considering aspects such as latency, throughput, and fault tolerance in event-driven architectures.",
+      "graduate_attr": "GA2, GA7, GA1, GA3",
+      "co_suggestions": [],
+      "learning_content": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis"
+    },
+    {
+      "id": "LILO-33",
+      "text": "Apply MapReduce to analyze and process big data.",
+      "week": "16-17",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2",
+        "CO-3"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis",
+      "key_concepts": [
+        "mapreduce",
+        "big data",
+        "distributed computing",
+        "hadoop",
+        "hdfs",
+        "mappers",
+        "reducers",
+        "fault tolerance",
+        "data partitioning"
+      ],
+      "enriched_text": "This LILO focuses on applying the MapReduce programming model, within a distributed computing framework like Hadoop and HDFS, to effectively analyze and process large-scale big data datasets, understanding the roles of mappers, reducers, data partitioning, and fault tolerance.",
+      "graduate_attr": "GA2, GA7, GA1, GA3",
+      "co_suggestions": [],
+      "learning_content": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis"
+    },
+    {
+      "id": "LILO-35",
+      "text": "Apply big data mining to log files, social media, and query logs.",
+      "week": "16-17",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2",
+        "CO-3"
+      ],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis",
+      "key_concepts": [
+        "big data mining",
+        "log file analysis",
+        "social media analytics",
+        "query log analysis",
+        "data preprocessing",
+        "pattern discovery",
+        "anomaly detection",
+        "sentiment analysis",
+        "topic modeling"
+      ],
+      "enriched_text": "Students will apply big data mining techniques, including data preprocessing, pattern discovery, and anomaly detection, to diverse datasets such as log files, social media feeds, and query logs, potentially involving sentiment analysis, topic modeling, and feature engineering for insights.",
+      "graduate_attr": "GA2, GA7, GA1, GA3",
+      "co_suggestions": [],
+      "learning_content": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis"
+    },
+    {
+      "id": "LILO-38",
+      "text": "Apply causal inference to understand factors influencing behavior.",
+      "week": "18",
+      "co_id": "CO-4",
+      "co_ids": [
+        "CO-4"
+      ],
+      "co_text": "Design end-to-end data mining solutions and communicate findings effectively, demonstrating ethical awareness, adaptability, and innovative thinking across interdisciplinary domains",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation",
+      "key_concepts": [
+        "causal inference",
+        "confounding variables",
+        "treatment effects",
+        "a/b testing",
+        "randomized controlled trials (rcts)",
+        "observational studies",
+        "propensity score matching",
+        "instrumental variables",
+        "granger causality"
+      ],
+      "enriched_text": "This LILO requires students to apply causal inference techniques, such as A/B testing, propensity score matching, or instrumental variables, to analyze observational or experimental data and understand the true causal factors influencing specific behaviors, accounting for confounding variables.",
+      "graduate_attr": "GA2, GA4, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation"
+    },
+    {
+      "id": "LILO-39",
+      "text": "Apply mining results to online advertising.",
+      "week": "18",
+      "co_id": "CO-4",
+      "co_ids": [
+        "CO-4"
+      ],
+      "co_text": "Design end-to-end data mining solutions and communicate findings effectively, demonstrating ethical awareness, adaptability, and innovative thinking across interdisciplinary domains",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "bloom_level": "apply",
+      "source_type": "ilo",
+      "topic_title": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation",
+      "key_concepts": [
+        "data mining results",
+        "online advertising",
+        "ad targeting",
+        "recommendation systems",
+        "click-through rate (ctr) prediction",
+        "conversion optimization",
+        "a/b testing",
+        "user segmentation",
+        "personalization"
+      ],
+      "enriched_text": "Students will apply insights derived from data mining results, including user segmentation and predictive models, to optimize online advertising strategies, focusing on areas such as ad targeting, recommendation systems, click-through rate (CTR) prediction, and conversion optimization through A/B testing.",
+      "graduate_attr": "GA2, GA4, GA7",
+      "co_suggestions": [],
+      "learning_content": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation"
+    }
+  ],
+  "courseOutcomes": [
+    {
+      "id": "CO-1",
+      "text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "ga_codes": [
+        "GA1",
+        "GA2"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "understand"
+    },
+    {
+      "id": "CO-2",
+      "text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "bloom_level": "apply"
+    },
+    {
+      "id": "CO-3",
+      "text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "ga_codes": [
+        "GA1",
+        "GA3"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "bloom_level": "evaluate"
+    },
+    {
+      "id": "CO-4",
+      "text": "Design end-to-end data mining solutions and communicate findings effectively, demonstrating ethical awareness, adaptability, and innovative thinking across interdisciplinary domains",
+      "ga_codes": [
+        "GA2",
+        "GA4",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "bloom_level": "create"
+    }
+  ],
+  "graduateAttributes": [],
+  "programOutcomes": [
+    {
+      "id": "PO1",
+      "text": "Apply knowledge of computing fundamentals, mathematics, science and domain knowledge appropriate for the computing specialization."
+    },
+    {
+      "id": "PO10",
+      "text": "Recognize the need and have the ability to engage in independent learning for continual development as a computing professional."
+    },
+    {
+      "id": "PO2",
+      "text": "Identify, analyze, formulate, research literature and solve complex computing problems reaching substantiated conclusions."
+    },
+    {
+      "id": "PO3",
+      "text": "Apply mathematical foundations, algorithmic principles and computer science theory in the modeling and design of computer-based systems."
+    },
+    {
+      "id": "PO4",
+      "text": "Demonstrate knowledge and understanding of information security issues in relation to the design, development and use of information systems."
+    },
+    {
+      "id": "PO5",
+      "text": "Design and evaluate solutions for complex computing problems with appropriate consideration for public health, safety and environmental factors."
+    },
+    {
+      "id": "PO6",
+      "text": "Create, select, adapt and apply appropriate techniques, resources and modern computing tools to complex computing activities."
+    },
+    {
+      "id": "PO7",
+      "text": "Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary settings."
+    },
+    {
+      "id": "PO8",
+      "text": "Communicate effectively with the computing community and with society at large about complex computing activities."
+    },
+    {
+      "id": "PO9",
+      "text": "Recognize the legal, social, ethical and professional issues involved in the utilization of computer technology."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "id": "CONTENT-1",
+      "week": "2-3",
+      "co_ids": [
+        "CO-1"
+      ],
+      "ilo_ids": [
+        "LILO-4",
+        "LILO-5",
+        "LILO-6",
+        "LILO-7"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA2"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "CONTENT-2",
+      "week": "4-5",
+      "co_ids": [
+        "CO-2"
+      ],
+      "ilo_ids": [
+        "LILO-8",
+        "LILO-9",
+        "LILO-10",
+        "LILO-11"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "CONTENT-3",
+      "week": "6-8",
+      "co_ids": [
+        "CO-2"
+      ],
+      "ilo_ids": [
+        "LILO-12",
+        "LILO-13",
+        "LILO-14",
+        "LILO-16"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "topic_title": "Mining Matrix Data \n • Principal Component Analysis (PCA) \n • Singular Value Decomposition (SVD) \n • Non-negative Matrix Factorization \n Machine Problem: Recommender System, Microarray Analysis",
+      "learning_content": "Mining Matrix Data \n • Principal Component Analysis (PCA) \n • Singular Value Decomposition (SVD) \n • Non-negative Matrix Factorization \n Machine Problem: Recommender System, Microarray Analysis"
+    },
+    {
+      "id": "CONTENT-4",
+      "week": "9-10",
+      "co_ids": [
+        "CO-2"
+      ],
+      "ilo_ids": [
+        "LILO-17",
+        "LILO-18",
+        "LILO-19"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "topic_title": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA",
+      "learning_content": "Mining Text Data \n • Latent Dirichlet Allocation (LDA) \n • Topic Modelling \n Machine Problem: Topic Modelling, Text Content Analysis using LDA"
+    },
+    {
+      "id": "CONTENT-5",
+      "week": "11-12",
+      "co_ids": [
+        "CO-2"
+      ],
+      "ilo_ids": [
+        "LILO-20",
+        "LILO-21",
+        "LILO-22",
+        "LILO-23"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "topic_title": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)",
+      "learning_content": "Mining Image Data \n • Image Recognition \n • Image Detection \n • Image Classification \n • Image-to-text Generation \n Machine Problem: Social Sensing, Medical Diagnosis (X-ray, MRI or CT Scan)"
+    },
+    {
+      "id": "CONTENT-6",
+      "week": "13",
+      "co_ids": [
+        "CO-3"
+      ],
+      "ilo_ids": [
+        "LILO-24",
+        "LILO-25",
+        "LILO-26",
+        "LILO-27"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA3"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "topic_title": "Mining Time Series and Spatiotemporal Data \n • Time-series Analysis \n • Outlier Detection \n • Symbolic Representation \n • Spatio-Temporal Mining \n Machine Problem: Stock Market Prediction, Marketing",
+      "learning_content": "Mining Time Series and Spatiotemporal Data \n • Time-series Analysis \n • Outlier Detection \n • Symbolic Representation \n • Spatio-Temporal Mining \n Machine Problem: Stock Market Prediction, Marketing"
+    },
+    {
+      "id": "CONTENT-7",
+      "week": "14-15",
+      "co_ids": [
+        "CO-3"
+      ],
+      "ilo_ids": [
+        "LILO-28",
+        "LILO-29",
+        "LILO-31"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA3"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "topic_title": "Mining Network Data \n • Network Measures \n • Community Detection \n • Link Prediction \n Machine Problem: Social Network Analysis",
+      "learning_content": "Mining Network Data \n • Network Measures \n • Community Detection \n • Link Prediction \n Machine Problem: Social Network Analysis"
+    },
+    {
+      "id": "CONTENT-8",
+      "week": "16-17",
+      "co_ids": [
+        "CO-2"
+      ],
+      "ilo_ids": [
+        "LILO-32",
+        "LILO-33",
+        "LILO-35"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA2",
+        "GA3",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "topic_title": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis",
+      "learning_content": "Mining Big Data \n • Stream/Online Algorithms \n • MapReduce \n • Min/Hash/Locality-Sensitive Hashing \n Machine Problem: Log File Processing, Social Media Mining, Query Log Analysis"
+    },
+    {
+      "id": "CONTENT-9",
+      "week": "18",
+      "co_ids": [
+        "CO-4"
+      ],
+      "ilo_ids": [
+        "LILO-38",
+        "LILO-39"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA4",
+        "GA7"
+      ],
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "topic_title": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation",
+      "learning_content": "Mining Behavior Data \n • Probabilistic Models \n • Generative Models \n • Correlation and Causality Tests \n Machine Problem: Click Modeling, Online Advertising \n Final Project Presentation"
+    }
+  ]
+}

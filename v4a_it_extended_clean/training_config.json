@@ -1,0 +1,15 @@
+{
+  "model_family": "V4-A extended clean IT/CS cross-encoder",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "train": "v4a_it_extended_clean/train.jsonl",
+  "validation": "v4a_it_extended_clean/validation.jsonl",
+  "output": "models/prime-lilo-reranker-v4a-it-extended-clean-v2",
+  "epochs": 12,
+  "batch_size": 16,
+  "learning_rate": 0.00001,
+  "max_length": 256,
+  "patience": 3,
+  "seed": 20260830,
+  "selection_metric": "grouped validation MRR, then validation loss",
+  "note": "Seven-JSON benchmark and ISU professor-test questions are excluded. Early stopping restores the best validation-MRR checkpoint."
+}

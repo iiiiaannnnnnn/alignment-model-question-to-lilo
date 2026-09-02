@@ -1,0 +1,526 @@
+PRIME SYNTHETIC QUESTION-TO-LILO DATASET SPECIFICATION
+Version 4 (supersedes synthetic_it_cs_human_style_v3)
+Target builder: src/build_it_cs_data.py
+Written 2026-08-31
+
+
+==============================================================================
+0. THE ONE FILE YOU CREATE
+==============================================================================
+
+You create EXACTLY ONE file:
+
+    prime_it_v4_IT_CS_question_LILO_synthetic.jsonl
+
+Format: JSON Lines (JSONL). One JSON object per line. UTF-8. ASCII only.
+No outer array. No commas between lines. No trailing blank object.
+No pretty-printing - each record is on a single physical line.
+
+You do NOT create any of the following. They are generated for you:
+
+    catalog/lilos.jsonl          <- derived
+    questions/train.jsonl        <- derived
+    questions/validation.jsonl   <- derived
+    pairs/train.jsonl            <- derived
+    pairs/validation.jsonl       <- derived
+    manifest.json                <- derived
+
+Do not hand-write negatives, labels of 0, train/validation splits, bloom
+levels, family ids, or the LILO catalogue. src/build_it_cs_data.py mines all
+of those deterministically from your one file, and it enforces leakage safety
+while doing so. Authoring them by AI would silently break those guarantees.
+
+Every record in your file is a POSITIVE. The builder rejects the file outright
+if any record carries a label other than 1.
+
+
+==============================================================================
+1. RECORD SCHEMA
+==============================================================================
+
+Exactly these seven keys, in this order, on every line. No extra keys. No
+missing keys. No nulls.
+
+    {"question_id": "...", "question": "...", "lilo_id": "LILO-n",
+     "lilo": "...", "topic": "...", "source": "...", "label": 1}
+
+Reference record, copied verbatim from the v3 corpus:
+
+{"question_id": "IT-LILO-1-01", "question": "In a payroll program, a variable declared inside a function cannot be accessed by another function. What programming concept explains this restriction?", "lilo_id": "LILO-1", "lilo": "Explain variable scope and lifetime in imperative programs.", "topic": "Programming", "source": "synthetic_it_cs_human_style_v3", "label": 1}
+
+FIELD RULES
+
+question_id
+    Format: IT-{lilo_id}-{NN}
+    NN is a two-digit, zero-padded counter restarting at 01 for each LILO.
+    Example: IT-LILO-1-01, IT-LILO-1-02, ... IT-LILO-1-24
+    Must be globally unique across the file.
+
+question
+    The question text only. See section 4 for the writing rules.
+    Plain string. No newlines, no tabs, no answer choices, no answer key,
+    no numbering prefix, no markdown.
+
+lilo_id
+    "LILO-n" where n is 1 to 120. See the fixed table in section 2.
+    The number determines the domain. This is not free choice.
+
+lilo
+    The full outcome statement. IDENTICAL string on every record that shares
+    the same lilo_id - byte for byte, including the trailing period. The
+    builder raises "Conflicting catalogue entry" on any mismatch.
+
+topic
+    One of the twelve strings in section 2, spelled exactly. Must be the
+    topic that owns this lilo_id. Any other string aborts the build.
+
+source
+    The constant "synthetic_it_cs_human_style_v4" on every record.
+
+label
+    The integer 1 on every record. Not "1", not 1.0.
+
+
+==============================================================================
+2. THE FIXED DOMAIN AND ID TABLE
+==============================================================================
+
+Twelve domains. Exactly ten LILOs each. One hundred twenty LILOs total.
+The ID ranges are NOT negotiable - the builder derives a per-domain code from
+the number, and any deviation collides two outcomes onto one code.
+
+    LILO-1   to LILO-10    Programming                 -> PROG-01..10
+    LILO-11  to LILO-20    Data Structures             -> DSTR-01..10
+    LILO-21  to LILO-30    Algorithms                  -> ALG-01..10
+    LILO-31  to LILO-40    Databases                   -> DB-01..10
+    LILO-41  to LILO-50    Networking                  -> NET-01..10
+    LILO-51  to LILO-60    Cybersecurity               -> SEC-01..10
+    LILO-61  to LILO-70    Artificial Intelligence     -> AI-01..10
+    LILO-71  to LILO-80    Data Science                -> DATA-01..10
+    LILO-81  to LILO-90    Web Development             -> WEB-01..10
+    LILO-91  to LILO-100   Software Engineering        -> SE-01..10
+    LILO-101 to LILO-110   Cloud & DevOps              -> CLOUD-01..10
+    LILO-111 to LILO-120   Emerging Technologies       -> EMERGE-01..10
+
+Write "Cloud & DevOps" with the ampersand. Write "Artificial Intelligence"
+in full, not "AI".
+
+REUSING THE V3 OUTCOMES IS THE SAFE DEFAULT. The 120 statements already exist
+in data/it_cs_v4/catalog/lilos.jsonl. If you keep them unchanged and only
+write new questions, the catalogue cannot break and the new corpus stays
+comparable with every result already in results/. If you rewrite the outcome
+statements, you are building a new catalogue and every earlier number becomes
+incomparable - do that deliberately or not at all.
+
+To go past 120 LILOs, see section 9. Do not improvise it.
+
+
+==============================================================================
+3. WRITING THE LILO STATEMENTS (only if you are not reusing v3)
+==============================================================================
+
+L1. Start with one of these fourteen verbs, lowercase-matched by the builder
+    to assign a Bloom level. Any other opening verb yields "unspecified",
+    which degrades the metadata:
+
+        explain, interpret            -> understand
+        apply, use, implement, write,
+        traverse, troubleshoot        -> apply
+        analyze, select, compare      -> analyze
+        evaluate                      -> evaluate
+        design, communicate           -> create
+
+L2. One measurable outcome per statement. No "and" joining two distinct
+    capabilities. No "understand", "know", "learn about", "be familiar with".
+
+L3. Between 8 and 18 words. End with a period.
+
+L4. Within a domain, the ten outcomes must be mutually exclusive. If a
+    question could honestly be evidence for two of them, the pair is
+    unlabelable and the whole domain is compromised. This is the single most
+    important property of the catalogue, because the builder mines the other
+    nine as negatives.
+
+L5. Across domains, no outcome may restate another. "Apply hashing to..."
+    in Data Structures and "Apply hashing to..." in Cybersecurity must be
+    distinguishable by their objects, not just their domain tag.
+
+L6. No course codes, no professor names, no institution names, no week
+    numbers, no textbook chapter references.
+
+
+==============================================================================
+4. WRITING THE QUESTIONS - THE RULES THAT DECIDE WHETHER THIS IS WORTH ANYTHING
+==============================================================================
+
+The builder pairs each question with its target plus three negatives chosen by
+token overlap against the outcome text. That means the questions decide what
+the model actually learns. Lexical echoes teach it to string-match; concrete
+scenarios teach it to align.
+
+Q1. NEVER ECHO THE OUTCOME. The question must not reuse the outcome's verb
+    phrase or its distinctive noun phrase verbatim.
+
+    Outcome: "Explain variable scope and lifetime in imperative programs."
+    BAD:  "Explain variable scope and lifetime in imperative programs."
+    BAD:  "What is variable scope and lifetime in a program?"
+    GOOD: "In a payroll program, a variable declared inside a function cannot
+           be accessed by another function. What programming concept explains
+           this restriction?"
+
+    Rule of thumb: at most THREE content words shared with the outcome text,
+    counting only words that carry meaning. Measured against the v3 corpus,
+    96 percent of its questions sit at or under three and the median is one.
+    You may name the structure or subject the question is genuinely about -
+    you cannot describe a binary search tree without the word tree - but the
+    outcome's verb phrase must not reappear.
+
+Q2. LEAD WITH A CONCRETE SITUATION. A system, a script, a dataset, a network,
+    a team, a deployment. Then ask. Roughly two thirds of questions should be
+    scenario-led. The remaining third may be direct conceptual questions, but
+    still must not echo the outcome.
+
+Q3. LENGTH: 8 to 30 words. Target a mean near 17. One sentence of setup plus
+    one question sentence is the ideal shape. Count words before you accept a
+    record. Concise is allowed when it is crisp - "Why can reducing memory
+    usage sometimes increase running time?" is nine words and is a good
+    question - but do not read the floor as a licence to write stubs.
+
+Q4. EXACTLY ONE CORRECT OUTCOME. Before accepting a question, check it against
+    the other nine outcomes in the same domain. If any of them is also a
+    defensible answer, rewrite or discard. Do not lower the bar because the
+    other nine are "less good" - the label is single, so a second defensible
+    target is a wrong label.
+
+Q5. MATCH THE COGNITIVE LEVEL. The builder stamps the question with the
+    outcome's Bloom level. An "analyze" outcome must not be served by a recall
+    question. If the outcome says compare, the question must require a
+    comparison.
+
+    The common failure is NAMING INSTEAD OF COMPARING. Describing a setup and
+    then asking "which two approaches are these?" is recall wearing a compare
+    costume - the student produces two labels and weighs nothing.
+    Outcome: "Compare retrieval-augmented generation with direct
+    language-model prompting."
+    BAD:  "A developer tests whether supplying internal documents via a vector
+           database reduces hallucinations. Which two architectures are being
+           evaluated?"
+    GOOD: "A support team must answer from an internal policy corpus that is
+           revised weekly. Why would grounding each answer in retrieved
+           documents be preferred over relying on the model's trained
+           knowledge?"
+
+Q13. THE SCENARIO MUST BE TECHNICALLY TRUE. Every premise has to be real
+     behaviour of the language, protocol, or system it names. A question built
+     on a false premise teaches the model a false association, and no amount of
+     alignment quality elsewhere repairs that.
+
+     Outcome: "Explain variable scope and lifetime in imperative programs."
+     BAD:  "A script initializes a counter inside a loop, but accessing it
+            after the loop triggers a NameError."
+            This does not happen. Python scopes to the function, not the block,
+            so the counter is still readable after the loop.
+     GOOD: "A counter declared inside a for block in Java cannot be read after
+            the block ends, though the same code in Python compiles."
+
+     Where a behaviour is language-specific, name the language. Scope, integer
+     division, string mutability, default arguments, and pass-by-reference all
+     differ across languages, and a premise that is true in one is often false
+     in another. Verify anything you are not certain of before accepting the
+     record.
+
+Q6. NO ANSWER MATERIAL. No options A/B/C/D, no "which of the following",
+    no answer key, no explanation, no rationale, no marks, no time limits.
+    The corpus trains a relevance reranker on question text only.
+
+Q7. DO NOT GIVE AWAY THE ANSWER, BUT DO NAME THE TECHNOLOGY.
+
+    These are two different things and confusing them ruins a block.
+
+    The ANSWER is what the student must supply. Do not state it. For an
+    outcome about binary search, describe a sorted collection being probed
+    rather than writing the words "binary search", because naming the
+    algorithm is the answer.
+
+    The TECHNOLOGY is the subject the question is set in - SQL, HTTP, TCP,
+    Git, a relational schema. NAME IT NORMALLY. It is context, not the answer.
+    Q1 allows three shared content words and a technology name costs one.
+
+    The failure this rule exists to prevent is the euphemism treadmill. A
+    generator told to avoid the word SQL will invent "backend statement",
+    "database instruction", "backend syntax", "database command" and rotate
+    them forever. No professor writes that way, the questions stop sounding
+    like real assessment items, and the model never learns the association
+    between the question and an outcome whose own text says SQL.
+
+    Outcome: "Write SQL queries that filter and aggregate relational data."
+    BAD:  "What backend syntax should be used to calculate total sales
+           grouped by region?"
+    GOOD: "A sales table stores one row per transaction. Which SQL query
+           returns total revenue for each region, excluding refunds?"
+
+    Roughly one third to one half of a block should name the technology
+    outright. If a block reaches the end without the technology appearing
+    once, it has failed this rule even when every individual record looks
+    acceptable.
+
+Q14. KEEP THE QUESTION ANSWERABLE FROM ONE TABLE unless the outcome is about
+     joins. A scenario that spans two entities - receipts and their line
+     items, players and their matches, scores and the outcomes they map to -
+     quietly becomes evidence for the joins outcome as well, and the label is
+     single. Name the table the data sits in when there is any doubt.
+
+Q8. VARY THE SURFACE FORM within each LILO's question block. Across the
+    questions for one outcome, vary the domain of the scenario (finance,
+    campus, health, logistics, retail, telecom, research), the opening word,
+    and the question stem. Do not produce N minimal edits of one sentence.
+
+Q9. VARY THE FRAMING, NOT THE TARGET. Every question under LILO-n must still
+    be squarely about LILO-n. Drift is worse than repetition.
+
+Q10. ENGLISH, ASCII, third person. No first person, no "you", no emoji,
+     no curly quotes, no em dashes, no non-ASCII characters of any kind.
+     Straight apostrophes only.
+
+Q11. NO NEAR-DUPLICATES ANYWHERE IN THE FILE. Two questions whose normalized
+     word sets overlap by more than 80 percent are duplicates, including
+     across different LILOs. The validator in section 7 checks this.
+
+Q12. NO PII, no student names, no real institution data, no real system
+     credentials, no real hostnames or IP ranges beyond documentation ranges.
+
+
+==============================================================================
+5. HOW MANY
+==============================================================================
+
+The v3 corpus is 8 questions per LILO = 960 rows.
+
+For v4, write between 20 and 40 questions per LILO:
+
+    20 per LILO = 2,400 rows
+    30 per LILO = 3,600 rows      <- recommended
+    40 per LILO = 4,800 rows
+
+THE COUNT MUST BE THE SAME FOR EVERY LILO. Uneven blocks skew the negative
+mining and the per-domain hold-out. Pick one number and hold it for all 120.
+
+Order the file by LILO number ascending, then by question counter ascending.
+The builder is order-independent but review is not.
+
+Generate in batches of one LILO at a time - all 30 questions for LILO-1, then
+all 30 for LILO-2. Batching by LILO is what makes rules Q4, Q8 and Q11
+checkable while you write. Do not generate the whole file in one pass.
+
+Past roughly 40 per LILO you are adding paraphrase, not signal. Breadth of
+scenario beats volume.
+
+
+==============================================================================
+6. WHAT MAKES A RECORD FAIL REVIEW
+==============================================================================
+
+Reject and rewrite any record that does any of the following:
+
+    - repeats the outcome's wording (Q1)
+    - could be answered by a sibling outcome in the same domain (Q4)
+    - names the technique the outcome names (Q7)
+    - is under 8 or over 30 words (Q3)
+    - contains options, an answer, or a rationale (Q6)
+    - rests on a premise that is not true of the named language or system (Q13)
+    - asks the student to NAME two approaches where the outcome says compare
+      them (Q5)
+    - needs a second table when the outcome is not about joins (Q14)
+
+And reject the BLOCK, not just the record, when:
+
+    - the technology is never named once across the whole block (Q7)
+    - every question in the block is scenario-led (Q2 wants about two thirds)
+    - the questions rotate synonyms for one stem instead of varying shape (Q8)
+    - contains any non-ASCII character (Q10)
+    - duplicates another question (Q11)
+    - carries a lilo string that differs by even one character from the other
+      records with the same lilo_id (section 1)
+    - carries a topic that does not own its lilo_id (section 2)
+
+Budget for rejection. The prime_tload_revised run rejected 18 of 120 reviewed
+payloads and kept 102. A generation pass with a zero rejection rate was not
+reviewed.
+
+
+==============================================================================
+7. VALIDATE BEFORE YOU BUILD
+==============================================================================
+
+Save this as check_source.py next to the JSONL and run it. Fix every reported
+line before running the builder. Do not skip this - the builder's own errors
+are terse and fire on the first bad record only.
+
+------------------------------------------------------------------------------
+import json, re, sys, collections
+
+PATH = sys.argv[1] if len(sys.argv) > 1 else "prime_it_v4_IT_CS_question_LILO_synthetic.jsonl"
+TOPICS = ["Programming","Data Structures","Algorithms","Databases","Networking",
+          "Cybersecurity","Artificial Intelligence","Data Science",
+          "Web Development","Software Engineering","Cloud & DevOps",
+          "Emerging Technologies"]
+KEYS = ["question_id","question","lilo_id","lilo","topic","source","label"]
+VERBS = {"explain","interpret","apply","use","implement","write","traverse",
+         "troubleshoot","analyze","select","compare","evaluate","design",
+         "communicate"}
+err = []
+rows = []
+for i, line in enumerate(open(PATH, encoding="utf-8"), 1):
+    if not line.strip():
+        continue
+    try:
+        r = json.loads(line)
+    except Exception as e:
+        err.append(f"line {i}: not valid JSON: {e}"); continue
+    if list(r) != KEYS:
+        err.append(f"line {i}: keys are {list(r)}")
+        continue
+    rows.append((i, r))
+
+texts, lilo_text, qids = {}, {}, set()
+per_lilo = collections.Counter()
+for i, r in rows:
+    n = int(re.search(r"\d+", r["lilo_id"]).group()) if re.search(r"\d+", r["lilo_id"]) else 0
+    if not (1 <= n <= 120):
+        err.append(f"line {i}: lilo_id out of range: {r['lilo_id']}")
+        continue
+    want = TOPICS[(n - 1) // 10]
+    if r["topic"] != want:
+        err.append(f"line {i}: {r['lilo_id']} must be topic '{want}', got '{r['topic']}'")
+    if r["label"] != 1 or not isinstance(r["label"], int):
+        err.append(f"line {i}: label must be the integer 1")
+    if r["source"] != "synthetic_it_cs_human_style_v4":
+        err.append(f"line {i}: wrong source value")
+    if r["lilo_id"] in lilo_text and lilo_text[r["lilo_id"]] != r["lilo"]:
+        err.append(f"line {i}: lilo text differs from an earlier record for {r['lilo_id']}")
+    lilo_text.setdefault(r["lilo_id"], r["lilo"])
+    if r["lilo"].split()[0].lower() not in VERBS:
+        err.append(f"line {i}: outcome verb '{r['lilo'].split()[0]}' is not in the Bloom map")
+    if r["question_id"] in qids:
+        err.append(f"line {i}: duplicate question_id {r['question_id']}")
+    qids.add(r["question_id"])
+    if not re.fullmatch(rf"IT-{re.escape(r['lilo_id'])}-\d{{2}}", r["question_id"]):
+        err.append(f"line {i}: question_id does not match IT-{r['lilo_id']}-NN")
+    q = r["question"]
+    w = len(q.split())
+    if not (8 <= w <= 30):
+        err.append(f"line {i}: question is {w} words, must be 8 to 30")
+    if not q.rstrip().endswith("?"):
+        err.append(f"line {i}: question does not end with a question mark")
+    for field in ("question", "lilo"):
+        try:
+            r[field].encode("ascii")
+        except UnicodeEncodeError:
+            err.append(f"line {i}: non-ASCII characters in {field}")
+    if len(re.findall(r"(?:^|\s)[A-D][\).]\s+[a-z]", q)) >= 2 or "following" in q.lower():
+        err.append(f"line {i}: looks like it carries answer options")
+    qw = set(re.findall(r"[a-z0-9]+", q.lower()))
+    lw = set(re.findall(r"[a-z0-9]+", r["lilo"].lower()))
+    stop = {"the","a","an","of","in","to","and","for","is","are","that","with",
+            "which","what","how","on","by","from","this","it","be","as","or"}
+    shared = (qw & lw) - stop
+    if len(shared) > 3:
+        err.append(f"line {i}: echoes the outcome, shares {sorted(shared)}")
+    per_lilo[r["lilo_id"]] += 1
+    texts[r["question_id"]] = qw - stop
+
+items = list(texts.items())
+for a in range(len(items)):
+    for b in range(a + 1, len(items)):
+        x, y = items[a][1], items[b][1]
+        if x and y and len(x & y) / len(x | y) > 0.8:
+            err.append(f"near-duplicate: {items[a][0]} and {items[b][0]}")
+
+if len(per_lilo) != 120:
+    err.append(f"expected 120 distinct LILOs, found {len(per_lilo)}")
+counts = set(per_lilo.values())
+if len(counts) > 1:
+    err.append(f"uneven questions per LILO: {sorted(counts)}")
+
+print(f"rows {len(rows)}  lilos {len(per_lilo)}  per-lilo {sorted(counts)}")
+print(f"errors {len(err)}")
+for e in err[:80]:
+    print("  " + e)
+sys.exit(1 if err else 0)
+------------------------------------------------------------------------------
+
+The pairwise duplicate scan is O(n^2). At 3,600 rows it takes a few seconds.
+At 10,000 rows, run it per domain instead.
+
+
+==============================================================================
+8. AFTER THE FILE PASSES
+==============================================================================
+
+Build the training-ready corpus:
+
+    python -m src.build_it_cs_data \
+      --source "C:\Users\Jericho Mico\Downloads\prime_it_v4_IT_CS_question_LILO_synthetic.jsonl" \
+      --output data/it_cs_v5 \
+      --seed 20260830
+
+Check the printed manifest:
+    lilos                 must be 120
+    domains               must be 12
+    train + validation    must equal your row count
+    pairs                 must be exactly 4x the question count
+
+Then train and evaluate exactly as the root README does for v4, substituting
+data/it_cs_v5 for data/it_cs_v4 and a new model name. Keep the same seed so
+the hold-out is comparable.
+
+NEVER touch data/evaluation/chem31a_human.jsonl. It is not training input, and
+it must not be used to choose epochs, thresholds, or the winning checkpoint.
+
+
+==============================================================================
+9. GOING PAST 120 LILOS
+==============================================================================
+
+Do not simply number past LILO-120. src/build_it_cs_data.py maps a LILO number
+to a per-domain code by decade:
+
+    number - ((number - 1) // 10) * 10
+
+LILO-121 would become PROG-01 and collide with LILO-1. The build aborts with
+"Conflicting catalogue entry", or worse, silently merges two outcomes if their
+text happens to match.
+
+If you want more than ten outcomes per domain, that is a builder change, not a
+data change: replace stable_id() with a per-domain counter assigned in first-
+appearance order, and widen the code to three digits. Make that change and
+re-run the v4 build first to confirm it reproduces the existing 120-code
+catalogue before you generate anything new against it.
+
+Until that change is made and verified, ten per domain is a hard limit.
+
+
+==============================================================================
+10. WHAT THIS DATASET IS, AND WHAT IT IS NOT
+==============================================================================
+
+Carry this wording into the manifest and into any write-up. It is the same
+position the existing manifests take, and it is what keeps the work defensible.
+
+    These labels are synthetic weak supervision. The target outcome is the one
+    the question was written for, not an independent expert judgment. This
+    corpus can train and compare rerankers. It cannot establish educational
+    alignment accuracy.
+
+Accuracy claims still require de-identified, blind, professor-reviewed ISU-CS
+labels on a test set that never entered training. Nothing in this file changes
+that.
+
+
+==============================================================================
+11. BEFORE YOU GENERATE ALL OF IT
+==============================================================================
+
+Produce three records first - one Programming, one Databases, one Emerging
+Technologies, each for a different LILO - and have them reviewed against
+sections 1, 2 and 4. Only then generate the full corpus.

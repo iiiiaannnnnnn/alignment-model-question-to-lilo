@@ -1,0 +1,1080 @@
+{
+  "exportedAt": "2026-08-25T07:06:13.393Z",
+  "assessment": {
+    "title": "test quizzz",
+    "topic": "Lecture 2 Mining Item Sets · Lecture 1 Real World Data Formulation (1)",
+    "type": "quiz",
+    "difficulty": "medium",
+    "createdAt": "2026-08-25T07:06:00.884Z"
+  },
+  "stats": {
+    "total": 20,
+    "matched": 20,
+    "bloomAligned": 13,
+    "avgBloomProximity": 0.825,
+    "bloomGapHistogram": {
+      "0": 13,
+      "1": 1,
+      "3": 1,
+      "-3": 1,
+      "-2": 3,
+      "-1": 1
+    },
+    "bloomGapNotMeasured": 0,
+    "avgAlignmentScore": 0.429
+  },
+  "questions": [
+    {
+      "index": 1,
+      "question": "Given the transaction dataset: T1:{Milk, Bread, Butter}, T2:{Milk, Bread}, T3:{Bread, Eggs}, T4:{Milk, Eggs}, T5:{Milk, Bread, Eggs}. If the minimum support threshold is 0.6, which of the following represents ALL frequent 2-itemsets?",
+      "type": "multiple_choice",
+      "options": [
+        "A) {Milk, Bread}",
+        "B) {Milk, Eggs}, {Bread, Eggs}",
+        "C) {Milk, Bread}, {Milk, Eggs}, {Bread, Eggs}",
+        "D) {Milk, Bread}, {Milk, Eggs}"
+      ],
+      "correct_answer": "A) {Milk, Bread}",
+      "explanation": "Support(Milk, Bread) = 3/5 = 0.6, which meets the threshold. Support(Milk, Eggs) = 2/5 = 0.4 and Support(Bread, Eggs) = 2/5 = 0.4, both of which are below the threshold.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-8",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-8",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop the ability to identify and extract frequent patterns from large datasets.",
+        "score": 0.2525,
+        "bloom_level": "remember",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": false,
+        "bloom_gap": -3,
+        "score_breakdown": {
+          "cosine": 0.4136,
+          "jaccard": 0.0652,
+          "content": 0.0222,
+          "bloom": 0.25
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 2,
+      "question": "An e-commerce platform processes millions of transactions daily, each containing numerous items. To efficiently extract frequent patterns from this large and potentially dense dataset, which algorithm would generally be preferred over Apriori, and why?",
+      "type": "multiple_choice",
+      "options": [
+        "A) Apriori, because its simplicity makes it robust for any dataset size.",
+        "B) FP-Growth, because it avoids the costly candidate generation step, making it faster for large and dense datasets.",
+        "C) ECLAT, because it is specifically designed for sparse datasets, which e-commerce platforms typically have.",
+        "D) Apriori, as its performance scales linearly with the increasing number of transactions."
+      ],
+      "correct_answer": "B) FP-Growth, because it avoids the costly candidate generation step, making it faster for large and dense datasets.",
+      "explanation": "FP-Growth is generally more efficient than Apriori for large and dense datasets as it constructs a compact FP-tree and mines patterns without generating numerous candidate itemsets, which can be computationally expensive for Apriori.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-8",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-8",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop the ability to identify and extract frequent patterns from large datasets.",
+        "score": 0.5074,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.6373,
+          "jaccard": 0.087,
+          "content": 0.0217,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 3,
+      "question": "During market basket analysis with a minimum support threshold of 0.6, the itemset {Milk, Eggs} has a calculated support of 0.4. How does this finding affect the subsequent identification of frequent patterns?",
+      "type": "multiple_choice",
+      "options": [
+        "A) The analysis will proceed to evaluate 3-itemsets containing both Milk and Eggs to confirm their frequency.",
+        "B) Any itemset containing both Milk and Eggs will automatically be considered infrequent and pruned from further consideration.",
+        "C) The minimum support threshold should be lowered to 0.4 to ensure {Milk, Eggs} is included as a frequent pattern.",
+        "D) The confidence for association rules involving Milk and Eggs will increase due to their low individual support."
+      ],
+      "correct_answer": "B) Any itemset containing both Milk and Eggs will automatically be considered infrequent and pruned from further consideration.",
+      "explanation": "According to the Apriori principle, if an itemset ({Milk, Eggs} in this case) is infrequent, then all its supersets (e.g., {Milk, Bread, Eggs}) must also be infrequent. Therefore, any larger pattern containing both Milk and Eggs will be discarded.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-8",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-8",
+        "target_co_id": "CO-2",
+        "lilo_text": "Develop the ability to identify and extract frequent patterns from large datasets.",
+        "score": 0.4448,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.4892,
+          "jaccard": 0.0889,
+          "content": 0.0455,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 4,
+      "question": "A market basket analysis yields two frequent patterns: {Milk, Bread} with a Mutual Information (MI) of -0.028, and {Coffee, Sugar} with an MI of 0.85. How do these MI values differentiate the significance of the two patterns for a retailer seeking to optimize product placement strategies?",
+      "type": "multiple_choice",
+      "options": [
+        "A) {Coffee, Sugar} indicates a strong, potentially actionable dependency, while {Milk, Bread} suggests items are almost independent, offering less strategic insight.",
+        "B) Both patterns indicate strong dependencies, but {Coffee, Sugar} is more frequent due to its higher MI value.",
+        "C) {Milk, Bread} shows a negative association, implying they should be placed far apart, whereas {Coffee, Sugar} shows a positive, weak association.",
+        "D) MI values are only relevant for feature selection, not for interpreting customer purchasing behavior directly."
+      ],
+      "correct_answer": "A) {Coffee, Sugar} indicates a strong, potentially actionable dependency, while {Milk, Bread} suggests items are almost independent, offering less strategic insight.",
+      "explanation": "Mutual Information close to zero indicates weak dependency, meaning the items are almost independent. A higher absolute MI value (like 0.85) signifies a stronger dependency, which is more significant for strategic decision-making like product placement.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-9",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-9",
+        "target_co_id": "CO-2",
+        "lilo_text": "Analyze the diversity of frequent patterns and interpret their significance.",
+        "score": 0.3516,
+        "bloom_level": "understand",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "score_breakdown": {
+          "cosine": 0.5035,
+          "jaccard": 0.0625,
+          "content": 0.0833,
+          "bloom": 0.5
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 5,
+      "question": "In a transaction dataset, the itemset {Milk, Bread} has a support of 0.6 and Confidence(Milk → Bread) = 0.75. Another itemset {Eggs, Butter} has a support of 0.1 and Confidence(Eggs → Butter) = 0.9. Analyze the differing practical significance of these two patterns for a business considering a cross-promotion.",
+      "type": "multiple_choice",
+      "options": [
+        "A) {Milk, Bread} is more practically significant due to its higher overall frequency, despite slightly lower confidence, indicating a more widespread trend.",
+        "B) {Eggs, Butter} is more significant because its higher confidence guarantees customers buying eggs will almost always buy butter.",
+        "C) Both patterns have similar practical significance, as confidence is the primary measure for cross-promotions.",
+        "D) Neither pattern is significant because their combined support and confidence values are below an implied threshold."
+      ],
+      "correct_answer": "A) {Milk, Bread} is more practically significant due to its higher overall frequency, despite slightly lower confidence, indicating a more widespread trend.",
+      "explanation": "For a cross-promotion, a pattern needs to be both frequently occurring (high support) and have a strong association (high confidence). While {Eggs, Butter} has higher confidence, its very low support (0.1) means it occurs infrequently, making it less impactful for a widespread promotion compared to {Milk, Bread} with its high support (0.6).",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-9",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-9",
+        "target_co_id": "CO-2",
+        "lilo_text": "Analyze the diversity of frequent patterns and interpret their significance.",
+        "score": 0.423,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.4708,
+          "jaccard": 0.0408,
+          "content": 0.0196,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 6,
+      "question": "When abstracting a complex real-world problem into a structured dataset, defining only a broad 'category' attribute for items with many distinct features (e.g., 'electronics' for a smartphone vs. a toaster) is always sufficient for identifying nuanced customer preferences and relationships.",
+      "type": "true_false",
+      "correct_answer": "False",
+      "explanation": "Abstracting complex items with only a broad 'category' attribute would obscure crucial, nuanced features and relationships necessary for identifying specific customer preferences, requiring more detailed attribute definition.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-4",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-4",
+        "target_co_id": "CO-1",
+        "lilo_text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+        "score": 0.4511,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.5282,
+          "jaccard": 0.0377,
+          "content": 0.0392,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 7,
+      "question": "Applying Principal Component Analysis (PCA) to a dataset with 100 highly correlated features is an efficient matrix transformation technique to reduce dimensionality while preserving most of the data's variance.",
+      "type": "true_false",
+      "correct_answer": "True",
+      "explanation": "PCA transforms correlated features into a smaller set of uncorrelated principal components, effectively reducing dimensionality and computational cost while retaining the most significant information (variance). This is a direct application of PCA for efficient data representation.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-5",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-5",
+        "target_co_id": "CO-1",
+        "lilo_text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+        "score": 0.5193,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.645,
+          "jaccard": 0.1154,
+          "content": 0.04,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 8,
+      "question": "Applying a matrix transformation for feature scaling (e.g., standardization) to a dataset with features on vastly different numerical scales is crucial for algorithms sensitive to feature magnitudes, such as K-Means clustering.",
+      "type": "true_false",
+      "correct_answer": "True",
+      "explanation": "Algorithms like K-Means clustering rely on distance calculations, which can be heavily skewed by features with larger magnitudes if not scaled. Feature scaling transformations ensure all features contribute proportionally to the distance metrics, leading to more accurate and efficient analysis.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-5",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-5",
+        "target_co_id": "CO-1",
+        "lilo_text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+        "score": 0.4983,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.6145,
+          "jaccard": 0.0943,
+          "content": 0.0196,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 9,
+      "question": "A retail chain analyzes customer transaction data to identify items frequently purchased together. To determine the proportion of all transactions that contain the item set {milk, bread, eggs}, which frequent pattern mining metric would be calculated?",
+      "type": "identification",
+      "correct_answer": "Support",
+      "explanation": "Support is the fundamental metric that quantifies the popularity of an item set by calculating the proportion of total transactions in which the item set appears, directly addressing the retail chain's need.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-11",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-11",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply frequent pattern mining to real-world datasets.",
+        "score": 0.4546,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.5134,
+          "jaccard": 0.069,
+          "content": 0.0652,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 10,
+      "question": "A cybersecurity firm analyzes network log data, which is often noisy and incomplete, to identify recurring patterns of suspicious event sequences. Which frequent pattern mining algorithm is typically applied for efficiently discovering these patterns in large, complex datasets without generating candidate item sets?",
+      "type": "identification",
+      "correct_answer": "FP-Growth algorithm",
+      "explanation": "The FP-Growth algorithm is well-suited for efficiently mining frequent patterns in large, complex, and potentially noisy real-world datasets like network logs, as it avoids costly candidate generation by using a compact FP-tree structure.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-11",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-11",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply frequent pattern mining to real-world datasets.",
+        "score": 0.5041,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.5638,
+          "jaccard": 0.1273,
+          "content": 0.1667,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 11,
+      "question": "A streaming service wants to analyze user viewing habits to recommend similar content. Each record contains a user ID and a list of movies watched in a single session. Which structured data representation is most appropriate for abstracting co-viewing patterns and relationships between movies?",
+      "type": "identification",
+      "correct_answer": "Item set",
+      "explanation": "To identify co-viewing patterns and relationships among movies, an item set (or transactional item set) structure is ideal as it groups related items (movies) that occur together within a session for association rule mining.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-4",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-4",
+        "target_co_id": "CO-1",
+        "lilo_text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+        "score": 0.382,
+        "bloom_level": "apply",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": false,
+        "bloom_gap": -1,
+        "score_breakdown": {
+          "cosine": 0.4769,
+          "jaccard": 0.0577,
+          "content": 0.0392,
+          "bloom": 0.75
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 12,
+      "question": "A medical research team compiles patient data including age, blood pressure, cholesterol levels, and a binary 'diagnosis present' flag for a specific condition. What structured data representation best abstracts these fixed patient characteristics for direct input into a predictive model?",
+      "type": "identification",
+      "correct_answer": "Structured matrix",
+      "explanation": "A structured matrix (or feature matrix) is best for representing fixed attributes of entities (patients) where each row is an instance and each column is a distinct attribute, enabling direct use in most statistical and machine learning models.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-4",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-4",
+        "target_co_id": "CO-1",
+        "lilo_text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+        "score": 0.3348,
+        "bloom_level": "understand",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "score_breakdown": {
+          "cosine": 0.4971,
+          "jaccard": 0.04,
+          "content": 0.0204,
+          "bloom": 0.5
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 13,
+      "question": "Using the provided dataset probabilities, calculate the mutual information between 'Milk' and 'Eggs' (round to three decimal places, log base 10).",
+      "type": "identification",
+      "correct_answer": "-0.079",
+      "explanation": "Mutual Information is calculated as log10(P(Milk, Eggs) / (P(Milk) * P(Eggs))). Substituting the given probabilities (0.4 / (0.8 * 0.6)) yields log10(0.4 / 0.48) = log10(0.8333...), which approximates to -0.079.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-10",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-10",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply mutual information to assess information gain between variables.",
+        "score": 0.4559,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.5166,
+          "jaccard": 0.0833,
+          "content": 0.0455,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 14,
+      "question": "A data analyst computes the mutual information between a target variable and two different features: MI(Feature X, Target) = 0.05 and MI(Feature Y, Target) = 0.12. Identify which feature provides greater information gain about the target variable.",
+      "type": "identification",
+      "correct_answer": "Feature Y",
+      "explanation": "A higher mutual information value indicates a stronger dependency and thus greater information gain about the target variable. Since 0.12 is greater than 0.05, Feature Y provides more information.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-10",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-10",
+        "target_co_id": "CO-2",
+        "lilo_text": "Apply mutual information to assess information gain between variables.",
+        "score": 0.4424,
+        "bloom_level": "remember",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": -2,
+        "score_breakdown": {
+          "cosine": 0.6675,
+          "jaccard": 0.1622,
+          "content": 0.0638,
+          "bloom": 0.5
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 15,
+      "question": "A retail analyst has identified a frequent pattern indicating that customers who buy item A also frequently buy item B. To precisely quantify the strength and direction of this association, distinguishing it from mere chance co-occurrence, what specific measure should the analyst primarily examine?",
+      "type": "identification",
+      "correct_answer": "Lift",
+      "explanation": "Lift is the key measure used to quantify the strength of an association and determine if the co-occurrence of items is more or less frequent than expected by chance, thereby distinguishing truly significant patterns.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-9",
+      "target_co_id": "CO-2",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-9",
+        "target_co_id": "CO-2",
+        "lilo_text": "Analyze the diversity of frequent patterns and interpret their significance.",
+        "score": 0.4634,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.5458,
+          "jaccard": 0.06,
+          "content": 0.0385,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-2",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 16,
+      "question": "Given a dataset of user interaction sequences on a streaming platform, which distinct temporal patterns or dependencies would you prioritize investigating to understand user engagement and potential churn risks?",
+      "type": "enumeration",
+      "correct_answer": "Common user paths, frequent consecutive actions, sequences leading to high engagement or churn, temporal order of feature usage",
+      "explanation": "Analyzing common paths identifies typical user journeys, while frequent consecutive actions reveal strong dependencies. Identifying sequences preceding high engagement or churn directly addresses the stated risks, and understanding feature usage order can uncover feature dependencies.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-6",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-6",
+        "target_co_id": "CO-1",
+        "lilo_text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+        "score": 0.4072,
+        "bloom_level": "evaluate",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": false,
+        "bloom_gap": 1,
+        "score_breakdown": {
+          "cosine": 0.4924,
+          "jaccard": 0.0889,
+          "content": 0.119,
+          "bloom": 0.75
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 17,
+      "question": "When analyzing 5-minute interval vehicle count data from smart city sensors, which specific temporal characteristics would you examine to differentiate between a daily traffic trend and a dependency on external factors like weather events?",
+      "type": "enumeration",
+      "correct_answer": "Consistency of recurring peaks/troughs, sustained directional movement over extended periods, abrupt deviations from expected patterns, correlation with external event timestamps",
+      "explanation": "Consistency and sustained movement indicate regular trends, while abrupt deviations and correlations with external timestamps suggest dependencies on specific events rather than inherent daily patterns.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-6",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-6",
+        "target_co_id": "CO-1",
+        "lilo_text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+        "score": 0.4525,
+        "bloom_level": "analyze",
+        "lilo_bloom": "analyze",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.5314,
+          "jaccard": 0.0377,
+          "content": 0.0392,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 18,
+      "question": "A financial dataset contains hundreds of variables, many of which are highly correlated, and their values range from small percentages to large dollar amounts. To efficiently prepare this data for a predictive model that is sensitive to feature scale and multicollinearity, which two common matrix transformation techniques would you apply?",
+      "type": "enumeration",
+      "correct_answer": "Feature Scaling, Principal Component Analysis (PCA)",
+      "explanation": "Feature scaling (e.g., standardization or normalization) addresses the issue of varying numerical scales, ensuring all features contribute equally. Principal Component Analysis (PCA) is a matrix transformation technique used to reduce dimensionality and decorrelate features, effectively handling multicollinearity and making the data more efficient for modeling.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-5",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-5",
+        "target_co_id": "CO-1",
+        "lilo_text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+        "score": 0.3523,
+        "bloom_level": "create",
+        "lilo_bloom": "apply",
+        "bloom_aligned": false,
+        "bloom_gap": 3,
+        "score_breakdown": {
+          "cosine": 0.6073,
+          "jaccard": 0.0784,
+          "content": 0.0889,
+          "bloom": 0.25
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 19,
+      "question": "Given a social network graph representing user connections, which two network analysis techniques would you apply to identify influential users and discover distinct user groups?",
+      "type": "enumeration",
+      "correct_answer": "Centrality analysis, Community detection",
+      "explanation": "To identify influential users, one would apply centrality analysis (e.g., degree, betweenness, closeness centrality). To discover distinct user groups, community detection algorithms are applied.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-7",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-7",
+        "target_co_id": "CO-1",
+        "lilo_text": "Conduct network analysis on graph-structured data.",
+        "score": 0.4685,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.5542,
+          "jaccard": 0.0444,
+          "content": 0.0682,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    },
+    {
+      "index": 20,
+      "question": "For a graph representing a supply chain, where nodes are companies and edges are transactions, which two centrality measures would you compute to identify key bottleneck companies and those with the most direct trading partners?",
+      "type": "enumeration",
+      "correct_answer": "Betweenness centrality, Degree centrality",
+      "explanation": "Betweenness centrality measures the extent to which a node lies on paths between other nodes, identifying bottlenecks. Degree centrality measures the number of direct connections a node has, indicating direct trading partners.",
+      "difficulty": "medium",
+      "source_ilo_id": "LILO-7",
+      "target_co_id": "CO-1",
+      "grounding": "content",
+      "alignment": {
+        "lilo_id": "LILO-7",
+        "target_co_id": "CO-1",
+        "lilo_text": "Conduct network analysis on graph-structured data.",
+        "score": 0.4102,
+        "bloom_level": "apply",
+        "lilo_bloom": "apply",
+        "bloom_aligned": true,
+        "bloom_gap": 0,
+        "score_breakdown": {
+          "cosine": 0.4174,
+          "jaccard": 0.0952,
+          "content": 0.0222,
+          "bloom": 1
+        },
+        "llm_validated": false,
+        "content_block": "CONTENT-1",
+        "topic_block_aligned": true
+      }
+    }
+  ],
+  "enrichedLlos": [
+    {
+      "id": "LILO-4",
+      "text": "Develop the ability to abstract real-world data into structured matrices and item sets, identifying relevant attributes and relationships.",
+      "bloom_level": "analyze",
+      "key_concepts": [
+        "data abstraction",
+        "real-world data",
+        "structured matrices",
+        "item sets",
+        "attributes",
+        "relationships",
+        "data modeling",
+        "feature engineering"
+      ],
+      "enriched_text": "Abstract complex real-world data into structured formats such as matrices and item sets, by identifying and selecting relevant attributes and their underlying relationships, thereby preparing data for further analytical processing and modeling.",
+      "source_type": "ilo",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_suggestions": [],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "week": "2-3",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "graduate_attr": "GA1, GA2",
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-5",
+      "text": "Apply matrix transformation techniques to represent and analyze real-world data efficiently.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "matrix transformation",
+        "linear algebra",
+        "data representation",
+        "dimensionality reduction",
+        "feature scaling",
+        "principal component analysis (pca)",
+        "singular value decomposition (svd)"
+      ],
+      "enriched_text": "Apply various matrix transformation techniques, such as dimensionality reduction (e.g., PCA, SVD) and feature scaling, to efficiently represent and analyze real-world datasets, optimizing them for subsequent machine learning algorithms or statistical analysis.",
+      "source_type": "ilo",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_suggestions": [],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "week": "2-3",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "graduate_attr": "GA1, GA2",
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-6",
+      "text": "Analyze sequences of data to identify temporal patterns, trends, and dependencies.",
+      "bloom_level": "analyze",
+      "key_concepts": [
+        "sequence data",
+        "temporal patterns",
+        "trends",
+        "dependencies",
+        "time series analysis",
+        "sequential pattern mining",
+        "autocorrelation"
+      ],
+      "enriched_text": "Analyze sequential datasets to identify and interpret temporal patterns, underlying trends, and causal or correlational dependencies, utilizing techniques from time series analysis and sequential pattern mining to extract meaningful insights.",
+      "source_type": "ilo",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_suggestions": [],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "week": "2-3",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "graduate_attr": "GA1, GA2",
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-7",
+      "text": "Conduct network analysis on graph-structured data.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "network analysis",
+        "graph-structured data",
+        "nodes",
+        "edges",
+        "centrality measures",
+        "community detection",
+        "pathfinding algorithms"
+      ],
+      "enriched_text": "Conduct comprehensive network analysis on graph-structured data, identifying key nodes, edges, and relationships, and applying techniques such as centrality measures, community detection, and pathfinding algorithms to understand network structure and dynamics.",
+      "source_type": "ilo",
+      "co_id": "CO-1",
+      "co_ids": [
+        "CO-1"
+      ],
+      "co_suggestions": [],
+      "co_text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "week": "2-3",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "graduate_attr": "GA1, GA2",
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities"
+    },
+    {
+      "id": "LILO-8",
+      "text": "Develop the ability to identify and extract frequent patterns from large datasets.",
+      "bloom_level": "analyze",
+      "key_concepts": [
+        "frequent patterns",
+        "large datasets",
+        "association rule mining",
+        "apriori algorithm",
+        "fp-growth algorithm",
+        "support",
+        "confidence",
+        "itemsets"
+      ],
+      "enriched_text": "Identify and extract frequent patterns from large datasets using data mining techniques such as association rule mining (e.g., Apriori, FP-growth), by defining and calculating metrics like support and confidence for various itemsets.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "4-5",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "LILO-9",
+      "text": "Analyze the diversity of frequent patterns and interpret their significance.",
+      "bloom_level": "analyze",
+      "key_concepts": [
+        "frequent patterns",
+        "pattern diversity",
+        "pattern significance",
+        "interpretation",
+        "domain knowledge",
+        "actionable insights",
+        "interestingness measures"
+      ],
+      "enriched_text": "Analyze the diversity of identified frequent patterns, assessing their uniqueness, redundancy, and novelty, and interpret their significance within a specific domain context to derive actionable insights and inform decision-making.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "4-5",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "LILO-10",
+      "text": "Apply mutual information to assess information gain between variables.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "mutual information",
+        "information gain",
+        "variables",
+        "feature selection",
+        "entropy",
+        "conditional entropy",
+        "statistical dependence"
+      ],
+      "enriched_text": "Apply the concept of mutual information to quantitatively assess the information gain and statistical dependence between variables, utilizing it as a key technique for feature selection and data preprocessing in machine learning contexts.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "4-5",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    },
+    {
+      "id": "LILO-11",
+      "text": "Apply frequent pattern mining to real-world datasets.",
+      "bloom_level": "apply",
+      "key_concepts": [
+        "frequent pattern mining",
+        "association rule mining",
+        "apriori algorithm",
+        "fp-growth algorithm",
+        "support, confidence, lift",
+        "real-world datasets",
+        "data preprocessing",
+        "market basket analysis"
+      ],
+      "enriched_text": "Apply frequent pattern mining techniques such as Apriori and FP-growth algorithms to extract meaningful association rules (e.g., support, confidence, lift) from diverse real-world datasets, including considerations for data preprocessing and interpretation of results.",
+      "source_type": "ilo",
+      "co_id": "CO-2",
+      "co_ids": [
+        "CO-2"
+      ],
+      "co_suggestions": [],
+      "co_text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "week": "4-5",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "graduate_attr": "GA2, GA7",
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis"
+    }
+  ],
+  "courseOutcomes": [
+    {
+      "id": "CO-1",
+      "text": "Gain a deep understanding of fundamental data mining concepts, techniques, and methodologies applicable to real-world datasets, and formulate diverse real-world problems as specific data mining genres",
+      "bloom_level": "understand",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA2"
+      ]
+    },
+    {
+      "id": "CO-2",
+      "text": "Apply data mining algorithms and techniques effectively to solve problems in various domains — including frequent pattern mining, matrix methods, text mining, image mining, time-series, network analysis, and big data — demonstrating proficiency in algorithm selection and implementation",
+      "bloom_level": "apply",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ]
+    },
+    {
+      "id": "CO-3",
+      "text": "Evaluate and interpret data mining methodologies and results in real-world problem-solving contexts, using rigorous testing and assessment strategies",
+      "bloom_level": "evaluate",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA3"
+      ]
+    },
+    {
+      "id": "CO-4",
+      "text": "Design end-to-end data mining solutions and communicate findings effectively, demonstrating ethical awareness, adaptability, and innovative thinking across interdisciplinary domains",
+      "bloom_level": "create",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO3",
+        "PO6",
+        "PO9"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA4",
+        "GA7"
+      ]
+    }
+  ],
+  "graduateAttributes": [],
+  "programOutcomes": [
+    {
+      "id": "PO1",
+      "text": "Apply knowledge of computing fundamentals, mathematics, science and domain knowledge appropriate for the computing specialization."
+    },
+    {
+      "id": "PO10",
+      "text": "Recognize the need and have the ability to engage in independent learning for continual development as a computing professional."
+    },
+    {
+      "id": "PO2",
+      "text": "Identify, analyze, formulate, research literature and solve complex computing problems reaching substantiated conclusions."
+    },
+    {
+      "id": "PO3",
+      "text": "Apply mathematical foundations, algorithmic principles and computer science theory in the modeling and design of computer-based systems."
+    },
+    {
+      "id": "PO4",
+      "text": "Demonstrate knowledge and understanding of information security issues in relation to the design, development and use of information systems."
+    },
+    {
+      "id": "PO5",
+      "text": "Design and evaluate solutions for complex computing problems with appropriate consideration for public health, safety and environmental factors."
+    },
+    {
+      "id": "PO6",
+      "text": "Create, select, adapt and apply appropriate techniques, resources and modern computing tools to complex computing activities."
+    },
+    {
+      "id": "PO7",
+      "text": "Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary settings."
+    },
+    {
+      "id": "PO8",
+      "text": "Communicate effectively with the computing community and with society at large about complex computing activities."
+    },
+    {
+      "id": "PO9",
+      "text": "Recognize the legal, social, ethical and professional issues involved in the utilization of computer technology."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "id": "CONTENT-1",
+      "topic_title": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "learning_content": "Real-World Data Formulation \n • Matrices and Item Sets \n • Sequences \n • Time-series \n • Graphs \n Machine Problem: Data on WWW; data in online communities",
+      "week": "2-3",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO3",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA1",
+        "GA2"
+      ],
+      "co_ids": [
+        "CO-1"
+      ],
+      "ilo_ids": [
+        "LILO-4",
+        "LILO-5",
+        "LILO-6",
+        "LILO-7"
+      ]
+    },
+    {
+      "id": "CONTENT-2",
+      "topic_title": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "learning_content": "Mining Item Sets \n • Frequent Pattern Mining \n • Mutual Information \n • Pattern Evaluation Methods \n • Pattern Exploration and Application \n Machine Problem: Query Log Analysis, Image Classification, Network Analysis",
+      "week": "4-5",
+      "po_codes": [
+        "PO1",
+        "PO10",
+        "PO2",
+        "PO6"
+      ],
+      "ga_codes": [
+        "GA2",
+        "GA7"
+      ],
+      "co_ids": [
+        "CO-2"
+      ],
+      "ilo_ids": [
+        "LILO-8",
+        "LILO-9",
+        "LILO-10",
+        "LILO-11"
+      ]
+    }
+  ]
+}
