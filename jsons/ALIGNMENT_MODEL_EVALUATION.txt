@@ -53,13 +53,13 @@ tags the system actually ships.
 
 export                                          items  LILOs  blocks   COs   POs  topic
 ----------------------------------------------------------------------------------------------------
-alignment_478588_2026-08-26.json                   35      5       2     4    10  Lecture 9 Mining Behavior Data (1) | Lecture
-alignment_final_exam_2026-08-25.json               62     31       9     4    10  Lecture 9 Mining Behavior Data (1) | Lecture
-alignment_quiz1111_2026-08-25.json                 10      4       1     4    10  Lecture 1 Real World Data Formulation (1)
-alignment_quiz_tssstt_2026-08-25.json              20      7       2     4    10  Lecture 5 Mining Image Data (1) | Lecture 4 
-alignment_quizzzzzzzzz_2026-08-25.json             10      4       1     4    10  Lecture 2 Mining Item Sets
-alignment_test_quizzz_2026-08-25.json              20      8       2     4    10  Lecture 2 Mining Item Sets | Lecture 1 Real 
-alignment_testtt1uizzz_2026-08-26.json             40      7       2     4    10  Lecture 5 Mining Image Data (1) | Lecture 4 
+export_06_quiz_big-data-and-behavior-mining_35q.json                   35      5       2     4    10  Lecture 9 Mining Behavior Data (1) | Lecture
+export_07_final-exam_full-course_62q.json               62     31       9     4    10  Lecture 9 Mining Behavior Data (1) | Lecture
+export_01_quiz_real-world-data-formulation_10q.json                 10      4       1     4    10  Lecture 1 Real World Data Formulation (1)
+export_04_quiz_text-and-image-mining_20q.json              20      7       2     4    10  Lecture 5 Mining Image Data (1) | Lecture 4 
+export_03_quiz_mining-item-sets_10q.json             10      4       1     4    10  Lecture 2 Mining Item Sets
+export_02_quiz_data-formulation-and-item-sets_20q.json              20      8       2     4    10  Lecture 2 Mining Item Sets | Lecture 1 Real 
+export_05_quiz_text-and-image-mining_40q.json             40      7       2     4    10  Lecture 5 Mining Image Data (1) | Lecture 4 
 ----------------------------------------------------------------------------------------------------
 TOTAL                                             197     66
 
@@ -82,13 +82,13 @@ normaliser fixes landed, so they preserve the older behaviour by design.
 
 export                                            n  identical  <=0.001   >0.01  tag moved  mean |d|
 ----------------------------------------------------------------------------------------------------
-alignment_478588_2026-08-26.json                 35         35       35       0          0    0.0000
-alignment_final_exam_2026-08-25.json             62          5        5      18          1    0.0257
-alignment_quiz1111_2026-08-25.json               10          0        1       2          0    0.0158
-alignment_quiz_tssstt_2026-08-25.json            20         14       14       6          6    0.0127
-alignment_quizzzzzzzzz_2026-08-25.json           10          0        0       6          0    0.0445
-alignment_test_quizzz_2026-08-25.json            20         20       20       0          0    0.0000
-alignment_testtt1uizzz_2026-08-26.json           40         40       40       0          0    0.0000
+export_06_quiz_big-data-and-behavior-mining_35q.json                 35         35       35       0          0    0.0000
+export_07_final-exam_full-course_62q.json             62          5        5      18          1    0.0257
+export_01_quiz_real-world-data-formulation_10q.json               10          0        1       2          0    0.0158
+export_04_quiz_text-and-image-mining_20q.json            20         14       14       6          6    0.0127
+export_03_quiz_mining-item-sets_10q.json           10          0        0       6          0    0.0445
+export_02_quiz_data-formulation-and-item-sets_20q.json            20         20       20       0          0    0.0000
+export_05_quiz_text-and-image-mining_40q.json           40         40       40       0          0    0.0000
 ----------------------------------------------------------------------------------------------------
 TOTAL                                           197        114      115      32          7
 
@@ -107,13 +107,13 @@ Run B only. source_ilo_id removed; the four channels have to find the outcome.
 
 export                                            n  pool  top-1 agree     rate   chance    lift
 ----------------------------------------------------------------------------------------------------
-alignment_478588_2026-08-26.json                 35     5           32  91.43%   20.00%    4.6x
-alignment_final_exam_2026-08-25.json             62    31           43  69.35%    3.23%   21.5x
-alignment_quiz1111_2026-08-25.json               10     4            9  90.00%   25.00%    3.6x
-alignment_quiz_tssstt_2026-08-25.json            20     7           15  75.00%   14.29%    5.2x
-alignment_quizzzzzzzzz_2026-08-25.json           10     4            5  50.00%   25.00%    2.0x
-alignment_test_quizzz_2026-08-25.json            20     8           16  80.00%   12.50%    6.4x
-alignment_testtt1uizzz_2026-08-26.json           40     7           26  65.00%   14.29%    4.6x
+export_06_quiz_big-data-and-behavior-mining_35q.json                 35     5           32  91.43%   20.00%    4.6x
+export_07_final-exam_full-course_62q.json             62    31           43  69.35%    3.23%   21.5x
+export_01_quiz_real-world-data-formulation_10q.json               10     4            9  90.00%   25.00%    3.6x
+export_04_quiz_text-and-image-mining_20q.json            20     7           15  75.00%   14.29%    5.2x
+export_03_quiz_mining-item-sets_10q.json           10     4            5  50.00%   25.00%    2.0x
+export_02_quiz_data-formulation-and-item-sets_20q.json            20     8           16  80.00%   12.50%    6.4x
+export_05_quiz_text-and-image-mining_40q.json           40     7           26  65.00%   14.29%    4.6x
 ----------------------------------------------------------------------------------------------------
 CORPUS                                          197                146  74.11%
 
@@ -350,13 +350,13 @@ did before the invariant shipped.
 
 export                                          items  tagged  outcomes   shipped   composite   lost
 ----------------------------------------------------------------------------------------------------
-alignment_478588_2026-08-26.json                   35      35         5    5 100.00%    5 100.00%      0
-alignment_final_exam_2026-08-25.json               62      62        31   31 100.00%   29  93.55%      2
-alignment_quiz1111_2026-08-25.json                 10      10         4    4 100.00%    4 100.00%      0
-alignment_quiz_tssstt_2026-08-25.json              20      20         7    7 100.00%    6  85.71%      1
-alignment_quizzzzzzzzz_2026-08-25.json             10      10         4    4 100.00%    3  75.00%      1
-alignment_test_quizzz_2026-08-25.json              20      20         8    8 100.00%    8 100.00%      0
-alignment_testtt1uizzz_2026-08-26.json             40      40         7    7 100.00%    7 100.00%      0
+export_06_quiz_big-data-and-behavior-mining_35q.json                   35      35         5    5 100.00%    5 100.00%      0
+export_07_final-exam_full-course_62q.json               62      62        31   31 100.00%   29  93.55%      2
+export_01_quiz_real-world-data-formulation_10q.json                 10      10         4    4 100.00%    4 100.00%      0
+export_04_quiz_text-and-image-mining_20q.json              20      20         7    7 100.00%    6  85.71%      1
+export_03_quiz_mining-item-sets_10q.json             10      10         4    4 100.00%    3  75.00%      1
+export_02_quiz_data-formulation-and-item-sets_20q.json              20      20         8    8 100.00%    8 100.00%      0
+export_05_quiz_text-and-image-mining_40q.json             40      40         7    7 100.00%    7 100.00%      0
 ----------------------------------------------------------------------------------------------------
 CORPUS                                                               66   66 100.00%   62  93.94%      4
 
@@ -395,13 +395,13 @@ wins, so the two runs part company on a handful of borderline questions.
 
 export                                            n  agree  drift  drift rate  mean margin      max
 ----------------------------------------------------------------------------------------------------
-alignment_478588_2026-08-26.json                 35     32      3   8.57%       0.0070   0.0155
-alignment_final_exam_2026-08-25.json             62     43     19  30.65%       0.1229   0.3273
-alignment_quiz1111_2026-08-25.json               10      9      1  10.00%       0.0187   0.0187
-alignment_quiz_tssstt_2026-08-25.json            20     15      5  25.00%       0.0235   0.0488
-alignment_quizzzzzzzzz_2026-08-25.json           10      5      5  50.00%       0.0560   0.0718
-alignment_test_quizzz_2026-08-25.json            20     17      3  15.00%       0.0319   0.0600
-alignment_testtt1uizzz_2026-08-26.json           40     26     14  35.00%       0.0204   0.0563
+export_06_quiz_big-data-and-behavior-mining_35q.json                 35     32      3   8.57%       0.0070   0.0155
+export_07_final-exam_full-course_62q.json             62     43     19  30.65%       0.1229   0.3273
+export_01_quiz_real-world-data-formulation_10q.json               10      9      1  10.00%       0.0187   0.0187
+export_04_quiz_text-and-image-mining_20q.json            20     15      5  25.00%       0.0235   0.0488
+export_03_quiz_mining-item-sets_10q.json           10      5      5  50.00%       0.0560   0.0718
+export_02_quiz_data-formulation-and-item-sets_20q.json            20     17      3  15.00%       0.0319   0.0600
+export_05_quiz_text-and-image-mining_40q.json           40     26     14  35.00%       0.0204   0.0563
 ----------------------------------------------------------------------------------------------------
 CORPUS                                          197    147     50  25.38%       0.0631   0.3273
 

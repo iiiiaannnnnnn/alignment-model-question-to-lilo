@@ -38,16 +38,21 @@ Measured on 197 questions across seven real assessment exports, with the
 `source_ilo_id` provenance field removed so the four channels have to find the
 outcome on their own:
 
-| export | n | pool | top-1 agreement | chance | lift |
-|---|---|---|---|---|---|
-| 478588 | 35 | 5 | 91.43% | 20.00% | 4.6x |
-| final exam | 62 | 31 | 69.35% | 3.23% | 21.5x |
-| quiz1111 | 10 | 4 | 90.00% | 25.00% | 3.6x |
-| quiz_tssstt | 20 | 7 | 75.00% | 14.29% | 5.2x |
-| quizzzzzzzzz | 10 | 4 | 50.00% | 25.00% | 2.0x |
-| test_quizzz | 20 | 8 | 80.00% | 12.50% | 6.4x |
-| testtt1uizzz | 40 | 7 | 65.00% | 14.29% | 4.6x |
-| **corpus** | **197** | | **74.11%** | | |
+| export | lectures | n | pool | top-1 agreement | chance | lift |
+|---|---|---|---|---|---|---|
+| 01 Quiz - Real-World Data Formulation | 1 | 10 | 4 | 90.00% | 25.00% | 3.6x |
+| 02 Quiz - Data Formulation and Item Sets | 1-2 | 20 | 8 | 80.00% | 12.50% | 6.4x |
+| 03 Quiz - Mining Item Sets | 2 | 10 | 4 | 50.00% | 25.00% | 2.0x |
+| 04 Quiz - Text and Image Mining | 4-5 | 20 | 7 | 75.00% | 14.29% | 5.2x |
+| 05 Quiz - Text and Image Mining (40 items) | 4-5 | 40 | 7 | 65.00% | 14.29% | 4.6x |
+| 06 Quiz - Big Data and Behavior Mining | 8-9 | 35 | 5 | 91.43% | 20.00% | 4.6x |
+| 07 Final Exam - Full Course | 1-9 | 62 | 31 | 69.35% | 3.23% | 21.5x |
+| **corpus** | | **197** | | **74.11%** | | |
+
+The export names come from each file's own `topic` field, which records the
+lectures it draws on; all seven are from the same Data Mining course, which is
+why the outcome pools overlap. `jsons/EXPORTS.md` maps each one back to its
+original filename and to the `group_id` the datasets and results still use.
 
 The lift column is the honest way to read this. A 91% agreement against a
 five-outcome pool is a weaker result than a 69% agreement against a
@@ -265,7 +270,7 @@ data/
 v4a_it_extended/         extended IT set (contaminated — kept as the record)
 v4a_it_extended_clean/   the same set with benchmark questions removed
 
-jsons/                   the 7 real assessment exports, and the evaluation report
+jsons/                   the 7 real assessment exports, EXPORTS.md, the evaluation report
 models/<name>/           config, tokenizer and training manifest per run
 results/                 every metric reported above
 ```
@@ -288,7 +293,7 @@ def train_questions(path):
         return {norm(json.loads(l)['question']) for l in fh if l.strip()}
 
 bench = set()
-for path in glob.glob('jsons/alignment_*.json'):
+for path in glob.glob('jsons/export_*.json'):
     with open(path, encoding='utf-8') as fh:
         for q in json.load(fh)['questions']:
             bench.add(norm(q['question']))

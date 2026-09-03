@@ -2,37 +2,37 @@
   "label_meaning": "source_ilo_id generation provenance; not independent professor ground truth",
   "exports": [
     {
-      "file": "alignment_478588_2026-08-26.json",
+      "file": "export_06_quiz_big-data-and-behavior-mining_35q.json",
       "questions": 35,
       "lilos": 5
     },
     {
-      "file": "alignment_final_exam_2026-08-25.json",
+      "file": "export_07_final-exam_full-course_62q.json",
       "questions": 62,
       "lilos": 31
     },
     {
-      "file": "alignment_quiz1111_2026-08-25.json",
+      "file": "export_01_quiz_real-world-data-formulation_10q.json",
       "questions": 10,
       "lilos": 4
     },
     {
-      "file": "alignment_quiz_tssstt_2026-08-25.json",
+      "file": "export_04_quiz_text-and-image-mining_20q.json",
       "questions": 20,
       "lilos": 7
     },
     {
-      "file": "alignment_quizzzzzzzzz_2026-08-25.json",
+      "file": "export_03_quiz_mining-item-sets_10q.json",
       "questions": 10,
       "lilos": 4
     },
     {
-      "file": "alignment_test_quizzz_2026-08-25.json",
+      "file": "export_02_quiz_data-formulation-and-item-sets_20q.json",
       "questions": 20,
       "lilos": 8
     },
     {
-      "file": "alignment_testtt1uizzz_2026-08-26.json",
+      "file": "export_05_quiz_text-and-image-mining_40q.json",
       "questions": 40,
       "lilos": 7
     }
